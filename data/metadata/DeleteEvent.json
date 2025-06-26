@@ -1,0 +1,54 @@
+{
+  "label": "DeleteEvent",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Record",
+      "type": "string",
+      "label": "Record"
+    },
+    {
+      "name": "RecordName",
+      "type": "string",
+      "label": "RecordName"
+    },
+    {
+      "name": "DeletedById",
+      "type": "reference",
+      "label": "DeletedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "DeletedDate",
+      "type": "datetime",
+      "label": "DeletedDate"
+    },
+    {
+      "name": "SobjectName",
+      "type": "string",
+      "label": "SobjectName"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "DeletedById"
+    }
+  ]
+}

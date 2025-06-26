@@ -1,0 +1,280 @@
+{
+  "label": "Task",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "WhoId",
+      "type": "reference",
+      "label": "WhoId",
+      "referenceTo": "Contact, Lead"
+    },
+    {
+      "name": "WhatId",
+      "type": "reference",
+      "label": "WhatId",
+      "referenceTo": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, Case, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, ListEmail, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate"
+    },
+    {
+      "name": "Subject",
+      "type": "combobox",
+      "label": "Subject"
+    },
+    {
+      "name": "ActivityDate",
+      "type": "date",
+      "label": "ActivityDate"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "Priority",
+      "type": "picklist",
+      "label": "Priority"
+    },
+    {
+      "name": "IsHighPriority",
+      "type": "boolean",
+      "label": "IsHighPriority"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "IsClosed",
+      "type": "boolean",
+      "label": "IsClosed"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "IsArchived",
+      "type": "boolean",
+      "label": "IsArchived"
+    },
+    {
+      "name": "CallDurationInSeconds",
+      "type": "int",
+      "label": "CallDurationInSeconds"
+    },
+    {
+      "name": "CallType",
+      "type": "picklist",
+      "label": "CallType"
+    },
+    {
+      "name": "CallDisposition",
+      "type": "string",
+      "label": "CallDisposition"
+    },
+    {
+      "name": "CallObject",
+      "type": "string",
+      "label": "CallObject"
+    },
+    {
+      "name": "ReminderDateTime",
+      "type": "datetime",
+      "label": "ReminderDateTime"
+    },
+    {
+      "name": "IsReminderSet",
+      "type": "boolean",
+      "label": "IsReminderSet"
+    },
+    {
+      "name": "RecurrenceActivityId",
+      "type": "reference",
+      "label": "RecurrenceActivityId",
+      "referenceTo": "Task"
+    },
+    {
+      "name": "IsRecurrence",
+      "type": "boolean",
+      "label": "IsRecurrence"
+    },
+    {
+      "name": "RecurrenceStartDateOnly",
+      "type": "date",
+      "label": "RecurrenceStartDateOnly"
+    },
+    {
+      "name": "RecurrenceEndDateOnly",
+      "type": "date",
+      "label": "RecurrenceEndDateOnly"
+    },
+    {
+      "name": "RecurrenceTimeZoneSidKey",
+      "type": "picklist",
+      "label": "RecurrenceTimeZoneSidKey"
+    },
+    {
+      "name": "RecurrenceType",
+      "type": "picklist",
+      "label": "RecurrenceType"
+    },
+    {
+      "name": "RecurrenceInterval",
+      "type": "int",
+      "label": "RecurrenceInterval"
+    },
+    {
+      "name": "RecurrenceDayOfWeekMask",
+      "type": "int",
+      "label": "RecurrenceDayOfWeekMask"
+    },
+    {
+      "name": "RecurrenceDayOfMonth",
+      "type": "int",
+      "label": "RecurrenceDayOfMonth"
+    },
+    {
+      "name": "RecurrenceInstance",
+      "type": "picklist",
+      "label": "RecurrenceInstance"
+    },
+    {
+      "name": "RecurrenceMonthOfYear",
+      "type": "picklist",
+      "label": "RecurrenceMonthOfYear"
+    },
+    {
+      "name": "RecurrenceRegeneratedType",
+      "type": "picklist",
+      "label": "RecurrenceRegeneratedType"
+    },
+    {
+      "name": "TaskSubtype",
+      "type": "picklist",
+      "label": "TaskSubtype"
+    },
+    {
+      "name": "CompletedDateTime",
+      "type": "datetime",
+      "label": "CompletedDateTime"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Contact, Lead",
+      "type": "parent",
+      "parentObject": "Contact, Lead",
+      "field": "WhoId"
+    },
+    {
+      "name": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, Case, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, ListEmail, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate",
+      "type": "parent",
+      "parentObject": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, Case, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, ListEmail, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate",
+      "field": "WhatId"
+    },
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Task",
+      "type": "parent",
+      "parentObject": "Task",
+      "field": "RecurrenceActivityId"
+    },
+    {
+      "name": "EmailMessages",
+      "type": "child",
+      "childObject": "EmailMessage",
+      "field": "ActivityId"
+    },
+    {
+      "name": "Tasks",
+      "type": "child",
+      "childObject": "Task",
+      "field": "RecurrenceActivityId"
+    },
+    {
+      "name": "TaskFeeds",
+      "type": "child",
+      "childObject": "TaskFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "VoiceCalls",
+      "type": "child",
+      "childObject": "VoiceCall",
+      "field": "ActivityId"
+    }
+  ]
+}

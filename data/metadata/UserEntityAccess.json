@@ -1,0 +1,84 @@
+{
+  "label": "UserEntityAccess",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "IsMergeable",
+      "type": "boolean",
+      "label": "IsMergeable"
+    },
+    {
+      "name": "IsUpdatable",
+      "type": "boolean",
+      "label": "IsUpdatable"
+    },
+    {
+      "name": "IsActivateable",
+      "type": "boolean",
+      "label": "IsActivateable"
+    },
+    {
+      "name": "IsReadable",
+      "type": "boolean",
+      "label": "IsReadable"
+    },
+    {
+      "name": "IsCreatable",
+      "type": "boolean",
+      "label": "IsCreatable"
+    },
+    {
+      "name": "IsEditable",
+      "type": "boolean",
+      "label": "IsEditable"
+    },
+    {
+      "name": "IsDeletable",
+      "type": "boolean",
+      "label": "IsDeletable"
+    },
+    {
+      "name": "IsUndeletable",
+      "type": "boolean",
+      "label": "IsUndeletable"
+    },
+    {
+      "name": "IsFlsUpdatable",
+      "type": "boolean",
+      "label": "IsFlsUpdatable"
+    },
+    {
+      "name": "EntityDefinitionId",
+      "type": "string",
+      "label": "EntityDefinitionId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    }
+  ]
+}

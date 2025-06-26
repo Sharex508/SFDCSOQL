@@ -1,0 +1,139 @@
+{
+  "label": "MLModel",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "PredictionDefinitionId",
+      "type": "reference",
+      "label": "PredictionDefinitionId",
+      "referenceTo": "MLPredictionDefinition"
+    },
+    {
+      "name": "ApprovalStatus",
+      "type": "picklist",
+      "label": "ApprovalStatus"
+    },
+    {
+      "name": "ScoringStatus",
+      "type": "picklist",
+      "label": "ScoringStatus"
+    },
+    {
+      "name": "ModelType",
+      "type": "picklist",
+      "label": "ModelType"
+    },
+    {
+      "name": "TrainingStartTime",
+      "type": "datetime",
+      "label": "TrainingStartTime"
+    },
+    {
+      "name": "TrainingEndTime",
+      "type": "datetime",
+      "label": "TrainingEndTime"
+    },
+    {
+      "name": "Dataset",
+      "type": "string",
+      "label": "Dataset"
+    },
+    {
+      "name": "RecommendationDefinitionId",
+      "type": "reference",
+      "label": "RecommendationDefinitionId",
+      "referenceTo": "MLRecommendationDefinition"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "MLPredictionDefinition",
+      "type": "parent",
+      "parentObject": "MLPredictionDefinition",
+      "field": "PredictionDefinitionId"
+    },
+    {
+      "name": "MLRecommendationDefinition",
+      "type": "parent",
+      "parentObject": "MLRecommendationDefinition",
+      "field": "RecommendationDefinitionId"
+    },
+    {
+      "name": "AIRecordInsights",
+      "type": "child",
+      "childObject": "AIRecordInsight",
+      "field": "ModelId"
+    },
+    {
+      "name": "MLModelFactors",
+      "type": "child",
+      "childObject": "MLModelFactor",
+      "field": "ModelId"
+    },
+    {
+      "name": "MLModelFactorComponents",
+      "type": "child",
+      "childObject": "MLModelFactorComponent",
+      "field": "ModelId"
+    },
+    {
+      "name": "MLModelMetrics",
+      "type": "child",
+      "childObject": "MLModelMetric",
+      "field": "ModelId"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "label": "EmailTemplate",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "FolderId",
+      "type": "reference",
+      "label": "FolderId",
+      "referenceTo": "Folder, Organization, User"
+    },
+    {
+      "name": "FolderName",
+      "type": "string",
+      "label": "FolderName"
+    },
+    {
+      "name": "BrandTemplateId",
+      "type": "reference",
+      "label": "BrandTemplateId",
+      "referenceTo": "BrandTemplate"
+    },
+    {
+      "name": "EnhancedLetterheadId",
+      "type": "reference",
+      "label": "EnhancedLetterheadId",
+      "referenceTo": "EnhancedLetterhead"
+    },
+    {
+      "name": "TemplateStyle",
+      "type": "picklist",
+      "label": "TemplateStyle"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "TemplateType",
+      "type": "picklist",
+      "label": "TemplateType"
+    },
+    {
+      "name": "Encoding",
+      "type": "picklist",
+      "label": "Encoding"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "Subject",
+      "type": "string",
+      "label": "Subject"
+    },
+    {
+      "name": "HtmlValue",
+      "type": "textarea",
+      "label": "HtmlValue"
+    },
+    {
+      "name": "Body",
+      "type": "textarea",
+      "label": "Body"
+    },
+    {
+      "name": "TimesUsed",
+      "type": "int",
+      "label": "TimesUsed"
+    },
+    {
+      "name": "LastUsedDate",
+      "type": "datetime",
+      "label": "LastUsedDate"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ApiVersion",
+      "type": "double",
+      "label": "ApiVersion"
+    },
+    {
+      "name": "Markup",
+      "type": "textarea",
+      "label": "Markup"
+    },
+    {
+      "name": "UiType",
+      "type": "picklist",
+      "label": "UiType"
+    },
+    {
+      "name": "RelatedEntityType",
+      "type": "picklist",
+      "label": "RelatedEntityType"
+    },
+    {
+      "name": "IsBuilderContent",
+      "type": "boolean",
+      "label": "IsBuilderContent"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "Folder, Organization, User",
+      "type": "parent",
+      "parentObject": "Folder, Organization, User",
+      "field": "FolderId"
+    },
+    {
+      "name": "BrandTemplate",
+      "type": "parent",
+      "parentObject": "BrandTemplate",
+      "field": "BrandTemplateId"
+    },
+    {
+      "name": "EnhancedLetterhead",
+      "type": "parent",
+      "parentObject": "EnhancedLetterhead",
+      "field": "EnhancedLetterheadId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "DocumentAttachmentMaps",
+      "type": "child",
+      "childObject": "DocumentAttachmentMap",
+      "field": "ParentId"
+    },
+    {
+      "name": "EmailMessages",
+      "type": "child",
+      "childObject": "EmailMessage",
+      "field": "EmailTemplateId"
+    },
+    {
+      "name": "OutgoingEmails",
+      "type": "child",
+      "childObject": "OutgoingEmail",
+      "field": "EmailTemplateId"
+    }
+  ]
+}

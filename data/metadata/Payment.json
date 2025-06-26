@@ -1,0 +1,314 @@
+{
+  "label": "Payment",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "PaymentNumber",
+      "type": "string",
+      "label": "PaymentNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "PaymentGroupId",
+      "type": "reference",
+      "label": "PaymentGroupId",
+      "referenceTo": "PaymentGroup"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "PaymentAuthorizationId",
+      "type": "reference",
+      "label": "PaymentAuthorizationId",
+      "referenceTo": "PaymentAuthorization"
+    },
+    {
+      "name": "Date",
+      "type": "datetime",
+      "label": "Date"
+    },
+    {
+      "name": "CancellationDate",
+      "type": "datetime",
+      "label": "CancellationDate"
+    },
+    {
+      "name": "Amount",
+      "type": "currency",
+      "label": "Amount"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "ProcessingMode",
+      "type": "picklist",
+      "label": "ProcessingMode"
+    },
+    {
+      "name": "GatewayRefNumber",
+      "type": "string",
+      "label": "GatewayRefNumber"
+    },
+    {
+      "name": "ClientContext",
+      "type": "textarea",
+      "label": "ClientContext"
+    },
+    {
+      "name": "GatewayResultCode",
+      "type": "string",
+      "label": "GatewayResultCode"
+    },
+    {
+      "name": "SfResultCode",
+      "type": "picklist",
+      "label": "SfResultCode"
+    },
+    {
+      "name": "GatewayDate",
+      "type": "datetime",
+      "label": "GatewayDate"
+    },
+    {
+      "name": "CancellationGatewayRefNumber",
+      "type": "string",
+      "label": "CancellationGatewayRefNumber"
+    },
+    {
+      "name": "CancellationGatewayResultCode",
+      "type": "string",
+      "label": "CancellationGatewayResultCode"
+    },
+    {
+      "name": "CancellationSfResultCode",
+      "type": "string",
+      "label": "CancellationSfResultCode"
+    },
+    {
+      "name": "CancellationGatewayDate",
+      "type": "datetime",
+      "label": "CancellationGatewayDate"
+    },
+    {
+      "name": "Comments",
+      "type": "textarea",
+      "label": "Comments"
+    },
+    {
+      "name": "ImpactAmount",
+      "type": "currency",
+      "label": "ImpactAmount"
+    },
+    {
+      "name": "EffectiveDate",
+      "type": "datetime",
+      "label": "EffectiveDate"
+    },
+    {
+      "name": "CancellationEffectiveDate",
+      "type": "datetime",
+      "label": "CancellationEffectiveDate"
+    },
+    {
+      "name": "GatewayResultCodeDescription",
+      "type": "string",
+      "label": "GatewayResultCodeDescription"
+    },
+    {
+      "name": "GatewayRefDetails",
+      "type": "textarea",
+      "label": "GatewayRefDetails"
+    },
+    {
+      "name": "IpAddress",
+      "type": "string",
+      "label": "IpAddress"
+    },
+    {
+      "name": "MacAddress",
+      "type": "string",
+      "label": "MacAddress"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "label": "Email"
+    },
+    {
+      "name": "PaymentGatewayId",
+      "type": "reference",
+      "label": "PaymentGatewayId",
+      "referenceTo": "PaymentGateway"
+    },
+    {
+      "name": "PaymentMethodId",
+      "type": "reference",
+      "label": "PaymentMethodId",
+      "referenceTo": "PaymentMethod"
+    },
+    {
+      "name": "TotalApplied",
+      "type": "currency",
+      "label": "TotalApplied"
+    },
+    {
+      "name": "TotalUnapplied",
+      "type": "currency",
+      "label": "TotalUnapplied"
+    },
+    {
+      "name": "NetApplied",
+      "type": "currency",
+      "label": "NetApplied"
+    },
+    {
+      "name": "Balance",
+      "type": "currency",
+      "label": "Balance"
+    },
+    {
+      "name": "TotalRefundApplied",
+      "type": "currency",
+      "label": "TotalRefundApplied"
+    },
+    {
+      "name": "TotalRefundUnapplied",
+      "type": "currency",
+      "label": "TotalRefundUnapplied"
+    },
+    {
+      "name": "NetRefundApplied",
+      "type": "currency",
+      "label": "NetRefundApplied"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "PaymentGroup",
+      "type": "parent",
+      "parentObject": "PaymentGroup",
+      "field": "PaymentGroupId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    },
+    {
+      "name": "PaymentAuthorization",
+      "type": "parent",
+      "parentObject": "PaymentAuthorization",
+      "field": "PaymentAuthorizationId"
+    },
+    {
+      "name": "PaymentGateway",
+      "type": "parent",
+      "parentObject": "PaymentGateway",
+      "field": "PaymentGatewayId"
+    },
+    {
+      "name": "PaymentMethod",
+      "type": "parent",
+      "parentObject": "PaymentMethod",
+      "field": "PaymentMethodId"
+    },
+    {
+      "name": "PaymentFeeds",
+      "type": "child",
+      "childObject": "PaymentFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "PaymentLineInvoices",
+      "type": "child",
+      "childObject": "PaymentLineInvoice",
+      "field": "PaymentId"
+    },
+    {
+      "name": "RefundLinePayments",
+      "type": "child",
+      "childObject": "RefundLinePayment",
+      "field": "PaymentId"
+    }
+  ]
+}

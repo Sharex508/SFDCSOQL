@@ -1,0 +1,31 @@
+{
+  "label": "FormulaFunctionAllowedType",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "FunctionId",
+      "type": "string",
+      "label": "FunctionId"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

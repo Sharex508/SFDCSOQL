@@ -1,0 +1,176 @@
+{
+  "label": "PrivacyObjectSession",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "PrivacyJobSessionObjectId",
+      "type": "reference",
+      "label": "PrivacyJobSessionObjectId",
+      "referenceTo": "PrivacyJobSession"
+    },
+    {
+      "name": "PolicyNode",
+      "type": "string",
+      "label": "PolicyNode"
+    },
+    {
+      "name": "CurrentEntity",
+      "type": "string",
+      "label": "CurrentEntity"
+    },
+    {
+      "name": "ObjectStatus",
+      "type": "picklist",
+      "label": "ObjectStatus"
+    },
+    {
+      "name": "TraversalStartTime",
+      "type": "datetime",
+      "label": "TraversalStartTime"
+    },
+    {
+      "name": "TraversalEndTime",
+      "type": "datetime",
+      "label": "TraversalEndTime"
+    },
+    {
+      "name": "ObjectFailureLog",
+      "type": "textarea",
+      "label": "ObjectFailureLog"
+    },
+    {
+      "name": "ProcessedSuccesses",
+      "type": "int",
+      "label": "ProcessedSuccesses"
+    },
+    {
+      "name": "ProcessedFailures",
+      "type": "int",
+      "label": "ProcessedFailures"
+    },
+    {
+      "name": "ProcessedTotal",
+      "type": "int",
+      "label": "ProcessedTotal"
+    },
+    {
+      "name": "RecordsAffected",
+      "type": "int",
+      "label": "RecordsAffected"
+    },
+    {
+      "name": "Queue",
+      "type": "string",
+      "label": "Queue"
+    },
+    {
+      "name": "QueueLength",
+      "type": "int",
+      "label": "QueueLength"
+    },
+    {
+      "name": "ProcessType",
+      "type": "picklist",
+      "label": "ProcessType"
+    },
+    {
+      "name": "Processor",
+      "type": "string",
+      "label": "Processor"
+    },
+    {
+      "name": "Retry",
+      "type": "int",
+      "label": "Retry"
+    },
+    {
+      "name": "Position",
+      "type": "int",
+      "label": "Position"
+    },
+    {
+      "name": "UniqueConstraint",
+      "type": "string",
+      "label": "UniqueConstraint"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "PrivacyJobSession",
+      "type": "parent",
+      "parentObject": "PrivacyJobSession",
+      "field": "PrivacyJobSessionObjectId"
+    },
+    {
+      "name": "PrivacyObjectSessionShares",
+      "type": "child",
+      "childObject": "PrivacyObjectSessionShare",
+      "field": "ParentId"
+    }
+  ]
+}

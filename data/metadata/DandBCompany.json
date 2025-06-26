@@ -1,0 +1,628 @@
+{
+  "label": "DandBCompany",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "DunsNumber",
+      "type": "string",
+      "label": "DunsNumber"
+    },
+    {
+      "name": "Street",
+      "type": "textarea",
+      "label": "Street"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "label": "State"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "GeocodeAccuracyStandard",
+      "type": "picklist",
+      "label": "GeocodeAccuracyStandard"
+    },
+    {
+      "name": "Address",
+      "type": "address",
+      "label": "Address"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Fax",
+      "type": "phone",
+      "label": "Fax"
+    },
+    {
+      "name": "CountryAccessCode",
+      "type": "string",
+      "label": "CountryAccessCode"
+    },
+    {
+      "name": "PublicIndicator",
+      "type": "picklist",
+      "label": "PublicIndicator"
+    },
+    {
+      "name": "StockSymbol",
+      "type": "string",
+      "label": "StockSymbol"
+    },
+    {
+      "name": "StockExchange",
+      "type": "string",
+      "label": "StockExchange"
+    },
+    {
+      "name": "SalesVolume",
+      "type": "double",
+      "label": "SalesVolume"
+    },
+    {
+      "name": "URL",
+      "type": "url",
+      "label": "URL"
+    },
+    {
+      "name": "OutOfBusiness",
+      "type": "picklist",
+      "label": "OutOfBusiness"
+    },
+    {
+      "name": "EmployeesTotal",
+      "type": "double",
+      "label": "EmployeesTotal"
+    },
+    {
+      "name": "FipsMsaCode",
+      "type": "string",
+      "label": "FipsMsaCode"
+    },
+    {
+      "name": "FipsMsaDesc",
+      "type": "string",
+      "label": "FipsMsaDesc"
+    },
+    {
+      "name": "TradeStyle1",
+      "type": "string",
+      "label": "TradeStyle1"
+    },
+    {
+      "name": "YearStarted",
+      "type": "string",
+      "label": "YearStarted"
+    },
+    {
+      "name": "MailingStreet",
+      "type": "textarea",
+      "label": "MailingStreet"
+    },
+    {
+      "name": "MailingCity",
+      "type": "string",
+      "label": "MailingCity"
+    },
+    {
+      "name": "MailingState",
+      "type": "string",
+      "label": "MailingState"
+    },
+    {
+      "name": "MailingPostalCode",
+      "type": "string",
+      "label": "MailingPostalCode"
+    },
+    {
+      "name": "MailingCountry",
+      "type": "string",
+      "label": "MailingCountry"
+    },
+    {
+      "name": "MailingGeocodeAccuracy",
+      "type": "picklist",
+      "label": "MailingGeocodeAccuracy"
+    },
+    {
+      "name": "MailingAddress",
+      "type": "address",
+      "label": "MailingAddress"
+    },
+    {
+      "name": "Latitude",
+      "type": "string",
+      "label": "Latitude"
+    },
+    {
+      "name": "Longitude",
+      "type": "string",
+      "label": "Longitude"
+    },
+    {
+      "name": "PrimarySic",
+      "type": "string",
+      "label": "PrimarySic"
+    },
+    {
+      "name": "PrimarySicDesc",
+      "type": "string",
+      "label": "PrimarySicDesc"
+    },
+    {
+      "name": "SecondSic",
+      "type": "string",
+      "label": "SecondSic"
+    },
+    {
+      "name": "SecondSicDesc",
+      "type": "string",
+      "label": "SecondSicDesc"
+    },
+    {
+      "name": "ThirdSic",
+      "type": "string",
+      "label": "ThirdSic"
+    },
+    {
+      "name": "ThirdSicDesc",
+      "type": "string",
+      "label": "ThirdSicDesc"
+    },
+    {
+      "name": "FourthSic",
+      "type": "string",
+      "label": "FourthSic"
+    },
+    {
+      "name": "FourthSicDesc",
+      "type": "string",
+      "label": "FourthSicDesc"
+    },
+    {
+      "name": "FifthSic",
+      "type": "string",
+      "label": "FifthSic"
+    },
+    {
+      "name": "FifthSicDesc",
+      "type": "string",
+      "label": "FifthSicDesc"
+    },
+    {
+      "name": "SixthSic",
+      "type": "string",
+      "label": "SixthSic"
+    },
+    {
+      "name": "SixthSicDesc",
+      "type": "string",
+      "label": "SixthSicDesc"
+    },
+    {
+      "name": "PrimaryNaics",
+      "type": "string",
+      "label": "PrimaryNaics"
+    },
+    {
+      "name": "PrimaryNaicsDesc",
+      "type": "string",
+      "label": "PrimaryNaicsDesc"
+    },
+    {
+      "name": "SecondNaics",
+      "type": "string",
+      "label": "SecondNaics"
+    },
+    {
+      "name": "SecondNaicsDesc",
+      "type": "string",
+      "label": "SecondNaicsDesc"
+    },
+    {
+      "name": "ThirdNaics",
+      "type": "string",
+      "label": "ThirdNaics"
+    },
+    {
+      "name": "ThirdNaicsDesc",
+      "type": "string",
+      "label": "ThirdNaicsDesc"
+    },
+    {
+      "name": "FourthNaics",
+      "type": "string",
+      "label": "FourthNaics"
+    },
+    {
+      "name": "FourthNaicsDesc",
+      "type": "string",
+      "label": "FourthNaicsDesc"
+    },
+    {
+      "name": "FifthNaics",
+      "type": "string",
+      "label": "FifthNaics"
+    },
+    {
+      "name": "FifthNaicsDesc",
+      "type": "string",
+      "label": "FifthNaicsDesc"
+    },
+    {
+      "name": "SixthNaics",
+      "type": "string",
+      "label": "SixthNaics"
+    },
+    {
+      "name": "SixthNaicsDesc",
+      "type": "string",
+      "label": "SixthNaicsDesc"
+    },
+    {
+      "name": "OwnOrRent",
+      "type": "picklist",
+      "label": "OwnOrRent"
+    },
+    {
+      "name": "EmployeesHere",
+      "type": "double",
+      "label": "EmployeesHere"
+    },
+    {
+      "name": "EmployeesHereReliability",
+      "type": "picklist",
+      "label": "EmployeesHereReliability"
+    },
+    {
+      "name": "SalesVolumeReliability",
+      "type": "picklist",
+      "label": "SalesVolumeReliability"
+    },
+    {
+      "name": "CurrencyCode",
+      "type": "picklist",
+      "label": "CurrencyCode"
+    },
+    {
+      "name": "LegalStatus",
+      "type": "picklist",
+      "label": "LegalStatus"
+    },
+    {
+      "name": "GlobalUltimateTotalEmployees",
+      "type": "double",
+      "label": "GlobalUltimateTotalEmployees"
+    },
+    {
+      "name": "EmployeesTotalReliability",
+      "type": "picklist",
+      "label": "EmployeesTotalReliability"
+    },
+    {
+      "name": "MinorityOwned",
+      "type": "picklist",
+      "label": "MinorityOwned"
+    },
+    {
+      "name": "WomenOwned",
+      "type": "picklist",
+      "label": "WomenOwned"
+    },
+    {
+      "name": "SmallBusiness",
+      "type": "picklist",
+      "label": "SmallBusiness"
+    },
+    {
+      "name": "MarketingSegmentationCluster",
+      "type": "picklist",
+      "label": "MarketingSegmentationCluster"
+    },
+    {
+      "name": "ImportExportAgent",
+      "type": "picklist",
+      "label": "ImportExportAgent"
+    },
+    {
+      "name": "Subsidiary",
+      "type": "picklist",
+      "label": "Subsidiary"
+    },
+    {
+      "name": "TradeStyle2",
+      "type": "string",
+      "label": "TradeStyle2"
+    },
+    {
+      "name": "TradeStyle3",
+      "type": "string",
+      "label": "TradeStyle3"
+    },
+    {
+      "name": "TradeStyle4",
+      "type": "string",
+      "label": "TradeStyle4"
+    },
+    {
+      "name": "TradeStyle5",
+      "type": "string",
+      "label": "TradeStyle5"
+    },
+    {
+      "name": "NationalId",
+      "type": "string",
+      "label": "NationalId"
+    },
+    {
+      "name": "NationalIdType",
+      "type": "picklist",
+      "label": "NationalIdType"
+    },
+    {
+      "name": "UsTaxId",
+      "type": "string",
+      "label": "UsTaxId"
+    },
+    {
+      "name": "GeoCodeAccuracy",
+      "type": "picklist",
+      "label": "GeoCodeAccuracy"
+    },
+    {
+      "name": "FamilyMembers",
+      "type": "int",
+      "label": "FamilyMembers"
+    },
+    {
+      "name": "MarketingPreScreen",
+      "type": "picklist",
+      "label": "MarketingPreScreen"
+    },
+    {
+      "name": "GlobalUltimateDunsNumber",
+      "type": "string",
+      "label": "GlobalUltimateDunsNumber"
+    },
+    {
+      "name": "GlobalUltimateBusinessName",
+      "type": "string",
+      "label": "GlobalUltimateBusinessName"
+    },
+    {
+      "name": "ParentOrHqDunsNumber",
+      "type": "string",
+      "label": "ParentOrHqDunsNumber"
+    },
+    {
+      "name": "ParentOrHqBusinessName",
+      "type": "string",
+      "label": "ParentOrHqBusinessName"
+    },
+    {
+      "name": "DomesticUltimateDunsNumber",
+      "type": "string",
+      "label": "DomesticUltimateDunsNumber"
+    },
+    {
+      "name": "DomesticUltimateBusinessName",
+      "type": "string",
+      "label": "DomesticUltimateBusinessName"
+    },
+    {
+      "name": "LocationStatus",
+      "type": "picklist",
+      "label": "LocationStatus"
+    },
+    {
+      "name": "CompanyCurrencyIsoCode",
+      "type": "picklist",
+      "label": "CompanyCurrencyIsoCode"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "FortuneRank",
+      "type": "int",
+      "label": "FortuneRank"
+    },
+    {
+      "name": "IncludedInSnP500",
+      "type": "string",
+      "label": "IncludedInSnP500"
+    },
+    {
+      "name": "PremisesMeasure",
+      "type": "int",
+      "label": "PremisesMeasure"
+    },
+    {
+      "name": "PremisesMeasureReliability",
+      "type": "string",
+      "label": "PremisesMeasureReliability"
+    },
+    {
+      "name": "PremisesMeasureUnit",
+      "type": "string",
+      "label": "PremisesMeasureUnit"
+    },
+    {
+      "name": "EmployeeQuantityGrowthRate",
+      "type": "double",
+      "label": "EmployeeQuantityGrowthRate"
+    },
+    {
+      "name": "SalesTurnoverGrowthRate",
+      "type": "double",
+      "label": "SalesTurnoverGrowthRate"
+    },
+    {
+      "name": "PrimarySic8",
+      "type": "string",
+      "label": "PrimarySic8"
+    },
+    {
+      "name": "PrimarySic8Desc",
+      "type": "string",
+      "label": "PrimarySic8Desc"
+    },
+    {
+      "name": "SecondSic8",
+      "type": "string",
+      "label": "SecondSic8"
+    },
+    {
+      "name": "SecondSic8Desc",
+      "type": "string",
+      "label": "SecondSic8Desc"
+    },
+    {
+      "name": "ThirdSic8",
+      "type": "string",
+      "label": "ThirdSic8"
+    },
+    {
+      "name": "ThirdSic8Desc",
+      "type": "string",
+      "label": "ThirdSic8Desc"
+    },
+    {
+      "name": "FourthSic8",
+      "type": "string",
+      "label": "FourthSic8"
+    },
+    {
+      "name": "FourthSic8Desc",
+      "type": "string",
+      "label": "FourthSic8Desc"
+    },
+    {
+      "name": "FifthSic8",
+      "type": "string",
+      "label": "FifthSic8"
+    },
+    {
+      "name": "FifthSic8Desc",
+      "type": "string",
+      "label": "FifthSic8Desc"
+    },
+    {
+      "name": "SixthSic8",
+      "type": "string",
+      "label": "SixthSic8"
+    },
+    {
+      "name": "SixthSic8Desc",
+      "type": "string",
+      "label": "SixthSic8Desc"
+    },
+    {
+      "name": "PriorYearEmployees",
+      "type": "int",
+      "label": "PriorYearEmployees"
+    },
+    {
+      "name": "PriorYearRevenue",
+      "type": "double",
+      "label": "PriorYearRevenue"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Accounts",
+      "type": "child",
+      "childObject": "Account",
+      "field": "DandbCompanyId"
+    },
+    {
+      "name": "Leads",
+      "type": "child",
+      "childObject": "Lead",
+      "field": "DandbCompanyId"
+    }
+  ]
+}

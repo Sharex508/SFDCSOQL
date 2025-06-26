@@ -1,0 +1,185 @@
+{
+  "label": "PaymentAuthAdjustment",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "PaymentAuthAdjustmentNumber",
+      "type": "string",
+      "label": "PaymentAuthAdjustmentNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "PaymentAuthorizationId",
+      "type": "reference",
+      "label": "PaymentAuthorizationId",
+      "referenceTo": "PaymentAuthorization"
+    },
+    {
+      "name": "ProcessingMode",
+      "type": "picklist",
+      "label": "ProcessingMode"
+    },
+    {
+      "name": "Amount",
+      "type": "currency",
+      "label": "Amount"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Date",
+      "type": "datetime",
+      "label": "Date"
+    },
+    {
+      "name": "GatewayDate",
+      "type": "datetime",
+      "label": "GatewayDate"
+    },
+    {
+      "name": "EffectiveDate",
+      "type": "datetime",
+      "label": "EffectiveDate"
+    },
+    {
+      "name": "Comments",
+      "type": "textarea",
+      "label": "Comments"
+    },
+    {
+      "name": "GatewayRefNumber",
+      "type": "string",
+      "label": "GatewayRefNumber"
+    },
+    {
+      "name": "GatewayResultCode",
+      "type": "string",
+      "label": "GatewayResultCode"
+    },
+    {
+      "name": "SfResultCode",
+      "type": "picklist",
+      "label": "SfResultCode"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "GatewayRefDetails",
+      "type": "textarea",
+      "label": "GatewayRefDetails"
+    },
+    {
+      "name": "GatewayResultCodeDescription",
+      "type": "string",
+      "label": "GatewayResultCodeDescription"
+    },
+    {
+      "name": "IpAddress",
+      "type": "string",
+      "label": "IpAddress"
+    },
+    {
+      "name": "MacAddress",
+      "type": "string",
+      "label": "MacAddress"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "label": "Email"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "PaymentAuthorization",
+      "type": "parent",
+      "parentObject": "PaymentAuthorization",
+      "field": "PaymentAuthorizationId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    }
+  ]
+}

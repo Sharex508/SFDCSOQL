@@ -1,0 +1,111 @@
+{
+  "label": "EventLogFile",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "EventType",
+      "type": "picklist",
+      "label": "EventType"
+    },
+    {
+      "name": "LogDate",
+      "type": "datetime",
+      "label": "LogDate"
+    },
+    {
+      "name": "LogFileLength",
+      "type": "double",
+      "label": "LogFileLength"
+    },
+    {
+      "name": "LogFileContentType",
+      "type": "string",
+      "label": "LogFileContentType"
+    },
+    {
+      "name": "ApiVersion",
+      "type": "double",
+      "label": "ApiVersion"
+    },
+    {
+      "name": "Sequence",
+      "type": "int",
+      "label": "Sequence"
+    },
+    {
+      "name": "Interval",
+      "type": "picklist",
+      "label": "Interval"
+    },
+    {
+      "name": "LogFileFieldNames",
+      "type": "string",
+      "label": "LogFileFieldNames"
+    },
+    {
+      "name": "LogFileFieldTypes",
+      "type": "string",
+      "label": "LogFileFieldTypes"
+    },
+    {
+      "name": "LogFile",
+      "type": "base64",
+      "label": "LogFile"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

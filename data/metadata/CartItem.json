@@ -1,0 +1,271 @@
+{
+  "label": "CartItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CartId",
+      "type": "reference",
+      "label": "CartId",
+      "referenceTo": "WebCart"
+    },
+    {
+      "name": "CartDeliveryGroupId",
+      "type": "reference",
+      "label": "CartDeliveryGroupId",
+      "referenceTo": "CartDeliveryGroup"
+    },
+    {
+      "name": "Product2Id",
+      "type": "reference",
+      "label": "Product2Id",
+      "referenceTo": "Product2"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Sku",
+      "type": "string",
+      "label": "Sku"
+    },
+    {
+      "name": "Quantity",
+      "type": "double",
+      "label": "Quantity"
+    },
+    {
+      "name": "ListPrice",
+      "type": "currency",
+      "label": "ListPrice"
+    },
+    {
+      "name": "NetUnitPrice",
+      "type": "currency",
+      "label": "NetUnitPrice"
+    },
+    {
+      "name": "GrossUnitPrice",
+      "type": "currency",
+      "label": "GrossUnitPrice"
+    },
+    {
+      "name": "SalesPrice",
+      "type": "currency",
+      "label": "SalesPrice"
+    },
+    {
+      "name": "UnitAdjustmentAmount",
+      "type": "currency",
+      "label": "UnitAdjustmentAmount"
+    },
+    {
+      "name": "UnitAdjustedPrice",
+      "type": "currency",
+      "label": "UnitAdjustedPrice"
+    },
+    {
+      "name": "TotalListPrice",
+      "type": "currency",
+      "label": "TotalListPrice"
+    },
+    {
+      "name": "TotalLineAmount",
+      "type": "currency",
+      "label": "TotalLineAmount"
+    },
+    {
+      "name": "TotalLineTaxAmount",
+      "type": "currency",
+      "label": "TotalLineTaxAmount"
+    },
+    {
+      "name": "AdjustmentAmount",
+      "type": "currency",
+      "label": "AdjustmentAmount"
+    },
+    {
+      "name": "AdjustmentTaxAmount",
+      "type": "currency",
+      "label": "AdjustmentTaxAmount"
+    },
+    {
+      "name": "TotalPrice",
+      "type": "currency",
+      "label": "TotalPrice"
+    },
+    {
+      "name": "TotalPriceTaxAmount",
+      "type": "currency",
+      "label": "TotalPriceTaxAmount"
+    },
+    {
+      "name": "ItemizedAdjustmentAmount",
+      "type": "currency",
+      "label": "ItemizedAdjustmentAmount"
+    },
+    {
+      "name": "ItemizedAdjustmentTaxAmount",
+      "type": "currency",
+      "label": "ItemizedAdjustmentTaxAmount"
+    },
+    {
+      "name": "DistributedAdjustmentAmount",
+      "type": "currency",
+      "label": "DistributedAdjustmentAmount"
+    },
+    {
+      "name": "DistributedAdjustmentTaxAmount",
+      "type": "currency",
+      "label": "DistributedAdjustmentTaxAmount"
+    },
+    {
+      "name": "TotalPromoAdjustmentAmount",
+      "type": "currency",
+      "label": "TotalPromoAdjustmentAmount"
+    },
+    {
+      "name": "TotalPromoAdjustmentTaxAmount",
+      "type": "currency",
+      "label": "TotalPromoAdjustmentTaxAmount"
+    },
+    {
+      "name": "TotalAdjustmentAmount",
+      "type": "currency",
+      "label": "TotalAdjustmentAmount"
+    },
+    {
+      "name": "TotalPriceAfterAllAdjustments",
+      "type": "currency",
+      "label": "TotalPriceAfterAllAdjustments"
+    },
+    {
+      "name": "TotalTaxAmount",
+      "type": "currency",
+      "label": "TotalTaxAmount"
+    },
+    {
+      "name": "TotalAmount",
+      "type": "currency",
+      "label": "TotalAmount"
+    },
+    {
+      "name": "TotalLineNetAmount",
+      "type": "currency",
+      "label": "TotalLineNetAmount"
+    },
+    {
+      "name": "TotalLineGrossAmount",
+      "type": "currency",
+      "label": "TotalLineGrossAmount"
+    },
+    {
+      "name": "NetAdjustmentAmount",
+      "type": "currency",
+      "label": "NetAdjustmentAmount"
+    },
+    {
+      "name": "GrossAdjustmentAmount",
+      "type": "currency",
+      "label": "GrossAdjustmentAmount"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "WebCart",
+      "type": "parent",
+      "parentObject": "WebCart",
+      "field": "CartId"
+    },
+    {
+      "name": "CartDeliveryGroup",
+      "type": "parent",
+      "parentObject": "CartDeliveryGroup",
+      "field": "CartDeliveryGroupId"
+    },
+    {
+      "name": "Product2",
+      "type": "parent",
+      "parentObject": "Product2",
+      "field": "Product2Id"
+    },
+    {
+      "name": "CartItemPriceAdjustments",
+      "type": "child",
+      "childObject": "CartItemPriceAdjustment",
+      "field": "CartItemId"
+    },
+    {
+      "name": "CartRelatedItems",
+      "type": "child",
+      "childObject": "CartRelatedItem",
+      "field": "ParentCartItemId"
+    },
+    {
+      "name": "CartRelatedItems",
+      "type": "child",
+      "childObject": "CartRelatedItem",
+      "field": "ChildCartItemId"
+    },
+    {
+      "name": "CartTaxs",
+      "type": "child",
+      "childObject": "CartTax",
+      "field": "CartItemId"
+    }
+  ]
+}

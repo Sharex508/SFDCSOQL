@@ -1,0 +1,171 @@
+{
+  "label": "EmbeddedServiceDetail",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "Site",
+      "type": "string",
+      "label": "Site"
+    },
+    {
+      "name": "PrimaryColor",
+      "type": "string",
+      "label": "PrimaryColor"
+    },
+    {
+      "name": "SecondaryColor",
+      "type": "string",
+      "label": "SecondaryColor"
+    },
+    {
+      "name": "ContrastPrimaryColor",
+      "type": "string",
+      "label": "ContrastPrimaryColor"
+    },
+    {
+      "name": "ContrastInvertedColor",
+      "type": "string",
+      "label": "ContrastInvertedColor"
+    },
+    {
+      "name": "NavBarColor",
+      "type": "string",
+      "label": "NavBarColor"
+    },
+    {
+      "name": "NavBarTextColor",
+      "type": "string",
+      "label": "NavBarTextColor"
+    },
+    {
+      "name": "SecondaryNavBarColor",
+      "type": "string",
+      "label": "SecondaryNavBarColor"
+    },
+    {
+      "name": "Font",
+      "type": "string",
+      "label": "Font"
+    },
+    {
+      "name": "IsLiveAgentEnabled",
+      "type": "boolean",
+      "label": "IsLiveAgentEnabled"
+    },
+    {
+      "name": "IsFieldServiceEnabled",
+      "type": "boolean",
+      "label": "IsFieldServiceEnabled"
+    },
+    {
+      "name": "Width",
+      "type": "int",
+      "label": "Width"
+    },
+    {
+      "name": "Height",
+      "type": "int",
+      "label": "Height"
+    },
+    {
+      "name": "IsPrechatEnabled",
+      "type": "boolean",
+      "label": "IsPrechatEnabled"
+    },
+    {
+      "name": "CustomPrechatComponent",
+      "type": "string",
+      "label": "CustomPrechatComponent"
+    },
+    {
+      "name": "AvatarImg",
+      "type": "string",
+      "label": "AvatarImg"
+    },
+    {
+      "name": "SmallCompanyLogoImg",
+      "type": "string",
+      "label": "SmallCompanyLogoImg"
+    },
+    {
+      "name": "PrechatBackgroundImg",
+      "type": "string",
+      "label": "PrechatBackgroundImg"
+    },
+    {
+      "name": "WaitingStateBackgroundImg",
+      "type": "string",
+      "label": "WaitingStateBackgroundImg"
+    },
+    {
+      "name": "FontSize",
+      "type": "picklist",
+      "label": "FontSize"
+    },
+    {
+      "name": "OfflineCaseBackgroundImg",
+      "type": "string",
+      "label": "OfflineCaseBackgroundImg"
+    },
+    {
+      "name": "IsOfflineCaseEnabled",
+      "type": "boolean",
+      "label": "IsOfflineCaseEnabled"
+    },
+    {
+      "name": "IsQueuePositionEnabled",
+      "type": "boolean",
+      "label": "IsQueuePositionEnabled"
+    },
+    {
+      "name": "ShouldShowNewAppointment",
+      "type": "boolean",
+      "label": "ShouldShowNewAppointment"
+    },
+    {
+      "name": "ShouldShowExistingAppointment",
+      "type": "boolean",
+      "label": "ShouldShowExistingAppointment"
+    },
+    {
+      "name": "FieldServiceHomeImg",
+      "type": "string",
+      "label": "FieldServiceHomeImg"
+    },
+    {
+      "name": "FieldServiceLogoImg",
+      "type": "string",
+      "label": "FieldServiceLogoImg"
+    },
+    {
+      "name": "FieldServiceConfirmCardImg",
+      "type": "string",
+      "label": "FieldServiceConfirmCardImg"
+    },
+    {
+      "name": "ShouldHideAuthDialog",
+      "type": "boolean",
+      "label": "ShouldHideAuthDialog"
+    },
+    {
+      "name": "CustomMinimizedComponent",
+      "type": "string",
+      "label": "CustomMinimizedComponent"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

@@ -1,0 +1,202 @@
+{
+  "label": "OrderItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Product2Id",
+      "type": "reference",
+      "label": "Product2Id",
+      "referenceTo": "Product2"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "OrderId",
+      "type": "reference",
+      "label": "OrderId",
+      "referenceTo": "Order"
+    },
+    {
+      "name": "PricebookEntryId",
+      "type": "reference",
+      "label": "PricebookEntryId",
+      "referenceTo": "PricebookEntry"
+    },
+    {
+      "name": "OriginalOrderItemId",
+      "type": "reference",
+      "label": "OriginalOrderItemId",
+      "referenceTo": "OrderItem"
+    },
+    {
+      "name": "AvailableQuantity",
+      "type": "double",
+      "label": "AvailableQuantity"
+    },
+    {
+      "name": "Quantity",
+      "type": "double",
+      "label": "Quantity"
+    },
+    {
+      "name": "UnitPrice",
+      "type": "currency",
+      "label": "UnitPrice"
+    },
+    {
+      "name": "ListPrice",
+      "type": "currency",
+      "label": "ListPrice"
+    },
+    {
+      "name": "TotalPrice",
+      "type": "currency",
+      "label": "TotalPrice"
+    },
+    {
+      "name": "ServiceDate",
+      "type": "date",
+      "label": "ServiceDate"
+    },
+    {
+      "name": "EndDate",
+      "type": "date",
+      "label": "EndDate"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "OrderItemNumber",
+      "type": "string",
+      "label": "OrderItemNumber"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Product2",
+      "type": "parent",
+      "parentObject": "Product2",
+      "field": "Product2Id"
+    },
+    {
+      "name": "Order",
+      "type": "parent",
+      "parentObject": "Order",
+      "field": "OrderId"
+    },
+    {
+      "name": "PricebookEntry",
+      "type": "parent",
+      "parentObject": "PricebookEntry",
+      "field": "PricebookEntryId"
+    },
+    {
+      "name": "OrderItem",
+      "type": "parent",
+      "parentObject": "OrderItem",
+      "field": "OriginalOrderItemId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "FulfillmentOrderLineItems",
+      "type": "child",
+      "childObject": "FulfillmentOrderLineItem",
+      "field": "OrderItemId"
+    },
+    {
+      "name": "InvoiceLines",
+      "type": "child",
+      "childObject": "InvoiceLine",
+      "field": "ReferenceEntityItemId"
+    },
+    {
+      "name": "InvoiceLines",
+      "type": "child",
+      "childObject": "InvoiceLine",
+      "field": "GroupReferenceEntityItemId"
+    },
+    {
+      "name": "OrderItems",
+      "type": "child",
+      "childObject": "OrderItem",
+      "field": "OriginalOrderItemId"
+    },
+    {
+      "name": "OrderItemFeeds",
+      "type": "child",
+      "childObject": "OrderItemFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "OrderItemHistories",
+      "type": "child",
+      "childObject": "OrderItemHistory",
+      "field": "OrderItemId"
+    },
+    {
+      "name": "ReturnOrderLineItems",
+      "type": "child",
+      "childObject": "ReturnOrderLineItem",
+      "field": "OrderItemId"
+    },
+    {
+      "name": "ReturnOrderLineItems",
+      "type": "child",
+      "childObject": "ReturnOrderLineItem",
+      "field": "ChangeOrderItemId"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "label": "AuraDefinitionInfo",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "AuraDefinitionBundleInfoId",
+      "type": "string",
+      "label": "AuraDefinitionBundleInfoId"
+    },
+    {
+      "name": "AuraDefinitionId",
+      "type": "string",
+      "label": "AuraDefinitionId"
+    },
+    {
+      "name": "DefType",
+      "type": "picklist",
+      "label": "DefType"
+    },
+    {
+      "name": "Format",
+      "type": "picklist",
+      "label": "Format"
+    },
+    {
+      "name": "Source",
+      "type": "textarea",
+      "label": "Source"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

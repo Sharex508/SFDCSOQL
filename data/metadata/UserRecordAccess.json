@@ -1,0 +1,64 @@
+{
+  "label": "UserRecordAccess",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "RecordId",
+      "type": "picklist",
+      "label": "RecordId"
+    },
+    {
+      "name": "HasReadAccess",
+      "type": "boolean",
+      "label": "HasReadAccess"
+    },
+    {
+      "name": "HasEditAccess",
+      "type": "boolean",
+      "label": "HasEditAccess"
+    },
+    {
+      "name": "HasDeleteAccess",
+      "type": "boolean",
+      "label": "HasDeleteAccess"
+    },
+    {
+      "name": "HasTransferAccess",
+      "type": "boolean",
+      "label": "HasTransferAccess"
+    },
+    {
+      "name": "HasAllAccess",
+      "type": "boolean",
+      "label": "HasAllAccess"
+    },
+    {
+      "name": "MaxAccessLevel",
+      "type": "picklist",
+      "label": "MaxAccessLevel"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "label": "LoginEvent",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "EventIdentifier",
+      "type": "string",
+      "label": "EventIdentifier"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Username",
+      "type": "string",
+      "label": "Username"
+    },
+    {
+      "name": "EventDate",
+      "type": "datetime",
+      "label": "EventDate"
+    },
+    {
+      "name": "RelatedEventIdentifier",
+      "type": "string",
+      "label": "RelatedEventIdentifier"
+    },
+    {
+      "name": "PolicyId",
+      "type": "reference",
+      "label": "PolicyId",
+      "referenceTo": "TransactionSecurityPolicy"
+    },
+    {
+      "name": "PolicyOutcome",
+      "type": "picklist",
+      "label": "PolicyOutcome"
+    },
+    {
+      "name": "EvaluationTime",
+      "type": "double",
+      "label": "EvaluationTime"
+    },
+    {
+      "name": "SessionKey",
+      "type": "string",
+      "label": "SessionKey"
+    },
+    {
+      "name": "LoginKey",
+      "type": "string",
+      "label": "LoginKey"
+    },
+    {
+      "name": "SessionLevel",
+      "type": "picklist",
+      "label": "SessionLevel"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "AdditionalInfo",
+      "type": "string",
+      "label": "AdditionalInfo"
+    },
+    {
+      "name": "ApiType",
+      "type": "string",
+      "label": "ApiType"
+    },
+    {
+      "name": "ApiVersion",
+      "type": "string",
+      "label": "ApiVersion"
+    },
+    {
+      "name": "Application",
+      "type": "string",
+      "label": "Application"
+    },
+    {
+      "name": "AuthServiceId",
+      "type": "reference",
+      "label": "AuthServiceId"
+    },
+    {
+      "name": "Browser",
+      "type": "string",
+      "label": "Browser"
+    },
+    {
+      "name": "HttpMethod",
+      "type": "picklist",
+      "label": "HttpMethod"
+    },
+    {
+      "name": "CountryIso",
+      "type": "string",
+      "label": "CountryIso"
+    },
+    {
+      "name": "LoginLatitude",
+      "type": "double",
+      "label": "LoginLatitude"
+    },
+    {
+      "name": "LoginLongitude",
+      "type": "double",
+      "label": "LoginLongitude"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Subdivision",
+      "type": "string",
+      "label": "Subdivision"
+    },
+    {
+      "name": "CipherSuite",
+      "type": "picklist",
+      "label": "CipherSuite"
+    },
+    {
+      "name": "ClientVersion",
+      "type": "string",
+      "label": "ClientVersion"
+    },
+    {
+      "name": "LoginGeoId",
+      "type": "reference",
+      "label": "LoginGeoId"
+    },
+    {
+      "name": "LoginHistoryId",
+      "type": "reference",
+      "label": "LoginHistoryId"
+    },
+    {
+      "name": "LoginType",
+      "type": "picklist",
+      "label": "LoginType"
+    },
+    {
+      "name": "LoginUrl",
+      "type": "string",
+      "label": "LoginUrl"
+    },
+    {
+      "name": "Platform",
+      "type": "string",
+      "label": "Platform"
+    },
+    {
+      "name": "Status",
+      "type": "string",
+      "label": "Status"
+    },
+    {
+      "name": "TlsProtocol",
+      "type": "picklist",
+      "label": "TlsProtocol"
+    },
+    {
+      "name": "UserType",
+      "type": "picklist",
+      "label": "UserType"
+    },
+    {
+      "name": "AuthMethodReference",
+      "type": "string",
+      "label": "AuthMethodReference"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "TransactionSecurityPolicy",
+      "type": "parent",
+      "parentObject": "TransactionSecurityPolicy",
+      "field": "PolicyId"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "label": "ExtlClntAppOauthSettings",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "Language",
+      "type": "picklist",
+      "label": "Language"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ExternalClientApplicationId",
+      "type": "reference",
+      "label": "ExternalClientApplicationId",
+      "referenceTo": "ExternalClientApplication"
+    },
+    {
+      "name": "OauthScopesSSO",
+      "type": "boolean",
+      "label": "OauthScopesSSO"
+    },
+    {
+      "name": "OauthScopesAPI",
+      "type": "boolean",
+      "label": "OauthScopesAPI"
+    },
+    {
+      "name": "OauthScopesWEB",
+      "type": "boolean",
+      "label": "OauthScopesWEB"
+    },
+    {
+      "name": "OauthScopesFULL",
+      "type": "boolean",
+      "label": "OauthScopesFULL"
+    },
+    {
+      "name": "OauthScopesCHATTER_REST_API",
+      "type": "boolean",
+      "label": "OauthScopesCHATTER_REST_API"
+    },
+    {
+      "name": "OauthScopesVF",
+      "type": "boolean",
+      "label": "OauthScopesVF"
+    },
+    {
+      "name": "OauthScopesREFRESH_TOKEN",
+      "type": "boolean",
+      "label": "OauthScopesREFRESH_TOKEN"
+    },
+    {
+      "name": "OauthScopesOPENID",
+      "type": "boolean",
+      "label": "OauthScopesOPENID"
+    },
+    {
+      "name": "OauthScopesPROFILE",
+      "type": "boolean",
+      "label": "OauthScopesPROFILE"
+    },
+    {
+      "name": "OauthScopesEMAIL",
+      "type": "boolean",
+      "label": "OauthScopesEMAIL"
+    },
+    {
+      "name": "OauthScopesADDRESS",
+      "type": "boolean",
+      "label": "OauthScopesADDRESS"
+    },
+    {
+      "name": "OauthScopesPHONE",
+      "type": "boolean",
+      "label": "OauthScopesPHONE"
+    },
+    {
+      "name": "OauthScopesOFFLINE_ACCESS",
+      "type": "boolean",
+      "label": "OauthScopesOFFLINE_ACCESS"
+    },
+    {
+      "name": "OauthScopesCUSTOM_PERMISSIONS",
+      "type": "boolean",
+      "label": "OauthScopesCUSTOM_PERMISSIONS"
+    },
+    {
+      "name": "OauthScopesWAVE_REST_API",
+      "type": "boolean",
+      "label": "OauthScopesWAVE_REST_API"
+    },
+    {
+      "name": "OauthScopesECLAIR_REST_API",
+      "type": "boolean",
+      "label": "OauthScopesECLAIR_REST_API"
+    },
+    {
+      "name": "OauthScopesHUB_API",
+      "type": "boolean",
+      "label": "OauthScopesHUB_API"
+    },
+    {
+      "name": "OauthScopesPARDOT_API",
+      "type": "boolean",
+      "label": "OauthScopesPARDOT_API"
+    },
+    {
+      "name": "OauthScopesLIGHTNING",
+      "type": "boolean",
+      "label": "OauthScopesLIGHTNING"
+    },
+    {
+      "name": "OauthScopesCONTENT",
+      "type": "boolean",
+      "label": "OauthScopesCONTENT"
+    },
+    {
+      "name": "OauthScopesCDP_INGEST_API",
+      "type": "boolean",
+      "label": "OauthScopesCDP_INGEST_API"
+    },
+    {
+      "name": "OauthScopesCDP_PROFILE_API",
+      "type": "boolean",
+      "label": "OauthScopesCDP_PROFILE_API"
+    },
+    {
+      "name": "OauthScopesCDP_QUERY_API",
+      "type": "boolean",
+      "label": "OauthScopesCDP_QUERY_API"
+    },
+    {
+      "name": "OauthScopesCHATBOT_API",
+      "type": "boolean",
+      "label": "OauthScopesCHATBOT_API"
+    },
+    {
+      "name": "OauthScopesCDP_SEGMENT_API",
+      "type": "boolean",
+      "label": "OauthScopesCDP_SEGMENT_API"
+    },
+    {
+      "name": "OauthScopesCDP_IDENTITYRESOLUTION_API",
+      "type": "boolean",
+      "label": "OauthScopesCDP_IDENTITYRESOLUTION_API"
+    },
+    {
+      "name": "OauthScopesFORGOT_PASSWORD",
+      "type": "boolean",
+      "label": "OauthScopesFORGOT_PASSWORD"
+    },
+    {
+      "name": "OauthScopesCDP_CALCULATED_INSIGHT_API",
+      "type": "boolean",
+      "label": "OauthScopesCDP_CALCULATED_INSIGHT_API"
+    },
+    {
+      "name": "OauthScopesUSER_REGISTRATION_API",
+      "type": "boolean",
+      "label": "OauthScopesUSER_REGISTRATION_API"
+    },
+    {
+      "name": "OauthScopesSFAP_API",
+      "type": "boolean",
+      "label": "OauthScopesSFAP_API"
+    },
+    {
+      "name": "OauthScopesINTERACTION_API",
+      "type": "boolean",
+      "label": "OauthScopesINTERACTION_API"
+    },
+    {
+      "name": "OauthScopesCDP_API",
+      "type": "boolean",
+      "label": "OauthScopesCDP_API"
+    },
+    {
+      "name": "OauthScopesEINSTEIN_GPT_API",
+      "type": "boolean",
+      "label": "OauthScopesEINSTEIN_GPT_API"
+    },
+    {
+      "name": "OauthScopesPWDLESS_LOGIN_API",
+      "type": "boolean",
+      "label": "OauthScopesPWDLESS_LOGIN_API"
+    },
+    {
+      "name": "OauthLink",
+      "type": "string",
+      "label": "OauthLink"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ExternalClientApplication",
+      "type": "parent",
+      "parentObject": "ExternalClientApplication",
+      "field": "ExternalClientApplicationId"
+    }
+  ]
+}

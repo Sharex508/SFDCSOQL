@@ -1,0 +1,117 @@
+{
+  "label": "ResourcePreference",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ResourcePreferenceNumber",
+      "type": "string",
+      "label": "ResourcePreferenceNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "ServiceResourceId",
+      "type": "reference",
+      "label": "ServiceResourceId",
+      "referenceTo": "ServiceResource"
+    },
+    {
+      "name": "RelatedRecordId",
+      "type": "reference",
+      "label": "RelatedRecordId",
+      "referenceTo": "Account, Asset, Location, WorkOrder, WorkOrderLineItem"
+    },
+    {
+      "name": "PreferenceType",
+      "type": "picklist",
+      "label": "PreferenceType"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ServiceResource",
+      "type": "parent",
+      "parentObject": "ServiceResource",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "Account, Asset, Location, WorkOrder, WorkOrderLineItem",
+      "type": "parent",
+      "parentObject": "Account, Asset, Location, WorkOrder, WorkOrderLineItem",
+      "field": "RelatedRecordId"
+    },
+    {
+      "name": "ResourcePreferenceFeeds",
+      "type": "child",
+      "childObject": "ResourcePreferenceFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ResourcePreferenceHistories",
+      "type": "child",
+      "childObject": "ResourcePreferenceHistory",
+      "field": "ResourcePreferenceId"
+    }
+  ]
+}

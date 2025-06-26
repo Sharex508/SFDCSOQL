@@ -1,0 +1,261 @@
+{
+  "label": "FieldDefinition",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "QualifiedApiName",
+      "type": "string",
+      "label": "QualifiedApiName"
+    },
+    {
+      "name": "EntityDefinitionId",
+      "type": "string",
+      "label": "EntityDefinitionId"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "Length",
+      "type": "int",
+      "label": "Length"
+    },
+    {
+      "name": "DataType",
+      "type": "string",
+      "label": "DataType"
+    },
+    {
+      "name": "ServiceDataTypeId",
+      "type": "string",
+      "label": "ServiceDataTypeId"
+    },
+    {
+      "name": "ValueTypeId",
+      "type": "string",
+      "label": "ValueTypeId"
+    },
+    {
+      "name": "ExtraTypeInfo",
+      "type": "string",
+      "label": "ExtraTypeInfo"
+    },
+    {
+      "name": "IsCalculated",
+      "type": "boolean",
+      "label": "IsCalculated"
+    },
+    {
+      "name": "IsHighScaleNumber",
+      "type": "boolean",
+      "label": "IsHighScaleNumber"
+    },
+    {
+      "name": "IsHtmlFormatted",
+      "type": "boolean",
+      "label": "IsHtmlFormatted"
+    },
+    {
+      "name": "IsNameField",
+      "type": "boolean",
+      "label": "IsNameField"
+    },
+    {
+      "name": "IsNillable",
+      "type": "boolean",
+      "label": "IsNillable"
+    },
+    {
+      "name": "IsWorkflowFilterable",
+      "type": "boolean",
+      "label": "IsWorkflowFilterable"
+    },
+    {
+      "name": "IsCompactLayoutable",
+      "type": "boolean",
+      "label": "IsCompactLayoutable"
+    },
+    {
+      "name": "Precision",
+      "type": "int",
+      "label": "Precision"
+    },
+    {
+      "name": "Scale",
+      "type": "int",
+      "label": "Scale"
+    },
+    {
+      "name": "IsFieldHistoryTracked",
+      "type": "boolean",
+      "label": "IsFieldHistoryTracked"
+    },
+    {
+      "name": "IsIndexed",
+      "type": "boolean",
+      "label": "IsIndexed"
+    },
+    {
+      "name": "IsApiFilterable",
+      "type": "boolean",
+      "label": "IsApiFilterable"
+    },
+    {
+      "name": "IsApiSortable",
+      "type": "boolean",
+      "label": "IsApiSortable"
+    },
+    {
+      "name": "IsListFilterable",
+      "type": "boolean",
+      "label": "IsListFilterable"
+    },
+    {
+      "name": "IsListSortable",
+      "type": "boolean",
+      "label": "IsListSortable"
+    },
+    {
+      "name": "IsApiGroupable",
+      "type": "boolean",
+      "label": "IsApiGroupable"
+    },
+    {
+      "name": "IsListVisible",
+      "type": "boolean",
+      "label": "IsListVisible"
+    },
+    {
+      "name": "ControllingFieldDefinitionId",
+      "type": "string",
+      "label": "ControllingFieldDefinitionId"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "PublisherId",
+      "type": "string",
+      "label": "PublisherId"
+    },
+    {
+      "name": "RunningUserFieldAccessId",
+      "type": "string",
+      "label": "RunningUserFieldAccessId"
+    },
+    {
+      "name": "RelationshipName",
+      "type": "string",
+      "label": "RelationshipName"
+    },
+    {
+      "name": "ReferenceTo",
+      "type": "complexvalue",
+      "label": "ReferenceTo"
+    },
+    {
+      "name": "ReferenceTargetField",
+      "type": "string",
+      "label": "ReferenceTargetField"
+    },
+    {
+      "name": "IsCompound",
+      "type": "boolean",
+      "label": "IsCompound"
+    },
+    {
+      "name": "IsSearchPrefilterable",
+      "type": "boolean",
+      "label": "IsSearchPrefilterable"
+    },
+    {
+      "name": "IsPolymorphicForeignKey",
+      "type": "boolean",
+      "label": "IsPolymorphicForeignKey"
+    },
+    {
+      "name": "IsAiPredictionField",
+      "type": "boolean",
+      "label": "IsAiPredictionField"
+    },
+    {
+      "name": "BusinessOwnerId",
+      "type": "reference",
+      "label": "BusinessOwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "BusinessStatus",
+      "type": "picklist",
+      "label": "BusinessStatus"
+    },
+    {
+      "name": "SecurityClassification",
+      "type": "picklist",
+      "label": "SecurityClassification"
+    },
+    {
+      "name": "ComplianceGroup",
+      "type": "multipicklist",
+      "label": "ComplianceGroup"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "BusinessOwnerId"
+    }
+  ]
+}

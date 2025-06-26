@@ -1,0 +1,148 @@
+{
+  "label": "AppointmentSchedulingPolicy",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "Language",
+      "type": "picklist",
+      "label": "Language"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "IsOrgDefault",
+      "type": "boolean",
+      "label": "IsOrgDefault"
+    },
+    {
+      "name": "ShouldEnforceExcludedResource",
+      "type": "boolean",
+      "label": "ShouldEnforceExcludedResource"
+    },
+    {
+      "name": "ShouldEnforceRequiredResource",
+      "type": "boolean",
+      "label": "ShouldEnforceRequiredResource"
+    },
+    {
+      "name": "ShouldUsePrimaryMembers",
+      "type": "boolean",
+      "label": "ShouldUsePrimaryMembers"
+    },
+    {
+      "name": "ShouldUseSecondaryMembers",
+      "type": "boolean",
+      "label": "ShouldUseSecondaryMembers"
+    },
+    {
+      "name": "ShouldMatchSkill",
+      "type": "boolean",
+      "label": "ShouldMatchSkill"
+    },
+    {
+      "name": "ShouldMatchSkillLevel",
+      "type": "boolean",
+      "label": "ShouldMatchSkillLevel"
+    },
+    {
+      "name": "ShouldRespectVisitingHours",
+      "type": "boolean",
+      "label": "ShouldRespectVisitingHours"
+    },
+    {
+      "name": "AppointmentStartTimeInterval",
+      "type": "picklist",
+      "label": "AppointmentStartTimeInterval"
+    },
+    {
+      "name": "ShouldConsiderCalendarEvents",
+      "type": "boolean",
+      "label": "ShouldConsiderCalendarEvents"
+    },
+    {
+      "name": "ExtCalEventHandlerId",
+      "type": "reference",
+      "label": "ExtCalEventHandlerId",
+      "referenceTo": "ApexClass"
+    },
+    {
+      "name": "IsSvcTerritoryMemberShiftUsed",
+      "type": "boolean",
+      "label": "IsSvcTerritoryMemberShiftUsed"
+    },
+    {
+      "name": "IsSvcTerrOpHoursWithShiftsUsed",
+      "type": "boolean",
+      "label": "IsSvcTerrOpHoursWithShiftsUsed"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ApexClass",
+      "type": "parent",
+      "parentObject": "ApexClass",
+      "field": "ExtCalEventHandlerId"
+    }
+  ]
+}

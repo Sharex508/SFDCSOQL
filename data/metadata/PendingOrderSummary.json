@@ -1,0 +1,152 @@
+{
+  "label": "PendingOrderSummary",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ExternalId",
+      "type": "string",
+      "label": "ExternalId"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "OrderNumber",
+      "type": "string",
+      "label": "OrderNumber"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "BillToContactId",
+      "type": "reference",
+      "label": "BillToContactId",
+      "referenceTo": "Contact"
+    },
+    {
+      "name": "SalesStoreId",
+      "type": "reference",
+      "label": "SalesStoreId",
+      "referenceTo": "WebStore"
+    },
+    {
+      "name": "ShopperName",
+      "type": "string",
+      "label": "ShopperName"
+    },
+    {
+      "name": "BillingEmailAddress",
+      "type": "email",
+      "label": "BillingEmailAddress"
+    },
+    {
+      "name": "BillingPhoneNumber",
+      "type": "phone",
+      "label": "BillingPhoneNumber"
+    },
+    {
+      "name": "OrderedDate",
+      "type": "datetime",
+      "label": "OrderedDate"
+    },
+    {
+      "name": "GrandTotalAmount",
+      "type": "currency",
+      "label": "GrandTotalAmount"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "Payload",
+      "type": "textarea",
+      "label": "Payload"
+    },
+    {
+      "name": "ExternalReferenceIdentifier",
+      "type": "string",
+      "label": "ExternalReferenceIdentifier"
+    },
+    {
+      "name": "PayloadType",
+      "type": "picklist",
+      "label": "PayloadType"
+    },
+    {
+      "name": "ProcessingInstructions",
+      "type": "textarea",
+      "label": "ProcessingInstructions"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    },
+    {
+      "name": "Contact",
+      "type": "parent",
+      "parentObject": "Contact",
+      "field": "BillToContactId"
+    },
+    {
+      "name": "WebStore",
+      "type": "parent",
+      "parentObject": "WebStore",
+      "field": "SalesStoreId"
+    }
+  ]
+}

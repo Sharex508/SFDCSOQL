@@ -1,0 +1,71 @@
+{
+  "label": "DatacloudAddress",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ExternalId",
+      "type": "string",
+      "label": "ExternalId"
+    },
+    {
+      "name": "AddressLine1",
+      "type": "string",
+      "label": "AddressLine1"
+    },
+    {
+      "name": "AddressLine2",
+      "type": "string",
+      "label": "AddressLine2"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "label": "State"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Latitude",
+      "type": "string",
+      "label": "Latitude"
+    },
+    {
+      "name": "Longitude",
+      "type": "string",
+      "label": "Longitude"
+    },
+    {
+      "name": "GeoAccuracyCode",
+      "type": "string",
+      "label": "GeoAccuracyCode"
+    },
+    {
+      "name": "GeoAccuracyNum",
+      "type": "string",
+      "label": "GeoAccuracyNum"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

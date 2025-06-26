@@ -1,0 +1,1651 @@
+{
+  "label": "MutingPermissionSet",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "Language",
+      "type": "picklist",
+      "label": "Language"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "PermissionsEmailSingle",
+      "type": "boolean",
+      "label": "PermissionsEmailSingle"
+    },
+    {
+      "name": "PermissionsEmailMass",
+      "type": "boolean",
+      "label": "PermissionsEmailMass"
+    },
+    {
+      "name": "PermissionsEditTask",
+      "type": "boolean",
+      "label": "PermissionsEditTask"
+    },
+    {
+      "name": "PermissionsEditEvent",
+      "type": "boolean",
+      "label": "PermissionsEditEvent"
+    },
+    {
+      "name": "PermissionsExportReport",
+      "type": "boolean",
+      "label": "PermissionsExportReport"
+    },
+    {
+      "name": "PermissionsImportPersonal",
+      "type": "boolean",
+      "label": "PermissionsImportPersonal"
+    },
+    {
+      "name": "PermissionsDataExport",
+      "type": "boolean",
+      "label": "PermissionsDataExport"
+    },
+    {
+      "name": "PermissionsManageUsers",
+      "type": "boolean",
+      "label": "PermissionsManageUsers"
+    },
+    {
+      "name": "PermissionsEditPublicFilters",
+      "type": "boolean",
+      "label": "PermissionsEditPublicFilters"
+    },
+    {
+      "name": "PermissionsEditPublicTemplates",
+      "type": "boolean",
+      "label": "PermissionsEditPublicTemplates"
+    },
+    {
+      "name": "PermissionsModifyAllData",
+      "type": "boolean",
+      "label": "PermissionsModifyAllData"
+    },
+    {
+      "name": "PermissionsEditBillingInfo",
+      "type": "boolean",
+      "label": "PermissionsEditBillingInfo"
+    },
+    {
+      "name": "PermissionsManageCases",
+      "type": "boolean",
+      "label": "PermissionsManageCases"
+    },
+    {
+      "name": "PermissionsMassInlineEdit",
+      "type": "boolean",
+      "label": "PermissionsMassInlineEdit"
+    },
+    {
+      "name": "PermissionsEditKnowledge",
+      "type": "boolean",
+      "label": "PermissionsEditKnowledge"
+    },
+    {
+      "name": "PermissionsManageKnowledge",
+      "type": "boolean",
+      "label": "PermissionsManageKnowledge"
+    },
+    {
+      "name": "PermissionsManageSolutions",
+      "type": "boolean",
+      "label": "PermissionsManageSolutions"
+    },
+    {
+      "name": "PermissionsCustomizeApplication",
+      "type": "boolean",
+      "label": "PermissionsCustomizeApplication"
+    },
+    {
+      "name": "PermissionsEditReadonlyFields",
+      "type": "boolean",
+      "label": "PermissionsEditReadonlyFields"
+    },
+    {
+      "name": "PermissionsRunReports",
+      "type": "boolean",
+      "label": "PermissionsRunReports"
+    },
+    {
+      "name": "PermissionsViewSetup",
+      "type": "boolean",
+      "label": "PermissionsViewSetup"
+    },
+    {
+      "name": "PermissionsTransferAnyEntity",
+      "type": "boolean",
+      "label": "PermissionsTransferAnyEntity"
+    },
+    {
+      "name": "PermissionsNewReportBuilder",
+      "type": "boolean",
+      "label": "PermissionsNewReportBuilder"
+    },
+    {
+      "name": "PermissionsActivateContract",
+      "type": "boolean",
+      "label": "PermissionsActivateContract"
+    },
+    {
+      "name": "PermissionsActivateOrder",
+      "type": "boolean",
+      "label": "PermissionsActivateOrder"
+    },
+    {
+      "name": "PermissionsImportLeads",
+      "type": "boolean",
+      "label": "PermissionsImportLeads"
+    },
+    {
+      "name": "PermissionsManageLeads",
+      "type": "boolean",
+      "label": "PermissionsManageLeads"
+    },
+    {
+      "name": "PermissionsTransferAnyLead",
+      "type": "boolean",
+      "label": "PermissionsTransferAnyLead"
+    },
+    {
+      "name": "PermissionsViewAllData",
+      "type": "boolean",
+      "label": "PermissionsViewAllData"
+    },
+    {
+      "name": "PermissionsEditPublicDocuments",
+      "type": "boolean",
+      "label": "PermissionsEditPublicDocuments"
+    },
+    {
+      "name": "PermissionsViewEncryptedData",
+      "type": "boolean",
+      "label": "PermissionsViewEncryptedData"
+    },
+    {
+      "name": "PermissionsEditBrandTemplates",
+      "type": "boolean",
+      "label": "PermissionsEditBrandTemplates"
+    },
+    {
+      "name": "PermissionsEditHtmlTemplates",
+      "type": "boolean",
+      "label": "PermissionsEditHtmlTemplates"
+    },
+    {
+      "name": "PermissionsChatterInternalUser",
+      "type": "boolean",
+      "label": "PermissionsChatterInternalUser"
+    },
+    {
+      "name": "PermissionsManageEncryptionKeys",
+      "type": "boolean",
+      "label": "PermissionsManageEncryptionKeys"
+    },
+    {
+      "name": "PermissionsDeleteActivatedContract",
+      "type": "boolean",
+      "label": "PermissionsDeleteActivatedContract"
+    },
+    {
+      "name": "PermissionsChatterInviteExternalUsers",
+      "type": "boolean",
+      "label": "PermissionsChatterInviteExternalUsers"
+    },
+    {
+      "name": "PermissionsSendSitRequests",
+      "type": "boolean",
+      "label": "PermissionsSendSitRequests"
+    },
+    {
+      "name": "PermissionsApiUserOnly",
+      "type": "boolean",
+      "label": "PermissionsApiUserOnly"
+    },
+    {
+      "name": "PermissionsManageRemoteAccess",
+      "type": "boolean",
+      "label": "PermissionsManageRemoteAccess"
+    },
+    {
+      "name": "PermissionsCanUseNewDashboardBuilder",
+      "type": "boolean",
+      "label": "PermissionsCanUseNewDashboardBuilder"
+    },
+    {
+      "name": "PermissionsManageCategories",
+      "type": "boolean",
+      "label": "PermissionsManageCategories"
+    },
+    {
+      "name": "PermissionsConvertLeads",
+      "type": "boolean",
+      "label": "PermissionsConvertLeads"
+    },
+    {
+      "name": "PermissionsPasswordNeverExpires",
+      "type": "boolean",
+      "label": "PermissionsPasswordNeverExpires"
+    },
+    {
+      "name": "PermissionsUseTeamReassignWizards",
+      "type": "boolean",
+      "label": "PermissionsUseTeamReassignWizards"
+    },
+    {
+      "name": "PermissionsEditActivatedOrders",
+      "type": "boolean",
+      "label": "PermissionsEditActivatedOrders"
+    },
+    {
+      "name": "PermissionsInstallPackaging",
+      "type": "boolean",
+      "label": "PermissionsInstallPackaging"
+    },
+    {
+      "name": "PermissionsPublishPackaging",
+      "type": "boolean",
+      "label": "PermissionsPublishPackaging"
+    },
+    {
+      "name": "PermissionsChatterOwnGroups",
+      "type": "boolean",
+      "label": "PermissionsChatterOwnGroups"
+    },
+    {
+      "name": "PermissionsEditOppLineItemUnitPrice",
+      "type": "boolean",
+      "label": "PermissionsEditOppLineItemUnitPrice"
+    },
+    {
+      "name": "PermissionsCreatePackaging",
+      "type": "boolean",
+      "label": "PermissionsCreatePackaging"
+    },
+    {
+      "name": "PermissionsBulkApiHardDelete",
+      "type": "boolean",
+      "label": "PermissionsBulkApiHardDelete"
+    },
+    {
+      "name": "PermissionsSolutionImport",
+      "type": "boolean",
+      "label": "PermissionsSolutionImport"
+    },
+    {
+      "name": "PermissionsManageCallCenters",
+      "type": "boolean",
+      "label": "PermissionsManageCallCenters"
+    },
+    {
+      "name": "PermissionsManageSynonyms",
+      "type": "boolean",
+      "label": "PermissionsManageSynonyms"
+    },
+    {
+      "name": "PermissionsViewContent",
+      "type": "boolean",
+      "label": "PermissionsViewContent"
+    },
+    {
+      "name": "PermissionsManageEmailClientConfig",
+      "type": "boolean",
+      "label": "PermissionsManageEmailClientConfig"
+    },
+    {
+      "name": "PermissionsEnableNotifications",
+      "type": "boolean",
+      "label": "PermissionsEnableNotifications"
+    },
+    {
+      "name": "PermissionsManageDataIntegrations",
+      "type": "boolean",
+      "label": "PermissionsManageDataIntegrations"
+    },
+    {
+      "name": "PermissionsDistributeFromPersWksp",
+      "type": "boolean",
+      "label": "PermissionsDistributeFromPersWksp"
+    },
+    {
+      "name": "PermissionsViewDataCategories",
+      "type": "boolean",
+      "label": "PermissionsViewDataCategories"
+    },
+    {
+      "name": "PermissionsManageDataCategories",
+      "type": "boolean",
+      "label": "PermissionsManageDataCategories"
+    },
+    {
+      "name": "PermissionsAuthorApex",
+      "type": "boolean",
+      "label": "PermissionsAuthorApex"
+    },
+    {
+      "name": "PermissionsManageMobile",
+      "type": "boolean",
+      "label": "PermissionsManageMobile"
+    },
+    {
+      "name": "PermissionsApiEnabled",
+      "type": "boolean",
+      "label": "PermissionsApiEnabled"
+    },
+    {
+      "name": "PermissionsManageCustomReportTypes",
+      "type": "boolean",
+      "label": "PermissionsManageCustomReportTypes"
+    },
+    {
+      "name": "PermissionsEditCaseComments",
+      "type": "boolean",
+      "label": "PermissionsEditCaseComments"
+    },
+    {
+      "name": "PermissionsTransferAnyCase",
+      "type": "boolean",
+      "label": "PermissionsTransferAnyCase"
+    },
+    {
+      "name": "PermissionsContentAdministrator",
+      "type": "boolean",
+      "label": "PermissionsContentAdministrator"
+    },
+    {
+      "name": "PermissionsCreateWorkspaces",
+      "type": "boolean",
+      "label": "PermissionsCreateWorkspaces"
+    },
+    {
+      "name": "PermissionsManageContentPermissions",
+      "type": "boolean",
+      "label": "PermissionsManageContentPermissions"
+    },
+    {
+      "name": "PermissionsManageContentProperties",
+      "type": "boolean",
+      "label": "PermissionsManageContentProperties"
+    },
+    {
+      "name": "PermissionsManageContentTypes",
+      "type": "boolean",
+      "label": "PermissionsManageContentTypes"
+    },
+    {
+      "name": "PermissionsManageExchangeConfig",
+      "type": "boolean",
+      "label": "PermissionsManageExchangeConfig"
+    },
+    {
+      "name": "PermissionsManageAnalyticSnapshots",
+      "type": "boolean",
+      "label": "PermissionsManageAnalyticSnapshots"
+    },
+    {
+      "name": "PermissionsScheduleReports",
+      "type": "boolean",
+      "label": "PermissionsScheduleReports"
+    },
+    {
+      "name": "PermissionsManageBusinessHourHolidays",
+      "type": "boolean",
+      "label": "PermissionsManageBusinessHourHolidays"
+    },
+    {
+      "name": "PermissionsManageEntitlements",
+      "type": "boolean",
+      "label": "PermissionsManageEntitlements"
+    },
+    {
+      "name": "PermissionsManageDynamicDashboards",
+      "type": "boolean",
+      "label": "PermissionsManageDynamicDashboards"
+    },
+    {
+      "name": "PermissionsCustomSidebarOnAllPages",
+      "type": "boolean",
+      "label": "PermissionsCustomSidebarOnAllPages"
+    },
+    {
+      "name": "PermissionsManageInteraction",
+      "type": "boolean",
+      "label": "PermissionsManageInteraction"
+    },
+    {
+      "name": "PermissionsViewMyTeamsDashboards",
+      "type": "boolean",
+      "label": "PermissionsViewMyTeamsDashboards"
+    },
+    {
+      "name": "PermissionsModerateChatter",
+      "type": "boolean",
+      "label": "PermissionsModerateChatter"
+    },
+    {
+      "name": "PermissionsResetPasswords",
+      "type": "boolean",
+      "label": "PermissionsResetPasswords"
+    },
+    {
+      "name": "PermissionsFlowUFLRequired",
+      "type": "boolean",
+      "label": "PermissionsFlowUFLRequired"
+    },
+    {
+      "name": "PermissionsCanInsertFeedSystemFields",
+      "type": "boolean",
+      "label": "PermissionsCanInsertFeedSystemFields"
+    },
+    {
+      "name": "PermissionsActivitiesAccess",
+      "type": "boolean",
+      "label": "PermissionsActivitiesAccess"
+    },
+    {
+      "name": "PermissionsManageKnowledgeImportExport",
+      "type": "boolean",
+      "label": "PermissionsManageKnowledgeImportExport"
+    },
+    {
+      "name": "PermissionsEmailTemplateManagement",
+      "type": "boolean",
+      "label": "PermissionsEmailTemplateManagement"
+    },
+    {
+      "name": "PermissionsEmailAdministration",
+      "type": "boolean",
+      "label": "PermissionsEmailAdministration"
+    },
+    {
+      "name": "PermissionsManageChatterMessages",
+      "type": "boolean",
+      "label": "PermissionsManageChatterMessages"
+    },
+    {
+      "name": "PermissionsAllowEmailIC",
+      "type": "boolean",
+      "label": "PermissionsAllowEmailIC"
+    },
+    {
+      "name": "PermissionsChatterFileLink",
+      "type": "boolean",
+      "label": "PermissionsChatterFileLink"
+    },
+    {
+      "name": "PermissionsForceTwoFactor",
+      "type": "boolean",
+      "label": "PermissionsForceTwoFactor"
+    },
+    {
+      "name": "PermissionsViewEventLogFiles",
+      "type": "boolean",
+      "label": "PermissionsViewEventLogFiles"
+    },
+    {
+      "name": "PermissionsManageNetworks",
+      "type": "boolean",
+      "label": "PermissionsManageNetworks"
+    },
+    {
+      "name": "PermissionsManageAuthProviders",
+      "type": "boolean",
+      "label": "PermissionsManageAuthProviders"
+    },
+    {
+      "name": "PermissionsRunFlow",
+      "type": "boolean",
+      "label": "PermissionsRunFlow"
+    },
+    {
+      "name": "PermissionsCreateCustomizeDashboards",
+      "type": "boolean",
+      "label": "PermissionsCreateCustomizeDashboards"
+    },
+    {
+      "name": "PermissionsCreateDashboardFolders",
+      "type": "boolean",
+      "label": "PermissionsCreateDashboardFolders"
+    },
+    {
+      "name": "PermissionsViewPublicDashboards",
+      "type": "boolean",
+      "label": "PermissionsViewPublicDashboards"
+    },
+    {
+      "name": "PermissionsManageDashbdsInPubFolders",
+      "type": "boolean",
+      "label": "PermissionsManageDashbdsInPubFolders"
+    },
+    {
+      "name": "PermissionsCreateCustomizeReports",
+      "type": "boolean",
+      "label": "PermissionsCreateCustomizeReports"
+    },
+    {
+      "name": "PermissionsCreateReportFolders",
+      "type": "boolean",
+      "label": "PermissionsCreateReportFolders"
+    },
+    {
+      "name": "PermissionsViewPublicReports",
+      "type": "boolean",
+      "label": "PermissionsViewPublicReports"
+    },
+    {
+      "name": "PermissionsManageReportsInPubFolders",
+      "type": "boolean",
+      "label": "PermissionsManageReportsInPubFolders"
+    },
+    {
+      "name": "PermissionsEditMyDashboards",
+      "type": "boolean",
+      "label": "PermissionsEditMyDashboards"
+    },
+    {
+      "name": "PermissionsEditMyReports",
+      "type": "boolean",
+      "label": "PermissionsEditMyReports"
+    },
+    {
+      "name": "PermissionsViewAllUsers",
+      "type": "boolean",
+      "label": "PermissionsViewAllUsers"
+    },
+    {
+      "name": "PermissionsAllowUniversalSearch",
+      "type": "boolean",
+      "label": "PermissionsAllowUniversalSearch"
+    },
+    {
+      "name": "PermissionsConnectOrgToEnvironmentHub",
+      "type": "boolean",
+      "label": "PermissionsConnectOrgToEnvironmentHub"
+    },
+    {
+      "name": "PermissionsWorkCalibrationUser",
+      "type": "boolean",
+      "label": "PermissionsWorkCalibrationUser"
+    },
+    {
+      "name": "PermissionsCreateCustomizeFilters",
+      "type": "boolean",
+      "label": "PermissionsCreateCustomizeFilters"
+    },
+    {
+      "name": "PermissionsWorkDotComUserPerm",
+      "type": "boolean",
+      "label": "PermissionsWorkDotComUserPerm"
+    },
+    {
+      "name": "PermissionsContentHubUser",
+      "type": "boolean",
+      "label": "PermissionsContentHubUser"
+    },
+    {
+      "name": "PermissionsGovernNetworks",
+      "type": "boolean",
+      "label": "PermissionsGovernNetworks"
+    },
+    {
+      "name": "PermissionsSalesConsole",
+      "type": "boolean",
+      "label": "PermissionsSalesConsole"
+    },
+    {
+      "name": "PermissionsTwoFactorApi",
+      "type": "boolean",
+      "label": "PermissionsTwoFactorApi"
+    },
+    {
+      "name": "PermissionsDeleteTopics",
+      "type": "boolean",
+      "label": "PermissionsDeleteTopics"
+    },
+    {
+      "name": "PermissionsEditTopics",
+      "type": "boolean",
+      "label": "PermissionsEditTopics"
+    },
+    {
+      "name": "PermissionsCreateTopics",
+      "type": "boolean",
+      "label": "PermissionsCreateTopics"
+    },
+    {
+      "name": "PermissionsAssignTopics",
+      "type": "boolean",
+      "label": "PermissionsAssignTopics"
+    },
+    {
+      "name": "PermissionsIdentityEnabled",
+      "type": "boolean",
+      "label": "PermissionsIdentityEnabled"
+    },
+    {
+      "name": "PermissionsIdentityConnect",
+      "type": "boolean",
+      "label": "PermissionsIdentityConnect"
+    },
+    {
+      "name": "PermissionsAllowViewKnowledge",
+      "type": "boolean",
+      "label": "PermissionsAllowViewKnowledge"
+    },
+    {
+      "name": "PermissionsContentWorkspaces",
+      "type": "boolean",
+      "label": "PermissionsContentWorkspaces"
+    },
+    {
+      "name": "PermissionsManageSearchPromotionRules",
+      "type": "boolean",
+      "label": "PermissionsManageSearchPromotionRules"
+    },
+    {
+      "name": "PermissionsCustomMobileAppsAccess",
+      "type": "boolean",
+      "label": "PermissionsCustomMobileAppsAccess"
+    },
+    {
+      "name": "PermissionsViewHelpLink",
+      "type": "boolean",
+      "label": "PermissionsViewHelpLink"
+    },
+    {
+      "name": "PermissionsManageProfilesPermissionsets",
+      "type": "boolean",
+      "label": "PermissionsManageProfilesPermissionsets"
+    },
+    {
+      "name": "PermissionsAssignPermissionSets",
+      "type": "boolean",
+      "label": "PermissionsAssignPermissionSets"
+    },
+    {
+      "name": "PermissionsManageRoles",
+      "type": "boolean",
+      "label": "PermissionsManageRoles"
+    },
+    {
+      "name": "PermissionsManageIpAddresses",
+      "type": "boolean",
+      "label": "PermissionsManageIpAddresses"
+    },
+    {
+      "name": "PermissionsManageSharing",
+      "type": "boolean",
+      "label": "PermissionsManageSharing"
+    },
+    {
+      "name": "PermissionsManageInternalUsers",
+      "type": "boolean",
+      "label": "PermissionsManageInternalUsers"
+    },
+    {
+      "name": "PermissionsManagePasswordPolicies",
+      "type": "boolean",
+      "label": "PermissionsManagePasswordPolicies"
+    },
+    {
+      "name": "PermissionsManageLoginAccessPolicies",
+      "type": "boolean",
+      "label": "PermissionsManageLoginAccessPolicies"
+    },
+    {
+      "name": "PermissionsViewPlatformEvents",
+      "type": "boolean",
+      "label": "PermissionsViewPlatformEvents"
+    },
+    {
+      "name": "PermissionsManageCustomPermissions",
+      "type": "boolean",
+      "label": "PermissionsManageCustomPermissions"
+    },
+    {
+      "name": "PermissionsCanVerifyComment",
+      "type": "boolean",
+      "label": "PermissionsCanVerifyComment"
+    },
+    {
+      "name": "PermissionsManageUnlistedGroups",
+      "type": "boolean",
+      "label": "PermissionsManageUnlistedGroups"
+    },
+    {
+      "name": "PermissionsStdAutomaticActivityCapture",
+      "type": "boolean",
+      "label": "PermissionsStdAutomaticActivityCapture"
+    },
+    {
+      "name": "PermissionsInsightsAppDashboardEditor",
+      "type": "boolean",
+      "label": "PermissionsInsightsAppDashboardEditor"
+    },
+    {
+      "name": "PermissionsManageTwoFactor",
+      "type": "boolean",
+      "label": "PermissionsManageTwoFactor"
+    },
+    {
+      "name": "PermissionsInsightsAppUser",
+      "type": "boolean",
+      "label": "PermissionsInsightsAppUser"
+    },
+    {
+      "name": "PermissionsInsightsAppAdmin",
+      "type": "boolean",
+      "label": "PermissionsInsightsAppAdmin"
+    },
+    {
+      "name": "PermissionsInsightsAppEltEditor",
+      "type": "boolean",
+      "label": "PermissionsInsightsAppEltEditor"
+    },
+    {
+      "name": "PermissionsInsightsAppUploadUser",
+      "type": "boolean",
+      "label": "PermissionsInsightsAppUploadUser"
+    },
+    {
+      "name": "PermissionsInsightsCreateApplication",
+      "type": "boolean",
+      "label": "PermissionsInsightsCreateApplication"
+    },
+    {
+      "name": "PermissionsLightningExperienceUser",
+      "type": "boolean",
+      "label": "PermissionsLightningExperienceUser"
+    },
+    {
+      "name": "PermissionsViewDataLeakageEvents",
+      "type": "boolean",
+      "label": "PermissionsViewDataLeakageEvents"
+    },
+    {
+      "name": "PermissionsConfigCustomRecs",
+      "type": "boolean",
+      "label": "PermissionsConfigCustomRecs"
+    },
+    {
+      "name": "PermissionsSubmitMacrosAllowed",
+      "type": "boolean",
+      "label": "PermissionsSubmitMacrosAllowed"
+    },
+    {
+      "name": "PermissionsBulkMacrosAllowed",
+      "type": "boolean",
+      "label": "PermissionsBulkMacrosAllowed"
+    },
+    {
+      "name": "PermissionsShareInternalArticles",
+      "type": "boolean",
+      "label": "PermissionsShareInternalArticles"
+    },
+    {
+      "name": "PermissionsManageSessionPermissionSets",
+      "type": "boolean",
+      "label": "PermissionsManageSessionPermissionSets"
+    },
+    {
+      "name": "PermissionsManageTemplatedApp",
+      "type": "boolean",
+      "label": "PermissionsManageTemplatedApp"
+    },
+    {
+      "name": "PermissionsUseTemplatedApp",
+      "type": "boolean",
+      "label": "PermissionsUseTemplatedApp"
+    },
+    {
+      "name": "PermissionsSendAnnouncementEmails",
+      "type": "boolean",
+      "label": "PermissionsSendAnnouncementEmails"
+    },
+    {
+      "name": "PermissionsChatterEditOwnPost",
+      "type": "boolean",
+      "label": "PermissionsChatterEditOwnPost"
+    },
+    {
+      "name": "PermissionsChatterEditOwnRecordPost",
+      "type": "boolean",
+      "label": "PermissionsChatterEditOwnRecordPost"
+    },
+    {
+      "name": "PermissionsWaveTabularDownload",
+      "type": "boolean",
+      "label": "PermissionsWaveTabularDownload"
+    },
+    {
+      "name": "PermissionsWaveCommunityUser",
+      "type": "boolean",
+      "label": "PermissionsWaveCommunityUser"
+    },
+    {
+      "name": "PermissionsAutomaticActivityCapture",
+      "type": "boolean",
+      "label": "PermissionsAutomaticActivityCapture"
+    },
+    {
+      "name": "PermissionsImportCustomObjects",
+      "type": "boolean",
+      "label": "PermissionsImportCustomObjects"
+    },
+    {
+      "name": "PermissionsSalesforceIQInbox",
+      "type": "boolean",
+      "label": "PermissionsSalesforceIQInbox"
+    },
+    {
+      "name": "PermissionsDelegatedTwoFactor",
+      "type": "boolean",
+      "label": "PermissionsDelegatedTwoFactor"
+    },
+    {
+      "name": "PermissionsChatterComposeUiCodesnippet",
+      "type": "boolean",
+      "label": "PermissionsChatterComposeUiCodesnippet"
+    },
+    {
+      "name": "PermissionsSelectFilesFromSalesforce",
+      "type": "boolean",
+      "label": "PermissionsSelectFilesFromSalesforce"
+    },
+    {
+      "name": "PermissionsModerateNetworkUsers",
+      "type": "boolean",
+      "label": "PermissionsModerateNetworkUsers"
+    },
+    {
+      "name": "PermissionsMergeTopics",
+      "type": "boolean",
+      "label": "PermissionsMergeTopics"
+    },
+    {
+      "name": "PermissionsSubscribeToLightningReports",
+      "type": "boolean",
+      "label": "PermissionsSubscribeToLightningReports"
+    },
+    {
+      "name": "PermissionsManagePvtRptsAndDashbds",
+      "type": "boolean",
+      "label": "PermissionsManagePvtRptsAndDashbds"
+    },
+    {
+      "name": "PermissionsAllowLightningLogin",
+      "type": "boolean",
+      "label": "PermissionsAllowLightningLogin"
+    },
+    {
+      "name": "PermissionsCampaignInfluence2",
+      "type": "boolean",
+      "label": "PermissionsCampaignInfluence2"
+    },
+    {
+      "name": "PermissionsViewDataAssessment",
+      "type": "boolean",
+      "label": "PermissionsViewDataAssessment"
+    },
+    {
+      "name": "PermissionsRemoveDirectMessageMembers",
+      "type": "boolean",
+      "label": "PermissionsRemoveDirectMessageMembers"
+    },
+    {
+      "name": "PermissionsCanApproveFeedPost",
+      "type": "boolean",
+      "label": "PermissionsCanApproveFeedPost"
+    },
+    {
+      "name": "PermissionsAddDirectMessageMembers",
+      "type": "boolean",
+      "label": "PermissionsAddDirectMessageMembers"
+    },
+    {
+      "name": "PermissionsAllowViewEditConvertedLeads",
+      "type": "boolean",
+      "label": "PermissionsAllowViewEditConvertedLeads"
+    },
+    {
+      "name": "PermissionsShowCompanyNameAsUserBadge",
+      "type": "boolean",
+      "label": "PermissionsShowCompanyNameAsUserBadge"
+    },
+    {
+      "name": "PermissionsAccessCMC",
+      "type": "boolean",
+      "label": "PermissionsAccessCMC"
+    },
+    {
+      "name": "PermissionsViewHealthCheck",
+      "type": "boolean",
+      "label": "PermissionsViewHealthCheck"
+    },
+    {
+      "name": "PermissionsManageHealthCheck",
+      "type": "boolean",
+      "label": "PermissionsManageHealthCheck"
+    },
+    {
+      "name": "PermissionsPackaging2",
+      "type": "boolean",
+      "label": "PermissionsPackaging2"
+    },
+    {
+      "name": "PermissionsManageCertificates",
+      "type": "boolean",
+      "label": "PermissionsManageCertificates"
+    },
+    {
+      "name": "PermissionsCreateReportInLightning",
+      "type": "boolean",
+      "label": "PermissionsCreateReportInLightning"
+    },
+    {
+      "name": "PermissionsPreventClassicExperience",
+      "type": "boolean",
+      "label": "PermissionsPreventClassicExperience"
+    },
+    {
+      "name": "PermissionsHideReadByList",
+      "type": "boolean",
+      "label": "PermissionsHideReadByList"
+    },
+    {
+      "name": "PermissionsListEmailSend",
+      "type": "boolean",
+      "label": "PermissionsListEmailSend"
+    },
+    {
+      "name": "PermissionsFeedPinning",
+      "type": "boolean",
+      "label": "PermissionsFeedPinning"
+    },
+    {
+      "name": "PermissionsChangeDashboardColors",
+      "type": "boolean",
+      "label": "PermissionsChangeDashboardColors"
+    },
+    {
+      "name": "PermissionsManageRecommendationStrategies",
+      "type": "boolean",
+      "label": "PermissionsManageRecommendationStrategies"
+    },
+    {
+      "name": "PermissionsManagePropositions",
+      "type": "boolean",
+      "label": "PermissionsManagePropositions"
+    },
+    {
+      "name": "PermissionsCloseConversations",
+      "type": "boolean",
+      "label": "PermissionsCloseConversations"
+    },
+    {
+      "name": "PermissionsSubscribeReportRolesGrps",
+      "type": "boolean",
+      "label": "PermissionsSubscribeReportRolesGrps"
+    },
+    {
+      "name": "PermissionsSubscribeDashboardRolesGrps",
+      "type": "boolean",
+      "label": "PermissionsSubscribeDashboardRolesGrps"
+    },
+    {
+      "name": "PermissionsUseWebLink",
+      "type": "boolean",
+      "label": "PermissionsUseWebLink"
+    },
+    {
+      "name": "PermissionsHasUnlimitedNBAExecutions",
+      "type": "boolean",
+      "label": "PermissionsHasUnlimitedNBAExecutions"
+    },
+    {
+      "name": "PermissionsViewOnlyEmbeddedAppUser",
+      "type": "boolean",
+      "label": "PermissionsViewOnlyEmbeddedAppUser"
+    },
+    {
+      "name": "PermissionsViewAllActivities",
+      "type": "boolean",
+      "label": "PermissionsViewAllActivities"
+    },
+    {
+      "name": "PermissionsSubscribeReportToOtherUsers",
+      "type": "boolean",
+      "label": "PermissionsSubscribeReportToOtherUsers"
+    },
+    {
+      "name": "PermissionsLightningConsoleAllowedForUser",
+      "type": "boolean",
+      "label": "PermissionsLightningConsoleAllowedForUser"
+    },
+    {
+      "name": "PermissionsSubscribeReportsRunAsUser",
+      "type": "boolean",
+      "label": "PermissionsSubscribeReportsRunAsUser"
+    },
+    {
+      "name": "PermissionsSubscribeToLightningDashboards",
+      "type": "boolean",
+      "label": "PermissionsSubscribeToLightningDashboards"
+    },
+    {
+      "name": "PermissionsSubscribeDashboardToOtherUsers",
+      "type": "boolean",
+      "label": "PermissionsSubscribeDashboardToOtherUsers"
+    },
+    {
+      "name": "PermissionsCreateLtngTempInPub",
+      "type": "boolean",
+      "label": "PermissionsCreateLtngTempInPub"
+    },
+    {
+      "name": "PermissionsAppointmentBookingUserAccess",
+      "type": "boolean",
+      "label": "PermissionsAppointmentBookingUserAccess"
+    },
+    {
+      "name": "PermissionsTransactionalEmailSend",
+      "type": "boolean",
+      "label": "PermissionsTransactionalEmailSend"
+    },
+    {
+      "name": "PermissionsViewPrivateStaticResources",
+      "type": "boolean",
+      "label": "PermissionsViewPrivateStaticResources"
+    },
+    {
+      "name": "PermissionsCreateLtngTempFolder",
+      "type": "boolean",
+      "label": "PermissionsCreateLtngTempFolder"
+    },
+    {
+      "name": "PermissionsApexRestServices",
+      "type": "boolean",
+      "label": "PermissionsApexRestServices"
+    },
+    {
+      "name": "PermissionsConfigureLiveMessage",
+      "type": "boolean",
+      "label": "PermissionsConfigureLiveMessage"
+    },
+    {
+      "name": "PermissionsLiveMessageAgent",
+      "type": "boolean",
+      "label": "PermissionsLiveMessageAgent"
+    },
+    {
+      "name": "PermissionsEnableCommunityAppLauncher",
+      "type": "boolean",
+      "label": "PermissionsEnableCommunityAppLauncher"
+    },
+    {
+      "name": "PermissionsGiveRecognitionBadge",
+      "type": "boolean",
+      "label": "PermissionsGiveRecognitionBadge"
+    },
+    {
+      "name": "PermissionsLightningSchedulerUserAccess",
+      "type": "boolean",
+      "label": "PermissionsLightningSchedulerUserAccess"
+    },
+    {
+      "name": "PermissionsAllowObjectDetection",
+      "type": "boolean",
+      "label": "PermissionsAllowObjectDetection"
+    },
+    {
+      "name": "PermissionsSalesforceIQInternal",
+      "type": "boolean",
+      "label": "PermissionsSalesforceIQInternal"
+    },
+    {
+      "name": "PermissionsUseMySearch",
+      "type": "boolean",
+      "label": "PermissionsUseMySearch"
+    },
+    {
+      "name": "PermissionsLtngPromoReserved01UserPerm",
+      "type": "boolean",
+      "label": "PermissionsLtngPromoReserved01UserPerm"
+    },
+    {
+      "name": "PermissionsManageSubscriptions",
+      "type": "boolean",
+      "label": "PermissionsManageSubscriptions"
+    },
+    {
+      "name": "PermissionsWaveManagePrivateAssetsUser",
+      "type": "boolean",
+      "label": "PermissionsWaveManagePrivateAssetsUser"
+    },
+    {
+      "name": "PermissionsAllowObjectDetectionTraining",
+      "type": "boolean",
+      "label": "PermissionsAllowObjectDetectionTraining"
+    },
+    {
+      "name": "PermissionsCanEditDataPrepRecipe",
+      "type": "boolean",
+      "label": "PermissionsCanEditDataPrepRecipe"
+    },
+    {
+      "name": "PermissionsAddAnalyticsRemoteConnections",
+      "type": "boolean",
+      "label": "PermissionsAddAnalyticsRemoteConnections"
+    },
+    {
+      "name": "PermissionsManageSurveys",
+      "type": "boolean",
+      "label": "PermissionsManageSurveys"
+    },
+    {
+      "name": "PermissionsUseAssistantDialog",
+      "type": "boolean",
+      "label": "PermissionsUseAssistantDialog"
+    },
+    {
+      "name": "PermissionsUseQuerySuggestions",
+      "type": "boolean",
+      "label": "PermissionsUseQuerySuggestions"
+    },
+    {
+      "name": "PermissionsRecordVisibilityAPI",
+      "type": "boolean",
+      "label": "PermissionsRecordVisibilityAPI"
+    },
+    {
+      "name": "PermissionsViewRoles",
+      "type": "boolean",
+      "label": "PermissionsViewRoles"
+    },
+    {
+      "name": "PermissionsCanManageMaps",
+      "type": "boolean",
+      "label": "PermissionsCanManageMaps"
+    },
+    {
+      "name": "PermissionsLMOutboundMessagingUserPerm",
+      "type": "boolean",
+      "label": "PermissionsLMOutboundMessagingUserPerm"
+    },
+    {
+      "name": "PermissionsModifyDataClassification",
+      "type": "boolean",
+      "label": "PermissionsModifyDataClassification"
+    },
+    {
+      "name": "PermissionsPrivacyDataAccess",
+      "type": "boolean",
+      "label": "PermissionsPrivacyDataAccess"
+    },
+    {
+      "name": "PermissionsQueryAllFiles",
+      "type": "boolean",
+      "label": "PermissionsQueryAllFiles"
+    },
+    {
+      "name": "PermissionsModifyMetadata",
+      "type": "boolean",
+      "label": "PermissionsModifyMetadata"
+    },
+    {
+      "name": "PermissionsManageCMS",
+      "type": "boolean",
+      "label": "PermissionsManageCMS"
+    },
+    {
+      "name": "PermissionsSandboxTestingInCommunityApp",
+      "type": "boolean",
+      "label": "PermissionsSandboxTestingInCommunityApp"
+    },
+    {
+      "name": "PermissionsCanEditPrompts",
+      "type": "boolean",
+      "label": "PermissionsCanEditPrompts"
+    },
+    {
+      "name": "PermissionsViewUserPII",
+      "type": "boolean",
+      "label": "PermissionsViewUserPII"
+    },
+    {
+      "name": "PermissionsManageHubConnections",
+      "type": "boolean",
+      "label": "PermissionsManageHubConnections"
+    },
+    {
+      "name": "PermissionsB2BMarketingAnalyticsUser",
+      "type": "boolean",
+      "label": "PermissionsB2BMarketingAnalyticsUser"
+    },
+    {
+      "name": "PermissionsTraceXdsQueries",
+      "type": "boolean",
+      "label": "PermissionsTraceXdsQueries"
+    },
+    {
+      "name": "PermissionsViewSecurityCommandCenter",
+      "type": "boolean",
+      "label": "PermissionsViewSecurityCommandCenter"
+    },
+    {
+      "name": "PermissionsManageSecurityCommandCenter",
+      "type": "boolean",
+      "label": "PermissionsManageSecurityCommandCenter"
+    },
+    {
+      "name": "PermissionsViewAllCustomSettings",
+      "type": "boolean",
+      "label": "PermissionsViewAllCustomSettings"
+    },
+    {
+      "name": "PermissionsViewAllForeignKeyNames",
+      "type": "boolean",
+      "label": "PermissionsViewAllForeignKeyNames"
+    },
+    {
+      "name": "PermissionsAddWaveNotificationRecipients",
+      "type": "boolean",
+      "label": "PermissionsAddWaveNotificationRecipients"
+    },
+    {
+      "name": "PermissionsHeadlessCMSAccess",
+      "type": "boolean",
+      "label": "PermissionsHeadlessCMSAccess"
+    },
+    {
+      "name": "PermissionsUseFulfillmentAPIs",
+      "type": "boolean",
+      "label": "PermissionsUseFulfillmentAPIs"
+    },
+    {
+      "name": "PermissionsLMEndMessagingSessionUserPerm",
+      "type": "boolean",
+      "label": "PermissionsLMEndMessagingSessionUserPerm"
+    },
+    {
+      "name": "PermissionsConsentApiUpdate",
+      "type": "boolean",
+      "label": "PermissionsConsentApiUpdate"
+    },
+    {
+      "name": "PermissionsPaymentsAPIUser",
+      "type": "boolean",
+      "label": "PermissionsPaymentsAPIUser"
+    },
+    {
+      "name": "PermissionsAccessContentBuilder",
+      "type": "boolean",
+      "label": "PermissionsAccessContentBuilder"
+    },
+    {
+      "name": "PermissionsAccountSwitcherUser",
+      "type": "boolean",
+      "label": "PermissionsAccountSwitcherUser"
+    },
+    {
+      "name": "PermissionsViewAnomalyEvents",
+      "type": "boolean",
+      "label": "PermissionsViewAnomalyEvents"
+    },
+    {
+      "name": "PermissionsManageC360AConnections",
+      "type": "boolean",
+      "label": "PermissionsManageC360AConnections"
+    },
+    {
+      "name": "PermissionsIsContactCenterAdmin",
+      "type": "boolean",
+      "label": "PermissionsIsContactCenterAdmin"
+    },
+    {
+      "name": "PermissionsIsContactCenterAgent",
+      "type": "boolean",
+      "label": "PermissionsIsContactCenterAgent"
+    },
+    {
+      "name": "PermissionsManageReleaseUpdates",
+      "type": "boolean",
+      "label": "PermissionsManageReleaseUpdates"
+    },
+    {
+      "name": "PermissionsViewAllProfiles",
+      "type": "boolean",
+      "label": "PermissionsViewAllProfiles"
+    },
+    {
+      "name": "PermissionsSkipIdentityConfirmation",
+      "type": "boolean",
+      "label": "PermissionsSkipIdentityConfirmation"
+    },
+    {
+      "name": "PermissionsCanToggleCallRecordings",
+      "type": "boolean",
+      "label": "PermissionsCanToggleCallRecordings"
+    },
+    {
+      "name": "PermissionsLearningManager",
+      "type": "boolean",
+      "label": "PermissionsLearningManager"
+    },
+    {
+      "name": "PermissionsIsContactCenterAdminBYOT",
+      "type": "boolean",
+      "label": "PermissionsIsContactCenterAdminBYOT"
+    },
+    {
+      "name": "PermissionsIsContactCenterAgentBYOT",
+      "type": "boolean",
+      "label": "PermissionsIsContactCenterAgentBYOT"
+    },
+    {
+      "name": "PermissionsSendCustomNotifications",
+      "type": "boolean",
+      "label": "PermissionsSendCustomNotifications"
+    },
+    {
+      "name": "PermissionsPackaging2Delete",
+      "type": "boolean",
+      "label": "PermissionsPackaging2Delete"
+    },
+    {
+      "name": "PermissionsUseOmnichannelInventoryAPIs",
+      "type": "boolean",
+      "label": "PermissionsUseOmnichannelInventoryAPIs"
+    },
+    {
+      "name": "PermissionsViewRestrictionAndScopingRules",
+      "type": "boolean",
+      "label": "PermissionsViewRestrictionAndScopingRules"
+    },
+    {
+      "name": "PermissionsFSCComprehensiveUserAccess",
+      "type": "boolean",
+      "label": "PermissionsFSCComprehensiveUserAccess"
+    },
+    {
+      "name": "PermissionsBotManageBots",
+      "type": "boolean",
+      "label": "PermissionsBotManageBots"
+    },
+    {
+      "name": "PermissionsBotManageBotsTrainingData",
+      "type": "boolean",
+      "label": "PermissionsBotManageBotsTrainingData"
+    },
+    {
+      "name": "PermissionsSchedulingLineAmbassador",
+      "type": "boolean",
+      "label": "PermissionsSchedulingLineAmbassador"
+    },
+    {
+      "name": "PermissionsSchedulingFacilityManager",
+      "type": "boolean",
+      "label": "PermissionsSchedulingFacilityManager"
+    },
+    {
+      "name": "PermissionsOmnichannelInventorySync",
+      "type": "boolean",
+      "label": "PermissionsOmnichannelInventorySync"
+    },
+    {
+      "name": "PermissionsManageLearningReporting",
+      "type": "boolean",
+      "label": "PermissionsManageLearningReporting"
+    },
+    {
+      "name": "PermissionsIsContactCenterSupervisor",
+      "type": "boolean",
+      "label": "PermissionsIsContactCenterSupervisor"
+    },
+    {
+      "name": "PermissionsIsotopeCToCUser",
+      "type": "boolean",
+      "label": "PermissionsIsotopeCToCUser"
+    },
+    {
+      "name": "PermissionsCanAccessCE",
+      "type": "boolean",
+      "label": "PermissionsCanAccessCE"
+    },
+    {
+      "name": "PermissionsUseAddOrderItemSummaryAPIs",
+      "type": "boolean",
+      "label": "PermissionsUseAddOrderItemSummaryAPIs"
+    },
+    {
+      "name": "PermissionsIsotopeAccess",
+      "type": "boolean",
+      "label": "PermissionsIsotopeAccess"
+    },
+    {
+      "name": "PermissionsIsotopeLEX",
+      "type": "boolean",
+      "label": "PermissionsIsotopeLEX"
+    },
+    {
+      "name": "PermissionsQuipMetricsAccess",
+      "type": "boolean",
+      "label": "PermissionsQuipMetricsAccess"
+    },
+    {
+      "name": "PermissionsQuipUserEngagementMetrics",
+      "type": "boolean",
+      "label": "PermissionsQuipUserEngagementMetrics"
+    },
+    {
+      "name": "PermissionsRemoteMediaVirtualDesktop",
+      "type": "boolean",
+      "label": "PermissionsRemoteMediaVirtualDesktop"
+    },
+    {
+      "name": "PermissionsTransactionSecurityExempt",
+      "type": "boolean",
+      "label": "PermissionsTransactionSecurityExempt"
+    },
+    {
+      "name": "PermissionsManageStores",
+      "type": "boolean",
+      "label": "PermissionsManageStores"
+    },
+    {
+      "name": "PermissionsManageExternalConnections",
+      "type": "boolean",
+      "label": "PermissionsManageExternalConnections"
+    },
+    {
+      "name": "PermissionsUseReturnOrder",
+      "type": "boolean",
+      "label": "PermissionsUseReturnOrder"
+    },
+    {
+      "name": "PermissionsUseReturnOrderAPIs",
+      "type": "boolean",
+      "label": "PermissionsUseReturnOrderAPIs"
+    },
+    {
+      "name": "PermissionsUseSubscriptionEmails",
+      "type": "boolean",
+      "label": "PermissionsUseSubscriptionEmails"
+    },
+    {
+      "name": "PermissionsUseOrderEntry",
+      "type": "boolean",
+      "label": "PermissionsUseOrderEntry"
+    },
+    {
+      "name": "PermissionsUseRepricing",
+      "type": "boolean",
+      "label": "PermissionsUseRepricing"
+    },
+    {
+      "name": "PermissionsAIViewInsightObjects",
+      "type": "boolean",
+      "label": "PermissionsAIViewInsightObjects"
+    },
+    {
+      "name": "PermissionsAICreateInsightObjects",
+      "type": "boolean",
+      "label": "PermissionsAICreateInsightObjects"
+    },
+    {
+      "name": "PermissionsViewMLModels",
+      "type": "boolean",
+      "label": "PermissionsViewMLModels"
+    },
+    {
+      "name": "PermissionsLifecycleManagementAPIUser",
+      "type": "boolean",
+      "label": "PermissionsLifecycleManagementAPIUser"
+    },
+    {
+      "name": "PermissionsEnablementUser",
+      "type": "boolean",
+      "label": "PermissionsEnablementUser"
+    },
+    {
+      "name": "PermissionsNativeWebviewScrolling",
+      "type": "boolean",
+      "label": "PermissionsNativeWebviewScrolling"
+    },
+    {
+      "name": "PermissionsViewDeveloperName",
+      "type": "boolean",
+      "label": "PermissionsViewDeveloperName"
+    },
+    {
+      "name": "PermissionsBypassMFAForUiLogins",
+      "type": "boolean",
+      "label": "PermissionsBypassMFAForUiLogins"
+    },
+    {
+      "name": "PermissionsClientSecretRotation",
+      "type": "boolean",
+      "label": "PermissionsClientSecretRotation"
+    },
+    {
+      "name": "PermissionsAccessToServiceProcess",
+      "type": "boolean",
+      "label": "PermissionsAccessToServiceProcess"
+    },
+    {
+      "name": "PermissionsManageOrchInstsAndWorkItems",
+      "type": "boolean",
+      "label": "PermissionsManageOrchInstsAndWorkItems"
+    },
+    {
+      "name": "PermissionsCMSECEAuthoringAccess",
+      "type": "boolean",
+      "label": "PermissionsCMSECEAuthoringAccess"
+    },
+    {
+      "name": "PermissionsEnablementAdmin",
+      "type": "boolean",
+      "label": "PermissionsEnablementAdmin"
+    },
+    {
+      "name": "PermissionsManageDataspaceScope",
+      "type": "boolean",
+      "label": "PermissionsManageDataspaceScope"
+    },
+    {
+      "name": "PermissionsConfigureDataspaceScope",
+      "type": "boolean",
+      "label": "PermissionsConfigureDataspaceScope"
+    },
+    {
+      "name": "PermissionsViewClientSecret",
+      "type": "boolean",
+      "label": "PermissionsViewClientSecret"
+    },
+    {
+      "name": "PermissionsEditRepricing",
+      "type": "boolean",
+      "label": "PermissionsEditRepricing"
+    },
+    {
+      "name": "PermissionsEnableIPFSUpload",
+      "type": "boolean",
+      "label": "PermissionsEnableIPFSUpload"
+    },
+    {
+      "name": "PermissionsEnableBCTransactionPolling",
+      "type": "boolean",
+      "label": "PermissionsEnableBCTransactionPolling"
+    },
+    {
+      "name": "PermissionsFSCArcGraphCommunityUser",
+      "type": "boolean",
+      "label": "PermissionsFSCArcGraphCommunityUser"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

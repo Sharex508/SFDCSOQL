@@ -1,0 +1,78 @@
+{
+  "label": "TopicAssignment",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "TopicId",
+      "type": "reference",
+      "label": "TopicId",
+      "referenceTo": "Topic"
+    },
+    {
+      "name": "EntityId",
+      "type": "reference",
+      "label": "EntityId",
+      "referenceTo": "Account, Asset, Campaign, Case, ChangeRequest, Coin__c, Contact, ContentDocument, Contract, Event, FeedItem, Incident, Lead, Opportunity, Order, Problem, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, Shift, Shipment, Solution, Task, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate"
+    },
+    {
+      "name": "EntityKeyPrefix",
+      "type": "string",
+      "label": "EntityKeyPrefix"
+    },
+    {
+      "name": "EntityType",
+      "type": "string",
+      "label": "EntityType"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Topic",
+      "type": "parent",
+      "parentObject": "Topic",
+      "field": "TopicId"
+    },
+    {
+      "name": "Account, Asset, Campaign, Case, ChangeRequest, Coin__c, Contact, ContentDocument, Contract, Event, FeedItem, Incident, Lead, Opportunity, Order, Problem, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, Shift, Shipment, Solution, Task, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate",
+      "type": "parent",
+      "parentObject": "Account, Asset, Campaign, Case, ChangeRequest, Coin__c, Contact, ContentDocument, Contract, Event, FeedItem, Incident, Lead, Opportunity, Order, Problem, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, Shift, Shipment, Solution, Task, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate",
+      "field": "EntityId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "label": "SalesStore",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ImplementorType",
+      "type": "string",
+      "label": "ImplementorType"
+    },
+    {
+      "name": "LocationId",
+      "type": "reference",
+      "label": "LocationId",
+      "referenceTo": "Location"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Location",
+      "type": "parent",
+      "parentObject": "Location",
+      "field": "LocationId"
+    }
+  ]
+}

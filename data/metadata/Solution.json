@@ -1,0 +1,152 @@
+{
+  "label": "Solution",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "SolutionNumber",
+      "type": "string",
+      "label": "SolutionNumber"
+    },
+    {
+      "name": "SolutionName",
+      "type": "string",
+      "label": "SolutionName"
+    },
+    {
+      "name": "IsPublished",
+      "type": "boolean",
+      "label": "IsPublished"
+    },
+    {
+      "name": "IsPublishedInPublicKb",
+      "type": "boolean",
+      "label": "IsPublishedInPublicKb"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "IsReviewed",
+      "type": "boolean",
+      "label": "IsReviewed"
+    },
+    {
+      "name": "SolutionNote",
+      "type": "textarea",
+      "label": "SolutionNote"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "TimesUsed",
+      "type": "int",
+      "label": "TimesUsed"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "IsHtml",
+      "type": "boolean",
+      "label": "IsHtml"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "CaseSolutions",
+      "type": "child",
+      "childObject": "CaseSolution",
+      "field": "SolutionId"
+    },
+    {
+      "name": "CategoryDatas",
+      "type": "child",
+      "childObject": "CategoryData",
+      "field": "RelatedSobjectId"
+    },
+    {
+      "name": "SolutionFeeds",
+      "type": "child",
+      "childObject": "SolutionFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "SolutionHistories",
+      "type": "child",
+      "childObject": "SolutionHistory",
+      "field": "SolutionId"
+    }
+  ]
+}

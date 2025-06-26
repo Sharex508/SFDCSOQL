@@ -1,0 +1,207 @@
+{
+  "label": "AuthProvider",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "ProviderType",
+      "type": "picklist",
+      "label": "ProviderType"
+    },
+    {
+      "name": "FriendlyName",
+      "type": "string",
+      "label": "FriendlyName"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "RegistrationHandlerId",
+      "type": "reference",
+      "label": "RegistrationHandlerId",
+      "referenceTo": "ApexClass"
+    },
+    {
+      "name": "ExecutionUserId",
+      "type": "reference",
+      "label": "ExecutionUserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "ConsumerKey",
+      "type": "string",
+      "label": "ConsumerKey"
+    },
+    {
+      "name": "ConsumerSecret",
+      "type": "string",
+      "label": "ConsumerSecret"
+    },
+    {
+      "name": "ErrorUrl",
+      "type": "string",
+      "label": "ErrorUrl"
+    },
+    {
+      "name": "AuthorizeUrl",
+      "type": "url",
+      "label": "AuthorizeUrl"
+    },
+    {
+      "name": "TokenUrl",
+      "type": "url",
+      "label": "TokenUrl"
+    },
+    {
+      "name": "UserInfoUrl",
+      "type": "url",
+      "label": "UserInfoUrl"
+    },
+    {
+      "name": "DefaultScopes",
+      "type": "string",
+      "label": "DefaultScopes"
+    },
+    {
+      "name": "IdTokenIssuer",
+      "type": "string",
+      "label": "IdTokenIssuer"
+    },
+    {
+      "name": "OptionsSendAccessTokenInHeader",
+      "type": "boolean",
+      "label": "OptionsSendAccessTokenInHeader"
+    },
+    {
+      "name": "OptionsSendClientCredentialsInHeader",
+      "type": "boolean",
+      "label": "OptionsSendClientCredentialsInHeader"
+    },
+    {
+      "name": "OptionsIncludeOrgIdInId",
+      "type": "boolean",
+      "label": "OptionsIncludeOrgIdInId"
+    },
+    {
+      "name": "OptionsSendSecretInApis",
+      "type": "boolean",
+      "label": "OptionsSendSecretInApis"
+    },
+    {
+      "name": "OptionsIsMuleSoftUS",
+      "type": "boolean",
+      "label": "OptionsIsMuleSoftUS"
+    },
+    {
+      "name": "OptionsIsMuleSoftEU",
+      "type": "boolean",
+      "label": "OptionsIsMuleSoftEU"
+    },
+    {
+      "name": "IconUrl",
+      "type": "url",
+      "label": "IconUrl"
+    },
+    {
+      "name": "LogoutUrl",
+      "type": "url",
+      "label": "LogoutUrl"
+    },
+    {
+      "name": "PluginId",
+      "type": "reference",
+      "label": "PluginId",
+      "referenceTo": "ApexClass"
+    },
+    {
+      "name": "CustomMetadataTypeRecord",
+      "type": "string",
+      "label": "CustomMetadataTypeRecord"
+    },
+    {
+      "name": "EcKey",
+      "type": "string",
+      "label": "EcKey"
+    },
+    {
+      "name": "AppleTeam",
+      "type": "string",
+      "label": "AppleTeam"
+    },
+    {
+      "name": "SsoKickoffUrl",
+      "type": "url",
+      "label": "SsoKickoffUrl"
+    },
+    {
+      "name": "LinkKickoffUrl",
+      "type": "url",
+      "label": "LinkKickoffUrl"
+    },
+    {
+      "name": "OauthKickoffUrl",
+      "type": "url",
+      "label": "OauthKickoffUrl"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ApexClass",
+      "type": "parent",
+      "parentObject": "ApexClass",
+      "field": "RegistrationHandlerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "ExecutionUserId"
+    },
+    {
+      "name": "ApexClass",
+      "type": "parent",
+      "parentObject": "ApexClass",
+      "field": "PluginId"
+    },
+    {
+      "name": "ExternalDataSources",
+      "type": "child",
+      "childObject": "ExternalDataSource",
+      "field": "AuthProviderId"
+    },
+    {
+      "name": "ExternalDataUserAuths",
+      "type": "child",
+      "childObject": "ExternalDataUserAuth",
+      "field": "AuthProviderId"
+    },
+    {
+      "name": "NamedCredentials",
+      "type": "child",
+      "childObject": "NamedCredential",
+      "field": "AuthProviderId"
+    },
+    {
+      "name": "ThirdPartyAccountLinks",
+      "type": "child",
+      "childObject": "ThirdPartyAccountLink",
+      "field": "SsoProviderId"
+    }
+  ]
+}

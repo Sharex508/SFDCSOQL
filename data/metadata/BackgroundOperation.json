@@ -1,0 +1,181 @@
+{
+  "label": "BackgroundOperation",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "SubmittedAt",
+      "type": "datetime",
+      "label": "SubmittedAt"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "ExecutionGroup",
+      "type": "string",
+      "label": "ExecutionGroup"
+    },
+    {
+      "name": "SequenceGroup",
+      "type": "string",
+      "label": "SequenceGroup"
+    },
+    {
+      "name": "SequenceNumber",
+      "type": "int",
+      "label": "SequenceNumber"
+    },
+    {
+      "name": "GroupLeaderId",
+      "type": "reference",
+      "label": "GroupLeaderId",
+      "referenceTo": "BackgroundOperation"
+    },
+    {
+      "name": "StartedAt",
+      "type": "datetime",
+      "label": "StartedAt"
+    },
+    {
+      "name": "FinishedAt",
+      "type": "datetime",
+      "label": "FinishedAt"
+    },
+    {
+      "name": "WorkerUri",
+      "type": "string",
+      "label": "WorkerUri"
+    },
+    {
+      "name": "Timeout",
+      "type": "int",
+      "label": "Timeout"
+    },
+    {
+      "name": "ExpiresAt",
+      "type": "datetime",
+      "label": "ExpiresAt"
+    },
+    {
+      "name": "NumFollowers",
+      "type": "int",
+      "label": "NumFollowers"
+    },
+    {
+      "name": "ProcessAfter",
+      "type": "datetime",
+      "label": "ProcessAfter"
+    },
+    {
+      "name": "ParentKey",
+      "type": "string",
+      "label": "ParentKey"
+    },
+    {
+      "name": "RetryLimit",
+      "type": "int",
+      "label": "RetryLimit"
+    },
+    {
+      "name": "RetryCount",
+      "type": "int",
+      "label": "RetryCount"
+    },
+    {
+      "name": "RetryBackoff",
+      "type": "int",
+      "label": "RetryBackoff"
+    },
+    {
+      "name": "Error",
+      "type": "string",
+      "label": "Error"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "BackgroundOperation",
+      "type": "parent",
+      "parentObject": "BackgroundOperation",
+      "field": "GroupLeaderId"
+    },
+    {
+      "name": "BackgroundOperations",
+      "type": "child",
+      "childObject": "BackgroundOperation",
+      "field": "GroupLeaderId"
+    },
+    {
+      "name": "CartCheckoutSessions",
+      "type": "child",
+      "childObject": "CartCheckoutSession",
+      "field": "BackgroundOperationId"
+    },
+    {
+      "name": "CartValidationOutputs",
+      "type": "child",
+      "childObject": "CartValidationOutput",
+      "field": "BackgroundOperationId"
+    }
+  ]
+}

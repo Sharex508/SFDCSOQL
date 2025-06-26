@@ -1,0 +1,284 @@
+{
+  "label": "EntityDefinition",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "QualifiedApiName",
+      "type": "string",
+      "label": "QualifiedApiName"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "PluralLabel",
+      "type": "string",
+      "label": "PluralLabel"
+    },
+    {
+      "name": "DefaultCompactLayoutId",
+      "type": "string",
+      "label": "DefaultCompactLayoutId"
+    },
+    {
+      "name": "IsCustomizable",
+      "type": "boolean",
+      "label": "IsCustomizable"
+    },
+    {
+      "name": "IsApexTriggerable",
+      "type": "boolean",
+      "label": "IsApexTriggerable"
+    },
+    {
+      "name": "IsWorkflowEnabled",
+      "type": "boolean",
+      "label": "IsWorkflowEnabled"
+    },
+    {
+      "name": "IsProcessEnabled",
+      "type": "boolean",
+      "label": "IsProcessEnabled"
+    },
+    {
+      "name": "IsCompactLayoutable",
+      "type": "boolean",
+      "label": "IsCompactLayoutable"
+    },
+    {
+      "name": "DeploymentStatus",
+      "type": "picklist",
+      "label": "DeploymentStatus"
+    },
+    {
+      "name": "KeyPrefix",
+      "type": "string",
+      "label": "KeyPrefix"
+    },
+    {
+      "name": "IsCustomSetting",
+      "type": "boolean",
+      "label": "IsCustomSetting"
+    },
+    {
+      "name": "IsDeprecatedAndHidden",
+      "type": "boolean",
+      "label": "IsDeprecatedAndHidden"
+    },
+    {
+      "name": "IsReplicateable",
+      "type": "boolean",
+      "label": "IsReplicateable"
+    },
+    {
+      "name": "IsRetrieveable",
+      "type": "boolean",
+      "label": "IsRetrieveable"
+    },
+    {
+      "name": "IsSearchLayoutable",
+      "type": "boolean",
+      "label": "IsSearchLayoutable"
+    },
+    {
+      "name": "IsSearchable",
+      "type": "boolean",
+      "label": "IsSearchable"
+    },
+    {
+      "name": "IsTriggerable",
+      "type": "boolean",
+      "label": "IsTriggerable"
+    },
+    {
+      "name": "IsIdEnabled",
+      "type": "boolean",
+      "label": "IsIdEnabled"
+    },
+    {
+      "name": "IsEverCreatable",
+      "type": "boolean",
+      "label": "IsEverCreatable"
+    },
+    {
+      "name": "IsEverUpdatable",
+      "type": "boolean",
+      "label": "IsEverUpdatable"
+    },
+    {
+      "name": "IsEverDeletable",
+      "type": "boolean",
+      "label": "IsEverDeletable"
+    },
+    {
+      "name": "IsFeedEnabled",
+      "type": "boolean",
+      "label": "IsFeedEnabled"
+    },
+    {
+      "name": "IsQueryable",
+      "type": "boolean",
+      "label": "IsQueryable"
+    },
+    {
+      "name": "IsMruEnabled",
+      "type": "boolean",
+      "label": "IsMruEnabled"
+    },
+    {
+      "name": "DetailUrl",
+      "type": "url",
+      "label": "DetailUrl"
+    },
+    {
+      "name": "EditUrl",
+      "type": "url",
+      "label": "EditUrl"
+    },
+    {
+      "name": "NewUrl",
+      "type": "url",
+      "label": "NewUrl"
+    },
+    {
+      "name": "EditDefinitionUrl",
+      "type": "url",
+      "label": "EditDefinitionUrl"
+    },
+    {
+      "name": "HelpSettingPageName",
+      "type": "string",
+      "label": "HelpSettingPageName"
+    },
+    {
+      "name": "HelpSettingPageUrl",
+      "type": "url",
+      "label": "HelpSettingPageUrl"
+    },
+    {
+      "name": "RunningUserEntityAccessId",
+      "type": "string",
+      "label": "RunningUserEntityAccessId"
+    },
+    {
+      "name": "PublisherId",
+      "type": "string",
+      "label": "PublisherId"
+    },
+    {
+      "name": "IsLayoutable",
+      "type": "boolean",
+      "label": "IsLayoutable"
+    },
+    {
+      "name": "RecordTypesSupported",
+      "type": "complexvalue",
+      "label": "RecordTypesSupported"
+    },
+    {
+      "name": "InternalSharingModel",
+      "type": "picklist",
+      "label": "InternalSharingModel"
+    },
+    {
+      "name": "ExternalSharingModel",
+      "type": "picklist",
+      "label": "ExternalSharingModel"
+    },
+    {
+      "name": "HasSubtypes",
+      "type": "boolean",
+      "label": "HasSubtypes"
+    },
+    {
+      "name": "IsSubtype",
+      "type": "boolean",
+      "label": "IsSubtype"
+    },
+    {
+      "name": "IsAutoActivityCaptureEnabled",
+      "type": "boolean",
+      "label": "IsAutoActivityCaptureEnabled"
+    },
+    {
+      "name": "IsInterface",
+      "type": "boolean",
+      "label": "IsInterface"
+    },
+    {
+      "name": "ImplementsInterfaces",
+      "type": "string",
+      "label": "ImplementsInterfaces"
+    },
+    {
+      "name": "ImplementedBy",
+      "type": "string",
+      "label": "ImplementedBy"
+    },
+    {
+      "name": "ExtendsInterfaces",
+      "type": "string",
+      "label": "ExtendsInterfaces"
+    },
+    {
+      "name": "ExtendedBy",
+      "type": "string",
+      "label": "ExtendedBy"
+    },
+    {
+      "name": "DefaultImplementation",
+      "type": "string",
+      "label": "DefaultImplementation"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

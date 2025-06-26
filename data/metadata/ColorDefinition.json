@@ -1,0 +1,41 @@
+{
+  "label": "ColorDefinition",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "TabDefinitionId",
+      "type": "string",
+      "label": "TabDefinitionId"
+    },
+    {
+      "name": "Color",
+      "type": "string",
+      "label": "Color"
+    },
+    {
+      "name": "Theme",
+      "type": "string",
+      "label": "Theme"
+    },
+    {
+      "name": "Context",
+      "type": "string",
+      "label": "Context"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

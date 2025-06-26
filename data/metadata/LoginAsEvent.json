@@ -1,0 +1,119 @@
+{
+  "label": "LoginAsEvent",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "EventIdentifier",
+      "type": "string",
+      "label": "EventIdentifier"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Username",
+      "type": "string",
+      "label": "Username"
+    },
+    {
+      "name": "EventDate",
+      "type": "datetime",
+      "label": "EventDate"
+    },
+    {
+      "name": "SessionKey",
+      "type": "string",
+      "label": "SessionKey"
+    },
+    {
+      "name": "LoginKey",
+      "type": "string",
+      "label": "LoginKey"
+    },
+    {
+      "name": "SessionLevel",
+      "type": "picklist",
+      "label": "SessionLevel"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "UserType",
+      "type": "picklist",
+      "label": "UserType"
+    },
+    {
+      "name": "LoginHistoryId",
+      "type": "reference",
+      "label": "LoginHistoryId"
+    },
+    {
+      "name": "Application",
+      "type": "string",
+      "label": "Application"
+    },
+    {
+      "name": "Browser",
+      "type": "string",
+      "label": "Browser"
+    },
+    {
+      "name": "LoginType",
+      "type": "picklist",
+      "label": "LoginType"
+    },
+    {
+      "name": "Platform",
+      "type": "string",
+      "label": "Platform"
+    },
+    {
+      "name": "DelegatedUsername",
+      "type": "string",
+      "label": "DelegatedUsername"
+    },
+    {
+      "name": "DelegatedOrganizationId",
+      "type": "string",
+      "label": "DelegatedOrganizationId"
+    },
+    {
+      "name": "TargetUrl",
+      "type": "string",
+      "label": "TargetUrl"
+    },
+    {
+      "name": "LoginAsCategory",
+      "type": "picklist",
+      "label": "LoginAsCategory"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    }
+  ]
+}

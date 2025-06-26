@@ -1,0 +1,105 @@
+{
+  "label": "Folder",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "Folder"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "AccessType",
+      "type": "picklist",
+      "label": "AccessType"
+    },
+    {
+      "name": "IsReadonly",
+      "type": "boolean",
+      "label": "IsReadonly"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Folder",
+      "type": "parent",
+      "parentObject": "Folder",
+      "field": "ParentId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Folders",
+      "type": "child",
+      "childObject": "Folder",
+      "field": "ParentId"
+    },
+    {
+      "name": "WaveAutoInstallRequests",
+      "type": "child",
+      "childObject": "WaveAutoInstallRequest",
+      "field": "FolderId"
+    }
+  ]
+}

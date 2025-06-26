@@ -1,0 +1,105 @@
+{
+  "label": "EmailServicesAddress",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "LocalPart",
+      "type": "string",
+      "label": "LocalPart"
+    },
+    {
+      "name": "EmailDomainName",
+      "type": "string",
+      "label": "EmailDomainName"
+    },
+    {
+      "name": "AuthorizedSenders",
+      "type": "textarea",
+      "label": "AuthorizedSenders"
+    },
+    {
+      "name": "RunAsUserId",
+      "type": "reference",
+      "label": "RunAsUserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "FunctionId",
+      "type": "reference",
+      "label": "FunctionId",
+      "referenceTo": "EmailServicesFunction"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "RunAsUserId"
+    },
+    {
+      "name": "EmailServicesFunction",
+      "type": "parent",
+      "parentObject": "EmailServicesFunction",
+      "field": "FunctionId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

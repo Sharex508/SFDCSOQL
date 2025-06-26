@@ -1,0 +1,198 @@
+{
+  "label": "UserProvisioningRequest",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "SalesforceUserId",
+      "type": "reference",
+      "label": "SalesforceUserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "ExternalUserId",
+      "type": "string",
+      "label": "ExternalUserId"
+    },
+    {
+      "name": "AppName",
+      "type": "string",
+      "label": "AppName"
+    },
+    {
+      "name": "State",
+      "type": "picklist",
+      "label": "State"
+    },
+    {
+      "name": "Operation",
+      "type": "picklist",
+      "label": "Operation"
+    },
+    {
+      "name": "ScheduleDate",
+      "type": "datetime",
+      "label": "ScheduleDate"
+    },
+    {
+      "name": "ConnectedAppId",
+      "type": "reference",
+      "label": "ConnectedAppId",
+      "referenceTo": "ConnectedApplication"
+    },
+    {
+      "name": "UserProvConfigId",
+      "type": "reference",
+      "label": "UserProvConfigId",
+      "referenceTo": "UserProvisioningConfig"
+    },
+    {
+      "name": "UserProvAccountId",
+      "type": "reference",
+      "label": "UserProvAccountId",
+      "referenceTo": "UserProvAccount"
+    },
+    {
+      "name": "ApprovalStatus",
+      "type": "picklist",
+      "label": "ApprovalStatus"
+    },
+    {
+      "name": "ManagerId",
+      "type": "reference",
+      "label": "ManagerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "RetryCount",
+      "type": "int",
+      "label": "RetryCount"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "UserProvisioningRequest"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "SalesforceUserId"
+    },
+    {
+      "name": "ConnectedApplication",
+      "type": "parent",
+      "parentObject": "ConnectedApplication",
+      "field": "ConnectedAppId"
+    },
+    {
+      "name": "UserProvisioningConfig",
+      "type": "parent",
+      "parentObject": "UserProvisioningConfig",
+      "field": "UserProvConfigId"
+    },
+    {
+      "name": "UserProvAccount",
+      "type": "parent",
+      "parentObject": "UserProvAccount",
+      "field": "UserProvAccountId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "ManagerId"
+    },
+    {
+      "name": "UserProvisioningRequest",
+      "type": "parent",
+      "parentObject": "UserProvisioningRequest",
+      "field": "ParentId"
+    },
+    {
+      "name": "UserProvisioningLogs",
+      "type": "child",
+      "childObject": "UserProvisioningLog",
+      "field": "UserProvisioningRequestId"
+    },
+    {
+      "name": "UserProvisioningRequests",
+      "type": "child",
+      "childObject": "UserProvisioningRequest",
+      "field": "ParentId"
+    },
+    {
+      "name": "UserProvisioningRequestShares",
+      "type": "child",
+      "childObject": "UserProvisioningRequestShare",
+      "field": "ParentId"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "label": "MsgChannelLanguageKeyword",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "MasterLanguage",
+      "type": "textarea",
+      "label": "MasterLanguage"
+    },
+    {
+      "name": "OptInKeywords",
+      "type": "textarea",
+      "label": "OptInKeywords"
+    },
+    {
+      "name": "DoubleOptInKeywords",
+      "type": "textarea",
+      "label": "DoubleOptInKeywords"
+    },
+    {
+      "name": "OptInConfirmation",
+      "type": "textarea",
+      "label": "OptInConfirmation"
+    },
+    {
+      "name": "HelpKeywords",
+      "type": "textarea",
+      "label": "HelpKeywords"
+    },
+    {
+      "name": "HelpResponse",
+      "type": "textarea",
+      "label": "HelpResponse"
+    },
+    {
+      "name": "OptOutKeywords",
+      "type": "textarea",
+      "label": "OptOutKeywords"
+    },
+    {
+      "name": "OptOutConfirmation",
+      "type": "textarea",
+      "label": "OptOutConfirmation"
+    },
+    {
+      "name": "MessagingChannelId",
+      "type": "reference",
+      "label": "MessagingChannelId",
+      "referenceTo": "MessagingChannel"
+    },
+    {
+      "name": "CustomKeywords",
+      "type": "textarea",
+      "label": "CustomKeywords"
+    },
+    {
+      "name": "CustomResponse",
+      "type": "textarea",
+      "label": "CustomResponse"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "MessagingChannel",
+      "type": "parent",
+      "parentObject": "MessagingChannel",
+      "field": "MessagingChannelId"
+    }
+  ]
+}

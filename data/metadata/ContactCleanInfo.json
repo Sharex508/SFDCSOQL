@@ -1,0 +1,300 @@
+{
+  "label": "ContactCleanInfo",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ContactId",
+      "type": "reference",
+      "label": "ContactId",
+      "referenceTo": "Contact"
+    },
+    {
+      "name": "LastMatchedDate",
+      "type": "datetime",
+      "label": "LastMatchedDate"
+    },
+    {
+      "name": "LastStatusChangedDate",
+      "type": "datetime",
+      "label": "LastStatusChangedDate"
+    },
+    {
+      "name": "LastStatusChangedById",
+      "type": "reference",
+      "label": "LastStatusChangedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "IsInactive",
+      "type": "boolean",
+      "label": "IsInactive"
+    },
+    {
+      "name": "FirstName",
+      "type": "string",
+      "label": "FirstName"
+    },
+    {
+      "name": "LastName",
+      "type": "string",
+      "label": "LastName"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "label": "Email"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Street",
+      "type": "textarea",
+      "label": "Street"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "label": "State"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "Latitude",
+      "type": "double",
+      "label": "Latitude"
+    },
+    {
+      "name": "Longitude",
+      "type": "double",
+      "label": "Longitude"
+    },
+    {
+      "name": "GeocodeAccuracy",
+      "type": "picklist",
+      "label": "GeocodeAccuracy"
+    },
+    {
+      "name": "Address",
+      "type": "address",
+      "label": "Address"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "ContactStatusDataDotCom",
+      "type": "picklist",
+      "label": "ContactStatusDataDotCom"
+    },
+    {
+      "name": "IsReviewedName",
+      "type": "boolean",
+      "label": "IsReviewedName"
+    },
+    {
+      "name": "IsReviewedEmail",
+      "type": "boolean",
+      "label": "IsReviewedEmail"
+    },
+    {
+      "name": "IsReviewedPhone",
+      "type": "boolean",
+      "label": "IsReviewedPhone"
+    },
+    {
+      "name": "IsReviewedAddress",
+      "type": "boolean",
+      "label": "IsReviewedAddress"
+    },
+    {
+      "name": "IsReviewedTitle",
+      "type": "boolean",
+      "label": "IsReviewedTitle"
+    },
+    {
+      "name": "IsDifferentFirstName",
+      "type": "boolean",
+      "label": "IsDifferentFirstName"
+    },
+    {
+      "name": "IsDifferentLastName",
+      "type": "boolean",
+      "label": "IsDifferentLastName"
+    },
+    {
+      "name": "IsDifferentEmail",
+      "type": "boolean",
+      "label": "IsDifferentEmail"
+    },
+    {
+      "name": "IsDifferentPhone",
+      "type": "boolean",
+      "label": "IsDifferentPhone"
+    },
+    {
+      "name": "IsDifferentStreet",
+      "type": "boolean",
+      "label": "IsDifferentStreet"
+    },
+    {
+      "name": "IsDifferentCity",
+      "type": "boolean",
+      "label": "IsDifferentCity"
+    },
+    {
+      "name": "IsDifferentState",
+      "type": "boolean",
+      "label": "IsDifferentState"
+    },
+    {
+      "name": "IsDifferentPostalCode",
+      "type": "boolean",
+      "label": "IsDifferentPostalCode"
+    },
+    {
+      "name": "IsDifferentCountry",
+      "type": "boolean",
+      "label": "IsDifferentCountry"
+    },
+    {
+      "name": "IsDifferentTitle",
+      "type": "boolean",
+      "label": "IsDifferentTitle"
+    },
+    {
+      "name": "IsDifferentStateCode",
+      "type": "boolean",
+      "label": "IsDifferentStateCode"
+    },
+    {
+      "name": "IsDifferentCountryCode",
+      "type": "boolean",
+      "label": "IsDifferentCountryCode"
+    },
+    {
+      "name": "CleanedByJob",
+      "type": "boolean",
+      "label": "CleanedByJob"
+    },
+    {
+      "name": "CleanedByUser",
+      "type": "boolean",
+      "label": "CleanedByUser"
+    },
+    {
+      "name": "IsFlaggedWrongName",
+      "type": "boolean",
+      "label": "IsFlaggedWrongName"
+    },
+    {
+      "name": "IsFlaggedWrongEmail",
+      "type": "boolean",
+      "label": "IsFlaggedWrongEmail"
+    },
+    {
+      "name": "IsFlaggedWrongPhone",
+      "type": "boolean",
+      "label": "IsFlaggedWrongPhone"
+    },
+    {
+      "name": "IsFlaggedWrongAddress",
+      "type": "boolean",
+      "label": "IsFlaggedWrongAddress"
+    },
+    {
+      "name": "IsFlaggedWrongTitle",
+      "type": "boolean",
+      "label": "IsFlaggedWrongTitle"
+    },
+    {
+      "name": "DataDotComId",
+      "type": "string",
+      "label": "DataDotComId"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Contact",
+      "type": "parent",
+      "parentObject": "Contact",
+      "field": "ContactId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastStatusChangedById"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "label": "ThirdPartyAccountLink",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ThirdPartyAccountLinkKey",
+      "type": "string",
+      "label": "ThirdPartyAccountLinkKey"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SsoProviderId",
+      "type": "reference",
+      "label": "SsoProviderId",
+      "referenceTo": "AuthProvider"
+    },
+    {
+      "name": "Handle",
+      "type": "string",
+      "label": "Handle"
+    },
+    {
+      "name": "RemoteIdentifier",
+      "type": "string",
+      "label": "RemoteIdentifier"
+    },
+    {
+      "name": "Provider",
+      "type": "string",
+      "label": "Provider"
+    },
+    {
+      "name": "SsoProviderName",
+      "type": "string",
+      "label": "SsoProviderName"
+    },
+    {
+      "name": "IsNotSsoUsable",
+      "type": "boolean",
+      "label": "IsNotSsoUsable"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "AuthProvider",
+      "type": "parent",
+      "parentObject": "AuthProvider",
+      "field": "SsoProviderId"
+    }
+  ]
+}

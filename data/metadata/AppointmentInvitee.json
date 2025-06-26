@@ -1,0 +1,100 @@
+{
+  "label": "AppointmentInvitee",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "AppointmentInvitationId",
+      "type": "reference",
+      "label": "AppointmentInvitationId",
+      "referenceTo": "AppointmentInvitation"
+    },
+    {
+      "name": "ParticipantServiceResourceId",
+      "type": "reference",
+      "label": "ParticipantServiceResourceId",
+      "referenceTo": "ServiceResource"
+    },
+    {
+      "name": "IsRequiredResource",
+      "type": "boolean",
+      "label": "IsRequiredResource"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AppointmentInvitation",
+      "type": "parent",
+      "parentObject": "AppointmentInvitation",
+      "field": "AppointmentInvitationId"
+    },
+    {
+      "name": "ServiceResource",
+      "type": "parent",
+      "parentObject": "ServiceResource",
+      "field": "ParticipantServiceResourceId"
+    }
+  ]
+}

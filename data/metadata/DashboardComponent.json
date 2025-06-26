@@ -1,0 +1,47 @@
+{
+  "label": "DashboardComponent",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "DashboardId",
+      "type": "reference",
+      "label": "DashboardId",
+      "referenceTo": "Dashboard"
+    },
+    {
+      "name": "CustomReportId",
+      "type": "reference",
+      "label": "CustomReportId",
+      "referenceTo": "Report"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Dashboard",
+      "type": "parent",
+      "parentObject": "Dashboard",
+      "field": "DashboardId"
+    },
+    {
+      "name": "Report",
+      "type": "parent",
+      "parentObject": "Report",
+      "field": "CustomReportId"
+    },
+    {
+      "name": "DashboardComponentFeeds",
+      "type": "child",
+      "childObject": "DashboardComponentFeed",
+      "field": "ParentId"
+    }
+  ]
+}

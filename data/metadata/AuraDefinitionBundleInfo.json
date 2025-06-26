@@ -1,0 +1,41 @@
+{
+  "label": "AuraDefinitionBundleInfo",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "AuraDefinitionBundleId",
+      "type": "string",
+      "label": "AuraDefinitionBundleId"
+    },
+    {
+      "name": "ApiVersion",
+      "type": "double",
+      "label": "ApiVersion"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

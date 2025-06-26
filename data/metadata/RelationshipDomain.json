@@ -1,0 +1,66 @@
+{
+  "label": "RelationshipDomain",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "ParentSobjectId",
+      "type": "string",
+      "label": "ParentSobjectId"
+    },
+    {
+      "name": "ChildSobjectId",
+      "type": "string",
+      "label": "ChildSobjectId"
+    },
+    {
+      "name": "FieldId",
+      "type": "string",
+      "label": "FieldId"
+    },
+    {
+      "name": "RelationshipInfoId",
+      "type": "string",
+      "label": "RelationshipInfoId"
+    },
+    {
+      "name": "RelationshipName",
+      "type": "string",
+      "label": "RelationshipName"
+    },
+    {
+      "name": "IsCascadeDelete",
+      "type": "boolean",
+      "label": "IsCascadeDelete"
+    },
+    {
+      "name": "IsDeprecatedAndHidden",
+      "type": "boolean",
+      "label": "IsDeprecatedAndHidden"
+    },
+    {
+      "name": "IsRestrictedDelete",
+      "type": "boolean",
+      "label": "IsRestrictedDelete"
+    },
+    {
+      "name": "JunctionIdListNames",
+      "type": "complexvalue",
+      "label": "JunctionIdListNames"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

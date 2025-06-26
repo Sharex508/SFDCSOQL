@@ -1,0 +1,73 @@
+{
+  "label": "CaseShare",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CaseId",
+      "type": "reference",
+      "label": "CaseId",
+      "referenceTo": "Case"
+    },
+    {
+      "name": "UserOrGroupId",
+      "type": "reference",
+      "label": "UserOrGroupId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "CaseAccessLevel",
+      "type": "picklist",
+      "label": "CaseAccessLevel"
+    },
+    {
+      "name": "RowCause",
+      "type": "picklist",
+      "label": "RowCause"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Case",
+      "type": "parent",
+      "parentObject": "Case",
+      "field": "CaseId"
+    },
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "UserOrGroupId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

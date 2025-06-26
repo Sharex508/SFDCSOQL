@@ -1,0 +1,144 @@
+{
+  "label": "EmailServicesFunction",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "FunctionName",
+      "type": "string",
+      "label": "FunctionName"
+    },
+    {
+      "name": "AuthorizedSenders",
+      "type": "textarea",
+      "label": "AuthorizedSenders"
+    },
+    {
+      "name": "IsAuthenticationRequired",
+      "type": "boolean",
+      "label": "IsAuthenticationRequired"
+    },
+    {
+      "name": "IsTlsRequired",
+      "type": "boolean",
+      "label": "IsTlsRequired"
+    },
+    {
+      "name": "AttachmentOption",
+      "type": "picklist",
+      "label": "AttachmentOption"
+    },
+    {
+      "name": "ApexClassId",
+      "type": "reference",
+      "label": "ApexClassId",
+      "referenceTo": "ApexClass"
+    },
+    {
+      "name": "OverLimitAction",
+      "type": "picklist",
+      "label": "OverLimitAction"
+    },
+    {
+      "name": "FunctionInactiveAction",
+      "type": "picklist",
+      "label": "FunctionInactiveAction"
+    },
+    {
+      "name": "AddressInactiveAction",
+      "type": "picklist",
+      "label": "AddressInactiveAction"
+    },
+    {
+      "name": "AuthenticationFailureAction",
+      "type": "picklist",
+      "label": "AuthenticationFailureAction"
+    },
+    {
+      "name": "AuthorizationFailureAction",
+      "type": "picklist",
+      "label": "AuthorizationFailureAction"
+    },
+    {
+      "name": "IsErrorRoutingEnabled",
+      "type": "boolean",
+      "label": "IsErrorRoutingEnabled"
+    },
+    {
+      "name": "ErrorRoutingAddress",
+      "type": "email",
+      "label": "ErrorRoutingAddress"
+    },
+    {
+      "name": "IsTextAttachmentsAsBinary",
+      "type": "boolean",
+      "label": "IsTextAttachmentsAsBinary"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ApexClass",
+      "type": "parent",
+      "parentObject": "ApexClass",
+      "field": "ApexClassId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "EmailServicesAddresses",
+      "type": "child",
+      "childObject": "EmailServicesAddress",
+      "field": "FunctionId"
+    }
+  ]
+}

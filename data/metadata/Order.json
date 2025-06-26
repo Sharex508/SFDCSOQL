@@ -1,0 +1,49 @@
+{
+  "label": "Order",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Order ID"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Order Name"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "EffectiveDate",
+      "type": "date",
+      "label": "Effective Date"
+    },
+    {
+      "name": "TotalAmount",
+      "type": "currency",
+      "label": "Total Amount"
+    },
+    {
+      "name": "QuoteId",
+      "type": "reference",
+      "label": "Quote ID"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Quote",
+      "type": "parent",
+      "parentObject": "Quote",
+      "field": "QuoteId"
+    },
+    {
+      "name": "OrderLineItems",
+      "type": "child",
+      "childObject": "OrderLineItem",
+      "field": "OrderId"
+    }
+  ]
+}

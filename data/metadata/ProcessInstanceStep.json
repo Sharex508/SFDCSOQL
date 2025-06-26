@@ -1,0 +1,112 @@
+{
+  "label": "ProcessInstanceStep",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ProcessInstanceId",
+      "type": "reference",
+      "label": "ProcessInstanceId",
+      "referenceTo": "ProcessInstance"
+    },
+    {
+      "name": "StepStatus",
+      "type": "picklist",
+      "label": "StepStatus"
+    },
+    {
+      "name": "OriginalActorId",
+      "type": "reference",
+      "label": "OriginalActorId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "ActorId",
+      "type": "reference",
+      "label": "ActorId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "Comments",
+      "type": "string",
+      "label": "Comments"
+    },
+    {
+      "name": "StepNodeId",
+      "type": "reference",
+      "label": "StepNodeId",
+      "referenceTo": "ProcessNode"
+    },
+    {
+      "name": "ElapsedTimeInDays",
+      "type": "double",
+      "label": "ElapsedTimeInDays"
+    },
+    {
+      "name": "ElapsedTimeInHours",
+      "type": "double",
+      "label": "ElapsedTimeInHours"
+    },
+    {
+      "name": "ElapsedTimeInMinutes",
+      "type": "double",
+      "label": "ElapsedTimeInMinutes"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ProcessInstance",
+      "type": "parent",
+      "parentObject": "ProcessInstance",
+      "field": "ProcessInstanceId"
+    },
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OriginalActorId"
+    },
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "ActorId"
+    },
+    {
+      "name": "ProcessNode",
+      "type": "parent",
+      "parentObject": "ProcessNode",
+      "field": "StepNodeId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    }
+  ]
+}

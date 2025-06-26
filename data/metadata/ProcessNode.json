@@ -1,0 +1,56 @@
+{
+  "label": "ProcessNode",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "ProcessDefinitionId",
+      "type": "reference",
+      "label": "ProcessDefinitionId",
+      "referenceTo": "ProcessDefinition"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ProcessDefinition",
+      "type": "parent",
+      "parentObject": "ProcessDefinition",
+      "field": "ProcessDefinitionId"
+    },
+    {
+      "name": "ProcessInstanceNodes",
+      "type": "child",
+      "childObject": "ProcessInstanceNode",
+      "field": "ProcessNodeId"
+    },
+    {
+      "name": "ProcessInstanceSteps",
+      "type": "child",
+      "childObject": "ProcessInstanceStep",
+      "field": "StepNodeId"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "label": "ContentDocument",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "IsArchived",
+      "type": "boolean",
+      "label": "IsArchived"
+    },
+    {
+      "name": "ArchivedById",
+      "type": "reference",
+      "label": "ArchivedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "ArchivedDate",
+      "type": "date",
+      "label": "ArchivedDate"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "PublishStatus",
+      "type": "picklist",
+      "label": "PublishStatus"
+    },
+    {
+      "name": "LatestPublishedVersionId",
+      "type": "reference",
+      "label": "LatestPublishedVersionId",
+      "referenceTo": "ContentVersion"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "ContentWorkspace"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "ContentSize",
+      "type": "int",
+      "label": "ContentSize"
+    },
+    {
+      "name": "FileType",
+      "type": "string",
+      "label": "FileType"
+    },
+    {
+      "name": "FileExtension",
+      "type": "string",
+      "label": "FileExtension"
+    },
+    {
+      "name": "SharingOption",
+      "type": "picklist",
+      "label": "SharingOption"
+    },
+    {
+      "name": "SharingPrivacy",
+      "type": "picklist",
+      "label": "SharingPrivacy"
+    },
+    {
+      "name": "ContentModifiedDate",
+      "type": "datetime",
+      "label": "ContentModifiedDate"
+    },
+    {
+      "name": "ContentAssetId",
+      "type": "reference",
+      "label": "ContentAssetId",
+      "referenceTo": "ContentAsset"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "ArchivedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "ContentVersion",
+      "type": "parent",
+      "parentObject": "ContentVersion",
+      "field": "LatestPublishedVersionId"
+    },
+    {
+      "name": "ContentWorkspace",
+      "type": "parent",
+      "parentObject": "ContentWorkspace",
+      "field": "ParentId"
+    },
+    {
+      "name": "ContentAsset",
+      "type": "parent",
+      "parentObject": "ContentAsset",
+      "field": "ContentAssetId"
+    },
+    {
+      "name": "AuthorizationFormTexts",
+      "type": "child",
+      "childObject": "AuthorizationFormText",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "ContentAssets",
+      "type": "child",
+      "childObject": "ContentAsset",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "ContentDistributions",
+      "type": "child",
+      "childObject": "ContentDistribution",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "ContentDocumentFeeds",
+      "type": "child",
+      "childObject": "ContentDocumentFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ContentDocumentHistories",
+      "type": "child",
+      "childObject": "ContentDocumentHistory",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "ContentDocumentLinks",
+      "type": "child",
+      "childObject": "ContentDocumentLink",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "ContentDocumentSubscriptions",
+      "type": "child",
+      "childObject": "ContentDocumentSubscription",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "ContentFolderMembers",
+      "type": "child",
+      "childObject": "ContentFolderMember",
+      "field": "ChildRecordId"
+    },
+    {
+      "name": "ContentVersions",
+      "type": "child",
+      "childObject": "ContentVersion",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "ContentVersionComments",
+      "type": "child",
+      "childObject": "ContentVersionComment",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "ContentWorkspaceDocs",
+      "type": "child",
+      "childObject": "ContentWorkspaceDoc",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "FileEventStores",
+      "type": "child",
+      "childObject": "FileEventStore",
+      "field": "DocumentId"
+    },
+    {
+      "name": "Images",
+      "type": "child",
+      "childObject": "Image",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "VoiceCallRecordings",
+      "type": "child",
+      "childObject": "VoiceCallRecording",
+      "field": "MediaContentId"
+    }
+  ]
+}

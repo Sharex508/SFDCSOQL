@@ -1,0 +1,182 @@
+{
+  "label": "ConnectedApplication",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "OptionsAllowAdminApprovedUsersOnly",
+      "type": "boolean",
+      "label": "OptionsAllowAdminApprovedUsersOnly"
+    },
+    {
+      "name": "OptionsRefreshTokenValidityMetric",
+      "type": "boolean",
+      "label": "OptionsRefreshTokenValidityMetric"
+    },
+    {
+      "name": "OptionsHasSessionLevelPolicy",
+      "type": "boolean",
+      "label": "OptionsHasSessionLevelPolicy"
+    },
+    {
+      "name": "OptionsIsInternal",
+      "type": "boolean",
+      "label": "OptionsIsInternal"
+    },
+    {
+      "name": "OptionsFullContentPushNotifications",
+      "type": "boolean",
+      "label": "OptionsFullContentPushNotifications"
+    },
+    {
+      "name": "OptionsCodeCredentialGuestEnabled",
+      "type": "boolean",
+      "label": "OptionsCodeCredentialGuestEnabled"
+    },
+    {
+      "name": "MobileSessionTimeout",
+      "type": "picklist",
+      "label": "MobileSessionTimeout"
+    },
+    {
+      "name": "PinLength",
+      "type": "picklist",
+      "label": "PinLength"
+    },
+    {
+      "name": "StartUrl",
+      "type": "url",
+      "label": "StartUrl"
+    },
+    {
+      "name": "MobileStartUrl",
+      "type": "url",
+      "label": "MobileStartUrl"
+    },
+    {
+      "name": "RefreshTokenValidityPeriod",
+      "type": "int",
+      "label": "RefreshTokenValidityPeriod"
+    },
+    {
+      "name": "UvidTimeout",
+      "type": "picklist",
+      "label": "UvidTimeout"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ApiEvents",
+      "type": "child",
+      "childObject": "ApiEvent",
+      "field": "ConnectedAppId"
+    },
+    {
+      "name": "IdentityProviderEventStores",
+      "type": "child",
+      "childObject": "IdentityProviderEventStore",
+      "field": "AppId"
+    },
+    {
+      "name": "IdentityVerificationEvents",
+      "type": "child",
+      "childObject": "IdentityVerificationEvent",
+      "field": "ResourceId"
+    },
+    {
+      "name": "IdpEventLogs",
+      "type": "child",
+      "childObject": "IdpEventLog",
+      "field": "AppId"
+    },
+    {
+      "name": "InstalledMobileApps",
+      "type": "child",
+      "childObject": "InstalledMobileApp",
+      "field": "ConnectedApplicationId"
+    },
+    {
+      "name": "SPSamlAttributeses",
+      "type": "child",
+      "childObject": "SPSamlAttributes",
+      "field": "ConnectivityId"
+    },
+    {
+      "name": "UserProvAccounts",
+      "type": "child",
+      "childObject": "UserProvAccount",
+      "field": "ConnectedAppId"
+    },
+    {
+      "name": "UserProvAccountStagings",
+      "type": "child",
+      "childObject": "UserProvAccountStaging",
+      "field": "ConnectedAppId"
+    },
+    {
+      "name": "UserProvisioningConfigs",
+      "type": "child",
+      "childObject": "UserProvisioningConfig",
+      "field": "ConnectedAppId"
+    },
+    {
+      "name": "UserProvisioningRequests",
+      "type": "child",
+      "childObject": "UserProvisioningRequest",
+      "field": "ConnectedAppId"
+    },
+    {
+      "name": "VerificationHistories",
+      "type": "child",
+      "childObject": "VerificationHistory",
+      "field": "ResourceId"
+    }
+  ]
+}

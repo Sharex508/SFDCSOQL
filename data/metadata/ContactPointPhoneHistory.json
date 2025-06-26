@@ -1,0 +1,71 @@
+{
+  "label": "ContactPointPhoneHistory",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ContactPointPhoneId",
+      "type": "reference",
+      "label": "ContactPointPhoneId",
+      "referenceTo": "ContactPointPhone"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "Field",
+      "type": "picklist",
+      "label": "Field"
+    },
+    {
+      "name": "DataType",
+      "type": "picklist",
+      "label": "DataType"
+    },
+    {
+      "name": "OldValue",
+      "type": "anytype",
+      "label": "OldValue"
+    },
+    {
+      "name": "NewValue",
+      "type": "anytype",
+      "label": "NewValue"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ContactPointPhone",
+      "type": "parent",
+      "parentObject": "ContactPointPhone",
+      "field": "ContactPointPhoneId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    }
+  ]
+}

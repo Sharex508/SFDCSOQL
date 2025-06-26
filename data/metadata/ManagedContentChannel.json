@@ -1,0 +1,101 @@
+{
+  "label": "ManagedContentChannel",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "OptionsIsSearchable",
+      "type": "boolean",
+      "label": "OptionsIsSearchable"
+    },
+    {
+      "name": "OptionsIsCacheControlPublic",
+      "type": "boolean",
+      "label": "OptionsIsCacheControlPublic"
+    },
+    {
+      "name": "OptionsIsDomainLocked",
+      "type": "boolean",
+      "label": "OptionsIsDomainLocked"
+    },
+    {
+      "name": "Domain",
+      "type": "picklist",
+      "label": "Domain"
+    },
+    {
+      "name": "DomainHostName",
+      "type": "string",
+      "label": "DomainHostName"
+    },
+    {
+      "name": "CacheControlMaxAge",
+      "type": "long",
+      "label": "CacheControlMaxAge"
+    },
+    {
+      "name": "MediaCacheControlMaxAge",
+      "type": "long",
+      "label": "MediaCacheControlMaxAge"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "label": "LightningUsageByFlexiPageMetrics",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "MetricsDate",
+      "type": "date",
+      "label": "MetricsDate"
+    },
+    {
+      "name": "FlexiPageType",
+      "type": "string",
+      "label": "FlexiPageType"
+    },
+    {
+      "name": "FlexiPageNameOrId",
+      "type": "string",
+      "label": "FlexiPageNameOrId"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "RecordCountEPT",
+      "type": "int",
+      "label": "RecordCountEPT"
+    },
+    {
+      "name": "TotalCount",
+      "type": "int",
+      "label": "TotalCount"
+    },
+    {
+      "name": "MedianEPT",
+      "type": "int",
+      "label": "MedianEPT"
+    },
+    {
+      "name": "SumEPT",
+      "type": "int",
+      "label": "SumEPT"
+    },
+    {
+      "name": "EptBinUnder3",
+      "type": "int",
+      "label": "EptBinUnder3"
+    },
+    {
+      "name": "EptBin3To5",
+      "type": "int",
+      "label": "EptBin3To5"
+    },
+    {
+      "name": "EptBin5To8",
+      "type": "int",
+      "label": "EptBin5To8"
+    },
+    {
+      "name": "EptBin8To10",
+      "type": "int",
+      "label": "EptBin8To10"
+    },
+    {
+      "name": "EptBinOver10",
+      "type": "int",
+      "label": "EptBinOver10"
+    },
+    {
+      "name": "CoresBinUnder2",
+      "type": "int",
+      "label": "CoresBinUnder2"
+    },
+    {
+      "name": "CoresBin2To4",
+      "type": "int",
+      "label": "CoresBin2To4"
+    },
+    {
+      "name": "CoresBin4To8",
+      "type": "int",
+      "label": "CoresBin4To8"
+    },
+    {
+      "name": "CoresBinOver8",
+      "type": "int",
+      "label": "CoresBinOver8"
+    },
+    {
+      "name": "DownlinkBinUnder3",
+      "type": "int",
+      "label": "DownlinkBinUnder3"
+    },
+    {
+      "name": "DownlinkBin3To5",
+      "type": "int",
+      "label": "DownlinkBin3To5"
+    },
+    {
+      "name": "DownlinkBin5To8",
+      "type": "int",
+      "label": "DownlinkBin5To8"
+    },
+    {
+      "name": "DownlinkBin8To10",
+      "type": "int",
+      "label": "DownlinkBin8To10"
+    },
+    {
+      "name": "DownlinkBinOver10",
+      "type": "int",
+      "label": "DownlinkBinOver10"
+    },
+    {
+      "name": "RttBinUnder50",
+      "type": "int",
+      "label": "RttBinUnder50"
+    },
+    {
+      "name": "RttBin50To150",
+      "type": "int",
+      "label": "RttBin50To150"
+    },
+    {
+      "name": "RttBinOver150",
+      "type": "int",
+      "label": "RttBinOver150"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

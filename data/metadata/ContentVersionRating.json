@@ -1,0 +1,56 @@
+{
+  "label": "ContentVersionRating",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "ContentVersionId",
+      "type": "reference",
+      "label": "ContentVersionId",
+      "referenceTo": "ContentVersion"
+    },
+    {
+      "name": "Rating",
+      "type": "int",
+      "label": "Rating"
+    },
+    {
+      "name": "UserComment",
+      "type": "textarea",
+      "label": "UserComment"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "ContentVersion",
+      "type": "parent",
+      "parentObject": "ContentVersion",
+      "field": "ContentVersionId"
+    }
+  ]
+}

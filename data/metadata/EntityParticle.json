@@ -1,0 +1,286 @@
+{
+  "label": "EntityParticle",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "QualifiedApiName",
+      "type": "string",
+      "label": "QualifiedApiName"
+    },
+    {
+      "name": "EntityDefinitionId",
+      "type": "string",
+      "label": "EntityDefinitionId"
+    },
+    {
+      "name": "FieldDefinitionId",
+      "type": "string",
+      "label": "FieldDefinitionId"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "Length",
+      "type": "int",
+      "label": "Length"
+    },
+    {
+      "name": "DataType",
+      "type": "string",
+      "label": "DataType"
+    },
+    {
+      "name": "ServiceDataTypeId",
+      "type": "string",
+      "label": "ServiceDataTypeId"
+    },
+    {
+      "name": "ValueTypeId",
+      "type": "string",
+      "label": "ValueTypeId"
+    },
+    {
+      "name": "ExtraTypeInfo",
+      "type": "string",
+      "label": "ExtraTypeInfo"
+    },
+    {
+      "name": "IsAutonumber",
+      "type": "boolean",
+      "label": "IsAutonumber"
+    },
+    {
+      "name": "ByteLength",
+      "type": "int",
+      "label": "ByteLength"
+    },
+    {
+      "name": "IsCaseSensitive",
+      "type": "boolean",
+      "label": "IsCaseSensitive"
+    },
+    {
+      "name": "IsUnique",
+      "type": "boolean",
+      "label": "IsUnique"
+    },
+    {
+      "name": "IsCreatable",
+      "type": "boolean",
+      "label": "IsCreatable"
+    },
+    {
+      "name": "IsUpdatable",
+      "type": "boolean",
+      "label": "IsUpdatable"
+    },
+    {
+      "name": "IsDefaultedOnCreate",
+      "type": "boolean",
+      "label": "IsDefaultedOnCreate"
+    },
+    {
+      "name": "IsWriteRequiresMasterRead",
+      "type": "boolean",
+      "label": "IsWriteRequiresMasterRead"
+    },
+    {
+      "name": "IsCalculated",
+      "type": "boolean",
+      "label": "IsCalculated"
+    },
+    {
+      "name": "IsHighScaleNumber",
+      "type": "boolean",
+      "label": "IsHighScaleNumber"
+    },
+    {
+      "name": "IsHtmlFormatted",
+      "type": "boolean",
+      "label": "IsHtmlFormatted"
+    },
+    {
+      "name": "IsNameField",
+      "type": "boolean",
+      "label": "IsNameField"
+    },
+    {
+      "name": "IsNillable",
+      "type": "boolean",
+      "label": "IsNillable"
+    },
+    {
+      "name": "IsPermissionable",
+      "type": "boolean",
+      "label": "IsPermissionable"
+    },
+    {
+      "name": "IsEncrypted",
+      "type": "boolean",
+      "label": "IsEncrypted"
+    },
+    {
+      "name": "Digits",
+      "type": "int",
+      "label": "Digits"
+    },
+    {
+      "name": "InlineHelpText",
+      "type": "string",
+      "label": "InlineHelpText"
+    },
+    {
+      "name": "RelationshipName",
+      "type": "string",
+      "label": "RelationshipName"
+    },
+    {
+      "name": "ReferenceTargetField",
+      "type": "string",
+      "label": "ReferenceTargetField"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "Mask",
+      "type": "string",
+      "label": "Mask"
+    },
+    {
+      "name": "MaskType",
+      "type": "string",
+      "label": "MaskType"
+    },
+    {
+      "name": "IsWorkflowFilterable",
+      "type": "boolean",
+      "label": "IsWorkflowFilterable"
+    },
+    {
+      "name": "IsCompactLayoutable",
+      "type": "boolean",
+      "label": "IsCompactLayoutable"
+    },
+    {
+      "name": "Precision",
+      "type": "int",
+      "label": "Precision"
+    },
+    {
+      "name": "Scale",
+      "type": "int",
+      "label": "Scale"
+    },
+    {
+      "name": "IsFieldHistoryTracked",
+      "type": "boolean",
+      "label": "IsFieldHistoryTracked"
+    },
+    {
+      "name": "IsApiFilterable",
+      "type": "boolean",
+      "label": "IsApiFilterable"
+    },
+    {
+      "name": "IsApiSortable",
+      "type": "boolean",
+      "label": "IsApiSortable"
+    },
+    {
+      "name": "IsApiGroupable",
+      "type": "boolean",
+      "label": "IsApiGroupable"
+    },
+    {
+      "name": "IsListVisible",
+      "type": "boolean",
+      "label": "IsListVisible"
+    },
+    {
+      "name": "IsLayoutable",
+      "type": "boolean",
+      "label": "IsLayoutable"
+    },
+    {
+      "name": "IsDependentPicklist",
+      "type": "boolean",
+      "label": "IsDependentPicklist"
+    },
+    {
+      "name": "IsDeprecatedAndHidden",
+      "type": "boolean",
+      "label": "IsDeprecatedAndHidden"
+    },
+    {
+      "name": "IsDisplayLocationInDecimal",
+      "type": "boolean",
+      "label": "IsDisplayLocationInDecimal"
+    },
+    {
+      "name": "DefaultValueFormula",
+      "type": "string",
+      "label": "DefaultValueFormula"
+    },
+    {
+      "name": "IsIdLookup",
+      "type": "boolean",
+      "label": "IsIdLookup"
+    },
+    {
+      "name": "IsNamePointing",
+      "type": "boolean",
+      "label": "IsNamePointing"
+    },
+    {
+      "name": "RelationshipOrder",
+      "type": "int",
+      "label": "RelationshipOrder"
+    },
+    {
+      "name": "ReferenceTo",
+      "type": "complexvalue",
+      "label": "ReferenceTo"
+    },
+    {
+      "name": "IsComponent",
+      "type": "boolean",
+      "label": "IsComponent"
+    },
+    {
+      "name": "IsCompound",
+      "type": "boolean",
+      "label": "IsCompound"
+    }
+  ],
+  "relationships": []
+}

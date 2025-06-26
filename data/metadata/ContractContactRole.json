@@ -1,0 +1,95 @@
+{
+  "label": "ContractContactRole",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ContractId",
+      "type": "reference",
+      "label": "ContractId",
+      "referenceTo": "Contract"
+    },
+    {
+      "name": "ContactId",
+      "type": "reference",
+      "label": "ContactId",
+      "referenceTo": "Contact"
+    },
+    {
+      "name": "Role",
+      "type": "picklist",
+      "label": "Role"
+    },
+    {
+      "name": "IsPrimary",
+      "type": "boolean",
+      "label": "IsPrimary"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Contract",
+      "type": "parent",
+      "parentObject": "Contract",
+      "field": "ContractId"
+    },
+    {
+      "name": "Contact",
+      "type": "parent",
+      "parentObject": "Contact",
+      "field": "ContactId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

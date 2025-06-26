@@ -1,0 +1,107 @@
+{
+  "label": "PromotionSegmentBuyerGroup",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "PromotionSegmentId",
+      "type": "reference",
+      "label": "PromotionSegmentId",
+      "referenceTo": "PromotionSegment"
+    },
+    {
+      "name": "BuyerGroupId",
+      "type": "reference",
+      "label": "BuyerGroupId",
+      "referenceTo": "BuyerGroup"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "PromotionSegment",
+      "type": "parent",
+      "parentObject": "PromotionSegment",
+      "field": "PromotionSegmentId"
+    },
+    {
+      "name": "BuyerGroup",
+      "type": "parent",
+      "parentObject": "BuyerGroup",
+      "field": "BuyerGroupId"
+    },
+    {
+      "name": "PromotionSegmentBuyerGroupFeeds",
+      "type": "child",
+      "childObject": "PromotionSegmentBuyerGroupFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "PromotionSegmentBuyerGroupHistories",
+      "type": "child",
+      "childObject": "PromotionSegmentBuyerGroupHistory",
+      "field": "PromotionSegmentBuyerGroupId"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "label": "ApiEvent",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "EventIdentifier",
+      "type": "string",
+      "label": "EventIdentifier"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Username",
+      "type": "string",
+      "label": "Username"
+    },
+    {
+      "name": "EventDate",
+      "type": "datetime",
+      "label": "EventDate"
+    },
+    {
+      "name": "RelatedEventIdentifier",
+      "type": "string",
+      "label": "RelatedEventIdentifier"
+    },
+    {
+      "name": "LoginHistoryId",
+      "type": "reference",
+      "label": "LoginHistoryId",
+      "referenceTo": "LoginHistory"
+    },
+    {
+      "name": "RowsProcessed",
+      "type": "double",
+      "label": "RowsProcessed"
+    },
+    {
+      "name": "RowsReturned",
+      "type": "double",
+      "label": "RowsReturned"
+    },
+    {
+      "name": "Operation",
+      "type": "picklist",
+      "label": "Operation"
+    },
+    {
+      "name": "QueriedEntities",
+      "type": "string",
+      "label": "QueriedEntities"
+    },
+    {
+      "name": "PolicyId",
+      "type": "reference",
+      "label": "PolicyId",
+      "referenceTo": "TransactionSecurityPolicy"
+    },
+    {
+      "name": "PolicyOutcome",
+      "type": "picklist",
+      "label": "PolicyOutcome"
+    },
+    {
+      "name": "EvaluationTime",
+      "type": "double",
+      "label": "EvaluationTime"
+    },
+    {
+      "name": "SessionKey",
+      "type": "string",
+      "label": "SessionKey"
+    },
+    {
+      "name": "LoginKey",
+      "type": "string",
+      "label": "LoginKey"
+    },
+    {
+      "name": "SessionLevel",
+      "type": "picklist",
+      "label": "SessionLevel"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "AdditionalInfo",
+      "type": "string",
+      "label": "AdditionalInfo"
+    },
+    {
+      "name": "ApiType",
+      "type": "string",
+      "label": "ApiType"
+    },
+    {
+      "name": "ApiVersion",
+      "type": "double",
+      "label": "ApiVersion"
+    },
+    {
+      "name": "Application",
+      "type": "string",
+      "label": "Application"
+    },
+    {
+      "name": "Client",
+      "type": "string",
+      "label": "Client"
+    },
+    {
+      "name": "ConnectedAppId",
+      "type": "reference",
+      "label": "ConnectedAppId",
+      "referenceTo": "ConnectedApplication"
+    },
+    {
+      "name": "ElapsedTime",
+      "type": "int",
+      "label": "ElapsedTime"
+    },
+    {
+      "name": "Platform",
+      "type": "string",
+      "label": "Platform"
+    },
+    {
+      "name": "Query",
+      "type": "string",
+      "label": "Query"
+    },
+    {
+      "name": "Records",
+      "type": "json",
+      "label": "Records"
+    },
+    {
+      "name": "UserAgent",
+      "type": "string",
+      "label": "UserAgent"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "LoginHistory",
+      "type": "parent",
+      "parentObject": "LoginHistory",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "TransactionSecurityPolicy",
+      "type": "parent",
+      "parentObject": "TransactionSecurityPolicy",
+      "field": "PolicyId"
+    },
+    {
+      "name": "ConnectedApplication",
+      "type": "parent",
+      "parentObject": "ConnectedApplication",
+      "field": "ConnectedAppId"
+    }
+  ]
+}

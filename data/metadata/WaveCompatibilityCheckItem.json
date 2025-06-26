@@ -1,0 +1,98 @@
+{
+  "label": "WaveCompatibilityCheckItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "TaskName",
+      "type": "string",
+      "label": "TaskName"
+    },
+    {
+      "name": "TaskResult",
+      "type": "picklist",
+      "label": "TaskResult"
+    },
+    {
+      "name": "TemplateApiName",
+      "type": "picklist",
+      "label": "TemplateApiName"
+    },
+    {
+      "name": "TemplateVersion",
+      "type": "string",
+      "label": "TemplateVersion"
+    },
+    {
+      "name": "Payload",
+      "type": "textarea",
+      "label": "Payload"
+    },
+    {
+      "name": "WaveAutoInstallRequestId",
+      "type": "reference",
+      "label": "WaveAutoInstallRequestId",
+      "referenceTo": "WaveAutoInstallRequest"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "WaveAutoInstallRequest",
+      "type": "parent",
+      "parentObject": "WaveAutoInstallRequest",
+      "field": "WaveAutoInstallRequestId"
+    }
+  ]
+}

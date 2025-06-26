@@ -1,0 +1,140 @@
+{
+  "label": "UserRole",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "ParentRoleId",
+      "type": "reference",
+      "label": "ParentRoleId",
+      "referenceTo": "UserRole"
+    },
+    {
+      "name": "RollupDescription",
+      "type": "string",
+      "label": "RollupDescription"
+    },
+    {
+      "name": "OpportunityAccessForAccountOwner",
+      "type": "picklist",
+      "label": "OpportunityAccessForAccountOwner"
+    },
+    {
+      "name": "CaseAccessForAccountOwner",
+      "type": "picklist",
+      "label": "CaseAccessForAccountOwner"
+    },
+    {
+      "name": "ContactAccessForAccountOwner",
+      "type": "picklist",
+      "label": "ContactAccessForAccountOwner"
+    },
+    {
+      "name": "ForecastUserId",
+      "type": "reference",
+      "label": "ForecastUserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "MayForecastManagerShare",
+      "type": "boolean",
+      "label": "MayForecastManagerShare"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "PortalAccountId",
+      "type": "reference",
+      "label": "PortalAccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "PortalType",
+      "type": "picklist",
+      "label": "PortalType"
+    },
+    {
+      "name": "PortalAccountOwnerId",
+      "type": "reference",
+      "label": "PortalAccountOwnerId",
+      "referenceTo": "User"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "UserRole",
+      "type": "parent",
+      "parentObject": "UserRole",
+      "field": "ParentRoleId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "ForecastUserId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "PortalAccountId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "PortalAccountOwnerId"
+    },
+    {
+      "name": "RecentlyVieweds",
+      "type": "child",
+      "childObject": "RecentlyViewed",
+      "field": "UserRoleId"
+    },
+    {
+      "name": "Users",
+      "type": "child",
+      "childObject": "User",
+      "field": "UserRoleId"
+    },
+    {
+      "name": "UserRoles",
+      "type": "child",
+      "childObject": "UserRole",
+      "field": "ParentRoleId"
+    }
+  ]
+}

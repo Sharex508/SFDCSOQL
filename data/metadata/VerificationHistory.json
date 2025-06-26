@@ -1,0 +1,149 @@
+{
+  "label": "VerificationHistory",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "EventGroup",
+      "type": "int",
+      "label": "EventGroup"
+    },
+    {
+      "name": "VerificationTime",
+      "type": "datetime",
+      "label": "VerificationTime"
+    },
+    {
+      "name": "VerificationMethod",
+      "type": "picklist",
+      "label": "VerificationMethod"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Activity",
+      "type": "picklist",
+      "label": "Activity"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "LoginHistoryId",
+      "type": "reference",
+      "label": "LoginHistoryId",
+      "referenceTo": "LoginHistory"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "LoginGeoId",
+      "type": "reference",
+      "label": "LoginGeoId",
+      "referenceTo": "LoginGeo"
+    },
+    {
+      "name": "Remarks",
+      "type": "string",
+      "label": "Remarks"
+    },
+    {
+      "name": "ResourceId",
+      "type": "reference",
+      "label": "ResourceId",
+      "referenceTo": "ConnectedApplication"
+    },
+    {
+      "name": "Policy",
+      "type": "picklist",
+      "label": "Policy"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "LoginHistory",
+      "type": "parent",
+      "parentObject": "LoginHistory",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "LoginGeo",
+      "type": "parent",
+      "parentObject": "LoginGeo",
+      "field": "LoginGeoId"
+    },
+    {
+      "name": "ConnectedApplication",
+      "type": "parent",
+      "parentObject": "ConnectedApplication",
+      "field": "ResourceId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

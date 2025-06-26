@@ -1,0 +1,200 @@
+{
+  "label": "CartDeliveryGroup",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CartId",
+      "type": "reference",
+      "label": "CartId",
+      "referenceTo": "WebCart"
+    },
+    {
+      "name": "DesiredDeliveryDate",
+      "type": "datetime",
+      "label": "DesiredDeliveryDate"
+    },
+    {
+      "name": "ShippingInstructions",
+      "type": "textarea",
+      "label": "ShippingInstructions"
+    },
+    {
+      "name": "DeliverToFirstName",
+      "type": "string",
+      "label": "DeliverToFirstName"
+    },
+    {
+      "name": "DeliverToLastName",
+      "type": "string",
+      "label": "DeliverToLastName"
+    },
+    {
+      "name": "DeliverToName",
+      "type": "string",
+      "label": "DeliverToName"
+    },
+    {
+      "name": "DeliverToStreet",
+      "type": "textarea",
+      "label": "DeliverToStreet"
+    },
+    {
+      "name": "DeliverToCity",
+      "type": "string",
+      "label": "DeliverToCity"
+    },
+    {
+      "name": "DeliverToState",
+      "type": "string",
+      "label": "DeliverToState"
+    },
+    {
+      "name": "DeliverToPostalCode",
+      "type": "string",
+      "label": "DeliverToPostalCode"
+    },
+    {
+      "name": "DeliverToCountry",
+      "type": "string",
+      "label": "DeliverToCountry"
+    },
+    {
+      "name": "DeliverToLatitude",
+      "type": "double",
+      "label": "DeliverToLatitude"
+    },
+    {
+      "name": "DeliverToLongitude",
+      "type": "double",
+      "label": "DeliverToLongitude"
+    },
+    {
+      "name": "DeliverToGeocodeAccuracy",
+      "type": "picklist",
+      "label": "DeliverToGeocodeAccuracy"
+    },
+    {
+      "name": "DeliverToAddress",
+      "type": "address",
+      "label": "DeliverToAddress"
+    },
+    {
+      "name": "TotalProductAmount",
+      "type": "currency",
+      "label": "TotalProductAmount"
+    },
+    {
+      "name": "TotalChargeAmount",
+      "type": "currency",
+      "label": "TotalChargeAmount"
+    },
+    {
+      "name": "TotalAmount",
+      "type": "currency",
+      "label": "TotalAmount"
+    },
+    {
+      "name": "TotalProductTaxAmount",
+      "type": "currency",
+      "label": "TotalProductTaxAmount"
+    },
+    {
+      "name": "TotalChargeTaxAmount",
+      "type": "currency",
+      "label": "TotalChargeTaxAmount"
+    },
+    {
+      "name": "TotalTaxAmount",
+      "type": "currency",
+      "label": "TotalTaxAmount"
+    },
+    {
+      "name": "GrandTotalAmount",
+      "type": "currency",
+      "label": "GrandTotalAmount"
+    },
+    {
+      "name": "TotalAdjustmentAmount",
+      "type": "currency",
+      "label": "TotalAdjustmentAmount"
+    },
+    {
+      "name": "TotalAdjustmentTaxAmount",
+      "type": "currency",
+      "label": "TotalAdjustmentTaxAmount"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "WebCart",
+      "type": "parent",
+      "parentObject": "WebCart",
+      "field": "CartId"
+    },
+    {
+      "name": "CartDeliveryGroupMethods",
+      "type": "child",
+      "childObject": "CartDeliveryGroupMethod",
+      "field": "CartDeliveryGroupId"
+    },
+    {
+      "name": "CartItems",
+      "type": "child",
+      "childObject": "CartItem",
+      "field": "CartDeliveryGroupId"
+    }
+  ]
+}

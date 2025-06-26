@@ -1,0 +1,182 @@
+{
+  "label": "ExternalDataSource",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "Language",
+      "type": "picklist",
+      "label": "Language"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Endpoint",
+      "type": "textarea",
+      "label": "Endpoint"
+    },
+    {
+      "name": "Repository",
+      "type": "string",
+      "label": "Repository"
+    },
+    {
+      "name": "IsWritable",
+      "type": "boolean",
+      "label": "IsWritable"
+    },
+    {
+      "name": "PrincipalType",
+      "type": "picklist",
+      "label": "PrincipalType"
+    },
+    {
+      "name": "Protocol",
+      "type": "picklist",
+      "label": "Protocol"
+    },
+    {
+      "name": "AuthProviderId",
+      "type": "reference",
+      "label": "AuthProviderId",
+      "referenceTo": "AuthProvider"
+    },
+    {
+      "name": "LargeIconId",
+      "type": "reference",
+      "label": "LargeIconId",
+      "referenceTo": "StaticResource"
+    },
+    {
+      "name": "SmallIconId",
+      "type": "reference",
+      "label": "SmallIconId",
+      "referenceTo": "StaticResource"
+    },
+    {
+      "name": "CustomConfiguration",
+      "type": "textarea",
+      "label": "CustomConfiguration"
+    },
+    {
+      "name": "NamedCredentialId",
+      "type": "reference",
+      "label": "NamedCredentialId",
+      "referenceTo": "NamedCredential"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AuthProvider",
+      "type": "parent",
+      "parentObject": "AuthProvider",
+      "field": "AuthProviderId"
+    },
+    {
+      "name": "StaticResource",
+      "type": "parent",
+      "parentObject": "StaticResource",
+      "field": "LargeIconId"
+    },
+    {
+      "name": "StaticResource",
+      "type": "parent",
+      "parentObject": "StaticResource",
+      "field": "SmallIconId"
+    },
+    {
+      "name": "NamedCredential",
+      "type": "parent",
+      "parentObject": "NamedCredential",
+      "field": "NamedCredentialId"
+    },
+    {
+      "name": "ContentVersions",
+      "type": "child",
+      "childObject": "ContentVersion",
+      "field": "ExternalDataSourceId"
+    },
+    {
+      "name": "ExternalDataSrcDescriptors",
+      "type": "child",
+      "childObject": "ExternalDataSrcDescriptor",
+      "field": "ExternalDataSourceId"
+    },
+    {
+      "name": "Product2s",
+      "type": "child",
+      "childObject": "Product2",
+      "field": "ExternalDataSourceId"
+    }
+  ]
+}

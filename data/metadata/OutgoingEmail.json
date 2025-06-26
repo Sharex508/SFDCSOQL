@@ -1,0 +1,108 @@
+{
+  "label": "OutgoingEmail",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ExternalId",
+      "type": "string",
+      "label": "ExternalId"
+    },
+    {
+      "name": "ValidatedFromAddress",
+      "type": "picklist",
+      "label": "ValidatedFromAddress"
+    },
+    {
+      "name": "ToAddress",
+      "type": "string",
+      "label": "ToAddress"
+    },
+    {
+      "name": "CcAddress",
+      "type": "string",
+      "label": "CcAddress"
+    },
+    {
+      "name": "BccAddress",
+      "type": "string",
+      "label": "BccAddress"
+    },
+    {
+      "name": "Subject",
+      "type": "string",
+      "label": "Subject"
+    },
+    {
+      "name": "TextBody",
+      "type": "textarea",
+      "label": "TextBody"
+    },
+    {
+      "name": "HtmlBody",
+      "type": "textarea",
+      "label": "HtmlBody"
+    },
+    {
+      "name": "RelatedToId",
+      "type": "reference",
+      "label": "RelatedToId",
+      "referenceTo": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate"
+    },
+    {
+      "name": "WhoId",
+      "type": "reference",
+      "label": "WhoId",
+      "referenceTo": "Contact, Lead"
+    },
+    {
+      "name": "EmailTemplateId",
+      "type": "reference",
+      "label": "EmailTemplateId",
+      "referenceTo": "EmailTemplate"
+    },
+    {
+      "name": "InReplyTo",
+      "type": "string",
+      "label": "InReplyTo"
+    },
+    {
+      "name": "References",
+      "type": "string",
+      "label": "References"
+    },
+    {
+      "name": "MessageId",
+      "type": "string",
+      "label": "MessageId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate",
+      "type": "parent",
+      "parentObject": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate",
+      "field": "RelatedToId"
+    },
+    {
+      "name": "Contact, Lead",
+      "type": "parent",
+      "parentObject": "Contact, Lead",
+      "field": "WhoId"
+    },
+    {
+      "name": "EmailTemplate",
+      "type": "parent",
+      "parentObject": "EmailTemplate",
+      "field": "EmailTemplateId"
+    }
+  ]
+}

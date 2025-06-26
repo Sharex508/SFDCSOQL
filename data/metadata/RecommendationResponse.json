@@ -1,0 +1,126 @@
+{
+  "label": "RecommendationResponse",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "OnBehalfOf",
+      "type": "string",
+      "label": "OnBehalfOf"
+    },
+    {
+      "name": "OnBehalfOfType",
+      "type": "string",
+      "label": "OnBehalfOfType"
+    },
+    {
+      "name": "OnBehalfOfName",
+      "type": "string",
+      "label": "OnBehalfOfName"
+    },
+    {
+      "name": "RecommendationKey",
+      "type": "string",
+      "label": "RecommendationKey"
+    },
+    {
+      "name": "RecommendationType",
+      "type": "string",
+      "label": "RecommendationType"
+    },
+    {
+      "name": "RecommendationName",
+      "type": "string",
+      "label": "RecommendationName"
+    },
+    {
+      "name": "ActionReference",
+      "type": "string",
+      "label": "ActionReference"
+    },
+    {
+      "name": "Response",
+      "type": "picklist",
+      "label": "Response"
+    },
+    {
+      "name": "StrategyReference",
+      "type": "string",
+      "label": "StrategyReference"
+    },
+    {
+      "name": "StrategyVersion",
+      "type": "string",
+      "label": "StrategyVersion"
+    },
+    {
+      "name": "ContextRecord",
+      "type": "string",
+      "label": "ContextRecord"
+    },
+    {
+      "name": "ContextRecordType",
+      "type": "string",
+      "label": "ContextRecordType"
+    },
+    {
+      "name": "ContextRecordName",
+      "type": "string",
+      "label": "ContextRecordName"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

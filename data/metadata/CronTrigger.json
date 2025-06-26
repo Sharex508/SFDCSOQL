@@ -1,0 +1,116 @@
+{
+  "label": "CronTrigger",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CronJobDetailId",
+      "type": "reference",
+      "label": "CronJobDetailId",
+      "referenceTo": "CronJobDetail"
+    },
+    {
+      "name": "NextFireTime",
+      "type": "datetime",
+      "label": "NextFireTime"
+    },
+    {
+      "name": "PreviousFireTime",
+      "type": "datetime",
+      "label": "PreviousFireTime"
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "label": "State"
+    },
+    {
+      "name": "StartTime",
+      "type": "datetime",
+      "label": "StartTime"
+    },
+    {
+      "name": "EndTime",
+      "type": "datetime",
+      "label": "EndTime"
+    },
+    {
+      "name": "CronExpression",
+      "type": "string",
+      "label": "CronExpression"
+    },
+    {
+      "name": "TimeZoneSidKey",
+      "type": "picklist",
+      "label": "TimeZoneSidKey"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "TimesTriggered",
+      "type": "int",
+      "label": "TimesTriggered"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "CronJobDetail",
+      "type": "parent",
+      "parentObject": "CronJobDetail",
+      "field": "CronJobDetailId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "AsyncApexJobs",
+      "type": "child",
+      "childObject": "AsyncApexJob",
+      "field": "CronTriggerId"
+    }
+  ]
+}

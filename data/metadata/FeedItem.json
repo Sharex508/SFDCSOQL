@@ -1,0 +1,190 @@
+{
+  "label": "FeedItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "Account, ApiAnomalyEventStore, AppointmentInvitation, AppointmentTopicTimeSlot, Asset, AssetRelationship, AssignedResource, AuthorizationFormText, BuyerGroup, Campaign, Case, CaseRelatedIssue, ChangeRequest, ChangeRequestRelatedIssue, ChangeRequestRelatedItem, Coin__c, CollaborationGroup, CommSubscription, CommSubscriptionChannelType, CommSubscriptionConsent, CommSubscriptionTiming, ConsumptionSchedule, Contact, ContentDocument, Contract, ContractLineItem, Coupon, CredentialStuffingEventStore, CreditMemo, CreditMemoInvApplication, CreditMemoLine, Dashboard, DashboardComponent, EngagementChannelType, EngagementChannelWorkType, EnhancedLetterhead, Entitlement, EntityMilestone, Event, FulfillmentOrder, FulfillmentOrderItemAdjustment, FulfillmentOrderItemTax, FulfillmentOrderLineItem, Image, Incident, IncidentRelatedItem, Invoice, InvoiceLine, Lead, LegalEntity, Location, LocationGroup, MessagingSession, OperatingHours, OperatingHoursHoliday, Opportunity, Order, OrderItem, PartyConsent, Payment, Problem, ProblemIncident, ProblemRelatedItem, Product2, ProductCatalog, ProductCategory, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, Report, ReportAnomalyEventStore, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, ServiceTerritoryWorkType, SessionHijackingEventStore, Shift, ShiftEngagementChannel, ShiftWorkTopic, Shipment, ShipmentItem, Site, SkillRequirement, Solution, Task, ThreatDetectionFeedback, Topic, User, VoiceCall, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate, WorkType, WorkTypeGroup, WorkTypeGroupMember"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Revision",
+      "type": "int",
+      "label": "Revision"
+    },
+    {
+      "name": "LastEditById",
+      "type": "reference",
+      "label": "LastEditById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastEditDate",
+      "type": "datetime",
+      "label": "LastEditDate"
+    },
+    {
+      "name": "CommentCount",
+      "type": "int",
+      "label": "CommentCount"
+    },
+    {
+      "name": "LikeCount",
+      "type": "int",
+      "label": "LikeCount"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "Body",
+      "type": "textarea",
+      "label": "Body"
+    },
+    {
+      "name": "LinkUrl",
+      "type": "url",
+      "label": "LinkUrl"
+    },
+    {
+      "name": "IsRichText",
+      "type": "boolean",
+      "label": "IsRichText"
+    },
+    {
+      "name": "RelatedRecordId",
+      "type": "reference",
+      "label": "RelatedRecordId",
+      "referenceTo": "ContentVersion"
+    },
+    {
+      "name": "InsertedById",
+      "type": "reference",
+      "label": "InsertedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "BestCommentId",
+      "type": "reference",
+      "label": "BestCommentId",
+      "referenceTo": "FeedComment"
+    },
+    {
+      "name": "HasContent",
+      "type": "boolean",
+      "label": "HasContent"
+    },
+    {
+      "name": "HasLink",
+      "type": "boolean",
+      "label": "HasLink"
+    },
+    {
+      "name": "HasFeedEntity",
+      "type": "boolean",
+      "label": "HasFeedEntity"
+    },
+    {
+      "name": "HasVerifiedComment",
+      "type": "boolean",
+      "label": "HasVerifiedComment"
+    },
+    {
+      "name": "IsClosed",
+      "type": "boolean",
+      "label": "IsClosed"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Account, ApiAnomalyEventStore, AppointmentInvitation, AppointmentTopicTimeSlot, Asset, AssetRelationship, AssignedResource, AuthorizationFormText, BuyerGroup, Campaign, Case, CaseRelatedIssue, ChangeRequest, ChangeRequestRelatedIssue, ChangeRequestRelatedItem, Coin__c, CollaborationGroup, CommSubscription, CommSubscriptionChannelType, CommSubscriptionConsent, CommSubscriptionTiming, ConsumptionSchedule, Contact, ContentDocument, Contract, ContractLineItem, Coupon, CredentialStuffingEventStore, CreditMemo, CreditMemoInvApplication, CreditMemoLine, Dashboard, DashboardComponent, EngagementChannelType, EngagementChannelWorkType, EnhancedLetterhead, Entitlement, EntityMilestone, Event, FulfillmentOrder, FulfillmentOrderItemAdjustment, FulfillmentOrderItemTax, FulfillmentOrderLineItem, Image, Incident, IncidentRelatedItem, Invoice, InvoiceLine, Lead, LegalEntity, Location, LocationGroup, MessagingSession, OperatingHours, OperatingHoursHoliday, Opportunity, Order, OrderItem, PartyConsent, Payment, Problem, ProblemIncident, ProblemRelatedItem, Product2, ProductCatalog, ProductCategory, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, Report, ReportAnomalyEventStore, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, ServiceTerritoryWorkType, SessionHijackingEventStore, Shift, ShiftEngagementChannel, ShiftWorkTopic, Shipment, ShipmentItem, Site, SkillRequirement, Solution, Task, ThreatDetectionFeedback, Topic, User, VoiceCall, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate, WorkType, WorkTypeGroup, WorkTypeGroupMember",
+      "type": "parent",
+      "parentObject": "Account, ApiAnomalyEventStore, AppointmentInvitation, AppointmentTopicTimeSlot, Asset, AssetRelationship, AssignedResource, AuthorizationFormText, BuyerGroup, Campaign, Case, CaseRelatedIssue, ChangeRequest, ChangeRequestRelatedIssue, ChangeRequestRelatedItem, Coin__c, CollaborationGroup, CommSubscription, CommSubscriptionChannelType, CommSubscriptionConsent, CommSubscriptionTiming, ConsumptionSchedule, Contact, ContentDocument, Contract, ContractLineItem, Coupon, CredentialStuffingEventStore, CreditMemo, CreditMemoInvApplication, CreditMemoLine, Dashboard, DashboardComponent, EngagementChannelType, EngagementChannelWorkType, EnhancedLetterhead, Entitlement, EntityMilestone, Event, FulfillmentOrder, FulfillmentOrderItemAdjustment, FulfillmentOrderItemTax, FulfillmentOrderLineItem, Image, Incident, IncidentRelatedItem, Invoice, InvoiceLine, Lead, LegalEntity, Location, LocationGroup, MessagingSession, OperatingHours, OperatingHoursHoliday, Opportunity, Order, OrderItem, PartyConsent, Payment, Problem, ProblemIncident, ProblemRelatedItem, Product2, ProductCatalog, ProductCategory, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, Report, ReportAnomalyEventStore, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, ServiceTerritoryWorkType, SessionHijackingEventStore, Shift, ShiftEngagementChannel, ShiftWorkTopic, Shipment, ShipmentItem, Site, SkillRequirement, Solution, Task, ThreatDetectionFeedback, Topic, User, VoiceCall, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate, WorkType, WorkTypeGroup, WorkTypeGroupMember",
+      "field": "ParentId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastEditById"
+    },
+    {
+      "name": "ContentVersion",
+      "type": "parent",
+      "parentObject": "ContentVersion",
+      "field": "RelatedRecordId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "InsertedById"
+    },
+    {
+      "name": "FeedComment",
+      "type": "parent",
+      "parentObject": "FeedComment",
+      "field": "BestCommentId"
+    },
+    {
+      "name": "Announcements",
+      "type": "child",
+      "childObject": "Announcement",
+      "field": "FeedItemId"
+    }
+  ]
+}

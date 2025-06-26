@@ -1,0 +1,100 @@
+{
+  "label": "DatacloudOwnedEntity",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "DataDotComKey",
+      "type": "string",
+      "label": "DataDotComKey"
+    },
+    {
+      "name": "DatacloudEntityType",
+      "type": "picklist",
+      "label": "DatacloudEntityType"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "PurchaseUsageId",
+      "type": "reference",
+      "label": "PurchaseUsageId",
+      "referenceTo": "DatacloudPurchaseUsage"
+    },
+    {
+      "name": "PurchaseType",
+      "type": "picklist",
+      "label": "PurchaseType"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "DatacloudPurchaseUsage",
+      "type": "parent",
+      "parentObject": "DatacloudPurchaseUsage",
+      "field": "PurchaseUsageId"
+    }
+  ]
+}

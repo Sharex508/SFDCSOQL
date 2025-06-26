@@ -1,0 +1,66 @@
+{
+  "label": "RelatedListColumnDefinition",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "RelatedListDefinitionId",
+      "type": "string",
+      "label": "RelatedListDefinitionId"
+    },
+    {
+      "name": "FieldDefinitionId",
+      "type": "string",
+      "label": "FieldDefinitionId"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "ColumnSoql",
+      "type": "string",
+      "label": "ColumnSoql"
+    },
+    {
+      "name": "Alias",
+      "type": "string",
+      "label": "Alias"
+    },
+    {
+      "name": "LookupId",
+      "type": "string",
+      "label": "LookupId"
+    },
+    {
+      "name": "DataType",
+      "type": "string",
+      "label": "DataType"
+    },
+    {
+      "name": "IsDescribable",
+      "type": "boolean",
+      "label": "IsDescribable"
+    },
+    {
+      "name": "IsDefault",
+      "type": "boolean",
+      "label": "IsDefault"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

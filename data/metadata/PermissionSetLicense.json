@@ -1,0 +1,1714 @@
+{
+  "label": "PermissionSetLicense",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "Language",
+      "type": "picklist",
+      "label": "Language"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "PermissionSetLicenseKey",
+      "type": "string",
+      "label": "PermissionSetLicenseKey"
+    },
+    {
+      "name": "TotalLicenses",
+      "type": "int",
+      "label": "TotalLicenses"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "ExpirationDate",
+      "type": "date",
+      "label": "ExpirationDate"
+    },
+    {
+      "name": "MaximumPermissionsEmailSingle",
+      "type": "boolean",
+      "label": "MaximumPermissionsEmailSingle"
+    },
+    {
+      "name": "MaximumPermissionsEmailMass",
+      "type": "boolean",
+      "label": "MaximumPermissionsEmailMass"
+    },
+    {
+      "name": "MaximumPermissionsEditTask",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditTask"
+    },
+    {
+      "name": "MaximumPermissionsEditEvent",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditEvent"
+    },
+    {
+      "name": "MaximumPermissionsExportReport",
+      "type": "boolean",
+      "label": "MaximumPermissionsExportReport"
+    },
+    {
+      "name": "MaximumPermissionsImportPersonal",
+      "type": "boolean",
+      "label": "MaximumPermissionsImportPersonal"
+    },
+    {
+      "name": "MaximumPermissionsDataExport",
+      "type": "boolean",
+      "label": "MaximumPermissionsDataExport"
+    },
+    {
+      "name": "MaximumPermissionsManageUsers",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageUsers"
+    },
+    {
+      "name": "MaximumPermissionsEditPublicFilters",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditPublicFilters"
+    },
+    {
+      "name": "MaximumPermissionsEditPublicTemplates",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditPublicTemplates"
+    },
+    {
+      "name": "MaximumPermissionsModifyAllData",
+      "type": "boolean",
+      "label": "MaximumPermissionsModifyAllData"
+    },
+    {
+      "name": "MaximumPermissionsEditBillingInfo",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditBillingInfo"
+    },
+    {
+      "name": "MaximumPermissionsManageCases",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageCases"
+    },
+    {
+      "name": "MaximumPermissionsMassInlineEdit",
+      "type": "boolean",
+      "label": "MaximumPermissionsMassInlineEdit"
+    },
+    {
+      "name": "MaximumPermissionsEditKnowledge",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditKnowledge"
+    },
+    {
+      "name": "MaximumPermissionsManageKnowledge",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageKnowledge"
+    },
+    {
+      "name": "MaximumPermissionsManageSolutions",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageSolutions"
+    },
+    {
+      "name": "MaximumPermissionsCustomizeApplication",
+      "type": "boolean",
+      "label": "MaximumPermissionsCustomizeApplication"
+    },
+    {
+      "name": "MaximumPermissionsEditReadonlyFields",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditReadonlyFields"
+    },
+    {
+      "name": "MaximumPermissionsRunReports",
+      "type": "boolean",
+      "label": "MaximumPermissionsRunReports"
+    },
+    {
+      "name": "MaximumPermissionsViewSetup",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewSetup"
+    },
+    {
+      "name": "MaximumPermissionsTransferAnyEntity",
+      "type": "boolean",
+      "label": "MaximumPermissionsTransferAnyEntity"
+    },
+    {
+      "name": "MaximumPermissionsNewReportBuilder",
+      "type": "boolean",
+      "label": "MaximumPermissionsNewReportBuilder"
+    },
+    {
+      "name": "MaximumPermissionsActivateContract",
+      "type": "boolean",
+      "label": "MaximumPermissionsActivateContract"
+    },
+    {
+      "name": "MaximumPermissionsActivateOrder",
+      "type": "boolean",
+      "label": "MaximumPermissionsActivateOrder"
+    },
+    {
+      "name": "MaximumPermissionsImportLeads",
+      "type": "boolean",
+      "label": "MaximumPermissionsImportLeads"
+    },
+    {
+      "name": "MaximumPermissionsManageLeads",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageLeads"
+    },
+    {
+      "name": "MaximumPermissionsTransferAnyLead",
+      "type": "boolean",
+      "label": "MaximumPermissionsTransferAnyLead"
+    },
+    {
+      "name": "MaximumPermissionsViewAllData",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewAllData"
+    },
+    {
+      "name": "MaximumPermissionsEditPublicDocuments",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditPublicDocuments"
+    },
+    {
+      "name": "MaximumPermissionsViewEncryptedData",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewEncryptedData"
+    },
+    {
+      "name": "MaximumPermissionsEditBrandTemplates",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditBrandTemplates"
+    },
+    {
+      "name": "MaximumPermissionsEditHtmlTemplates",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditHtmlTemplates"
+    },
+    {
+      "name": "MaximumPermissionsChatterInternalUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsChatterInternalUser"
+    },
+    {
+      "name": "MaximumPermissionsManageEncryptionKeys",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageEncryptionKeys"
+    },
+    {
+      "name": "MaximumPermissionsDeleteActivatedContract",
+      "type": "boolean",
+      "label": "MaximumPermissionsDeleteActivatedContract"
+    },
+    {
+      "name": "MaximumPermissionsChatterInviteExternalUsers",
+      "type": "boolean",
+      "label": "MaximumPermissionsChatterInviteExternalUsers"
+    },
+    {
+      "name": "MaximumPermissionsSendSitRequests",
+      "type": "boolean",
+      "label": "MaximumPermissionsSendSitRequests"
+    },
+    {
+      "name": "MaximumPermissionsApiUserOnly",
+      "type": "boolean",
+      "label": "MaximumPermissionsApiUserOnly"
+    },
+    {
+      "name": "MaximumPermissionsManageRemoteAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageRemoteAccess"
+    },
+    {
+      "name": "MaximumPermissionsCanUseNewDashboardBuilder",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanUseNewDashboardBuilder"
+    },
+    {
+      "name": "MaximumPermissionsManageCategories",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageCategories"
+    },
+    {
+      "name": "MaximumPermissionsConvertLeads",
+      "type": "boolean",
+      "label": "MaximumPermissionsConvertLeads"
+    },
+    {
+      "name": "MaximumPermissionsPasswordNeverExpires",
+      "type": "boolean",
+      "label": "MaximumPermissionsPasswordNeverExpires"
+    },
+    {
+      "name": "MaximumPermissionsUseTeamReassignWizards",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseTeamReassignWizards"
+    },
+    {
+      "name": "MaximumPermissionsEditActivatedOrders",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditActivatedOrders"
+    },
+    {
+      "name": "MaximumPermissionsInstallPackaging",
+      "type": "boolean",
+      "label": "MaximumPermissionsInstallPackaging"
+    },
+    {
+      "name": "MaximumPermissionsPublishPackaging",
+      "type": "boolean",
+      "label": "MaximumPermissionsPublishPackaging"
+    },
+    {
+      "name": "MaximumPermissionsChatterOwnGroups",
+      "type": "boolean",
+      "label": "MaximumPermissionsChatterOwnGroups"
+    },
+    {
+      "name": "MaximumPermissionsEditOppLineItemUnitPrice",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditOppLineItemUnitPrice"
+    },
+    {
+      "name": "MaximumPermissionsCreatePackaging",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreatePackaging"
+    },
+    {
+      "name": "MaximumPermissionsBulkApiHardDelete",
+      "type": "boolean",
+      "label": "MaximumPermissionsBulkApiHardDelete"
+    },
+    {
+      "name": "MaximumPermissionsSolutionImport",
+      "type": "boolean",
+      "label": "MaximumPermissionsSolutionImport"
+    },
+    {
+      "name": "MaximumPermissionsManageCallCenters",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageCallCenters"
+    },
+    {
+      "name": "MaximumPermissionsManageSynonyms",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageSynonyms"
+    },
+    {
+      "name": "MaximumPermissionsViewContent",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewContent"
+    },
+    {
+      "name": "MaximumPermissionsManageEmailClientConfig",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageEmailClientConfig"
+    },
+    {
+      "name": "MaximumPermissionsEnableNotifications",
+      "type": "boolean",
+      "label": "MaximumPermissionsEnableNotifications"
+    },
+    {
+      "name": "MaximumPermissionsManageDataIntegrations",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageDataIntegrations"
+    },
+    {
+      "name": "MaximumPermissionsDistributeFromPersWksp",
+      "type": "boolean",
+      "label": "MaximumPermissionsDistributeFromPersWksp"
+    },
+    {
+      "name": "MaximumPermissionsViewDataCategories",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewDataCategories"
+    },
+    {
+      "name": "MaximumPermissionsManageDataCategories",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageDataCategories"
+    },
+    {
+      "name": "MaximumPermissionsAuthorApex",
+      "type": "boolean",
+      "label": "MaximumPermissionsAuthorApex"
+    },
+    {
+      "name": "MaximumPermissionsManageMobile",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageMobile"
+    },
+    {
+      "name": "MaximumPermissionsApiEnabled",
+      "type": "boolean",
+      "label": "MaximumPermissionsApiEnabled"
+    },
+    {
+      "name": "MaximumPermissionsManageCustomReportTypes",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageCustomReportTypes"
+    },
+    {
+      "name": "MaximumPermissionsEditCaseComments",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditCaseComments"
+    },
+    {
+      "name": "MaximumPermissionsTransferAnyCase",
+      "type": "boolean",
+      "label": "MaximumPermissionsTransferAnyCase"
+    },
+    {
+      "name": "MaximumPermissionsContentAdministrator",
+      "type": "boolean",
+      "label": "MaximumPermissionsContentAdministrator"
+    },
+    {
+      "name": "MaximumPermissionsCreateWorkspaces",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateWorkspaces"
+    },
+    {
+      "name": "MaximumPermissionsManageContentPermissions",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageContentPermissions"
+    },
+    {
+      "name": "MaximumPermissionsManageContentProperties",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageContentProperties"
+    },
+    {
+      "name": "MaximumPermissionsManageContentTypes",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageContentTypes"
+    },
+    {
+      "name": "MaximumPermissionsManageExchangeConfig",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageExchangeConfig"
+    },
+    {
+      "name": "MaximumPermissionsManageAnalyticSnapshots",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageAnalyticSnapshots"
+    },
+    {
+      "name": "MaximumPermissionsScheduleReports",
+      "type": "boolean",
+      "label": "MaximumPermissionsScheduleReports"
+    },
+    {
+      "name": "MaximumPermissionsManageBusinessHourHolidays",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageBusinessHourHolidays"
+    },
+    {
+      "name": "MaximumPermissionsManageEntitlements",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageEntitlements"
+    },
+    {
+      "name": "MaximumPermissionsManageDynamicDashboards",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageDynamicDashboards"
+    },
+    {
+      "name": "MaximumPermissionsCustomSidebarOnAllPages",
+      "type": "boolean",
+      "label": "MaximumPermissionsCustomSidebarOnAllPages"
+    },
+    {
+      "name": "MaximumPermissionsManageInteraction",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageInteraction"
+    },
+    {
+      "name": "MaximumPermissionsViewMyTeamsDashboards",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewMyTeamsDashboards"
+    },
+    {
+      "name": "MaximumPermissionsModerateChatter",
+      "type": "boolean",
+      "label": "MaximumPermissionsModerateChatter"
+    },
+    {
+      "name": "MaximumPermissionsResetPasswords",
+      "type": "boolean",
+      "label": "MaximumPermissionsResetPasswords"
+    },
+    {
+      "name": "MaximumPermissionsFlowUFLRequired",
+      "type": "boolean",
+      "label": "MaximumPermissionsFlowUFLRequired"
+    },
+    {
+      "name": "MaximumPermissionsCanInsertFeedSystemFields",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanInsertFeedSystemFields"
+    },
+    {
+      "name": "MaximumPermissionsActivitiesAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsActivitiesAccess"
+    },
+    {
+      "name": "MaximumPermissionsManageKnowledgeImportExport",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageKnowledgeImportExport"
+    },
+    {
+      "name": "MaximumPermissionsEmailTemplateManagement",
+      "type": "boolean",
+      "label": "MaximumPermissionsEmailTemplateManagement"
+    },
+    {
+      "name": "MaximumPermissionsEmailAdministration",
+      "type": "boolean",
+      "label": "MaximumPermissionsEmailAdministration"
+    },
+    {
+      "name": "MaximumPermissionsManageChatterMessages",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageChatterMessages"
+    },
+    {
+      "name": "MaximumPermissionsAllowEmailIC",
+      "type": "boolean",
+      "label": "MaximumPermissionsAllowEmailIC"
+    },
+    {
+      "name": "MaximumPermissionsChatterFileLink",
+      "type": "boolean",
+      "label": "MaximumPermissionsChatterFileLink"
+    },
+    {
+      "name": "MaximumPermissionsForceTwoFactor",
+      "type": "boolean",
+      "label": "MaximumPermissionsForceTwoFactor"
+    },
+    {
+      "name": "MaximumPermissionsViewEventLogFiles",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewEventLogFiles"
+    },
+    {
+      "name": "MaximumPermissionsManageNetworks",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageNetworks"
+    },
+    {
+      "name": "MaximumPermissionsManageAuthProviders",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageAuthProviders"
+    },
+    {
+      "name": "MaximumPermissionsRunFlow",
+      "type": "boolean",
+      "label": "MaximumPermissionsRunFlow"
+    },
+    {
+      "name": "MaximumPermissionsCreateCustomizeDashboards",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateCustomizeDashboards"
+    },
+    {
+      "name": "MaximumPermissionsCreateDashboardFolders",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateDashboardFolders"
+    },
+    {
+      "name": "MaximumPermissionsViewPublicDashboards",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewPublicDashboards"
+    },
+    {
+      "name": "MaximumPermissionsManageDashbdsInPubFolders",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageDashbdsInPubFolders"
+    },
+    {
+      "name": "MaximumPermissionsCreateCustomizeReports",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateCustomizeReports"
+    },
+    {
+      "name": "MaximumPermissionsCreateReportFolders",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateReportFolders"
+    },
+    {
+      "name": "MaximumPermissionsViewPublicReports",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewPublicReports"
+    },
+    {
+      "name": "MaximumPermissionsManageReportsInPubFolders",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageReportsInPubFolders"
+    },
+    {
+      "name": "MaximumPermissionsEditMyDashboards",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditMyDashboards"
+    },
+    {
+      "name": "MaximumPermissionsEditMyReports",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditMyReports"
+    },
+    {
+      "name": "MaximumPermissionsViewAllUsers",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewAllUsers"
+    },
+    {
+      "name": "MaximumPermissionsAllowUniversalSearch",
+      "type": "boolean",
+      "label": "MaximumPermissionsAllowUniversalSearch"
+    },
+    {
+      "name": "MaximumPermissionsConnectOrgToEnvironmentHub",
+      "type": "boolean",
+      "label": "MaximumPermissionsConnectOrgToEnvironmentHub"
+    },
+    {
+      "name": "MaximumPermissionsWorkCalibrationUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsWorkCalibrationUser"
+    },
+    {
+      "name": "MaximumPermissionsCreateCustomizeFilters",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateCustomizeFilters"
+    },
+    {
+      "name": "MaximumPermissionsWorkDotComUserPerm",
+      "type": "boolean",
+      "label": "MaximumPermissionsWorkDotComUserPerm"
+    },
+    {
+      "name": "MaximumPermissionsContentHubUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsContentHubUser"
+    },
+    {
+      "name": "MaximumPermissionsGovernNetworks",
+      "type": "boolean",
+      "label": "MaximumPermissionsGovernNetworks"
+    },
+    {
+      "name": "MaximumPermissionsSalesConsole",
+      "type": "boolean",
+      "label": "MaximumPermissionsSalesConsole"
+    },
+    {
+      "name": "MaximumPermissionsTwoFactorApi",
+      "type": "boolean",
+      "label": "MaximumPermissionsTwoFactorApi"
+    },
+    {
+      "name": "MaximumPermissionsDeleteTopics",
+      "type": "boolean",
+      "label": "MaximumPermissionsDeleteTopics"
+    },
+    {
+      "name": "MaximumPermissionsEditTopics",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditTopics"
+    },
+    {
+      "name": "MaximumPermissionsCreateTopics",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateTopics"
+    },
+    {
+      "name": "MaximumPermissionsAssignTopics",
+      "type": "boolean",
+      "label": "MaximumPermissionsAssignTopics"
+    },
+    {
+      "name": "MaximumPermissionsIdentityEnabled",
+      "type": "boolean",
+      "label": "MaximumPermissionsIdentityEnabled"
+    },
+    {
+      "name": "MaximumPermissionsIdentityConnect",
+      "type": "boolean",
+      "label": "MaximumPermissionsIdentityConnect"
+    },
+    {
+      "name": "MaximumPermissionsAllowViewKnowledge",
+      "type": "boolean",
+      "label": "MaximumPermissionsAllowViewKnowledge"
+    },
+    {
+      "name": "MaximumPermissionsContentWorkspaces",
+      "type": "boolean",
+      "label": "MaximumPermissionsContentWorkspaces"
+    },
+    {
+      "name": "MaximumPermissionsManageSearchPromotionRules",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageSearchPromotionRules"
+    },
+    {
+      "name": "MaximumPermissionsCustomMobileAppsAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsCustomMobileAppsAccess"
+    },
+    {
+      "name": "MaximumPermissionsViewHelpLink",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewHelpLink"
+    },
+    {
+      "name": "MaximumPermissionsManageProfilesPermissionsets",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageProfilesPermissionsets"
+    },
+    {
+      "name": "MaximumPermissionsAssignPermissionSets",
+      "type": "boolean",
+      "label": "MaximumPermissionsAssignPermissionSets"
+    },
+    {
+      "name": "MaximumPermissionsManageRoles",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageRoles"
+    },
+    {
+      "name": "MaximumPermissionsManageIpAddresses",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageIpAddresses"
+    },
+    {
+      "name": "MaximumPermissionsManageSharing",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageSharing"
+    },
+    {
+      "name": "MaximumPermissionsManageInternalUsers",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageInternalUsers"
+    },
+    {
+      "name": "MaximumPermissionsManagePasswordPolicies",
+      "type": "boolean",
+      "label": "MaximumPermissionsManagePasswordPolicies"
+    },
+    {
+      "name": "MaximumPermissionsManageLoginAccessPolicies",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageLoginAccessPolicies"
+    },
+    {
+      "name": "MaximumPermissionsViewPlatformEvents",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewPlatformEvents"
+    },
+    {
+      "name": "MaximumPermissionsManageCustomPermissions",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageCustomPermissions"
+    },
+    {
+      "name": "MaximumPermissionsCanVerifyComment",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanVerifyComment"
+    },
+    {
+      "name": "MaximumPermissionsManageUnlistedGroups",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageUnlistedGroups"
+    },
+    {
+      "name": "MaximumPermissionsStdAutomaticActivityCapture",
+      "type": "boolean",
+      "label": "MaximumPermissionsStdAutomaticActivityCapture"
+    },
+    {
+      "name": "MaximumPermissionsInsightsAppDashboardEditor",
+      "type": "boolean",
+      "label": "MaximumPermissionsInsightsAppDashboardEditor"
+    },
+    {
+      "name": "MaximumPermissionsManageTwoFactor",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageTwoFactor"
+    },
+    {
+      "name": "MaximumPermissionsInsightsAppUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsInsightsAppUser"
+    },
+    {
+      "name": "MaximumPermissionsInsightsAppAdmin",
+      "type": "boolean",
+      "label": "MaximumPermissionsInsightsAppAdmin"
+    },
+    {
+      "name": "MaximumPermissionsInsightsAppEltEditor",
+      "type": "boolean",
+      "label": "MaximumPermissionsInsightsAppEltEditor"
+    },
+    {
+      "name": "MaximumPermissionsInsightsAppUploadUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsInsightsAppUploadUser"
+    },
+    {
+      "name": "MaximumPermissionsInsightsCreateApplication",
+      "type": "boolean",
+      "label": "MaximumPermissionsInsightsCreateApplication"
+    },
+    {
+      "name": "MaximumPermissionsLightningExperienceUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsLightningExperienceUser"
+    },
+    {
+      "name": "MaximumPermissionsViewDataLeakageEvents",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewDataLeakageEvents"
+    },
+    {
+      "name": "MaximumPermissionsConfigCustomRecs",
+      "type": "boolean",
+      "label": "MaximumPermissionsConfigCustomRecs"
+    },
+    {
+      "name": "MaximumPermissionsSubmitMacrosAllowed",
+      "type": "boolean",
+      "label": "MaximumPermissionsSubmitMacrosAllowed"
+    },
+    {
+      "name": "MaximumPermissionsBulkMacrosAllowed",
+      "type": "boolean",
+      "label": "MaximumPermissionsBulkMacrosAllowed"
+    },
+    {
+      "name": "MaximumPermissionsShareInternalArticles",
+      "type": "boolean",
+      "label": "MaximumPermissionsShareInternalArticles"
+    },
+    {
+      "name": "MaximumPermissionsManageSessionPermissionSets",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageSessionPermissionSets"
+    },
+    {
+      "name": "MaximumPermissionsManageTemplatedApp",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageTemplatedApp"
+    },
+    {
+      "name": "MaximumPermissionsUseTemplatedApp",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseTemplatedApp"
+    },
+    {
+      "name": "MaximumPermissionsSendAnnouncementEmails",
+      "type": "boolean",
+      "label": "MaximumPermissionsSendAnnouncementEmails"
+    },
+    {
+      "name": "MaximumPermissionsChatterEditOwnPost",
+      "type": "boolean",
+      "label": "MaximumPermissionsChatterEditOwnPost"
+    },
+    {
+      "name": "MaximumPermissionsChatterEditOwnRecordPost",
+      "type": "boolean",
+      "label": "MaximumPermissionsChatterEditOwnRecordPost"
+    },
+    {
+      "name": "MaximumPermissionsWaveTabularDownload",
+      "type": "boolean",
+      "label": "MaximumPermissionsWaveTabularDownload"
+    },
+    {
+      "name": "MaximumPermissionsWaveCommunityUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsWaveCommunityUser"
+    },
+    {
+      "name": "MaximumPermissionsAutomaticActivityCapture",
+      "type": "boolean",
+      "label": "MaximumPermissionsAutomaticActivityCapture"
+    },
+    {
+      "name": "MaximumPermissionsImportCustomObjects",
+      "type": "boolean",
+      "label": "MaximumPermissionsImportCustomObjects"
+    },
+    {
+      "name": "MaximumPermissionsSalesforceIQInbox",
+      "type": "boolean",
+      "label": "MaximumPermissionsSalesforceIQInbox"
+    },
+    {
+      "name": "MaximumPermissionsDelegatedTwoFactor",
+      "type": "boolean",
+      "label": "MaximumPermissionsDelegatedTwoFactor"
+    },
+    {
+      "name": "MaximumPermissionsChatterComposeUiCodesnippet",
+      "type": "boolean",
+      "label": "MaximumPermissionsChatterComposeUiCodesnippet"
+    },
+    {
+      "name": "MaximumPermissionsSelectFilesFromSalesforce",
+      "type": "boolean",
+      "label": "MaximumPermissionsSelectFilesFromSalesforce"
+    },
+    {
+      "name": "MaximumPermissionsModerateNetworkUsers",
+      "type": "boolean",
+      "label": "MaximumPermissionsModerateNetworkUsers"
+    },
+    {
+      "name": "MaximumPermissionsMergeTopics",
+      "type": "boolean",
+      "label": "MaximumPermissionsMergeTopics"
+    },
+    {
+      "name": "MaximumPermissionsSubscribeToLightningReports",
+      "type": "boolean",
+      "label": "MaximumPermissionsSubscribeToLightningReports"
+    },
+    {
+      "name": "MaximumPermissionsManagePvtRptsAndDashbds",
+      "type": "boolean",
+      "label": "MaximumPermissionsManagePvtRptsAndDashbds"
+    },
+    {
+      "name": "MaximumPermissionsAllowLightningLogin",
+      "type": "boolean",
+      "label": "MaximumPermissionsAllowLightningLogin"
+    },
+    {
+      "name": "MaximumPermissionsCampaignInfluence2",
+      "type": "boolean",
+      "label": "MaximumPermissionsCampaignInfluence2"
+    },
+    {
+      "name": "MaximumPermissionsViewDataAssessment",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewDataAssessment"
+    },
+    {
+      "name": "MaximumPermissionsRemoveDirectMessageMembers",
+      "type": "boolean",
+      "label": "MaximumPermissionsRemoveDirectMessageMembers"
+    },
+    {
+      "name": "MaximumPermissionsCanApproveFeedPost",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanApproveFeedPost"
+    },
+    {
+      "name": "MaximumPermissionsAddDirectMessageMembers",
+      "type": "boolean",
+      "label": "MaximumPermissionsAddDirectMessageMembers"
+    },
+    {
+      "name": "MaximumPermissionsAllowViewEditConvertedLeads",
+      "type": "boolean",
+      "label": "MaximumPermissionsAllowViewEditConvertedLeads"
+    },
+    {
+      "name": "MaximumPermissionsShowCompanyNameAsUserBadge",
+      "type": "boolean",
+      "label": "MaximumPermissionsShowCompanyNameAsUserBadge"
+    },
+    {
+      "name": "MaximumPermissionsAccessCMC",
+      "type": "boolean",
+      "label": "MaximumPermissionsAccessCMC"
+    },
+    {
+      "name": "MaximumPermissionsViewHealthCheck",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewHealthCheck"
+    },
+    {
+      "name": "MaximumPermissionsManageHealthCheck",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageHealthCheck"
+    },
+    {
+      "name": "MaximumPermissionsPackaging2",
+      "type": "boolean",
+      "label": "MaximumPermissionsPackaging2"
+    },
+    {
+      "name": "MaximumPermissionsManageCertificates",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageCertificates"
+    },
+    {
+      "name": "MaximumPermissionsCreateReportInLightning",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateReportInLightning"
+    },
+    {
+      "name": "MaximumPermissionsPreventClassicExperience",
+      "type": "boolean",
+      "label": "MaximumPermissionsPreventClassicExperience"
+    },
+    {
+      "name": "MaximumPermissionsHideReadByList",
+      "type": "boolean",
+      "label": "MaximumPermissionsHideReadByList"
+    },
+    {
+      "name": "MaximumPermissionsListEmailSend",
+      "type": "boolean",
+      "label": "MaximumPermissionsListEmailSend"
+    },
+    {
+      "name": "MaximumPermissionsFeedPinning",
+      "type": "boolean",
+      "label": "MaximumPermissionsFeedPinning"
+    },
+    {
+      "name": "MaximumPermissionsChangeDashboardColors",
+      "type": "boolean",
+      "label": "MaximumPermissionsChangeDashboardColors"
+    },
+    {
+      "name": "MaximumPermissionsManageRecommendationStrategies",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageRecommendationStrategies"
+    },
+    {
+      "name": "MaximumPermissionsManagePropositions",
+      "type": "boolean",
+      "label": "MaximumPermissionsManagePropositions"
+    },
+    {
+      "name": "MaximumPermissionsCloseConversations",
+      "type": "boolean",
+      "label": "MaximumPermissionsCloseConversations"
+    },
+    {
+      "name": "MaximumPermissionsSubscribeReportRolesGrps",
+      "type": "boolean",
+      "label": "MaximumPermissionsSubscribeReportRolesGrps"
+    },
+    {
+      "name": "MaximumPermissionsSubscribeDashboardRolesGrps",
+      "type": "boolean",
+      "label": "MaximumPermissionsSubscribeDashboardRolesGrps"
+    },
+    {
+      "name": "MaximumPermissionsUseWebLink",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseWebLink"
+    },
+    {
+      "name": "MaximumPermissionsHasUnlimitedNBAExecutions",
+      "type": "boolean",
+      "label": "MaximumPermissionsHasUnlimitedNBAExecutions"
+    },
+    {
+      "name": "MaximumPermissionsViewOnlyEmbeddedAppUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewOnlyEmbeddedAppUser"
+    },
+    {
+      "name": "MaximumPermissionsViewAllActivities",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewAllActivities"
+    },
+    {
+      "name": "MaximumPermissionsSubscribeReportToOtherUsers",
+      "type": "boolean",
+      "label": "MaximumPermissionsSubscribeReportToOtherUsers"
+    },
+    {
+      "name": "MaximumPermissionsLightningConsoleAllowedForUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsLightningConsoleAllowedForUser"
+    },
+    {
+      "name": "MaximumPermissionsSubscribeReportsRunAsUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsSubscribeReportsRunAsUser"
+    },
+    {
+      "name": "MaximumPermissionsSubscribeToLightningDashboards",
+      "type": "boolean",
+      "label": "MaximumPermissionsSubscribeToLightningDashboards"
+    },
+    {
+      "name": "MaximumPermissionsSubscribeDashboardToOtherUsers",
+      "type": "boolean",
+      "label": "MaximumPermissionsSubscribeDashboardToOtherUsers"
+    },
+    {
+      "name": "MaximumPermissionsCreateLtngTempInPub",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateLtngTempInPub"
+    },
+    {
+      "name": "MaximumPermissionsAppointmentBookingUserAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsAppointmentBookingUserAccess"
+    },
+    {
+      "name": "MaximumPermissionsTransactionalEmailSend",
+      "type": "boolean",
+      "label": "MaximumPermissionsTransactionalEmailSend"
+    },
+    {
+      "name": "MaximumPermissionsViewPrivateStaticResources",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewPrivateStaticResources"
+    },
+    {
+      "name": "MaximumPermissionsCreateLtngTempFolder",
+      "type": "boolean",
+      "label": "MaximumPermissionsCreateLtngTempFolder"
+    },
+    {
+      "name": "MaximumPermissionsApexRestServices",
+      "type": "boolean",
+      "label": "MaximumPermissionsApexRestServices"
+    },
+    {
+      "name": "MaximumPermissionsConfigureLiveMessage",
+      "type": "boolean",
+      "label": "MaximumPermissionsConfigureLiveMessage"
+    },
+    {
+      "name": "MaximumPermissionsLiveMessageAgent",
+      "type": "boolean",
+      "label": "MaximumPermissionsLiveMessageAgent"
+    },
+    {
+      "name": "MaximumPermissionsEnableCommunityAppLauncher",
+      "type": "boolean",
+      "label": "MaximumPermissionsEnableCommunityAppLauncher"
+    },
+    {
+      "name": "MaximumPermissionsGiveRecognitionBadge",
+      "type": "boolean",
+      "label": "MaximumPermissionsGiveRecognitionBadge"
+    },
+    {
+      "name": "MaximumPermissionsLightningSchedulerUserAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsLightningSchedulerUserAccess"
+    },
+    {
+      "name": "MaximumPermissionsAllowObjectDetection",
+      "type": "boolean",
+      "label": "MaximumPermissionsAllowObjectDetection"
+    },
+    {
+      "name": "MaximumPermissionsSalesforceIQInternal",
+      "type": "boolean",
+      "label": "MaximumPermissionsSalesforceIQInternal"
+    },
+    {
+      "name": "MaximumPermissionsUseMySearch",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseMySearch"
+    },
+    {
+      "name": "MaximumPermissionsLtngPromoReserved01UserPerm",
+      "type": "boolean",
+      "label": "MaximumPermissionsLtngPromoReserved01UserPerm"
+    },
+    {
+      "name": "MaximumPermissionsManageSubscriptions",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageSubscriptions"
+    },
+    {
+      "name": "MaximumPermissionsWaveManagePrivateAssetsUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsWaveManagePrivateAssetsUser"
+    },
+    {
+      "name": "MaximumPermissionsAllowObjectDetectionTraining",
+      "type": "boolean",
+      "label": "MaximumPermissionsAllowObjectDetectionTraining"
+    },
+    {
+      "name": "MaximumPermissionsCanEditDataPrepRecipe",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanEditDataPrepRecipe"
+    },
+    {
+      "name": "MaximumPermissionsAddAnalyticsRemoteConnections",
+      "type": "boolean",
+      "label": "MaximumPermissionsAddAnalyticsRemoteConnections"
+    },
+    {
+      "name": "MaximumPermissionsManageSurveys",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageSurveys"
+    },
+    {
+      "name": "MaximumPermissionsUseAssistantDialog",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseAssistantDialog"
+    },
+    {
+      "name": "MaximumPermissionsUseQuerySuggestions",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseQuerySuggestions"
+    },
+    {
+      "name": "MaximumPermissionsRecordVisibilityAPI",
+      "type": "boolean",
+      "label": "MaximumPermissionsRecordVisibilityAPI"
+    },
+    {
+      "name": "MaximumPermissionsViewRoles",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewRoles"
+    },
+    {
+      "name": "MaximumPermissionsCanManageMaps",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanManageMaps"
+    },
+    {
+      "name": "MaximumPermissionsLMOutboundMessagingUserPerm",
+      "type": "boolean",
+      "label": "MaximumPermissionsLMOutboundMessagingUserPerm"
+    },
+    {
+      "name": "MaximumPermissionsModifyDataClassification",
+      "type": "boolean",
+      "label": "MaximumPermissionsModifyDataClassification"
+    },
+    {
+      "name": "MaximumPermissionsPrivacyDataAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsPrivacyDataAccess"
+    },
+    {
+      "name": "MaximumPermissionsQueryAllFiles",
+      "type": "boolean",
+      "label": "MaximumPermissionsQueryAllFiles"
+    },
+    {
+      "name": "MaximumPermissionsModifyMetadata",
+      "type": "boolean",
+      "label": "MaximumPermissionsModifyMetadata"
+    },
+    {
+      "name": "MaximumPermissionsManageCMS",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageCMS"
+    },
+    {
+      "name": "MaximumPermissionsSandboxTestingInCommunityApp",
+      "type": "boolean",
+      "label": "MaximumPermissionsSandboxTestingInCommunityApp"
+    },
+    {
+      "name": "MaximumPermissionsCanEditPrompts",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanEditPrompts"
+    },
+    {
+      "name": "MaximumPermissionsViewUserPII",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewUserPII"
+    },
+    {
+      "name": "MaximumPermissionsManageHubConnections",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageHubConnections"
+    },
+    {
+      "name": "MaximumPermissionsB2BMarketingAnalyticsUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsB2BMarketingAnalyticsUser"
+    },
+    {
+      "name": "MaximumPermissionsTraceXdsQueries",
+      "type": "boolean",
+      "label": "MaximumPermissionsTraceXdsQueries"
+    },
+    {
+      "name": "MaximumPermissionsViewSecurityCommandCenter",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewSecurityCommandCenter"
+    },
+    {
+      "name": "MaximumPermissionsManageSecurityCommandCenter",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageSecurityCommandCenter"
+    },
+    {
+      "name": "MaximumPermissionsViewAllCustomSettings",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewAllCustomSettings"
+    },
+    {
+      "name": "MaximumPermissionsViewAllForeignKeyNames",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewAllForeignKeyNames"
+    },
+    {
+      "name": "MaximumPermissionsAddWaveNotificationRecipients",
+      "type": "boolean",
+      "label": "MaximumPermissionsAddWaveNotificationRecipients"
+    },
+    {
+      "name": "MaximumPermissionsHeadlessCMSAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsHeadlessCMSAccess"
+    },
+    {
+      "name": "MaximumPermissionsUseFulfillmentAPIs",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseFulfillmentAPIs"
+    },
+    {
+      "name": "MaximumPermissionsLMEndMessagingSessionUserPerm",
+      "type": "boolean",
+      "label": "MaximumPermissionsLMEndMessagingSessionUserPerm"
+    },
+    {
+      "name": "MaximumPermissionsConsentApiUpdate",
+      "type": "boolean",
+      "label": "MaximumPermissionsConsentApiUpdate"
+    },
+    {
+      "name": "MaximumPermissionsPaymentsAPIUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsPaymentsAPIUser"
+    },
+    {
+      "name": "MaximumPermissionsAccessContentBuilder",
+      "type": "boolean",
+      "label": "MaximumPermissionsAccessContentBuilder"
+    },
+    {
+      "name": "MaximumPermissionsAccountSwitcherUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsAccountSwitcherUser"
+    },
+    {
+      "name": "MaximumPermissionsViewAnomalyEvents",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewAnomalyEvents"
+    },
+    {
+      "name": "MaximumPermissionsManageC360AConnections",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageC360AConnections"
+    },
+    {
+      "name": "MaximumPermissionsIsContactCenterAdmin",
+      "type": "boolean",
+      "label": "MaximumPermissionsIsContactCenterAdmin"
+    },
+    {
+      "name": "MaximumPermissionsIsContactCenterAgent",
+      "type": "boolean",
+      "label": "MaximumPermissionsIsContactCenterAgent"
+    },
+    {
+      "name": "MaximumPermissionsManageReleaseUpdates",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageReleaseUpdates"
+    },
+    {
+      "name": "MaximumPermissionsViewAllProfiles",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewAllProfiles"
+    },
+    {
+      "name": "MaximumPermissionsSkipIdentityConfirmation",
+      "type": "boolean",
+      "label": "MaximumPermissionsSkipIdentityConfirmation"
+    },
+    {
+      "name": "MaximumPermissionsCanToggleCallRecordings",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanToggleCallRecordings"
+    },
+    {
+      "name": "MaximumPermissionsLearningManager",
+      "type": "boolean",
+      "label": "MaximumPermissionsLearningManager"
+    },
+    {
+      "name": "MaximumPermissionsIsContactCenterAdminBYOT",
+      "type": "boolean",
+      "label": "MaximumPermissionsIsContactCenterAdminBYOT"
+    },
+    {
+      "name": "MaximumPermissionsIsContactCenterAgentBYOT",
+      "type": "boolean",
+      "label": "MaximumPermissionsIsContactCenterAgentBYOT"
+    },
+    {
+      "name": "MaximumPermissionsSendCustomNotifications",
+      "type": "boolean",
+      "label": "MaximumPermissionsSendCustomNotifications"
+    },
+    {
+      "name": "MaximumPermissionsPackaging2Delete",
+      "type": "boolean",
+      "label": "MaximumPermissionsPackaging2Delete"
+    },
+    {
+      "name": "MaximumPermissionsUseOmnichannelInventoryAPIs",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseOmnichannelInventoryAPIs"
+    },
+    {
+      "name": "MaximumPermissionsViewRestrictionAndScopingRules",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewRestrictionAndScopingRules"
+    },
+    {
+      "name": "MaximumPermissionsFSCComprehensiveUserAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsFSCComprehensiveUserAccess"
+    },
+    {
+      "name": "MaximumPermissionsBotManageBots",
+      "type": "boolean",
+      "label": "MaximumPermissionsBotManageBots"
+    },
+    {
+      "name": "MaximumPermissionsBotManageBotsTrainingData",
+      "type": "boolean",
+      "label": "MaximumPermissionsBotManageBotsTrainingData"
+    },
+    {
+      "name": "MaximumPermissionsSchedulingLineAmbassador",
+      "type": "boolean",
+      "label": "MaximumPermissionsSchedulingLineAmbassador"
+    },
+    {
+      "name": "MaximumPermissionsSchedulingFacilityManager",
+      "type": "boolean",
+      "label": "MaximumPermissionsSchedulingFacilityManager"
+    },
+    {
+      "name": "MaximumPermissionsOmnichannelInventorySync",
+      "type": "boolean",
+      "label": "MaximumPermissionsOmnichannelInventorySync"
+    },
+    {
+      "name": "MaximumPermissionsManageLearningReporting",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageLearningReporting"
+    },
+    {
+      "name": "MaximumPermissionsIsContactCenterSupervisor",
+      "type": "boolean",
+      "label": "MaximumPermissionsIsContactCenterSupervisor"
+    },
+    {
+      "name": "MaximumPermissionsIsotopeCToCUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsIsotopeCToCUser"
+    },
+    {
+      "name": "MaximumPermissionsCanAccessCE",
+      "type": "boolean",
+      "label": "MaximumPermissionsCanAccessCE"
+    },
+    {
+      "name": "MaximumPermissionsUseAddOrderItemSummaryAPIs",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseAddOrderItemSummaryAPIs"
+    },
+    {
+      "name": "MaximumPermissionsIsotopeAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsIsotopeAccess"
+    },
+    {
+      "name": "MaximumPermissionsIsotopeLEX",
+      "type": "boolean",
+      "label": "MaximumPermissionsIsotopeLEX"
+    },
+    {
+      "name": "MaximumPermissionsQuipMetricsAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsQuipMetricsAccess"
+    },
+    {
+      "name": "MaximumPermissionsQuipUserEngagementMetrics",
+      "type": "boolean",
+      "label": "MaximumPermissionsQuipUserEngagementMetrics"
+    },
+    {
+      "name": "MaximumPermissionsRemoteMediaVirtualDesktop",
+      "type": "boolean",
+      "label": "MaximumPermissionsRemoteMediaVirtualDesktop"
+    },
+    {
+      "name": "MaximumPermissionsTransactionSecurityExempt",
+      "type": "boolean",
+      "label": "MaximumPermissionsTransactionSecurityExempt"
+    },
+    {
+      "name": "MaximumPermissionsManageStores",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageStores"
+    },
+    {
+      "name": "MaximumPermissionsManageExternalConnections",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageExternalConnections"
+    },
+    {
+      "name": "MaximumPermissionsUseReturnOrder",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseReturnOrder"
+    },
+    {
+      "name": "MaximumPermissionsUseReturnOrderAPIs",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseReturnOrderAPIs"
+    },
+    {
+      "name": "MaximumPermissionsUseSubscriptionEmails",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseSubscriptionEmails"
+    },
+    {
+      "name": "MaximumPermissionsUseOrderEntry",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseOrderEntry"
+    },
+    {
+      "name": "MaximumPermissionsUseRepricing",
+      "type": "boolean",
+      "label": "MaximumPermissionsUseRepricing"
+    },
+    {
+      "name": "MaximumPermissionsAIViewInsightObjects",
+      "type": "boolean",
+      "label": "MaximumPermissionsAIViewInsightObjects"
+    },
+    {
+      "name": "MaximumPermissionsAICreateInsightObjects",
+      "type": "boolean",
+      "label": "MaximumPermissionsAICreateInsightObjects"
+    },
+    {
+      "name": "MaximumPermissionsViewMLModels",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewMLModels"
+    },
+    {
+      "name": "MaximumPermissionsLifecycleManagementAPIUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsLifecycleManagementAPIUser"
+    },
+    {
+      "name": "MaximumPermissionsEnablementUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsEnablementUser"
+    },
+    {
+      "name": "MaximumPermissionsNativeWebviewScrolling",
+      "type": "boolean",
+      "label": "MaximumPermissionsNativeWebviewScrolling"
+    },
+    {
+      "name": "MaximumPermissionsViewDeveloperName",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewDeveloperName"
+    },
+    {
+      "name": "MaximumPermissionsBypassMFAForUiLogins",
+      "type": "boolean",
+      "label": "MaximumPermissionsBypassMFAForUiLogins"
+    },
+    {
+      "name": "MaximumPermissionsClientSecretRotation",
+      "type": "boolean",
+      "label": "MaximumPermissionsClientSecretRotation"
+    },
+    {
+      "name": "MaximumPermissionsAccessToServiceProcess",
+      "type": "boolean",
+      "label": "MaximumPermissionsAccessToServiceProcess"
+    },
+    {
+      "name": "MaximumPermissionsManageOrchInstsAndWorkItems",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageOrchInstsAndWorkItems"
+    },
+    {
+      "name": "MaximumPermissionsCMSECEAuthoringAccess",
+      "type": "boolean",
+      "label": "MaximumPermissionsCMSECEAuthoringAccess"
+    },
+    {
+      "name": "MaximumPermissionsEnablementAdmin",
+      "type": "boolean",
+      "label": "MaximumPermissionsEnablementAdmin"
+    },
+    {
+      "name": "MaximumPermissionsManageDataspaceScope",
+      "type": "boolean",
+      "label": "MaximumPermissionsManageDataspaceScope"
+    },
+    {
+      "name": "MaximumPermissionsConfigureDataspaceScope",
+      "type": "boolean",
+      "label": "MaximumPermissionsConfigureDataspaceScope"
+    },
+    {
+      "name": "MaximumPermissionsViewClientSecret",
+      "type": "boolean",
+      "label": "MaximumPermissionsViewClientSecret"
+    },
+    {
+      "name": "MaximumPermissionsEditRepricing",
+      "type": "boolean",
+      "label": "MaximumPermissionsEditRepricing"
+    },
+    {
+      "name": "MaximumPermissionsEnableIPFSUpload",
+      "type": "boolean",
+      "label": "MaximumPermissionsEnableIPFSUpload"
+    },
+    {
+      "name": "MaximumPermissionsEnableBCTransactionPolling",
+      "type": "boolean",
+      "label": "MaximumPermissionsEnableBCTransactionPolling"
+    },
+    {
+      "name": "MaximumPermissionsFSCArcGraphCommunityUser",
+      "type": "boolean",
+      "label": "MaximumPermissionsFSCArcGraphCommunityUser"
+    },
+    {
+      "name": "UsedLicenses",
+      "type": "int",
+      "label": "UsedLicenses"
+    },
+    {
+      "name": "MigratableLicenses",
+      "type": "int",
+      "label": "MigratableLicenses"
+    },
+    {
+      "name": "IsAvailableForIntegrations",
+      "type": "boolean",
+      "label": "IsAvailableForIntegrations"
+    },
+    {
+      "name": "LicenseExpirationPolicy",
+      "type": "picklist",
+      "label": "LicenseExpirationPolicy"
+    },
+    {
+      "name": "IsSupplementLicense",
+      "type": "boolean",
+      "label": "IsSupplementLicense"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ActivePermSetLicenseMetrics",
+      "type": "child",
+      "childObject": "ActivePermSetLicenseMetric",
+      "field": "PermissionSetLicenseId"
+    },
+    {
+      "name": "GrantedByLicenses",
+      "type": "child",
+      "childObject": "GrantedByLicense",
+      "field": "PermissionSetLicenseId"
+    },
+    {
+      "name": "PermissionSetLicenseAssigns",
+      "type": "child",
+      "childObject": "PermissionSetLicenseAssign",
+      "field": "PermissionSetLicenseId"
+    }
+  ]
+}

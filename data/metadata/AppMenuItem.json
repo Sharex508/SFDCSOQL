@@ -1,0 +1,217 @@
+{
+  "label": "AppMenuItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "SortOrder",
+      "type": "int",
+      "label": "SortOrder"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "StartUrl",
+      "type": "url",
+      "label": "StartUrl"
+    },
+    {
+      "name": "MobileStartUrl",
+      "type": "url",
+      "label": "MobileStartUrl"
+    },
+    {
+      "name": "LogoUrl",
+      "type": "url",
+      "label": "LogoUrl"
+    },
+    {
+      "name": "IconUrl",
+      "type": "url",
+      "label": "IconUrl"
+    },
+    {
+      "name": "InfoUrl",
+      "type": "url",
+      "label": "InfoUrl"
+    },
+    {
+      "name": "IsUsingAdminAuthorization",
+      "type": "boolean",
+      "label": "IsUsingAdminAuthorization"
+    },
+    {
+      "name": "MobilePlatform",
+      "type": "picklist",
+      "label": "MobilePlatform"
+    },
+    {
+      "name": "MobileMinOsVer",
+      "type": "string",
+      "label": "MobileMinOsVer"
+    },
+    {
+      "name": "MobileDeviceType",
+      "type": "string",
+      "label": "MobileDeviceType"
+    },
+    {
+      "name": "IsRegisteredDeviceOnly",
+      "type": "boolean",
+      "label": "IsRegisteredDeviceOnly"
+    },
+    {
+      "name": "MobileAppVer",
+      "type": "string",
+      "label": "MobileAppVer"
+    },
+    {
+      "name": "MobileAppInstalledDate",
+      "type": "datetime",
+      "label": "MobileAppInstalledDate"
+    },
+    {
+      "name": "MobileAppInstalledVersion",
+      "type": "string",
+      "label": "MobileAppInstalledVersion"
+    },
+    {
+      "name": "MobileAppBinaryId",
+      "type": "string",
+      "label": "MobileAppBinaryId"
+    },
+    {
+      "name": "MobileAppInstallUrl",
+      "type": "url",
+      "label": "MobileAppInstallUrl"
+    },
+    {
+      "name": "CanvasEnabled",
+      "type": "boolean",
+      "label": "CanvasEnabled"
+    },
+    {
+      "name": "CanvasReferenceId",
+      "type": "string",
+      "label": "CanvasReferenceId"
+    },
+    {
+      "name": "CanvasUrl",
+      "type": "url",
+      "label": "CanvasUrl"
+    },
+    {
+      "name": "CanvasAccessMethod",
+      "type": "picklist",
+      "label": "CanvasAccessMethod"
+    },
+    {
+      "name": "CanvasSelectedLocations",
+      "type": "string",
+      "label": "CanvasSelectedLocations"
+    },
+    {
+      "name": "CanvasOptions",
+      "type": "string",
+      "label": "CanvasOptions"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "ApplicationId",
+      "type": "reference",
+      "label": "ApplicationId"
+    },
+    {
+      "name": "UserSortOrder",
+      "type": "int",
+      "label": "UserSortOrder"
+    },
+    {
+      "name": "IsVisible",
+      "type": "boolean",
+      "label": "IsVisible"
+    },
+    {
+      "name": "IsAccessible",
+      "type": "boolean",
+      "label": "IsAccessible"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "OauthTokens",
+      "type": "child",
+      "childObject": "OauthToken",
+      "field": "AppMenuItemId"
+    }
+  ]
+}

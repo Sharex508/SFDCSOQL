@@ -1,0 +1,51 @@
+{
+  "label": "IconDefinition",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "TabDefinitionId",
+      "type": "string",
+      "label": "TabDefinitionId"
+    },
+    {
+      "name": "Url",
+      "type": "string",
+      "label": "Url"
+    },
+    {
+      "name": "ContentType",
+      "type": "string",
+      "label": "ContentType"
+    },
+    {
+      "name": "Theme",
+      "type": "string",
+      "label": "Theme"
+    },
+    {
+      "name": "Height",
+      "type": "int",
+      "label": "Height"
+    },
+    {
+      "name": "Width",
+      "type": "int",
+      "label": "Width"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

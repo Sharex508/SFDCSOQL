@@ -1,0 +1,208 @@
+{
+  "label": "Dashboard",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "FolderId",
+      "type": "reference",
+      "label": "FolderId",
+      "referenceTo": "Folder, User"
+    },
+    {
+      "name": "FolderName",
+      "type": "string",
+      "label": "FolderName"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "LeftSize",
+      "type": "picklist",
+      "label": "LeftSize"
+    },
+    {
+      "name": "MiddleSize",
+      "type": "picklist",
+      "label": "MiddleSize"
+    },
+    {
+      "name": "RightSize",
+      "type": "picklist",
+      "label": "RightSize"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "RunningUserId",
+      "type": "reference",
+      "label": "RunningUserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "TitleColor",
+      "type": "int",
+      "label": "TitleColor"
+    },
+    {
+      "name": "TitleSize",
+      "type": "int",
+      "label": "TitleSize"
+    },
+    {
+      "name": "TextColor",
+      "type": "int",
+      "label": "TextColor"
+    },
+    {
+      "name": "BackgroundStart",
+      "type": "int",
+      "label": "BackgroundStart"
+    },
+    {
+      "name": "BackgroundEnd",
+      "type": "int",
+      "label": "BackgroundEnd"
+    },
+    {
+      "name": "BackgroundDirection",
+      "type": "picklist",
+      "label": "BackgroundDirection"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "DashboardResultRefreshedDate",
+      "type": "string",
+      "label": "DashboardResultRefreshedDate"
+    },
+    {
+      "name": "DashboardResultRunningUser",
+      "type": "string",
+      "label": "DashboardResultRunningUser"
+    },
+    {
+      "name": "ColorPalette",
+      "type": "picklist",
+      "label": "ColorPalette"
+    },
+    {
+      "name": "ChartTheme",
+      "type": "picklist",
+      "label": "ChartTheme"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Folder, User",
+      "type": "parent",
+      "parentObject": "Folder, User",
+      "field": "FolderId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "RunningUserId"
+    },
+    {
+      "name": "DashboardComponents",
+      "type": "child",
+      "childObject": "DashboardComponent",
+      "field": "DashboardId"
+    },
+    {
+      "name": "DashboardFeeds",
+      "type": "child",
+      "childObject": "DashboardFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ReportEvents",
+      "type": "child",
+      "childObject": "ReportEvent",
+      "field": "DashboardId"
+    }
+  ]
+}

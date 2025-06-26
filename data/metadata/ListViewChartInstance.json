@@ -1,0 +1,106 @@
+{
+  "label": "ListViewChartInstance",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ExternalId",
+      "type": "string",
+      "label": "ExternalId"
+    },
+    {
+      "name": "ListViewChartId",
+      "type": "reference",
+      "label": "ListViewChartId",
+      "referenceTo": "ListViewChart"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "SourceEntity",
+      "type": "string",
+      "label": "SourceEntity"
+    },
+    {
+      "name": "ListViewContextId",
+      "type": "reference",
+      "label": "ListViewContextId",
+      "referenceTo": "ListView"
+    },
+    {
+      "name": "ChartType",
+      "type": "picklist",
+      "label": "ChartType"
+    },
+    {
+      "name": "IsLastViewed",
+      "type": "boolean",
+      "label": "IsLastViewed"
+    },
+    {
+      "name": "DataQuery",
+      "type": "textarea",
+      "label": "DataQuery"
+    },
+    {
+      "name": "DataQueryWithoutUserFilters",
+      "type": "textarea",
+      "label": "DataQueryWithoutUserFilters"
+    },
+    {
+      "name": "IsEditable",
+      "type": "boolean",
+      "label": "IsEditable"
+    },
+    {
+      "name": "IsDeletable",
+      "type": "boolean",
+      "label": "IsDeletable"
+    },
+    {
+      "name": "GroupingField",
+      "type": "string",
+      "label": "GroupingField"
+    },
+    {
+      "name": "AggregateField",
+      "type": "string",
+      "label": "AggregateField"
+    },
+    {
+      "name": "AggregateType",
+      "type": "picklist",
+      "label": "AggregateType"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ListViewChart",
+      "type": "parent",
+      "parentObject": "ListViewChart",
+      "field": "ListViewChartId"
+    },
+    {
+      "name": "ListView",
+      "type": "parent",
+      "parentObject": "ListView",
+      "field": "ListViewContextId"
+    }
+  ]
+}

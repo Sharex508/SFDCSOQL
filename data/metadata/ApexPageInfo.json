@@ -1,0 +1,56 @@
+{
+  "label": "ApexPageInfo",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "ApexPageId",
+      "type": "string",
+      "label": "ApexPageId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "NameSpacePrefix",
+      "type": "string",
+      "label": "NameSpacePrefix"
+    },
+    {
+      "name": "ApiVersion",
+      "type": "double",
+      "label": "ApiVersion"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "IsAvailableInTouch",
+      "type": "boolean",
+      "label": "IsAvailableInTouch"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "IsShowHeader",
+      "type": "string",
+      "label": "IsShowHeader"
+    }
+  ],
+  "relationships": []
+}

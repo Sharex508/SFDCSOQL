@@ -1,0 +1,235 @@
+{
+  "label": "DigitalWallet",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DigitalWalletNumber",
+      "type": "string",
+      "label": "DigitalWalletNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "PaymentGatewayId",
+      "type": "reference",
+      "label": "PaymentGatewayId",
+      "referenceTo": "PaymentGateway"
+    },
+    {
+      "name": "NickName",
+      "type": "string",
+      "label": "NickName"
+    },
+    {
+      "name": "GatewayToken",
+      "type": "string",
+      "label": "GatewayToken"
+    },
+    {
+      "name": "GatewayTokenDetails",
+      "type": "textarea",
+      "label": "GatewayTokenDetails"
+    },
+    {
+      "name": "Customer",
+      "type": "string",
+      "label": "Customer"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "label": "Email"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "CompanyName",
+      "type": "string",
+      "label": "CompanyName"
+    },
+    {
+      "name": "PaymentMethodStreet",
+      "type": "textarea",
+      "label": "PaymentMethodStreet"
+    },
+    {
+      "name": "PaymentMethodCity",
+      "type": "string",
+      "label": "PaymentMethodCity"
+    },
+    {
+      "name": "PaymentMethodState",
+      "type": "string",
+      "label": "PaymentMethodState"
+    },
+    {
+      "name": "PaymentMethodPostalCode",
+      "type": "string",
+      "label": "PaymentMethodPostalCode"
+    },
+    {
+      "name": "PaymentMethodCountry",
+      "type": "string",
+      "label": "PaymentMethodCountry"
+    },
+    {
+      "name": "PaymentMethodLatitude",
+      "type": "double",
+      "label": "PaymentMethodLatitude"
+    },
+    {
+      "name": "PaymentMethodLongitude",
+      "type": "double",
+      "label": "PaymentMethodLongitude"
+    },
+    {
+      "name": "PaymentMethodGeocodeAccuracy",
+      "type": "picklist",
+      "label": "PaymentMethodGeocodeAccuracy"
+    },
+    {
+      "name": "PaymentMethodAddress",
+      "type": "address",
+      "label": "PaymentMethodAddress"
+    },
+    {
+      "name": "Comments",
+      "type": "textarea",
+      "label": "Comments"
+    },
+    {
+      "name": "ProcessingMode",
+      "type": "picklist",
+      "label": "ProcessingMode"
+    },
+    {
+      "name": "MacAddress",
+      "type": "string",
+      "label": "MacAddress"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "IpAddress",
+      "type": "string",
+      "label": "IpAddress"
+    },
+    {
+      "name": "AuditEmail",
+      "type": "email",
+      "label": "AuditEmail"
+    },
+    {
+      "name": "GatewayTokenEncrypted",
+      "type": "encryptedstring",
+      "label": "GatewayTokenEncrypted"
+    },
+    {
+      "name": "IsAutoPayEnabled",
+      "type": "boolean",
+      "label": "IsAutoPayEnabled"
+    },
+    {
+      "name": "PaymentMethodType",
+      "type": "picklist",
+      "label": "PaymentMethodType"
+    },
+    {
+      "name": "PaymentMethodSubType",
+      "type": "string",
+      "label": "PaymentMethodSubType"
+    },
+    {
+      "name": "PaymentMethodDetails",
+      "type": "string",
+      "label": "PaymentMethodDetails"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "PaymentGateway",
+      "type": "parent",
+      "parentObject": "PaymentGateway",
+      "field": "PaymentGatewayId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    }
+  ]
+}

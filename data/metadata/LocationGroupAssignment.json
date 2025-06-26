@@ -1,0 +1,120 @@
+{
+  "label": "LocationGroupAssignment",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "LocationGroupAssignment",
+      "type": "string",
+      "label": "LocationGroupAssignment"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "LocationId",
+      "type": "reference",
+      "label": "LocationId",
+      "referenceTo": "Location"
+    },
+    {
+      "name": "LocationGroupId",
+      "type": "reference",
+      "label": "LocationGroupId",
+      "referenceTo": "LocationGroup"
+    },
+    {
+      "name": "LocationExternalReference",
+      "type": "string",
+      "label": "LocationExternalReference"
+    },
+    {
+      "name": "LocationGroupExternalReference",
+      "type": "string",
+      "label": "LocationGroupExternalReference"
+    },
+    {
+      "name": "LocationName",
+      "type": "string",
+      "label": "LocationName"
+    },
+    {
+      "name": "LocationGroupName",
+      "type": "string",
+      "label": "LocationGroupName"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Location",
+      "type": "parent",
+      "parentObject": "Location",
+      "field": "LocationId"
+    },
+    {
+      "name": "LocationGroup",
+      "type": "parent",
+      "parentObject": "LocationGroup",
+      "field": "LocationGroupId"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "label": "AuthConfig",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "Language",
+      "type": "picklist",
+      "label": "Language"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Url",
+      "type": "string",
+      "label": "Url"
+    },
+    {
+      "name": "AuthOptionsUsernamePassword",
+      "type": "boolean",
+      "label": "AuthOptionsUsernamePassword"
+    },
+    {
+      "name": "AuthOptionsSaml",
+      "type": "boolean",
+      "label": "AuthOptionsSaml"
+    },
+    {
+      "name": "AuthOptionsAuthProvider",
+      "type": "boolean",
+      "label": "AuthOptionsAuthProvider"
+    },
+    {
+      "name": "AuthOptionsCertificate",
+      "type": "boolean",
+      "label": "AuthOptionsCertificate"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AuthConfigProviderses",
+      "type": "child",
+      "childObject": "AuthConfigProviders",
+      "field": "AuthConfigId"
+    }
+  ]
+}

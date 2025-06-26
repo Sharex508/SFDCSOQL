@@ -1,0 +1,98 @@
+{
+  "label": "ContentFolderItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "IsFolder",
+      "type": "boolean",
+      "label": "IsFolder"
+    },
+    {
+      "name": "ParentContentFolderId",
+      "type": "reference",
+      "label": "ParentContentFolderId",
+      "referenceTo": "ContentFolder"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "FileType",
+      "type": "string",
+      "label": "FileType"
+    },
+    {
+      "name": "ContentSize",
+      "type": "int",
+      "label": "ContentSize"
+    },
+    {
+      "name": "FileExtension",
+      "type": "string",
+      "label": "FileExtension"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ContentFolder",
+      "type": "parent",
+      "parentObject": "ContentFolder",
+      "field": "ParentContentFolderId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "label": "WebLink",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "PageOrSobjectType",
+      "type": "picklist",
+      "label": "PageOrSobjectType"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "IsProtected",
+      "type": "boolean",
+      "label": "IsProtected"
+    },
+    {
+      "name": "Url",
+      "type": "textarea",
+      "label": "Url"
+    },
+    {
+      "name": "EncodingKey",
+      "type": "picklist",
+      "label": "EncodingKey"
+    },
+    {
+      "name": "LinkType",
+      "type": "picklist",
+      "label": "LinkType"
+    },
+    {
+      "name": "OpenType",
+      "type": "picklist",
+      "label": "OpenType"
+    },
+    {
+      "name": "Height",
+      "type": "int",
+      "label": "Height"
+    },
+    {
+      "name": "Width",
+      "type": "int",
+      "label": "Width"
+    },
+    {
+      "name": "ShowsLocation",
+      "type": "boolean",
+      "label": "ShowsLocation"
+    },
+    {
+      "name": "HasScrollbars",
+      "type": "boolean",
+      "label": "HasScrollbars"
+    },
+    {
+      "name": "HasToolbar",
+      "type": "boolean",
+      "label": "HasToolbar"
+    },
+    {
+      "name": "HasMenubar",
+      "type": "boolean",
+      "label": "HasMenubar"
+    },
+    {
+      "name": "ShowsStatus",
+      "type": "boolean",
+      "label": "ShowsStatus"
+    },
+    {
+      "name": "IsResizable",
+      "type": "boolean",
+      "label": "IsResizable"
+    },
+    {
+      "name": "Position",
+      "type": "picklist",
+      "label": "Position"
+    },
+    {
+      "name": "ScontrolId",
+      "type": "reference",
+      "label": "ScontrolId",
+      "referenceTo": "ApexPage, Scontrol"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "DisplayType",
+      "type": "picklist",
+      "label": "DisplayType"
+    },
+    {
+      "name": "RequireRowSelection",
+      "type": "boolean",
+      "label": "RequireRowSelection"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ApexPage, Scontrol",
+      "type": "parent",
+      "parentObject": "ApexPage, Scontrol",
+      "field": "ScontrolId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

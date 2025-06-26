@@ -1,0 +1,377 @@
+{
+  "label": "Case",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "MasterRecordId",
+      "type": "reference",
+      "label": "MasterRecordId",
+      "referenceTo": "Case"
+    },
+    {
+      "name": "CaseNumber",
+      "type": "string",
+      "label": "CaseNumber"
+    },
+    {
+      "name": "ContactId",
+      "type": "reference",
+      "label": "ContactId",
+      "referenceTo": "Contact"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "AssetId",
+      "type": "reference",
+      "label": "AssetId",
+      "referenceTo": "Asset"
+    },
+    {
+      "name": "SourceId",
+      "type": "reference",
+      "label": "SourceId",
+      "referenceTo": "EmailMessage, MessagingSession"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "Case"
+    },
+    {
+      "name": "SuppliedName",
+      "type": "string",
+      "label": "SuppliedName"
+    },
+    {
+      "name": "SuppliedEmail",
+      "type": "email",
+      "label": "SuppliedEmail"
+    },
+    {
+      "name": "SuppliedPhone",
+      "type": "string",
+      "label": "SuppliedPhone"
+    },
+    {
+      "name": "SuppliedCompany",
+      "type": "string",
+      "label": "SuppliedCompany"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "Reason",
+      "type": "picklist",
+      "label": "Reason"
+    },
+    {
+      "name": "Origin",
+      "type": "picklist",
+      "label": "Origin"
+    },
+    {
+      "name": "Subject",
+      "type": "string",
+      "label": "Subject"
+    },
+    {
+      "name": "Priority",
+      "type": "picklist",
+      "label": "Priority"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "IsClosed",
+      "type": "boolean",
+      "label": "IsClosed"
+    },
+    {
+      "name": "ClosedDate",
+      "type": "datetime",
+      "label": "ClosedDate"
+    },
+    {
+      "name": "IsEscalated",
+      "type": "boolean",
+      "label": "IsEscalated"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ContactPhone",
+      "type": "phone",
+      "label": "ContactPhone"
+    },
+    {
+      "name": "ContactMobile",
+      "type": "phone",
+      "label": "ContactMobile"
+    },
+    {
+      "name": "ContactEmail",
+      "type": "email",
+      "label": "ContactEmail"
+    },
+    {
+      "name": "ContactFax",
+      "type": "phone",
+      "label": "ContactFax"
+    },
+    {
+      "name": "Comments",
+      "type": "textarea",
+      "label": "Comments"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "EngineeringReqNumber__c",
+      "type": "string",
+      "label": "EngineeringReqNumber__c"
+    },
+    {
+      "name": "SLAViolation__c",
+      "type": "picklist",
+      "label": "SLAViolation__c"
+    },
+    {
+      "name": "Product__c",
+      "type": "picklist",
+      "label": "Product__c"
+    },
+    {
+      "name": "PotentialLiability__c",
+      "type": "picklist",
+      "label": "PotentialLiability__c"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Case",
+      "type": "parent",
+      "parentObject": "Case",
+      "field": "MasterRecordId"
+    },
+    {
+      "name": "Contact",
+      "type": "parent",
+      "parentObject": "Contact",
+      "field": "ContactId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    },
+    {
+      "name": "Asset",
+      "type": "parent",
+      "parentObject": "Asset",
+      "field": "AssetId"
+    },
+    {
+      "name": "EmailMessage, MessagingSession",
+      "type": "parent",
+      "parentObject": "EmailMessage, MessagingSession",
+      "field": "SourceId"
+    },
+    {
+      "name": "Case",
+      "type": "parent",
+      "parentObject": "Case",
+      "field": "ParentId"
+    },
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Cases",
+      "type": "child",
+      "childObject": "Case",
+      "field": "MasterRecordId"
+    },
+    {
+      "name": "Cases",
+      "type": "child",
+      "childObject": "Case",
+      "field": "ParentId"
+    },
+    {
+      "name": "CaseComments",
+      "type": "child",
+      "childObject": "CaseComment",
+      "field": "ParentId"
+    },
+    {
+      "name": "CaseContactRoles",
+      "type": "child",
+      "childObject": "CaseContactRole",
+      "field": "CasesId"
+    },
+    {
+      "name": "CaseFeeds",
+      "type": "child",
+      "childObject": "CaseFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "CaseHistories",
+      "type": "child",
+      "childObject": "CaseHistory",
+      "field": "CaseId"
+    },
+    {
+      "name": "CaseMilestones",
+      "type": "child",
+      "childObject": "CaseMilestone",
+      "field": "CaseId"
+    },
+    {
+      "name": "CaseRelatedIssues",
+      "type": "child",
+      "childObject": "CaseRelatedIssue",
+      "field": "CaseId"
+    },
+    {
+      "name": "CaseShares",
+      "type": "child",
+      "childObject": "CaseShare",
+      "field": "CaseId"
+    },
+    {
+      "name": "CaseSolutions",
+      "type": "child",
+      "childObject": "CaseSolution",
+      "field": "CaseId"
+    },
+    {
+      "name": "CaseTeamMembers",
+      "type": "child",
+      "childObject": "CaseTeamMember",
+      "field": "ParentId"
+    },
+    {
+      "name": "CaseTeamTemplateRecords",
+      "type": "child",
+      "childObject": "CaseTeamTemplateRecord",
+      "field": "ParentId"
+    },
+    {
+      "name": "EmailMessages",
+      "type": "child",
+      "childObject": "EmailMessage",
+      "field": "ParentId"
+    },
+    {
+      "name": "MessagingSessions",
+      "type": "child",
+      "childObject": "MessagingSession",
+      "field": "CaseId"
+    },
+    {
+      "name": "ProcessExceptions",
+      "type": "child",
+      "childObject": "ProcessException",
+      "field": "CaseId"
+    },
+    {
+      "name": "ReturnOrders",
+      "type": "child",
+      "childObject": "ReturnOrder",
+      "field": "CaseId"
+    },
+    {
+      "name": "WorkOrders",
+      "type": "child",
+      "childObject": "WorkOrder",
+      "field": "CaseId"
+    }
+  ]
+}

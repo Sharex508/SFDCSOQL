@@ -1,0 +1,127 @@
+{
+  "label": "CartTax",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CartItemId",
+      "type": "reference",
+      "label": "CartItemId",
+      "referenceTo": "CartItem"
+    },
+    {
+      "name": "CartId",
+      "type": "reference",
+      "label": "CartId",
+      "referenceTo": "WebCart"
+    },
+    {
+      "name": "CartItemPriceAdjustmentId",
+      "type": "reference",
+      "label": "CartItemPriceAdjustmentId",
+      "referenceTo": "CartItemPriceAdjustment"
+    },
+    {
+      "name": "TaxType",
+      "type": "picklist",
+      "label": "TaxType"
+    },
+    {
+      "name": "TaxCalculationDate",
+      "type": "date",
+      "label": "TaxCalculationDate"
+    },
+    {
+      "name": "Amount",
+      "type": "currency",
+      "label": "Amount"
+    },
+    {
+      "name": "TaxRate",
+      "type": "percent",
+      "label": "TaxRate"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "AdjustmentTargetType",
+      "type": "picklist",
+      "label": "AdjustmentTargetType"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "CartItem",
+      "type": "parent",
+      "parentObject": "CartItem",
+      "field": "CartItemId"
+    },
+    {
+      "name": "WebCart",
+      "type": "parent",
+      "parentObject": "WebCart",
+      "field": "CartId"
+    },
+    {
+      "name": "CartItemPriceAdjustment",
+      "type": "parent",
+      "parentObject": "CartItemPriceAdjustment",
+      "field": "CartItemPriceAdjustmentId"
+    }
+  ]
+}

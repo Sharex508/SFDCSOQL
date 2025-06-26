@@ -1,0 +1,46 @@
+{
+  "label": "UserSetupEntityAccess",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "SetupEntityId",
+      "type": "string",
+      "label": "SetupEntityId"
+    },
+    {
+      "name": "KeyPrefix",
+      "type": "string",
+      "label": "KeyPrefix"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "LastCacheUpdate",
+      "type": "datetime",
+      "label": "LastCacheUpdate"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

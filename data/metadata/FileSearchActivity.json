@@ -1,0 +1,101 @@
+{
+  "label": "FileSearchActivity",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "SearchTerm",
+      "type": "string",
+      "label": "SearchTerm"
+    },
+    {
+      "name": "QueryDate",
+      "type": "date",
+      "label": "QueryDate"
+    },
+    {
+      "name": "CountQueries",
+      "type": "int",
+      "label": "CountQueries"
+    },
+    {
+      "name": "CountUsers",
+      "type": "int",
+      "label": "CountUsers"
+    },
+    {
+      "name": "AvgNumResults",
+      "type": "double",
+      "label": "AvgNumResults"
+    },
+    {
+      "name": "Period",
+      "type": "picklist",
+      "label": "Period"
+    },
+    {
+      "name": "QueryLanguage",
+      "type": "picklist",
+      "label": "QueryLanguage"
+    },
+    {
+      "name": "ClickRank",
+      "type": "double",
+      "label": "ClickRank"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

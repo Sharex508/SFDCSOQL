@@ -1,0 +1,150 @@
+{
+  "label": "AsyncApexJob",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "JobType",
+      "type": "picklist",
+      "label": "JobType"
+    },
+    {
+      "name": "ApexClassId",
+      "type": "reference",
+      "label": "ApexClassId",
+      "referenceTo": "ApexClass"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "JobItemsProcessed",
+      "type": "int",
+      "label": "JobItemsProcessed"
+    },
+    {
+      "name": "TotalJobItems",
+      "type": "int",
+      "label": "TotalJobItems"
+    },
+    {
+      "name": "NumberOfErrors",
+      "type": "int",
+      "label": "NumberOfErrors"
+    },
+    {
+      "name": "CompletedDate",
+      "type": "datetime",
+      "label": "CompletedDate"
+    },
+    {
+      "name": "MethodName",
+      "type": "string",
+      "label": "MethodName"
+    },
+    {
+      "name": "ExtendedStatus",
+      "type": "string",
+      "label": "ExtendedStatus"
+    },
+    {
+      "name": "ParentJobId",
+      "type": "reference",
+      "label": "ParentJobId",
+      "referenceTo": "AsyncApexJob"
+    },
+    {
+      "name": "LastProcessed",
+      "type": "string",
+      "label": "LastProcessed"
+    },
+    {
+      "name": "LastProcessedOffset",
+      "type": "int",
+      "label": "LastProcessedOffset"
+    },
+    {
+      "name": "CronTriggerId",
+      "type": "reference",
+      "label": "CronTriggerId",
+      "referenceTo": "CronTrigger"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "ApexClass",
+      "type": "parent",
+      "parentObject": "ApexClass",
+      "field": "ApexClassId"
+    },
+    {
+      "name": "AsyncApexJob",
+      "type": "parent",
+      "parentObject": "AsyncApexJob",
+      "field": "ParentJobId"
+    },
+    {
+      "name": "CronTrigger",
+      "type": "parent",
+      "parentObject": "CronTrigger",
+      "field": "CronTriggerId"
+    },
+    {
+      "name": "ApexTestQueueItems",
+      "type": "child",
+      "childObject": "ApexTestQueueItem",
+      "field": "ParentJobId"
+    },
+    {
+      "name": "ApexTestResults",
+      "type": "child",
+      "childObject": "ApexTestResult",
+      "field": "AsyncApexJobId"
+    },
+    {
+      "name": "ApexTestRunResults",
+      "type": "child",
+      "childObject": "ApexTestRunResult",
+      "field": "AsyncApexJobId"
+    },
+    {
+      "name": "AsyncApexJobs",
+      "type": "child",
+      "childObject": "AsyncApexJob",
+      "field": "ParentJobId"
+    },
+    {
+      "name": "FlexQueueItems",
+      "type": "child",
+      "childObject": "FlexQueueItem",
+      "field": "AsyncApexJobId"
+    }
+  ]
+}

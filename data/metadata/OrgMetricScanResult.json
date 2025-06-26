@@ -1,0 +1,118 @@
+{
+  "label": "OrgMetricScanResult",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "OrgMetricScanSummaryId",
+      "type": "reference",
+      "label": "OrgMetricScanSummaryId",
+      "referenceTo": "OrgMetricScanSummary"
+    },
+    {
+      "name": "Url",
+      "type": "url",
+      "label": "Url"
+    },
+    {
+      "name": "Object",
+      "type": "string",
+      "label": "Object"
+    },
+    {
+      "name": "Date",
+      "type": "datetime",
+      "label": "Date"
+    },
+    {
+      "name": "Type",
+      "type": "string",
+      "label": "Type"
+    },
+    {
+      "name": "Profile",
+      "type": "int",
+      "label": "Profile"
+    },
+    {
+      "name": "User",
+      "type": "string",
+      "label": "User"
+    },
+    {
+      "name": "Quantity",
+      "type": "int",
+      "label": "Quantity"
+    },
+    {
+      "name": "ItemStatus",
+      "type": "picklist",
+      "label": "ItemStatus"
+    },
+    {
+      "name": "Flags",
+      "type": "int",
+      "label": "Flags"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "OrgMetricScanSummary",
+      "type": "parent",
+      "parentObject": "OrgMetricScanSummary",
+      "field": "OrgMetricScanSummaryId"
+    }
+  ]
+}

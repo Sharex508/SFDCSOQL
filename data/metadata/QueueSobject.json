@@ -1,0 +1,51 @@
+{
+  "label": "QueueSobject",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "QueueId",
+      "type": "reference",
+      "label": "QueueId",
+      "referenceTo": "Group"
+    },
+    {
+      "name": "SobjectType",
+      "type": "picklist",
+      "label": "SobjectType"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group",
+      "type": "parent",
+      "parentObject": "Group",
+      "field": "QueueId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    }
+  ]
+}

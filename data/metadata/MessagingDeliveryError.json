@@ -1,0 +1,127 @@
+{
+  "label": "MessagingDeliveryError",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "MessagingChannelId",
+      "type": "reference",
+      "label": "MessagingChannelId",
+      "referenceTo": "MessagingChannel"
+    },
+    {
+      "name": "MessagingTemplateId",
+      "type": "reference",
+      "label": "MessagingTemplateId",
+      "referenceTo": "MessagingTemplate"
+    },
+    {
+      "name": "FlowEntity",
+      "type": "string",
+      "label": "FlowEntity"
+    },
+    {
+      "name": "FullMessage",
+      "type": "textarea",
+      "label": "FullMessage"
+    },
+    {
+      "name": "FailureReason",
+      "type": "textarea",
+      "label": "FailureReason"
+    },
+    {
+      "name": "DestinationPhoneNumber",
+      "type": "string",
+      "label": "DestinationPhoneNumber"
+    },
+    {
+      "name": "MessagingEndUserId",
+      "type": "reference",
+      "label": "MessagingEndUserId",
+      "referenceTo": "MessagingEndUser"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "CorrelationIdentifier",
+      "type": "string",
+      "label": "CorrelationIdentifier"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "MessagingChannel",
+      "type": "parent",
+      "parentObject": "MessagingChannel",
+      "field": "MessagingChannelId"
+    },
+    {
+      "name": "MessagingTemplate",
+      "type": "parent",
+      "parentObject": "MessagingTemplate",
+      "field": "MessagingTemplateId"
+    },
+    {
+      "name": "MessagingEndUser",
+      "type": "parent",
+      "parentObject": "MessagingEndUser",
+      "field": "MessagingEndUserId"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "label": "CommSubscriptionConsent",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "ConsentGiverId",
+      "type": "reference",
+      "label": "ConsentGiverId",
+      "referenceTo": "Account, Contact, Individual, User"
+    },
+    {
+      "name": "ContactPointId",
+      "type": "reference",
+      "label": "ContactPointId",
+      "referenceTo": "ContactPointAddress, ContactPointEmail, ContactPointPhone"
+    },
+    {
+      "name": "EffectiveFromDate",
+      "type": "date",
+      "label": "EffectiveFromDate"
+    },
+    {
+      "name": "ConsentCapturedDateTime",
+      "type": "datetime",
+      "label": "ConsentCapturedDateTime"
+    },
+    {
+      "name": "ConsentCapturedSource",
+      "type": "string",
+      "label": "ConsentCapturedSource"
+    },
+    {
+      "name": "CommSubscriptionChannelTypeId",
+      "type": "reference",
+      "label": "CommSubscriptionChannelTypeId",
+      "referenceTo": "CommSubscriptionChannelType"
+    },
+    {
+      "name": "PartyRoleId",
+      "type": "reference",
+      "label": "PartyRoleId",
+      "referenceTo": "Customer, Seller"
+    },
+    {
+      "name": "BusinessBrandId",
+      "type": "reference",
+      "label": "BusinessBrandId",
+      "referenceTo": "BusinessBrand"
+    },
+    {
+      "name": "PrivacyConsentStatus",
+      "type": "picklist",
+      "label": "PrivacyConsentStatus"
+    },
+    {
+      "name": "DataUsePurposeId",
+      "type": "reference",
+      "label": "DataUsePurposeId",
+      "referenceTo": "DataUsePurpose"
+    },
+    {
+      "name": "EngagementChannelTypeId",
+      "type": "reference",
+      "label": "EngagementChannelTypeId",
+      "referenceTo": "EngagementChannelType"
+    },
+    {
+      "name": "PartyId",
+      "type": "reference",
+      "label": "PartyId",
+      "referenceTo": "Individual"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Account, Contact, Individual, User",
+      "type": "parent",
+      "parentObject": "Account, Contact, Individual, User",
+      "field": "ConsentGiverId"
+    },
+    {
+      "name": "ContactPointAddress, ContactPointEmail, ContactPointPhone",
+      "type": "parent",
+      "parentObject": "ContactPointAddress, ContactPointEmail, ContactPointPhone",
+      "field": "ContactPointId"
+    },
+    {
+      "name": "CommSubscriptionChannelType",
+      "type": "parent",
+      "parentObject": "CommSubscriptionChannelType",
+      "field": "CommSubscriptionChannelTypeId"
+    },
+    {
+      "name": "Customer, Seller",
+      "type": "parent",
+      "parentObject": "Customer, Seller",
+      "field": "PartyRoleId"
+    },
+    {
+      "name": "BusinessBrand",
+      "type": "parent",
+      "parentObject": "BusinessBrand",
+      "field": "BusinessBrandId"
+    },
+    {
+      "name": "DataUsePurpose",
+      "type": "parent",
+      "parentObject": "DataUsePurpose",
+      "field": "DataUsePurposeId"
+    },
+    {
+      "name": "EngagementChannelType",
+      "type": "parent",
+      "parentObject": "EngagementChannelType",
+      "field": "EngagementChannelTypeId"
+    },
+    {
+      "name": "Individual",
+      "type": "parent",
+      "parentObject": "Individual",
+      "field": "PartyId"
+    },
+    {
+      "name": "CommSubscriptionConsentFeeds",
+      "type": "child",
+      "childObject": "CommSubscriptionConsentFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "CommSubscriptionConsentHistories",
+      "type": "child",
+      "childObject": "CommSubscriptionConsentHistory",
+      "field": "CommSubscriptionConsentId"
+    },
+    {
+      "name": "CommSubscriptionConsentShares",
+      "type": "child",
+      "childObject": "CommSubscriptionConsentShare",
+      "field": "ParentId"
+    },
+    {
+      "name": "CommSubscriptionTimings",
+      "type": "child",
+      "childObject": "CommSubscriptionTiming",
+      "field": "CommSubscriptionConsentId"
+    }
+  ]
+}

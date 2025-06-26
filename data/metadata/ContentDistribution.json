@@ -1,0 +1,195 @@
+{
+  "label": "ContentDistribution",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ContentVersionId",
+      "type": "reference",
+      "label": "ContentVersionId",
+      "referenceTo": "ContentVersion"
+    },
+    {
+      "name": "ContentDocumentId",
+      "type": "reference",
+      "label": "ContentDocumentId",
+      "referenceTo": "ContentDocument"
+    },
+    {
+      "name": "RelatedRecordId",
+      "type": "reference",
+      "label": "RelatedRecordId",
+      "referenceTo": "Account, Campaign, Case, Coin__c, Contact, EmailMessage, Lead, ListEmail, Opportunity"
+    },
+    {
+      "name": "PreferencesAllowPDFDownload",
+      "type": "boolean",
+      "label": "PreferencesAllowPDFDownload"
+    },
+    {
+      "name": "PreferencesAllowOriginalDownload",
+      "type": "boolean",
+      "label": "PreferencesAllowOriginalDownload"
+    },
+    {
+      "name": "PreferencesPasswordRequired",
+      "type": "boolean",
+      "label": "PreferencesPasswordRequired"
+    },
+    {
+      "name": "PreferencesNotifyOnVisit",
+      "type": "boolean",
+      "label": "PreferencesNotifyOnVisit"
+    },
+    {
+      "name": "PreferencesLinkLatestVersion",
+      "type": "boolean",
+      "label": "PreferencesLinkLatestVersion"
+    },
+    {
+      "name": "PreferencesAllowViewInBrowser",
+      "type": "boolean",
+      "label": "PreferencesAllowViewInBrowser"
+    },
+    {
+      "name": "PreferencesExpires",
+      "type": "boolean",
+      "label": "PreferencesExpires"
+    },
+    {
+      "name": "PreferencesNotifyRndtnComplete",
+      "type": "boolean",
+      "label": "PreferencesNotifyRndtnComplete"
+    },
+    {
+      "name": "ExpiryDate",
+      "type": "datetime",
+      "label": "ExpiryDate"
+    },
+    {
+      "name": "Password",
+      "type": "string",
+      "label": "Password"
+    },
+    {
+      "name": "ViewCount",
+      "type": "int",
+      "label": "ViewCount"
+    },
+    {
+      "name": "FirstViewDate",
+      "type": "datetime",
+      "label": "FirstViewDate"
+    },
+    {
+      "name": "LastViewDate",
+      "type": "datetime",
+      "label": "LastViewDate"
+    },
+    {
+      "name": "DistributionPublicUrl",
+      "type": "string",
+      "label": "DistributionPublicUrl"
+    },
+    {
+      "name": "ContentDownloadUrl",
+      "type": "string",
+      "label": "ContentDownloadUrl"
+    },
+    {
+      "name": "PdfDownloadUrl",
+      "type": "string",
+      "label": "PdfDownloadUrl"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ContentVersion",
+      "type": "parent",
+      "parentObject": "ContentVersion",
+      "field": "ContentVersionId"
+    },
+    {
+      "name": "ContentDocument",
+      "type": "parent",
+      "parentObject": "ContentDocument",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "Account, Campaign, Case, Coin__c, Contact, EmailMessage, Lead, ListEmail, Opportunity",
+      "type": "parent",
+      "parentObject": "Account, Campaign, Case, Coin__c, Contact, EmailMessage, Lead, ListEmail, Opportunity",
+      "field": "RelatedRecordId"
+    },
+    {
+      "name": "ContentDistributionViews",
+      "type": "child",
+      "childObject": "ContentDistributionView",
+      "field": "DistributionId"
+    }
+  ]
+}

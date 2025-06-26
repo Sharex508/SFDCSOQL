@@ -1,0 +1,132 @@
+{
+  "label": "ConversationParticipant",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "ConversationId",
+      "type": "reference",
+      "label": "ConversationId",
+      "referenceTo": "Conversation"
+    },
+    {
+      "name": "AppType",
+      "type": "string",
+      "label": "AppType"
+    },
+    {
+      "name": "JoinedTime",
+      "type": "datetime",
+      "label": "JoinedTime"
+    },
+    {
+      "name": "ParticipantEntityId",
+      "type": "reference",
+      "label": "ParticipantEntityId",
+      "referenceTo": "Contact, MessagingEndUser, User"
+    },
+    {
+      "name": "ParticipantKey",
+      "type": "string",
+      "label": "ParticipantKey"
+    },
+    {
+      "name": "ParticipantRole",
+      "type": "string",
+      "label": "ParticipantRole"
+    },
+    {
+      "name": "ParticipantContext",
+      "type": "string",
+      "label": "ParticipantContext"
+    },
+    {
+      "name": "ParticipantDisplayName",
+      "type": "string",
+      "label": "ParticipantDisplayName"
+    },
+    {
+      "name": "LeftTime",
+      "type": "datetime",
+      "label": "LeftTime"
+    },
+    {
+      "name": "LastActiveTime",
+      "type": "datetime",
+      "label": "LastActiveTime"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Conversation",
+      "type": "parent",
+      "parentObject": "Conversation",
+      "field": "ConversationId"
+    },
+    {
+      "name": "Contact, MessagingEndUser, User",
+      "type": "parent",
+      "parentObject": "Contact, MessagingEndUser, User",
+      "field": "ParticipantEntityId"
+    },
+    {
+      "name": "VoiceCalls",
+      "type": "child",
+      "childObject": "VoiceCall",
+      "field": "CallerId"
+    },
+    {
+      "name": "VoiceCalls",
+      "type": "child",
+      "childObject": "VoiceCall",
+      "field": "RecipientId"
+    }
+  ]
+}

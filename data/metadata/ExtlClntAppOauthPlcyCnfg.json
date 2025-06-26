@@ -1,0 +1,123 @@
+{
+  "label": "ExtlClntAppOauthPlcyCnfg",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "Language",
+      "type": "picklist",
+      "label": "Language"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ExternalClientApplicationId",
+      "type": "reference",
+      "label": "ExternalClientApplicationId",
+      "referenceTo": "ExternalClientApplication"
+    },
+    {
+      "name": "RefreshTokenPolicyType",
+      "type": "picklist",
+      "label": "RefreshTokenPolicyType"
+    },
+    {
+      "name": "RefreshTokenValidityPeriod",
+      "type": "int",
+      "label": "RefreshTokenValidityPeriod"
+    },
+    {
+      "name": "RefreshTokenValidityUnit",
+      "type": "picklist",
+      "label": "RefreshTokenValidityUnit"
+    },
+    {
+      "name": "IpRelaxationPolicyType",
+      "type": "picklist",
+      "label": "IpRelaxationPolicyType"
+    },
+    {
+      "name": "PermittedUsersPolicyType",
+      "type": "picklist",
+      "label": "PermittedUsersPolicyType"
+    },
+    {
+      "name": "SingleLogoutUrl",
+      "type": "url",
+      "label": "SingleLogoutUrl"
+    },
+    {
+      "name": "StartUrl",
+      "type": "url",
+      "label": "StartUrl"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ExternalClientApplication",
+      "type": "parent",
+      "parentObject": "ExternalClientApplication",
+      "field": "ExternalClientApplicationId"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "label": "AuthConfigProviders",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "AuthConfigId",
+      "type": "reference",
+      "label": "AuthConfigId",
+      "referenceTo": "AuthConfig"
+    },
+    {
+      "name": "AuthProviderId",
+      "type": "reference",
+      "label": "AuthProviderId",
+      "referenceTo": "AuthProvider, SamlSsoConfig"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AuthConfig",
+      "type": "parent",
+      "parentObject": "AuthConfig",
+      "field": "AuthConfigId"
+    },
+    {
+      "name": "AuthProvider, SamlSsoConfig",
+      "type": "parent",
+      "parentObject": "AuthProvider, SamlSsoConfig",
+      "field": "AuthProviderId"
+    }
+  ]
+}

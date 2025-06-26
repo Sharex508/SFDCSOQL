@@ -1,0 +1,120 @@
+{
+  "label": "RecordActionHistory",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ParentRecordId",
+      "type": "reference",
+      "label": "ParentRecordId",
+      "referenceTo": "Account, Address, Asset, AssetRelationship, AssignedResource, AssociatedLocation, Campaign, CampaignMember, Case, ChangeRequest, Coin__c, CollaborationGroup, Contact, ContactRequest, Contract, ContractLineItem, EnhancedLetterhead, Entitlement, Incident, Lead, Location, MessagingSession, OperatingHours, Opportunity, Order, Pricebook2, PricebookEntry, Problem, Product2, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, Scorecard, ServiceAppointment, ServiceContract, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, Shipment, SkillRequirement, TimeSlot, User, VoiceCall, WorkOrder, WorkOrderLineItem, WorkType, WorkTypeGroup"
+    },
+    {
+      "name": "ActionDefinitionApiName",
+      "type": "string",
+      "label": "ActionDefinitionApiName"
+    },
+    {
+      "name": "ActionDefinitionLabel",
+      "type": "string",
+      "label": "ActionDefinitionLabel"
+    },
+    {
+      "name": "ActionType",
+      "type": "picklist",
+      "label": "ActionType"
+    },
+    {
+      "name": "State",
+      "type": "picklist",
+      "label": "State"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "RecordActionId",
+      "type": "string",
+      "label": "RecordActionId"
+    },
+    {
+      "name": "LoggedTime",
+      "type": "datetime",
+      "label": "LoggedTime"
+    },
+    {
+      "name": "Pinned",
+      "type": "picklist",
+      "label": "Pinned"
+    },
+    {
+      "name": "IsMandatory",
+      "type": "boolean",
+      "label": "IsMandatory"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Account, Address, Asset, AssetRelationship, AssignedResource, AssociatedLocation, Campaign, CampaignMember, Case, ChangeRequest, Coin__c, CollaborationGroup, Contact, ContactRequest, Contract, ContractLineItem, EnhancedLetterhead, Entitlement, Incident, Lead, Location, MessagingSession, OperatingHours, Opportunity, Order, Pricebook2, PricebookEntry, Problem, Product2, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, Scorecard, ServiceAppointment, ServiceContract, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, Shipment, SkillRequirement, TimeSlot, User, VoiceCall, WorkOrder, WorkOrderLineItem, WorkType, WorkTypeGroup",
+      "type": "parent",
+      "parentObject": "Account, Address, Asset, AssetRelationship, AssignedResource, AssociatedLocation, Campaign, CampaignMember, Case, ChangeRequest, Coin__c, CollaborationGroup, Contact, ContactRequest, Contract, ContractLineItem, EnhancedLetterhead, Entitlement, Incident, Lead, Location, MessagingSession, OperatingHours, Opportunity, Order, Pricebook2, PricebookEntry, Problem, Product2, ResourceAbsence, ResourcePreference, ReturnOrder, ReturnOrderLineItem, Scorecard, ServiceAppointment, ServiceContract, ServiceResource, ServiceResourceSkill, ServiceTerritory, ServiceTerritoryMember, Shipment, SkillRequirement, TimeSlot, User, VoiceCall, WorkOrder, WorkOrderLineItem, WorkType, WorkTypeGroup",
+      "field": "ParentRecordId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    }
+  ]
+}

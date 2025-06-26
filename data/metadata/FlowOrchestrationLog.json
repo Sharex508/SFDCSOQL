@@ -1,0 +1,133 @@
+{
+  "label": "FlowOrchestrationLog",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "OrchestrationName",
+      "type": "string",
+      "label": "OrchestrationName"
+    },
+    {
+      "name": "OrchestrationVersion",
+      "type": "int",
+      "label": "OrchestrationVersion"
+    },
+    {
+      "name": "OrchestrationInstanceId",
+      "type": "reference",
+      "label": "OrchestrationInstanceId",
+      "referenceTo": "FlowOrchestrationInstance"
+    },
+    {
+      "name": "StageName",
+      "type": "string",
+      "label": "StageName"
+    },
+    {
+      "name": "StepName",
+      "type": "string",
+      "label": "StepName"
+    },
+    {
+      "name": "Actor",
+      "type": "string",
+      "label": "Actor"
+    },
+    {
+      "name": "Kind",
+      "type": "picklist",
+      "label": "Kind"
+    },
+    {
+      "name": "Timestamp",
+      "type": "datetime",
+      "label": "Timestamp"
+    },
+    {
+      "name": "Duration",
+      "type": "long",
+      "label": "Duration"
+    },
+    {
+      "name": "Context",
+      "type": "string",
+      "label": "Context"
+    },
+    {
+      "name": "AssigneeType",
+      "type": "picklist",
+      "label": "AssigneeType"
+    },
+    {
+      "name": "Assignee",
+      "type": "string",
+      "label": "Assignee"
+    },
+    {
+      "name": "Comments",
+      "type": "string",
+      "label": "Comments"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "FlowOrchestrationInstance",
+      "type": "parent",
+      "parentObject": "FlowOrchestrationInstance",
+      "field": "OrchestrationInstanceId"
+    }
+  ]
+}

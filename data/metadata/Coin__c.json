@@ -1,0 +1,121 @@
+{
+  "label": "Coin__c",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "coin_initial_price__c",
+      "type": "string",
+      "label": "coin_initial_price__c"
+    },
+    {
+      "name": "Purchase_Price__c",
+      "type": "string",
+      "label": "Purchase_Price__c"
+    },
+    {
+      "name": "Sold_Price__c",
+      "type": "string",
+      "label": "Sold_Price__c"
+    },
+    {
+      "name": "Margin__c",
+      "type": "string",
+      "label": "Margin__c"
+    },
+    {
+      "name": "User_Account_Name__c",
+      "type": "reference",
+      "label": "User_Account_Name__c",
+      "referenceTo": "Account"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "User_Account_Name__c"
+    },
+    {
+      "name": "Coin__Shares",
+      "type": "child",
+      "childObject": "Coin__Share",
+      "field": "ParentId"
+    }
+  ]
+}

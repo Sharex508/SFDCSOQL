@@ -1,0 +1,102 @@
+{
+  "label": "ContactCenterChannel",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ContactCenterId",
+      "type": "reference",
+      "label": "ContactCenterId",
+      "referenceTo": "CallCenter"
+    },
+    {
+      "name": "ChannelId",
+      "type": "reference",
+      "label": "ChannelId",
+      "referenceTo": "MessagingChannel"
+    },
+    {
+      "name": "VoicemailHandler",
+      "type": "picklist",
+      "label": "VoicemailHandler"
+    },
+    {
+      "name": "VoicemailFallbackQueueId",
+      "type": "reference",
+      "label": "VoicemailFallbackQueueId",
+      "referenceTo": "Group"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "CallCenter",
+      "type": "parent",
+      "parentObject": "CallCenter",
+      "field": "ContactCenterId"
+    },
+    {
+      "name": "MessagingChannel",
+      "type": "parent",
+      "parentObject": "MessagingChannel",
+      "field": "ChannelId"
+    },
+    {
+      "name": "Group",
+      "type": "parent",
+      "parentObject": "Group",
+      "field": "VoicemailFallbackQueueId"
+    }
+  ]
+}

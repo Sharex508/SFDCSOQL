@@ -1,0 +1,39 @@
+{
+  "label": "PermissionSetTabSetting",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "PermissionSet"
+    },
+    {
+      "name": "Visibility",
+      "type": "picklist",
+      "label": "Visibility"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "PermissionSet",
+      "type": "parent",
+      "parentObject": "PermissionSet",
+      "field": "ParentId"
+    }
+  ]
+}

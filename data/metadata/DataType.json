@@ -1,0 +1,41 @@
+{
+  "label": "DataType",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "IsComplex",
+      "type": "boolean",
+      "label": "IsComplex"
+    },
+    {
+      "name": "ContextServiceDataTypeId",
+      "type": "string",
+      "label": "ContextServiceDataTypeId"
+    },
+    {
+      "name": "ContextWsdlDataTypeId",
+      "type": "string",
+      "label": "ContextWsdlDataTypeId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

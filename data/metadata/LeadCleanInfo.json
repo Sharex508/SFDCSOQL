@@ -1,0 +1,420 @@
+{
+  "label": "LeadCleanInfo",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LeadId",
+      "type": "reference",
+      "label": "LeadId",
+      "referenceTo": "Lead"
+    },
+    {
+      "name": "LastMatchedDate",
+      "type": "datetime",
+      "label": "LastMatchedDate"
+    },
+    {
+      "name": "LastStatusChangedDate",
+      "type": "datetime",
+      "label": "LastStatusChangedDate"
+    },
+    {
+      "name": "LastStatusChangedById",
+      "type": "reference",
+      "label": "LastStatusChangedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "IsInactive",
+      "type": "boolean",
+      "label": "IsInactive"
+    },
+    {
+      "name": "FirstName",
+      "type": "string",
+      "label": "FirstName"
+    },
+    {
+      "name": "LastName",
+      "type": "string",
+      "label": "LastName"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "label": "Email"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Street",
+      "type": "textarea",
+      "label": "Street"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "label": "State"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "Latitude",
+      "type": "double",
+      "label": "Latitude"
+    },
+    {
+      "name": "Longitude",
+      "type": "double",
+      "label": "Longitude"
+    },
+    {
+      "name": "GeocodeAccuracy",
+      "type": "picklist",
+      "label": "GeocodeAccuracy"
+    },
+    {
+      "name": "Address",
+      "type": "address",
+      "label": "Address"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "AnnualRevenue",
+      "type": "currency",
+      "label": "AnnualRevenue"
+    },
+    {
+      "name": "NumberOfEmployees",
+      "type": "int",
+      "label": "NumberOfEmployees"
+    },
+    {
+      "name": "Industry",
+      "type": "picklist",
+      "label": "Industry"
+    },
+    {
+      "name": "CompanyName",
+      "type": "string",
+      "label": "CompanyName"
+    },
+    {
+      "name": "CompanyDunsNumber",
+      "type": "string",
+      "label": "CompanyDunsNumber"
+    },
+    {
+      "name": "ContactStatusDataDotCom",
+      "type": "picklist",
+      "label": "ContactStatusDataDotCom"
+    },
+    {
+      "name": "IsReviewedName",
+      "type": "boolean",
+      "label": "IsReviewedName"
+    },
+    {
+      "name": "IsReviewedEmail",
+      "type": "boolean",
+      "label": "IsReviewedEmail"
+    },
+    {
+      "name": "IsReviewedPhone",
+      "type": "boolean",
+      "label": "IsReviewedPhone"
+    },
+    {
+      "name": "IsReviewedAddress",
+      "type": "boolean",
+      "label": "IsReviewedAddress"
+    },
+    {
+      "name": "IsReviewedTitle",
+      "type": "boolean",
+      "label": "IsReviewedTitle"
+    },
+    {
+      "name": "IsReviewedAnnualRevenue",
+      "type": "boolean",
+      "label": "IsReviewedAnnualRevenue"
+    },
+    {
+      "name": "IsReviewedNumberOfEmployees",
+      "type": "boolean",
+      "label": "IsReviewedNumberOfEmployees"
+    },
+    {
+      "name": "IsReviewedIndustry",
+      "type": "boolean",
+      "label": "IsReviewedIndustry"
+    },
+    {
+      "name": "IsReviewedCompanyName",
+      "type": "boolean",
+      "label": "IsReviewedCompanyName"
+    },
+    {
+      "name": "IsReviewedCompanyDunsNumber",
+      "type": "boolean",
+      "label": "IsReviewedCompanyDunsNumber"
+    },
+    {
+      "name": "IsReviewedDandBCompanyDunsNumber",
+      "type": "boolean",
+      "label": "IsReviewedDandBCompanyDunsNumber"
+    },
+    {
+      "name": "IsDifferentFirstName",
+      "type": "boolean",
+      "label": "IsDifferentFirstName"
+    },
+    {
+      "name": "IsDifferentLastName",
+      "type": "boolean",
+      "label": "IsDifferentLastName"
+    },
+    {
+      "name": "IsDifferentEmail",
+      "type": "boolean",
+      "label": "IsDifferentEmail"
+    },
+    {
+      "name": "IsDifferentPhone",
+      "type": "boolean",
+      "label": "IsDifferentPhone"
+    },
+    {
+      "name": "IsDifferentStreet",
+      "type": "boolean",
+      "label": "IsDifferentStreet"
+    },
+    {
+      "name": "IsDifferentCity",
+      "type": "boolean",
+      "label": "IsDifferentCity"
+    },
+    {
+      "name": "IsDifferentState",
+      "type": "boolean",
+      "label": "IsDifferentState"
+    },
+    {
+      "name": "IsDifferentPostalCode",
+      "type": "boolean",
+      "label": "IsDifferentPostalCode"
+    },
+    {
+      "name": "IsDifferentCountry",
+      "type": "boolean",
+      "label": "IsDifferentCountry"
+    },
+    {
+      "name": "IsDifferentTitle",
+      "type": "boolean",
+      "label": "IsDifferentTitle"
+    },
+    {
+      "name": "IsDifferentAnnualRevenue",
+      "type": "boolean",
+      "label": "IsDifferentAnnualRevenue"
+    },
+    {
+      "name": "IsDifferentNumberOfEmployees",
+      "type": "boolean",
+      "label": "IsDifferentNumberOfEmployees"
+    },
+    {
+      "name": "IsDifferentIndustry",
+      "type": "boolean",
+      "label": "IsDifferentIndustry"
+    },
+    {
+      "name": "IsDifferentCompanyName",
+      "type": "boolean",
+      "label": "IsDifferentCompanyName"
+    },
+    {
+      "name": "IsDifferentCompanyDunsNumber",
+      "type": "boolean",
+      "label": "IsDifferentCompanyDunsNumber"
+    },
+    {
+      "name": "IsDifferentDandBCompanyDunsNumber",
+      "type": "boolean",
+      "label": "IsDifferentDandBCompanyDunsNumber"
+    },
+    {
+      "name": "IsDifferentStateCode",
+      "type": "boolean",
+      "label": "IsDifferentStateCode"
+    },
+    {
+      "name": "IsDifferentCountryCode",
+      "type": "boolean",
+      "label": "IsDifferentCountryCode"
+    },
+    {
+      "name": "CleanedByJob",
+      "type": "boolean",
+      "label": "CleanedByJob"
+    },
+    {
+      "name": "CleanedByUser",
+      "type": "boolean",
+      "label": "CleanedByUser"
+    },
+    {
+      "name": "DandBCompanyDunsNumber",
+      "type": "string",
+      "label": "DandBCompanyDunsNumber"
+    },
+    {
+      "name": "DataDotComCompanyId",
+      "type": "string",
+      "label": "DataDotComCompanyId"
+    },
+    {
+      "name": "IsFlaggedWrongName",
+      "type": "boolean",
+      "label": "IsFlaggedWrongName"
+    },
+    {
+      "name": "IsFlaggedWrongEmail",
+      "type": "boolean",
+      "label": "IsFlaggedWrongEmail"
+    },
+    {
+      "name": "IsFlaggedWrongPhone",
+      "type": "boolean",
+      "label": "IsFlaggedWrongPhone"
+    },
+    {
+      "name": "IsFlaggedWrongAddress",
+      "type": "boolean",
+      "label": "IsFlaggedWrongAddress"
+    },
+    {
+      "name": "IsFlaggedWrongTitle",
+      "type": "boolean",
+      "label": "IsFlaggedWrongTitle"
+    },
+    {
+      "name": "IsFlaggedWrongAnnualRevenue",
+      "type": "boolean",
+      "label": "IsFlaggedWrongAnnualRevenue"
+    },
+    {
+      "name": "IsFlaggedWrongNumberOfEmployees",
+      "type": "boolean",
+      "label": "IsFlaggedWrongNumberOfEmployees"
+    },
+    {
+      "name": "IsFlaggedWrongIndustry",
+      "type": "boolean",
+      "label": "IsFlaggedWrongIndustry"
+    },
+    {
+      "name": "IsFlaggedWrongCompanyName",
+      "type": "boolean",
+      "label": "IsFlaggedWrongCompanyName"
+    },
+    {
+      "name": "IsFlaggedWrongCompanyDunsNumber",
+      "type": "boolean",
+      "label": "IsFlaggedWrongCompanyDunsNumber"
+    },
+    {
+      "name": "DataDotComId",
+      "type": "string",
+      "label": "DataDotComId"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Lead",
+      "type": "parent",
+      "parentObject": "Lead",
+      "field": "LeadId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastStatusChangedById"
+    }
+  ]
+}

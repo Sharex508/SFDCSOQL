@@ -1,0 +1,101 @@
+{
+  "label": "EmailCapture",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "ToPattern",
+      "type": "string",
+      "label": "ToPattern"
+    },
+    {
+      "name": "FromPattern",
+      "type": "string",
+      "label": "FromPattern"
+    },
+    {
+      "name": "Sender",
+      "type": "string",
+      "label": "Sender"
+    },
+    {
+      "name": "Recipient",
+      "type": "string",
+      "label": "Recipient"
+    },
+    {
+      "name": "CaptureDate",
+      "type": "datetime",
+      "label": "CaptureDate"
+    },
+    {
+      "name": "RawMessageLength",
+      "type": "int",
+      "label": "RawMessageLength"
+    },
+    {
+      "name": "RawMessage",
+      "type": "base64",
+      "label": "RawMessage"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

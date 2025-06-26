@@ -1,0 +1,93 @@
+{
+  "label": "ConvIntelligenceSignalSubRule",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ConvIntelligenceSignalRuleId",
+      "type": "reference",
+      "label": "ConvIntelligenceSignalRuleId",
+      "referenceTo": "ConvIntelligenceSignalRule"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "OperandValue",
+      "type": "string",
+      "label": "OperandValue"
+    },
+    {
+      "name": "Order",
+      "type": "int",
+      "label": "Order"
+    },
+    {
+      "name": "Operator",
+      "type": "picklist",
+      "label": "Operator"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ConvIntelligenceSignalRule",
+      "type": "parent",
+      "parentObject": "ConvIntelligenceSignalRule",
+      "field": "ConvIntelligenceSignalRuleId"
+    }
+  ]
+}

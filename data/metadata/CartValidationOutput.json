@@ -1,0 +1,122 @@
+{
+  "label": "CartValidationOutput",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CartId",
+      "type": "reference",
+      "label": "CartId",
+      "referenceTo": "WebCart"
+    },
+    {
+      "name": "RelatedEntityId",
+      "type": "reference",
+      "label": "RelatedEntityId",
+      "referenceTo": "CartDeliveryGroup, CartItem, CartTax, WebCart"
+    },
+    {
+      "name": "BackgroundOperationId",
+      "type": "reference",
+      "label": "BackgroundOperationId",
+      "referenceTo": "BackgroundOperation"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Level",
+      "type": "picklist",
+      "label": "Level"
+    },
+    {
+      "name": "Message",
+      "type": "string",
+      "label": "Message"
+    },
+    {
+      "name": "IsDismissed",
+      "type": "boolean",
+      "label": "IsDismissed"
+    },
+    {
+      "name": "RelatedEntityPrefix",
+      "type": "string",
+      "label": "RelatedEntityPrefix"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "WebCart",
+      "type": "parent",
+      "parentObject": "WebCart",
+      "field": "CartId"
+    },
+    {
+      "name": "CartDeliveryGroup, CartItem, CartTax, WebCart",
+      "type": "parent",
+      "parentObject": "CartDeliveryGroup, CartItem, CartTax, WebCart",
+      "field": "RelatedEntityId"
+    },
+    {
+      "name": "BackgroundOperation",
+      "type": "parent",
+      "parentObject": "BackgroundOperation",
+      "field": "BackgroundOperationId"
+    }
+  ]
+}

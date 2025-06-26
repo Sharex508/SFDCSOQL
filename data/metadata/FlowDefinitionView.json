@@ -1,0 +1,161 @@
+{
+  "label": "FlowDefinitionView",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "ApiName",
+      "type": "string",
+      "label": "ApiName"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "ProcessType",
+      "type": "picklist",
+      "label": "ProcessType"
+    },
+    {
+      "name": "TriggerType",
+      "type": "picklist",
+      "label": "TriggerType"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "ActiveVersionId",
+      "type": "string",
+      "label": "ActiveVersionId"
+    },
+    {
+      "name": "LatestVersionId",
+      "type": "string",
+      "label": "LatestVersionId"
+    },
+    {
+      "name": "LastModifiedBy",
+      "type": "string",
+      "label": "LastModifiedBy"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "IsOutOfDate",
+      "type": "boolean",
+      "label": "IsOutOfDate"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "IsTemplate",
+      "type": "boolean",
+      "label": "IsTemplate"
+    },
+    {
+      "name": "IsOverridable",
+      "type": "boolean",
+      "label": "IsOverridable"
+    },
+    {
+      "name": "OverriddenById",
+      "type": "string",
+      "label": "OverriddenById"
+    },
+    {
+      "name": "SourceTemplateId",
+      "type": "string",
+      "label": "SourceTemplateId"
+    },
+    {
+      "name": "OverriddenFlowId",
+      "type": "string",
+      "label": "OverriddenFlowId"
+    },
+    {
+      "name": "IsSwingFlow",
+      "type": "boolean",
+      "label": "IsSwingFlow"
+    },
+    {
+      "name": "Builder",
+      "type": "string",
+      "label": "Builder"
+    },
+    {
+      "name": "ManageableState",
+      "type": "picklist",
+      "label": "ManageableState"
+    },
+    {
+      "name": "InstalledPackageName",
+      "type": "string",
+      "label": "InstalledPackageName"
+    },
+    {
+      "name": "TriggerObjectOrEventLabel",
+      "type": "string",
+      "label": "TriggerObjectOrEventLabel"
+    },
+    {
+      "name": "TriggerObjectOrEventId",
+      "type": "string",
+      "label": "TriggerObjectOrEventId"
+    },
+    {
+      "name": "RecordTriggerType",
+      "type": "picklist",
+      "label": "RecordTriggerType"
+    },
+    {
+      "name": "HasAsyncAfterCommitPath",
+      "type": "boolean",
+      "label": "HasAsyncAfterCommitPath"
+    },
+    {
+      "name": "VersionNumber",
+      "type": "int",
+      "label": "VersionNumber"
+    },
+    {
+      "name": "TriggerOrder",
+      "type": "int",
+      "label": "TriggerOrder"
+    },
+    {
+      "name": "Environments",
+      "type": "multipicklist",
+      "label": "Environments"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

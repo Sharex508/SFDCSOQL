@@ -1,0 +1,104 @@
+{
+  "label": "DataAssessmentFieldMetric",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "DataAssessmentMetricId",
+      "type": "reference",
+      "label": "DataAssessmentMetricId",
+      "referenceTo": "DataAssessmentMetric"
+    },
+    {
+      "name": "FieldName",
+      "type": "string",
+      "label": "FieldName"
+    },
+    {
+      "name": "NumMatchedInSync",
+      "type": "int",
+      "label": "NumMatchedInSync"
+    },
+    {
+      "name": "NumMatchedDifferent",
+      "type": "int",
+      "label": "NumMatchedDifferent"
+    },
+    {
+      "name": "NumMatchedBlanks",
+      "type": "int",
+      "label": "NumMatchedBlanks"
+    },
+    {
+      "name": "NumUnmatchedBlanks",
+      "type": "int",
+      "label": "NumUnmatchedBlanks"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "DataAssessmentMetric",
+      "type": "parent",
+      "parentObject": "DataAssessmentMetric",
+      "field": "DataAssessmentMetricId"
+    },
+    {
+      "name": "DataAssessmentValueMetrics",
+      "type": "child",
+      "childObject": "DataAssessmentValueMetric",
+      "field": "DataAssessmentFieldMetricId"
+    }
+  ]
+}

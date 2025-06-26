@@ -1,0 +1,86 @@
+{
+  "label": "UserAppMenuItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "AppMenuItemId",
+      "type": "string",
+      "label": "AppMenuItemId"
+    },
+    {
+      "name": "ApplicationId",
+      "type": "reference",
+      "label": "ApplicationId"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "UserSortOrder",
+      "type": "int",
+      "label": "UserSortOrder"
+    },
+    {
+      "name": "SortOrder",
+      "type": "int",
+      "label": "SortOrder"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "LogoUrl",
+      "type": "url",
+      "label": "LogoUrl"
+    },
+    {
+      "name": "IconUrl",
+      "type": "url",
+      "label": "IconUrl"
+    },
+    {
+      "name": "InfoUrl",
+      "type": "url",
+      "label": "InfoUrl"
+    },
+    {
+      "name": "StartUrl",
+      "type": "url",
+      "label": "StartUrl"
+    },
+    {
+      "name": "MobileStartUrl",
+      "type": "url",
+      "label": "MobileStartUrl"
+    },
+    {
+      "name": "IsVisible",
+      "type": "boolean",
+      "label": "IsVisible"
+    },
+    {
+      "name": "IsUsingAdminAuthorization",
+      "type": "boolean",
+      "label": "IsUsingAdminAuthorization"
+    }
+  ],
+  "relationships": []
+}

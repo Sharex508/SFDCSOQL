@@ -1,0 +1,106 @@
+{
+  "label": "AIInsightAction",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "AiRecordInsightId",
+      "type": "reference",
+      "label": "AiRecordInsightId",
+      "referenceTo": "AIRecordInsight"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Confidence",
+      "type": "double",
+      "label": "Confidence"
+    },
+    {
+      "name": "ActionName",
+      "type": "picklist",
+      "label": "ActionName"
+    },
+    {
+      "name": "ActionId",
+      "type": "reference",
+      "label": "ActionId",
+      "referenceTo": "ApexClass, AuraDefinitionBundle, CustomNotificationType, Macro"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AIRecordInsight",
+      "type": "parent",
+      "parentObject": "AIRecordInsight",
+      "field": "AiRecordInsightId"
+    },
+    {
+      "name": "ApexClass, AuraDefinitionBundle, CustomNotificationType, Macro",
+      "type": "parent",
+      "parentObject": "ApexClass, AuraDefinitionBundle, CustomNotificationType, Macro",
+      "field": "ActionId"
+    },
+    {
+      "name": "AIInsightValues",
+      "type": "child",
+      "childObject": "AIInsightValue",
+      "field": "AiInsightActionId"
+    }
+  ]
+}

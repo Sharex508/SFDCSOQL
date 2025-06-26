@@ -1,0 +1,104 @@
+{
+  "label": "DatacloudPurchaseUsage",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "UserType",
+      "type": "picklist",
+      "label": "UserType"
+    },
+    {
+      "name": "PurchaseType",
+      "type": "picklist",
+      "label": "PurchaseType"
+    },
+    {
+      "name": "DatacloudEntityType",
+      "type": "picklist",
+      "label": "DatacloudEntityType"
+    },
+    {
+      "name": "Usage",
+      "type": "double",
+      "label": "Usage"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "DatacloudOwnedEntities",
+      "type": "child",
+      "childObject": "DatacloudOwnedEntity",
+      "field": "PurchaseUsageId"
+    }
+  ]
+}

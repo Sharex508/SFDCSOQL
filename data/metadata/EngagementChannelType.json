@@ -1,0 +1,152 @@
+{
+  "label": "EngagementChannelType",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "ContactPointType",
+      "type": "picklist",
+      "label": "ContactPointType"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "UsageType",
+      "type": "multipicklist",
+      "label": "UsageType"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AppointmentInvitations",
+      "type": "child",
+      "childObject": "AppointmentInvitation",
+      "field": "EngagementChannelTypeId"
+    },
+    {
+      "name": "CommSubscriptionChannelTypes",
+      "type": "child",
+      "childObject": "CommSubscriptionChannelType",
+      "field": "EngagementChannelTypeId"
+    },
+    {
+      "name": "CommSubscriptionConsents",
+      "type": "child",
+      "childObject": "CommSubscriptionConsent",
+      "field": "EngagementChannelTypeId"
+    },
+    {
+      "name": "EngagementChannelTypeFeeds",
+      "type": "child",
+      "childObject": "EngagementChannelTypeFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "EngagementChannelTypeHistories",
+      "type": "child",
+      "childObject": "EngagementChannelTypeHistory",
+      "field": "EngagementChannelTypeId"
+    },
+    {
+      "name": "EngagementChannelTypeShares",
+      "type": "child",
+      "childObject": "EngagementChannelTypeShare",
+      "field": "ParentId"
+    },
+    {
+      "name": "EngagementChannelWorkTypes",
+      "type": "child",
+      "childObject": "EngagementChannelWorkType",
+      "field": "EngagementChannelTypeId"
+    },
+    {
+      "name": "ServiceAppointments",
+      "type": "child",
+      "childObject": "ServiceAppointment",
+      "field": "EngagementChannelTypeId"
+    },
+    {
+      "name": "ShiftEngagementChannels",
+      "type": "child",
+      "childObject": "ShiftEngagementChannel",
+      "field": "EngagementChannelTypeId"
+    }
+  ]
+}

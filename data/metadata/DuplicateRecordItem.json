@@ -1,0 +1,85 @@
+{
+  "label": "DuplicateRecordItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "DuplicateRecordSetId",
+      "type": "reference",
+      "label": "DuplicateRecordSetId",
+      "referenceTo": "DuplicateRecordSet"
+    },
+    {
+      "name": "RecordId",
+      "type": "reference",
+      "label": "RecordId",
+      "referenceTo": "Account, Address, Coin__c, Contact, Individual, Lead"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "DuplicateRecordSet",
+      "type": "parent",
+      "parentObject": "DuplicateRecordSet",
+      "field": "DuplicateRecordSetId"
+    },
+    {
+      "name": "Account, Address, Coin__c, Contact, Individual, Lead",
+      "type": "parent",
+      "parentObject": "Account, Address, Coin__c, Contact, Individual, Lead",
+      "field": "RecordId"
+    }
+  ]
+}

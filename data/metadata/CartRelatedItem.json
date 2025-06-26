@@ -1,0 +1,90 @@
+{
+  "label": "CartRelatedItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ParentCartItemId",
+      "type": "reference",
+      "label": "ParentCartItemId",
+      "referenceTo": "CartItem"
+    },
+    {
+      "name": "ChildCartItemId",
+      "type": "reference",
+      "label": "ChildCartItemId",
+      "referenceTo": "CartItem"
+    },
+    {
+      "name": "RelationshipType",
+      "type": "picklist",
+      "label": "RelationshipType"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "CartItem",
+      "type": "parent",
+      "parentObject": "CartItem",
+      "field": "ParentCartItemId"
+    },
+    {
+      "name": "CartItem",
+      "type": "parent",
+      "parentObject": "CartItem",
+      "field": "ChildCartItemId"
+    }
+  ]
+}

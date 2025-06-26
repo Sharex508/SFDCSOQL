@@ -1,0 +1,76 @@
+{
+  "label": "OauthToken",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "AccessToken",
+      "type": "string",
+      "label": "AccessToken"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "RequestToken",
+      "type": "string",
+      "label": "RequestToken"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "AppName",
+      "type": "string",
+      "label": "AppName"
+    },
+    {
+      "name": "LastUsedDate",
+      "type": "datetime",
+      "label": "LastUsedDate"
+    },
+    {
+      "name": "UseCount",
+      "type": "int",
+      "label": "UseCount"
+    },
+    {
+      "name": "DeleteToken",
+      "type": "string",
+      "label": "DeleteToken"
+    },
+    {
+      "name": "AppMenuItemId",
+      "type": "reference",
+      "label": "AppMenuItemId",
+      "referenceTo": "AppMenuItem"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "AppMenuItem",
+      "type": "parent",
+      "parentObject": "AppMenuItem",
+      "field": "AppMenuItemId"
+    }
+  ]
+}

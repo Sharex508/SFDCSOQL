@@ -1,0 +1,71 @@
+{
+  "label": "ServiceContractHistory",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ServiceContractId",
+      "type": "reference",
+      "label": "ServiceContractId",
+      "referenceTo": "ServiceContract"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "Field",
+      "type": "picklist",
+      "label": "Field"
+    },
+    {
+      "name": "DataType",
+      "type": "picklist",
+      "label": "DataType"
+    },
+    {
+      "name": "OldValue",
+      "type": "anytype",
+      "label": "OldValue"
+    },
+    {
+      "name": "NewValue",
+      "type": "anytype",
+      "label": "NewValue"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ServiceContract",
+      "type": "parent",
+      "parentObject": "ServiceContract",
+      "field": "ServiceContractId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    }
+  ]
+}

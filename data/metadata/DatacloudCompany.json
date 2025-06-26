@@ -1,0 +1,226 @@
+{
+  "label": "DatacloudCompany",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ExternalId",
+      "type": "string",
+      "label": "ExternalId"
+    },
+    {
+      "name": "CompanyId",
+      "type": "string",
+      "label": "CompanyId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "IsInactive",
+      "type": "boolean",
+      "label": "IsInactive"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Fax",
+      "type": "phone",
+      "label": "Fax"
+    },
+    {
+      "name": "Street",
+      "type": "string",
+      "label": "Street"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "label": "State"
+    },
+    {
+      "name": "StateCode",
+      "type": "picklist",
+      "label": "StateCode"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "CountryCode",
+      "type": "picklist",
+      "label": "CountryCode"
+    },
+    {
+      "name": "Zip",
+      "type": "string",
+      "label": "Zip"
+    },
+    {
+      "name": "Site",
+      "type": "picklist",
+      "label": "Site"
+    },
+    {
+      "name": "Industry",
+      "type": "string",
+      "label": "Industry"
+    },
+    {
+      "name": "NumberOfEmployees",
+      "type": "int",
+      "label": "NumberOfEmployees"
+    },
+    {
+      "name": "AnnualRevenue",
+      "type": "currency",
+      "label": "AnnualRevenue"
+    },
+    {
+      "name": "DunsNumber",
+      "type": "string",
+      "label": "DunsNumber"
+    },
+    {
+      "name": "NaicsCode",
+      "type": "string",
+      "label": "NaicsCode"
+    },
+    {
+      "name": "NaicsDesc",
+      "type": "string",
+      "label": "NaicsDesc"
+    },
+    {
+      "name": "Sic",
+      "type": "string",
+      "label": "Sic"
+    },
+    {
+      "name": "SicDesc",
+      "type": "string",
+      "label": "SicDesc"
+    },
+    {
+      "name": "Ownership",
+      "type": "string",
+      "label": "Ownership"
+    },
+    {
+      "name": "IsOwned",
+      "type": "boolean",
+      "label": "IsOwned"
+    },
+    {
+      "name": "TickerSymbol",
+      "type": "string",
+      "label": "TickerSymbol"
+    },
+    {
+      "name": "TradeStyle",
+      "type": "string",
+      "label": "TradeStyle"
+    },
+    {
+      "name": "Website",
+      "type": "url",
+      "label": "Website"
+    },
+    {
+      "name": "YearStarted",
+      "type": "string",
+      "label": "YearStarted"
+    },
+    {
+      "name": "ActiveContacts",
+      "type": "int",
+      "label": "ActiveContacts"
+    },
+    {
+      "name": "UpdatedDate",
+      "type": "datetime",
+      "label": "UpdatedDate"
+    },
+    {
+      "name": "FortuneRank",
+      "type": "int",
+      "label": "FortuneRank"
+    },
+    {
+      "name": "IncludedInSnP500",
+      "type": "string",
+      "label": "IncludedInSnP500"
+    },
+    {
+      "name": "PremisesMeasure",
+      "type": "int",
+      "label": "PremisesMeasure"
+    },
+    {
+      "name": "PremisesMeasureReliability",
+      "type": "string",
+      "label": "PremisesMeasureReliability"
+    },
+    {
+      "name": "PremisesMeasureUnit",
+      "type": "string",
+      "label": "PremisesMeasureUnit"
+    },
+    {
+      "name": "EmployeeQuantityGrowthRate",
+      "type": "double",
+      "label": "EmployeeQuantityGrowthRate"
+    },
+    {
+      "name": "SalesTurnoverGrowthRate",
+      "type": "double",
+      "label": "SalesTurnoverGrowthRate"
+    },
+    {
+      "name": "PriorYearEmployees",
+      "type": "int",
+      "label": "PriorYearEmployees"
+    },
+    {
+      "name": "PriorYearRevenue",
+      "type": "currency",
+      "label": "PriorYearRevenue"
+    },
+    {
+      "name": "IsInCrm",
+      "type": "boolean",
+      "label": "IsInCrm"
+    },
+    {
+      "name": "FullAddress",
+      "type": "string",
+      "label": "FullAddress"
+    },
+    {
+      "name": "SicCodeDesc",
+      "type": "string",
+      "label": "SicCodeDesc"
+    }
+  ],
+  "relationships": []
+}

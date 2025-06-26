@@ -1,0 +1,222 @@
+{
+  "label": "CreditMemoLine",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CreditMemoId",
+      "type": "reference",
+      "label": "CreditMemoId",
+      "referenceTo": "CreditMemo"
+    },
+    {
+      "name": "ReferenceEntityItemId",
+      "type": "reference",
+      "label": "ReferenceEntityItemId",
+      "referenceTo": "InvoiceLine, OrderItem"
+    },
+    {
+      "name": "StartDate",
+      "type": "date",
+      "label": "StartDate"
+    },
+    {
+      "name": "EndDate",
+      "type": "date",
+      "label": "EndDate"
+    },
+    {
+      "name": "TaxEffectiveDate",
+      "type": "date",
+      "label": "TaxEffectiveDate"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "TaxCode",
+      "type": "string",
+      "label": "TaxCode"
+    },
+    {
+      "name": "TaxRate",
+      "type": "percent",
+      "label": "TaxRate"
+    },
+    {
+      "name": "Status",
+      "type": "string",
+      "label": "Status"
+    },
+    {
+      "name": "ChargeAmount",
+      "type": "currency",
+      "label": "ChargeAmount"
+    },
+    {
+      "name": "TaxAmount",
+      "type": "currency",
+      "label": "TaxAmount"
+    },
+    {
+      "name": "AdjustmentAmount",
+      "type": "currency",
+      "label": "AdjustmentAmount"
+    },
+    {
+      "name": "LineAmount",
+      "type": "currency",
+      "label": "LineAmount"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "ReferenceEntityItemTypeCode",
+      "type": "picklist",
+      "label": "ReferenceEntityItemTypeCode"
+    },
+    {
+      "name": "ReferenceEntityItemType",
+      "type": "picklist",
+      "label": "ReferenceEntityItemType"
+    },
+    {
+      "name": "RelatedLineId",
+      "type": "reference",
+      "label": "RelatedLineId",
+      "referenceTo": "CreditMemoLine"
+    },
+    {
+      "name": "Product2Id",
+      "type": "reference",
+      "label": "Product2Id",
+      "referenceTo": "Product2"
+    },
+    {
+      "name": "TaxName",
+      "type": "string",
+      "label": "TaxName"
+    },
+    {
+      "name": "ChargeTaxAmount",
+      "type": "currency",
+      "label": "ChargeTaxAmount"
+    },
+    {
+      "name": "ChargeAmountWithTax",
+      "type": "currency",
+      "label": "ChargeAmountWithTax"
+    },
+    {
+      "name": "AdjustmentTaxAmount",
+      "type": "currency",
+      "label": "AdjustmentTaxAmount"
+    },
+    {
+      "name": "AdjustmentAmountWithTax",
+      "type": "currency",
+      "label": "AdjustmentAmountWithTax"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "CreditMemo",
+      "type": "parent",
+      "parentObject": "CreditMemo",
+      "field": "CreditMemoId"
+    },
+    {
+      "name": "InvoiceLine, OrderItem",
+      "type": "parent",
+      "parentObject": "InvoiceLine, OrderItem",
+      "field": "ReferenceEntityItemId"
+    },
+    {
+      "name": "CreditMemoLine",
+      "type": "parent",
+      "parentObject": "CreditMemoLine",
+      "field": "RelatedLineId"
+    },
+    {
+      "name": "Product2",
+      "type": "parent",
+      "parentObject": "Product2",
+      "field": "Product2Id"
+    },
+    {
+      "name": "CreditMemoLines",
+      "type": "child",
+      "childObject": "CreditMemoLine",
+      "field": "RelatedLineId"
+    },
+    {
+      "name": "CreditMemoLineFeeds",
+      "type": "child",
+      "childObject": "CreditMemoLineFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "CreditMemoLineHistories",
+      "type": "child",
+      "childObject": "CreditMemoLineHistory",
+      "field": "CreditMemoLineId"
+    }
+  ]
+}

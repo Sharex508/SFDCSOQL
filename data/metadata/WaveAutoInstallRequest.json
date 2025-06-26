@@ -1,0 +1,114 @@
+{
+  "label": "WaveAutoInstallRequest",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "TemplateApiName",
+      "type": "string",
+      "label": "TemplateApiName"
+    },
+    {
+      "name": "TemplateVersion",
+      "type": "string",
+      "label": "TemplateVersion"
+    },
+    {
+      "name": "FolderId",
+      "type": "reference",
+      "label": "FolderId",
+      "referenceTo": "Folder"
+    },
+    {
+      "name": "RequestType",
+      "type": "picklist",
+      "label": "RequestType"
+    },
+    {
+      "name": "RequestStatus",
+      "type": "picklist",
+      "label": "RequestStatus"
+    },
+    {
+      "name": "FailedReason",
+      "type": "picklist",
+      "label": "FailedReason"
+    },
+    {
+      "name": "Configuration",
+      "type": "textarea",
+      "label": "Configuration"
+    },
+    {
+      "name": "RequestLog",
+      "type": "textarea",
+      "label": "RequestLog"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Folder",
+      "type": "parent",
+      "parentObject": "Folder",
+      "field": "FolderId"
+    },
+    {
+      "name": "WaveCompatibilityCheckItems",
+      "type": "child",
+      "childObject": "WaveCompatibilityCheckItem",
+      "field": "WaveAutoInstallRequestId"
+    }
+  ]
+}

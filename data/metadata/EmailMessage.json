@@ -1,0 +1,253 @@
+{
+  "label": "EmailMessage",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "Case"
+    },
+    {
+      "name": "ActivityId",
+      "type": "reference",
+      "label": "ActivityId",
+      "referenceTo": "Task"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "TextBody",
+      "type": "textarea",
+      "label": "TextBody"
+    },
+    {
+      "name": "HtmlBody",
+      "type": "textarea",
+      "label": "HtmlBody"
+    },
+    {
+      "name": "Headers",
+      "type": "textarea",
+      "label": "Headers"
+    },
+    {
+      "name": "Subject",
+      "type": "string",
+      "label": "Subject"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "FromName",
+      "type": "string",
+      "label": "FromName"
+    },
+    {
+      "name": "FromAddress",
+      "type": "email",
+      "label": "FromAddress"
+    },
+    {
+      "name": "ValidatedFromAddress",
+      "type": "picklist",
+      "label": "ValidatedFromAddress"
+    },
+    {
+      "name": "ToAddress",
+      "type": "string",
+      "label": "ToAddress"
+    },
+    {
+      "name": "CcAddress",
+      "type": "string",
+      "label": "CcAddress"
+    },
+    {
+      "name": "BccAddress",
+      "type": "string",
+      "label": "BccAddress"
+    },
+    {
+      "name": "Incoming",
+      "type": "boolean",
+      "label": "Incoming"
+    },
+    {
+      "name": "HasAttachment",
+      "type": "boolean",
+      "label": "HasAttachment"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "MessageDate",
+      "type": "datetime",
+      "label": "MessageDate"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ReplyToEmailMessageId",
+      "type": "reference",
+      "label": "ReplyToEmailMessageId",
+      "referenceTo": "EmailMessage"
+    },
+    {
+      "name": "IsExternallyVisible",
+      "type": "boolean",
+      "label": "IsExternallyVisible"
+    },
+    {
+      "name": "MessageIdentifier",
+      "type": "string",
+      "label": "MessageIdentifier"
+    },
+    {
+      "name": "ThreadIdentifier",
+      "type": "string",
+      "label": "ThreadIdentifier"
+    },
+    {
+      "name": "ClientThreadIdentifier",
+      "type": "string",
+      "label": "ClientThreadIdentifier"
+    },
+    {
+      "name": "IsClientManaged",
+      "type": "boolean",
+      "label": "IsClientManaged"
+    },
+    {
+      "name": "RelatedToId",
+      "type": "reference",
+      "label": "RelatedToId",
+      "referenceTo": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, Case, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, ListEmail, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate"
+    },
+    {
+      "name": "IsTracked",
+      "type": "boolean",
+      "label": "IsTracked"
+    },
+    {
+      "name": "IsOpened",
+      "type": "boolean",
+      "label": "IsOpened"
+    },
+    {
+      "name": "FirstOpenedDate",
+      "type": "datetime",
+      "label": "FirstOpenedDate"
+    },
+    {
+      "name": "LastOpenedDate",
+      "type": "datetime",
+      "label": "LastOpenedDate"
+    },
+    {
+      "name": "IsBounced",
+      "type": "boolean",
+      "label": "IsBounced"
+    },
+    {
+      "name": "EmailTemplateId",
+      "type": "reference",
+      "label": "EmailTemplateId",
+      "referenceTo": "EmailTemplate"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Case",
+      "type": "parent",
+      "parentObject": "Case",
+      "field": "ParentId"
+    },
+    {
+      "name": "Task",
+      "type": "parent",
+      "parentObject": "Task",
+      "field": "ActivityId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "EmailMessage",
+      "type": "parent",
+      "parentObject": "EmailMessage",
+      "field": "ReplyToEmailMessageId"
+    },
+    {
+      "name": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, Case, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, ListEmail, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate",
+      "type": "parent",
+      "parentObject": "Account, AppointmentInvitation, Asset, AssetRelationship, AssignedResource, Campaign, Case, ChangeRequest, CommSubscriptionConsent, ContactRequest, Contract, ContractLineItem, Coupon, CreditMemo, Entitlement, FulfillmentOrder, Image, Incident, Invoice, LegalEntity, ListEmail, Location, OperatingHoursHoliday, Opportunity, Order, PartyConsent, Problem, ProcessException, Product2, ProductCatalog, Promotion, PromotionMarketSegment, PromotionQualifier, PromotionSegment, PromotionSegmentBuyerGroup, PromotionSegmentSalesStore, PromotionTarget, PromotionTier, ResourceAbsence, ReturnOrder, ReturnOrderLineItem, ServiceAppointment, ServiceContract, ServiceResource, Shift, Shipment, ShipmentItem, Solution, WorkOrder, WorkOrderLineItem, WorkPlan, WorkPlanTemplate, WorkPlanTemplateEntry, WorkStep, WorkStepTemplate",
+      "field": "RelatedToId"
+    },
+    {
+      "name": "EmailTemplate",
+      "type": "parent",
+      "parentObject": "EmailTemplate",
+      "field": "EmailTemplateId"
+    },
+    {
+      "name": "EmailMessages",
+      "type": "child",
+      "childObject": "EmailMessage",
+      "field": "ReplyToEmailMessageId"
+    },
+    {
+      "name": "EmailMessageRelations",
+      "type": "child",
+      "childObject": "EmailMessageRelation",
+      "field": "EmailMessageId"
+    }
+  ]
+}

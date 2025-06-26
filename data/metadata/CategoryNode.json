@@ -1,0 +1,95 @@
+{
+  "label": "CategoryNode",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "CategoryNode"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "SortOrder",
+      "type": "int",
+      "label": "SortOrder"
+    },
+    {
+      "name": "SortStyle",
+      "type": "picklist",
+      "label": "SortStyle"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "CategoryNode",
+      "type": "parent",
+      "parentObject": "CategoryNode",
+      "field": "ParentId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "CategoryDatas",
+      "type": "child",
+      "childObject": "CategoryData",
+      "field": "CategoryNodeId"
+    },
+    {
+      "name": "CategoryNodes",
+      "type": "child",
+      "childObject": "CategoryNode",
+      "field": "ParentId"
+    }
+  ]
+}

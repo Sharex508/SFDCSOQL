@@ -1,0 +1,61 @@
+{
+  "label": "VisualforceAccessMetrics",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "MetricsDate",
+      "type": "date",
+      "label": "MetricsDate"
+    },
+    {
+      "name": "ApexPageId",
+      "type": "reference",
+      "label": "ApexPageId",
+      "referenceTo": "ApexPage"
+    },
+    {
+      "name": "ProfileId",
+      "type": "reference",
+      "label": "ProfileId",
+      "referenceTo": "Profile"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "DailyPageViewCount",
+      "type": "int",
+      "label": "DailyPageViewCount"
+    },
+    {
+      "name": "LogDate",
+      "type": "date",
+      "label": "LogDate"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ApexPage",
+      "type": "parent",
+      "parentObject": "ApexPage",
+      "field": "ApexPageId"
+    },
+    {
+      "name": "Profile",
+      "type": "parent",
+      "parentObject": "Profile",
+      "field": "ProfileId"
+    }
+  ]
+}

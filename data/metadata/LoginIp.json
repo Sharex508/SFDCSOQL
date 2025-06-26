@@ -1,0 +1,54 @@
+{
+  "label": "LoginIp",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "UsersId",
+      "type": "reference",
+      "label": "UsersId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "IsAuthenticated",
+      "type": "boolean",
+      "label": "IsAuthenticated"
+    },
+    {
+      "name": "ChallengeSentDate",
+      "type": "datetime",
+      "label": "ChallengeSentDate"
+    },
+    {
+      "name": "ChallengeMethod",
+      "type": "picklist",
+      "label": "ChallengeMethod"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UsersId"
+    }
+  ]
+}

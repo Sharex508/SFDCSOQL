@@ -1,0 +1,196 @@
+{
+  "label": "Idea",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "RecordTypeId",
+      "type": "reference",
+      "label": "RecordTypeId",
+      "referenceTo": "RecordType"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "CommunityId",
+      "type": "reference",
+      "label": "CommunityId",
+      "referenceTo": "Community"
+    },
+    {
+      "name": "Body",
+      "type": "textarea",
+      "label": "Body"
+    },
+    {
+      "name": "NumComments",
+      "type": "int",
+      "label": "NumComments"
+    },
+    {
+      "name": "VoteScore",
+      "type": "double",
+      "label": "VoteScore"
+    },
+    {
+      "name": "VoteTotal",
+      "type": "double",
+      "label": "VoteTotal"
+    },
+    {
+      "name": "Categories",
+      "type": "multipicklist",
+      "label": "Categories"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "LastCommentDate",
+      "type": "datetime",
+      "label": "LastCommentDate"
+    },
+    {
+      "name": "LastCommentId",
+      "type": "reference",
+      "label": "LastCommentId",
+      "referenceTo": "IdeaComment"
+    },
+    {
+      "name": "ParentIdeaId",
+      "type": "reference",
+      "label": "ParentIdeaId",
+      "referenceTo": "Idea"
+    },
+    {
+      "name": "IsHtml",
+      "type": "boolean",
+      "label": "IsHtml"
+    },
+    {
+      "name": "IsMerged",
+      "type": "boolean",
+      "label": "IsMerged"
+    },
+    {
+      "name": "CreatorFullPhotoUrl",
+      "type": "string",
+      "label": "CreatorFullPhotoUrl"
+    },
+    {
+      "name": "CreatorSmallPhotoUrl",
+      "type": "string",
+      "label": "CreatorSmallPhotoUrl"
+    },
+    {
+      "name": "CreatorName",
+      "type": "string",
+      "label": "CreatorName"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "RecordType",
+      "type": "parent",
+      "parentObject": "RecordType",
+      "field": "RecordTypeId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Community",
+      "type": "parent",
+      "parentObject": "Community",
+      "field": "CommunityId"
+    },
+    {
+      "name": "IdeaComment",
+      "type": "parent",
+      "parentObject": "IdeaComment",
+      "field": "LastCommentId"
+    },
+    {
+      "name": "Idea",
+      "type": "parent",
+      "parentObject": "Idea",
+      "field": "ParentIdeaId"
+    },
+    {
+      "name": "Ideas",
+      "type": "child",
+      "childObject": "Idea",
+      "field": "ParentIdeaId"
+    },
+    {
+      "name": "IdeaComments",
+      "type": "child",
+      "childObject": "IdeaComment",
+      "field": "IdeaId"
+    }
+  ]
+}

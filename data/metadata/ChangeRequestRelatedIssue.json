@@ -1,0 +1,107 @@
+{
+  "label": "ChangeRequestRelatedIssue",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ChangeRequestId",
+      "type": "reference",
+      "label": "ChangeRequestId",
+      "referenceTo": "ChangeRequest"
+    },
+    {
+      "name": "RelatedIssueId",
+      "type": "reference",
+      "label": "RelatedIssueId",
+      "referenceTo": "Case, ChangeRequest, Incident, Problem"
+    },
+    {
+      "name": "RelatedEntityType",
+      "type": "picklist",
+      "label": "RelatedEntityType"
+    },
+    {
+      "name": "RelationshipType",
+      "type": "picklist",
+      "label": "RelationshipType"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ChangeRequest",
+      "type": "parent",
+      "parentObject": "ChangeRequest",
+      "field": "ChangeRequestId"
+    },
+    {
+      "name": "Case, ChangeRequest, Incident, Problem",
+      "type": "parent",
+      "parentObject": "Case, ChangeRequest, Incident, Problem",
+      "field": "RelatedIssueId"
+    },
+    {
+      "name": "ChangeRequestRelatedIssueFeeds",
+      "type": "child",
+      "childObject": "ChangeRequestRelatedIssueFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ChangeRequestRelatedIssueHistories",
+      "type": "child",
+      "childObject": "ChangeRequestRelatedIssueHistory",
+      "field": "ChangeRequestRelatedIssueId"
+    }
+  ]
+}

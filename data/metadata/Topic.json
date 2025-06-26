@@ -1,0 +1,78 @@
+{
+  "label": "Topic",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "TalkingAbout",
+      "type": "int",
+      "label": "TalkingAbout"
+    },
+    {
+      "name": "ManagedTopicType",
+      "type": "string",
+      "label": "ManagedTopicType"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "KnowledgeableUsers",
+      "type": "child",
+      "childObject": "KnowledgeableUser",
+      "field": "TopicId"
+    },
+    {
+      "name": "TopicAssignments",
+      "type": "child",
+      "childObject": "TopicAssignment",
+      "field": "TopicId"
+    },
+    {
+      "name": "TopicFeeds",
+      "type": "child",
+      "childObject": "TopicFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "TopicUserEvents",
+      "type": "child",
+      "childObject": "TopicUserEvent",
+      "field": "TopicId"
+    }
+  ]
+}

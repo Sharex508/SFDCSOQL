@@ -1,0 +1,54 @@
+{
+  "label": "Account",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Account ID"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Account Name"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Account Type"
+    },
+    {
+      "name": "Industry",
+      "type": "picklist",
+      "label": "Industry"
+    },
+    {
+      "name": "AnnualRevenue",
+      "type": "currency",
+      "label": "Annual Revenue"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Website",
+      "type": "url",
+      "label": "Website"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Contacts",
+      "type": "child",
+      "childObject": "Contact",
+      "field": "AccountId"
+    },
+    {
+      "name": "Opportunities",
+      "type": "child",
+      "childObject": "Opportunity",
+      "field": "AccountId"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "label": "Report",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Folder, Organization, User"
+    },
+    {
+      "name": "FolderName",
+      "type": "string",
+      "label": "FolderName"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "LastRunDate",
+      "type": "datetime",
+      "label": "LastRunDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Format",
+      "type": "picklist",
+      "label": "Format"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Folder, Organization, User",
+      "type": "parent",
+      "parentObject": "Folder, Organization, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "DashboardComponents",
+      "type": "child",
+      "childObject": "DashboardComponent",
+      "field": "CustomReportId"
+    },
+    {
+      "name": "ReportEvents",
+      "type": "child",
+      "childObject": "ReportEvent",
+      "field": "ReportId"
+    },
+    {
+      "name": "ReportFeeds",
+      "type": "child",
+      "childObject": "ReportFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ScorecardMetrics",
+      "type": "child",
+      "childObject": "ScorecardMetric",
+      "field": "ReportId"
+    }
+  ]
+}

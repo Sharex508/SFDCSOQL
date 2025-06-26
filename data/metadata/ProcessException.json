@@ -1,0 +1,163 @@
+{
+  "label": "ProcessException",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ProcessExceptionNumber",
+      "type": "string",
+      "label": "ProcessExceptionNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "AttachedToId",
+      "type": "reference",
+      "label": "AttachedToId",
+      "referenceTo": "Coin__c, CreditMemo, FulfillmentOrder, Invoice, Order, OrderItem, Payment, PaymentAuthorization, Refund, ReturnOrder, WebCart, WebStore"
+    },
+    {
+      "name": "Message",
+      "type": "string",
+      "label": "Message"
+    },
+    {
+      "name": "StatusCategory",
+      "type": "picklist",
+      "label": "StatusCategory"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "Category",
+      "type": "picklist",
+      "label": "Category"
+    },
+    {
+      "name": "Severity",
+      "type": "picklist",
+      "label": "Severity"
+    },
+    {
+      "name": "Priority",
+      "type": "picklist",
+      "label": "Priority"
+    },
+    {
+      "name": "CaseId",
+      "type": "reference",
+      "label": "CaseId",
+      "referenceTo": "Case"
+    },
+    {
+      "name": "ExternalReference",
+      "type": "string",
+      "label": "ExternalReference"
+    },
+    {
+      "name": "SeverityCategory",
+      "type": "picklist",
+      "label": "SeverityCategory"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Coin__c, CreditMemo, FulfillmentOrder, Invoice, Order, OrderItem, Payment, PaymentAuthorization, Refund, ReturnOrder, WebCart, WebStore",
+      "type": "parent",
+      "parentObject": "Coin__c, CreditMemo, FulfillmentOrder, Invoice, Order, OrderItem, Payment, PaymentAuthorization, Refund, ReturnOrder, WebCart, WebStore",
+      "field": "AttachedToId"
+    },
+    {
+      "name": "Case",
+      "type": "parent",
+      "parentObject": "Case",
+      "field": "CaseId"
+    },
+    {
+      "name": "ProcessExceptionShares",
+      "type": "child",
+      "childObject": "ProcessExceptionShare",
+      "field": "ParentId"
+    }
+  ]
+}

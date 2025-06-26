@@ -1,0 +1,109 @@
+{
+  "label": "ConsumptionRate",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ConsumptionScheduleId",
+      "type": "reference",
+      "label": "ConsumptionScheduleId",
+      "referenceTo": "ConsumptionSchedule"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "ProcessingOrder",
+      "type": "int",
+      "label": "ProcessingOrder"
+    },
+    {
+      "name": "PricingMethod",
+      "type": "picklist",
+      "label": "PricingMethod"
+    },
+    {
+      "name": "LowerBound",
+      "type": "int",
+      "label": "LowerBound"
+    },
+    {
+      "name": "UpperBound",
+      "type": "int",
+      "label": "UpperBound"
+    },
+    {
+      "name": "Price",
+      "type": "currency",
+      "label": "Price"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ConsumptionSchedule",
+      "type": "parent",
+      "parentObject": "ConsumptionSchedule",
+      "field": "ConsumptionScheduleId"
+    },
+    {
+      "name": "ConsumptionRateHistories",
+      "type": "child",
+      "childObject": "ConsumptionRateHistory",
+      "field": "ConsumptionRateId"
+    }
+  ]
+}

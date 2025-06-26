@@ -1,0 +1,71 @@
+{
+  "label": "ConsumptionRateHistory",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ConsumptionRateId",
+      "type": "reference",
+      "label": "ConsumptionRateId",
+      "referenceTo": "ConsumptionRate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "Field",
+      "type": "picklist",
+      "label": "Field"
+    },
+    {
+      "name": "DataType",
+      "type": "picklist",
+      "label": "DataType"
+    },
+    {
+      "name": "OldValue",
+      "type": "anytype",
+      "label": "OldValue"
+    },
+    {
+      "name": "NewValue",
+      "type": "anytype",
+      "label": "NewValue"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ConsumptionRate",
+      "type": "parent",
+      "parentObject": "ConsumptionRate",
+      "field": "ConsumptionRateId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    }
+  ]
+}

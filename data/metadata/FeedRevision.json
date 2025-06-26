@@ -1,0 +1,81 @@
+{
+  "label": "FeedRevision",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "FeedEntityId",
+      "type": "reference",
+      "label": "FeedEntityId",
+      "referenceTo": "FeedComment, FeedItem"
+    },
+    {
+      "name": "Revision",
+      "type": "int",
+      "label": "Revision"
+    },
+    {
+      "name": "Action",
+      "type": "picklist",
+      "label": "Action"
+    },
+    {
+      "name": "EditedAttribute",
+      "type": "picklist",
+      "label": "EditedAttribute"
+    },
+    {
+      "name": "Value",
+      "type": "textarea",
+      "label": "Value"
+    },
+    {
+      "name": "IsValueRichText",
+      "type": "boolean",
+      "label": "IsValueRichText"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "FeedComment, FeedItem",
+      "type": "parent",
+      "parentObject": "FeedComment, FeedItem",
+      "field": "FeedEntityId"
+    }
+  ]
+}

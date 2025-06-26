@@ -1,0 +1,127 @@
+{
+  "label": "ProcessInstanceNode",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ProcessInstanceId",
+      "type": "reference",
+      "label": "ProcessInstanceId",
+      "referenceTo": "ProcessInstance"
+    },
+    {
+      "name": "ProcessNodeId",
+      "type": "reference",
+      "label": "ProcessNodeId",
+      "referenceTo": "ProcessNode"
+    },
+    {
+      "name": "NodeStatus",
+      "type": "picklist",
+      "label": "NodeStatus"
+    },
+    {
+      "name": "CompletedDate",
+      "type": "datetime",
+      "label": "CompletedDate"
+    },
+    {
+      "name": "LastActorId",
+      "type": "reference",
+      "label": "LastActorId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "ProcessNodeName",
+      "type": "string",
+      "label": "ProcessNodeName"
+    },
+    {
+      "name": "ElapsedTimeInDays",
+      "type": "double",
+      "label": "ElapsedTimeInDays"
+    },
+    {
+      "name": "ElapsedTimeInHours",
+      "type": "double",
+      "label": "ElapsedTimeInHours"
+    },
+    {
+      "name": "ElapsedTimeInMinutes",
+      "type": "double",
+      "label": "ElapsedTimeInMinutes"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ProcessInstance",
+      "type": "parent",
+      "parentObject": "ProcessInstance",
+      "field": "ProcessInstanceId"
+    },
+    {
+      "name": "ProcessNode",
+      "type": "parent",
+      "parentObject": "ProcessNode",
+      "field": "ProcessNodeId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastActorId"
+    }
+  ]
+}

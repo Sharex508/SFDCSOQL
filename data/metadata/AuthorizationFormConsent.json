@@ -1,0 +1,163 @@
+{
+  "label": "AuthorizationFormConsent",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "ConsentGiverId",
+      "type": "reference",
+      "label": "ConsentGiverId",
+      "referenceTo": "Account, Contact, Individual, Lead, User"
+    },
+    {
+      "name": "AuthorizationFormTextId",
+      "type": "reference",
+      "label": "AuthorizationFormTextId",
+      "referenceTo": "AuthorizationFormText"
+    },
+    {
+      "name": "ConsentCapturedSource",
+      "type": "string",
+      "label": "ConsentCapturedSource"
+    },
+    {
+      "name": "ConsentCapturedSourceType",
+      "type": "picklist",
+      "label": "ConsentCapturedSourceType"
+    },
+    {
+      "name": "ConsentCapturedDateTime",
+      "type": "datetime",
+      "label": "ConsentCapturedDateTime"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "DocumentVersionId",
+      "type": "reference",
+      "label": "DocumentVersionId",
+      "referenceTo": "ContentVersion"
+    },
+    {
+      "name": "RelatedRecordId",
+      "type": "reference",
+      "label": "RelatedRecordId",
+      "referenceTo": "Account"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Account, Contact, Individual, Lead, User",
+      "type": "parent",
+      "parentObject": "Account, Contact, Individual, Lead, User",
+      "field": "ConsentGiverId"
+    },
+    {
+      "name": "AuthorizationFormText",
+      "type": "parent",
+      "parentObject": "AuthorizationFormText",
+      "field": "AuthorizationFormTextId"
+    },
+    {
+      "name": "ContentVersion",
+      "type": "parent",
+      "parentObject": "ContentVersion",
+      "field": "DocumentVersionId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "RelatedRecordId"
+    },
+    {
+      "name": "AuthorizationFormConsentHistories",
+      "type": "child",
+      "childObject": "AuthorizationFormConsentHistory",
+      "field": "AuthorizationFormConsentId"
+    },
+    {
+      "name": "AuthorizationFormConsentShares",
+      "type": "child",
+      "childObject": "AuthorizationFormConsentShare",
+      "field": "ParentId"
+    }
+  ]
+}

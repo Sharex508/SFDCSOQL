@@ -1,0 +1,61 @@
+{
+  "label": "FlowVariableView",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "FlowVersionViewId",
+      "type": "string",
+      "label": "FlowVersionViewId"
+    },
+    {
+      "name": "ApiName",
+      "type": "string",
+      "label": "ApiName"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "DataType",
+      "type": "string",
+      "label": "DataType"
+    },
+    {
+      "name": "IsInput",
+      "type": "boolean",
+      "label": "IsInput"
+    },
+    {
+      "name": "IsOutput",
+      "type": "boolean",
+      "label": "IsOutput"
+    },
+    {
+      "name": "IsCollection",
+      "type": "boolean",
+      "label": "IsCollection"
+    },
+    {
+      "name": "ObjectType",
+      "type": "string",
+      "label": "ObjectType"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

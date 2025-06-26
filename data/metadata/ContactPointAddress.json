@@ -1,0 +1,219 @@
+{
+  "label": "ContactPointAddress",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "Account, Individual"
+    },
+    {
+      "name": "ActiveFromDate",
+      "type": "date",
+      "label": "ActiveFromDate"
+    },
+    {
+      "name": "ActiveToDate",
+      "type": "date",
+      "label": "ActiveToDate"
+    },
+    {
+      "name": "BestTimeToContactEndTime",
+      "type": "time",
+      "label": "BestTimeToContactEndTime"
+    },
+    {
+      "name": "BestTimeToContactStartTime",
+      "type": "time",
+      "label": "BestTimeToContactStartTime"
+    },
+    {
+      "name": "BestTimeToContactTimezone",
+      "type": "picklist",
+      "label": "BestTimeToContactTimezone"
+    },
+    {
+      "name": "IsPrimary",
+      "type": "boolean",
+      "label": "IsPrimary"
+    },
+    {
+      "name": "ContactPointPhoneId",
+      "type": "reference",
+      "label": "ContactPointPhoneId",
+      "referenceTo": "ContactPointPhone"
+    },
+    {
+      "name": "AddressType",
+      "type": "picklist",
+      "label": "AddressType"
+    },
+    {
+      "name": "Street",
+      "type": "textarea",
+      "label": "Street"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "label": "State"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "Latitude",
+      "type": "double",
+      "label": "Latitude"
+    },
+    {
+      "name": "Longitude",
+      "type": "double",
+      "label": "Longitude"
+    },
+    {
+      "name": "GeocodeAccuracy",
+      "type": "picklist",
+      "label": "GeocodeAccuracy"
+    },
+    {
+      "name": "Address",
+      "type": "address",
+      "label": "Address"
+    },
+    {
+      "name": "IsDefault",
+      "type": "boolean",
+      "label": "IsDefault"
+    },
+    {
+      "name": "PreferenceRank",
+      "type": "int",
+      "label": "PreferenceRank"
+    },
+    {
+      "name": "UsageType",
+      "type": "picklist",
+      "label": "UsageType"
+    },
+    {
+      "name": "IsThirdPartyAddress",
+      "type": "boolean",
+      "label": "IsThirdPartyAddress"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Account, Individual",
+      "type": "parent",
+      "parentObject": "Account, Individual",
+      "field": "ParentId"
+    },
+    {
+      "name": "ContactPointPhone",
+      "type": "parent",
+      "parentObject": "ContactPointPhone",
+      "field": "ContactPointPhoneId"
+    },
+    {
+      "name": "ContactPointAddressHistories",
+      "type": "child",
+      "childObject": "ContactPointAddressHistory",
+      "field": "ContactPointAddressId"
+    },
+    {
+      "name": "ContactPointAddressShares",
+      "type": "child",
+      "childObject": "ContactPointAddressShare",
+      "field": "ParentId"
+    }
+  ]
+}

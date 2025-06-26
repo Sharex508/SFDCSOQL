@@ -1,0 +1,101 @@
+{
+  "label": "WebStoreCatalog",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "ProductCatalogId",
+      "type": "reference",
+      "label": "ProductCatalogId",
+      "referenceTo": "ProductCatalog"
+    },
+    {
+      "name": "SalesStoreId",
+      "type": "reference",
+      "label": "SalesStoreId",
+      "referenceTo": "WebStore"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ProductCatalog",
+      "type": "parent",
+      "parentObject": "ProductCatalog",
+      "field": "ProductCatalogId"
+    },
+    {
+      "name": "WebStore",
+      "type": "parent",
+      "parentObject": "WebStore",
+      "field": "SalesStoreId"
+    },
+    {
+      "name": "WebStoreCatalogHistories",
+      "type": "child",
+      "childObject": "WebStoreCatalogHistory",
+      "field": "WebStoreCatalogId"
+    }
+  ]
+}

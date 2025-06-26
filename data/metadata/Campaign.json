@@ -1,0 +1,261 @@
+{
+  "label": "Campaign",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "Campaign"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "StartDate",
+      "type": "date",
+      "label": "StartDate"
+    },
+    {
+      "name": "EndDate",
+      "type": "date",
+      "label": "EndDate"
+    },
+    {
+      "name": "ExpectedRevenue",
+      "type": "currency",
+      "label": "ExpectedRevenue"
+    },
+    {
+      "name": "BudgetedCost",
+      "type": "currency",
+      "label": "BudgetedCost"
+    },
+    {
+      "name": "ActualCost",
+      "type": "currency",
+      "label": "ActualCost"
+    },
+    {
+      "name": "ExpectedResponse",
+      "type": "percent",
+      "label": "ExpectedResponse"
+    },
+    {
+      "name": "NumberSent",
+      "type": "double",
+      "label": "NumberSent"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "NumberOfLeads",
+      "type": "int",
+      "label": "NumberOfLeads"
+    },
+    {
+      "name": "NumberOfConvertedLeads",
+      "type": "int",
+      "label": "NumberOfConvertedLeads"
+    },
+    {
+      "name": "NumberOfContacts",
+      "type": "int",
+      "label": "NumberOfContacts"
+    },
+    {
+      "name": "NumberOfResponses",
+      "type": "int",
+      "label": "NumberOfResponses"
+    },
+    {
+      "name": "NumberOfOpportunities",
+      "type": "int",
+      "label": "NumberOfOpportunities"
+    },
+    {
+      "name": "NumberOfWonOpportunities",
+      "type": "int",
+      "label": "NumberOfWonOpportunities"
+    },
+    {
+      "name": "AmountAllOpportunities",
+      "type": "currency",
+      "label": "AmountAllOpportunities"
+    },
+    {
+      "name": "AmountWonOpportunities",
+      "type": "currency",
+      "label": "AmountWonOpportunities"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastActivityDate",
+      "type": "date",
+      "label": "LastActivityDate"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "CampaignMemberRecordTypeId",
+      "type": "reference",
+      "label": "CampaignMemberRecordTypeId",
+      "referenceTo": "RecordType"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Campaign",
+      "type": "parent",
+      "parentObject": "Campaign",
+      "field": "ParentId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "RecordType",
+      "type": "parent",
+      "parentObject": "RecordType",
+      "field": "CampaignMemberRecordTypeId"
+    },
+    {
+      "name": "Campaigns",
+      "type": "child",
+      "childObject": "Campaign",
+      "field": "ParentId"
+    },
+    {
+      "name": "CampaignFeeds",
+      "type": "child",
+      "childObject": "CampaignFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "CampaignHistories",
+      "type": "child",
+      "childObject": "CampaignHistory",
+      "field": "CampaignId"
+    },
+    {
+      "name": "CampaignMembers",
+      "type": "child",
+      "childObject": "CampaignMember",
+      "field": "CampaignId"
+    },
+    {
+      "name": "CampaignMemberStatuses",
+      "type": "child",
+      "childObject": "CampaignMemberStatus",
+      "field": "CampaignId"
+    },
+    {
+      "name": "CampaignShares",
+      "type": "child",
+      "childObject": "CampaignShare",
+      "field": "CampaignId"
+    },
+    {
+      "name": "ListEmails",
+      "type": "child",
+      "childObject": "ListEmail",
+      "field": "CampaignId"
+    },
+    {
+      "name": "Opportunities",
+      "type": "child",
+      "childObject": "Opportunity",
+      "field": "CampaignId"
+    },
+    {
+      "name": "Promotions",
+      "type": "child",
+      "childObject": "Promotion",
+      "field": "CampaignId"
+    }
+  ]
+}

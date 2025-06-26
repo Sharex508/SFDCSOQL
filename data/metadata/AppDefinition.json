@@ -1,0 +1,113 @@
+{
+  "label": "AppDefinition",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "LogoUrl",
+      "type": "url",
+      "label": "LogoUrl"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "UiType",
+      "type": "picklist",
+      "label": "UiType"
+    },
+    {
+      "name": "NavType",
+      "type": "picklist",
+      "label": "NavType"
+    },
+    {
+      "name": "UtilityBar",
+      "type": "string",
+      "label": "UtilityBar"
+    },
+    {
+      "name": "HeaderColor",
+      "type": "string",
+      "label": "HeaderColor"
+    },
+    {
+      "name": "IsOverrideOrgTheme",
+      "type": "boolean",
+      "label": "IsOverrideOrgTheme"
+    },
+    {
+      "name": "IsSmallFormFactorSupported",
+      "type": "boolean",
+      "label": "IsSmallFormFactorSupported"
+    },
+    {
+      "name": "IsMediumFormFactorSupported",
+      "type": "boolean",
+      "label": "IsMediumFormFactorSupported"
+    },
+    {
+      "name": "IsLargeFormFactorSupported",
+      "type": "boolean",
+      "label": "IsLargeFormFactorSupported"
+    },
+    {
+      "name": "IsNavPersonalizationDisabled",
+      "type": "boolean",
+      "label": "IsNavPersonalizationDisabled"
+    },
+    {
+      "name": "IsNavAutoTempTabsDisabled",
+      "type": "boolean",
+      "label": "IsNavAutoTempTabsDisabled"
+    },
+    {
+      "name": "IsNavTabPersistenceDisabled",
+      "type": "boolean",
+      "label": "IsNavTabPersistenceDisabled"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "UserAppInfos",
+      "type": "child",
+      "childObject": "UserAppInfo",
+      "field": "AppDefinitionId"
+    }
+  ]
+}

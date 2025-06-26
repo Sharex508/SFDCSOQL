@@ -1,0 +1,216 @@
+{
+  "label": "TransactionSecurityPolicy",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "Language",
+      "type": "picklist",
+      "label": "Language"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "State",
+      "type": "picklist",
+      "label": "State"
+    },
+    {
+      "name": "ActionConfig",
+      "type": "textarea",
+      "label": "ActionConfig"
+    },
+    {
+      "name": "ApexPolicyId",
+      "type": "reference",
+      "label": "ApexPolicyId",
+      "referenceTo": "ApexClass"
+    },
+    {
+      "name": "EventType",
+      "type": "picklist",
+      "label": "EventType"
+    },
+    {
+      "name": "ResourceName",
+      "type": "string",
+      "label": "ResourceName"
+    },
+    {
+      "name": "ExecutionUserId",
+      "type": "reference",
+      "label": "ExecutionUserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "EventName",
+      "type": "picklist",
+      "label": "EventName"
+    },
+    {
+      "name": "BlockMessage",
+      "type": "string",
+      "label": "BlockMessage"
+    },
+    {
+      "name": "CustomEmailContent",
+      "type": "string",
+      "label": "CustomEmailContent"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ApexClass",
+      "type": "parent",
+      "parentObject": "ApexClass",
+      "field": "ApexPolicyId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "ExecutionUserId"
+    },
+    {
+      "name": "ApiAnomalyEventStores",
+      "type": "child",
+      "childObject": "ApiAnomalyEventStore",
+      "field": "PolicyId"
+    },
+    {
+      "name": "ApiEvents",
+      "type": "child",
+      "childObject": "ApiEvent",
+      "field": "PolicyId"
+    },
+    {
+      "name": "BulkApiResultEventStores",
+      "type": "child",
+      "childObject": "BulkApiResultEventStore",
+      "field": "PolicyId"
+    },
+    {
+      "name": "CredentialStuffingEventStores",
+      "type": "child",
+      "childObject": "CredentialStuffingEventStore",
+      "field": "PolicyId"
+    },
+    {
+      "name": "FileEventStores",
+      "type": "child",
+      "childObject": "FileEventStore",
+      "field": "PolicyId"
+    },
+    {
+      "name": "ListViewEvents",
+      "type": "child",
+      "childObject": "ListViewEvent",
+      "field": "PolicyId"
+    },
+    {
+      "name": "LoginEvents",
+      "type": "child",
+      "childObject": "LoginEvent",
+      "field": "PolicyId"
+    },
+    {
+      "name": "PermissionSetEventStores",
+      "type": "child",
+      "childObject": "PermissionSetEventStore",
+      "field": "PolicyId"
+    },
+    {
+      "name": "ReportAnomalyEventStores",
+      "type": "child",
+      "childObject": "ReportAnomalyEventStore",
+      "field": "PolicyId"
+    },
+    {
+      "name": "ReportEvents",
+      "type": "child",
+      "childObject": "ReportEvent",
+      "field": "PolicyId"
+    },
+    {
+      "name": "SessionHijackingEventStores",
+      "type": "child",
+      "childObject": "SessionHijackingEventStore",
+      "field": "PolicyId"
+    }
+  ]
+}

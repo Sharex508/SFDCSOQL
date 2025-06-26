@@ -1,0 +1,80 @@
+{
+  "label": "UserLicense",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "LicenseDefinitionKey",
+      "type": "string",
+      "label": "LicenseDefinitionKey"
+    },
+    {
+      "name": "TotalLicenses",
+      "type": "int",
+      "label": "TotalLicenses"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "UsedLicenses",
+      "type": "int",
+      "label": "UsedLicenses"
+    },
+    {
+      "name": "UsedLicensesLastUpdated",
+      "type": "datetime",
+      "label": "UsedLicensesLastUpdated"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ActiveProfileMetrics",
+      "type": "child",
+      "childObject": "ActiveProfileMetric",
+      "field": "UserLicenseId"
+    },
+    {
+      "name": "CustomObjectUserLicenseMetricses",
+      "type": "child",
+      "childObject": "CustomObjectUserLicenseMetrics",
+      "field": "UserLicenseId"
+    },
+    {
+      "name": "Profiles",
+      "type": "child",
+      "childObject": "Profile",
+      "field": "UserLicenseId"
+    }
+  ]
+}

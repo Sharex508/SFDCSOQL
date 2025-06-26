@@ -1,0 +1,61 @@
+{
+  "label": "ActiveProfileMetric",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "MetricsDate",
+      "type": "date",
+      "label": "MetricsDate"
+    },
+    {
+      "name": "UserLicenseId",
+      "type": "reference",
+      "label": "UserLicenseId",
+      "referenceTo": "UserLicense"
+    },
+    {
+      "name": "ProfileId",
+      "type": "reference",
+      "label": "ProfileId",
+      "referenceTo": "Profile"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "AssignedUserCount",
+      "type": "int",
+      "label": "AssignedUserCount"
+    },
+    {
+      "name": "ActiveUserCount",
+      "type": "int",
+      "label": "ActiveUserCount"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "UserLicense",
+      "type": "parent",
+      "parentObject": "UserLicense",
+      "field": "UserLicenseId"
+    },
+    {
+      "name": "Profile",
+      "type": "parent",
+      "parentObject": "Profile",
+      "field": "ProfileId"
+    }
+  ]
+}

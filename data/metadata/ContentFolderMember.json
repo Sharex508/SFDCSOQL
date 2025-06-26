@@ -1,0 +1,85 @@
+{
+  "label": "ContentFolderMember",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ParentContentFolderId",
+      "type": "reference",
+      "label": "ParentContentFolderId",
+      "referenceTo": "ContentFolder"
+    },
+    {
+      "name": "ChildRecordId",
+      "type": "reference",
+      "label": "ChildRecordId",
+      "referenceTo": "ContentDocument"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ContentFolder",
+      "type": "parent",
+      "parentObject": "ContentFolder",
+      "field": "ParentContentFolderId"
+    },
+    {
+      "name": "ContentDocument",
+      "type": "parent",
+      "parentObject": "ContentDocument",
+      "field": "ChildRecordId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

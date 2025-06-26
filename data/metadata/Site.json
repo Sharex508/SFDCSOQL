@@ -1,0 +1,267 @@
+{
+  "label": "Site",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "Subdomain",
+      "type": "string",
+      "label": "Subdomain"
+    },
+    {
+      "name": "UrlPathPrefix",
+      "type": "string",
+      "label": "UrlPathPrefix"
+    },
+    {
+      "name": "GuestUserId",
+      "type": "reference",
+      "label": "GuestUserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "AdminId",
+      "type": "reference",
+      "label": "AdminId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "OptionsEnableFeeds",
+      "type": "boolean",
+      "label": "OptionsEnableFeeds"
+    },
+    {
+      "name": "OptionsRedirectToCustomDomain",
+      "type": "boolean",
+      "label": "OptionsRedirectToCustomDomain"
+    },
+    {
+      "name": "OptionsAllowGuestPaymentsApi",
+      "type": "boolean",
+      "label": "OptionsAllowGuestPaymentsApi"
+    },
+    {
+      "name": "OptionsHasStoredPathPrefix",
+      "type": "boolean",
+      "label": "OptionsHasStoredPathPrefix"
+    },
+    {
+      "name": "OptionsCookieConsent",
+      "type": "boolean",
+      "label": "OptionsCookieConsent"
+    },
+    {
+      "name": "OptionsCachePublicVfPagesInProxies",
+      "type": "boolean",
+      "label": "OptionsCachePublicVfPagesInProxies"
+    },
+    {
+      "name": "OptionsAllowHomePage",
+      "type": "boolean",
+      "label": "OptionsAllowHomePage"
+    },
+    {
+      "name": "OptionsAllowStandardIdeasPages",
+      "type": "boolean",
+      "label": "OptionsAllowStandardIdeasPages"
+    },
+    {
+      "name": "OptionsAllowStandardSearch",
+      "type": "boolean",
+      "label": "OptionsAllowStandardSearch"
+    },
+    {
+      "name": "OptionsAllowStandardLookups",
+      "type": "boolean",
+      "label": "OptionsAllowStandardLookups"
+    },
+    {
+      "name": "OptionsAllowStandardAnswersPages",
+      "type": "boolean",
+      "label": "OptionsAllowStandardAnswersPages"
+    },
+    {
+      "name": "OptionsAllowGuestSupportApi",
+      "type": "boolean",
+      "label": "OptionsAllowGuestSupportApi"
+    },
+    {
+      "name": "OptionsAllowStandardPortalPages",
+      "type": "boolean",
+      "label": "OptionsAllowStandardPortalPages"
+    },
+    {
+      "name": "OptionsContentSniffingProtection",
+      "type": "boolean",
+      "label": "OptionsContentSniffingProtection"
+    },
+    {
+      "name": "OptionsBrowserXssProtection",
+      "type": "boolean",
+      "label": "OptionsBrowserXssProtection"
+    },
+    {
+      "name": "OptionsReferrerPolicyOriginWhenCrossOrigin",
+      "type": "boolean",
+      "label": "OptionsReferrerPolicyOriginWhenCrossOrigin"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "AnalyticsTrackingCode",
+      "type": "string",
+      "label": "AnalyticsTrackingCode"
+    },
+    {
+      "name": "SiteType",
+      "type": "picklist",
+      "label": "SiteType"
+    },
+    {
+      "name": "ClickjackProtectionLevel",
+      "type": "picklist",
+      "label": "ClickjackProtectionLevel"
+    },
+    {
+      "name": "DailyBandwidthLimit",
+      "type": "int",
+      "label": "DailyBandwidthLimit"
+    },
+    {
+      "name": "DailyBandwidthUsed",
+      "type": "int",
+      "label": "DailyBandwidthUsed"
+    },
+    {
+      "name": "DailyRequestTimeLimit",
+      "type": "int",
+      "label": "DailyRequestTimeLimit"
+    },
+    {
+      "name": "DailyRequestTimeUsed",
+      "type": "int",
+      "label": "DailyRequestTimeUsed"
+    },
+    {
+      "name": "MonthlyPageViewsEntitlement",
+      "type": "int",
+      "label": "MonthlyPageViewsEntitlement"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "GuestRecordDefaultOwnerId",
+      "type": "reference",
+      "label": "GuestRecordDefaultOwnerId",
+      "referenceTo": "User"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "GuestUserId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "AdminId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "GuestRecordDefaultOwnerId"
+    },
+    {
+      "name": "DomainSites",
+      "type": "child",
+      "childObject": "DomainSite",
+      "field": "SiteId"
+    },
+    {
+      "name": "SiteFeeds",
+      "type": "child",
+      "childObject": "SiteFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "SiteHistories",
+      "type": "child",
+      "childObject": "SiteHistory",
+      "field": "SiteId"
+    },
+    {
+      "name": "SiteIframeWhiteListUrls",
+      "type": "child",
+      "childObject": "SiteIframeWhiteListUrl",
+      "field": "SiteId"
+    },
+    {
+      "name": "SiteRedirectMappings",
+      "type": "child",
+      "childObject": "SiteRedirectMapping",
+      "field": "SiteId"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "label": "StaticResource",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "ContentType",
+      "type": "string",
+      "label": "ContentType"
+    },
+    {
+      "name": "BodyLength",
+      "type": "int",
+      "label": "BodyLength"
+    },
+    {
+      "name": "Body",
+      "type": "base64",
+      "label": "Body"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CacheControl",
+      "type": "picklist",
+      "label": "CacheControl"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ExternalDataSources",
+      "type": "child",
+      "childObject": "ExternalDataSource",
+      "field": "LargeIconId"
+    },
+    {
+      "name": "ExternalDataSources",
+      "type": "child",
+      "childObject": "ExternalDataSource",
+      "field": "SmallIconId"
+    }
+  ]
+}

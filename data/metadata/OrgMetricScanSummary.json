@@ -1,0 +1,125 @@
+{
+  "label": "OrgMetricScanSummary",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "OrgMetricId",
+      "type": "reference",
+      "label": "OrgMetricId",
+      "referenceTo": "OrgMetric"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "ImplementationEffort",
+      "type": "picklist",
+      "label": "ImplementationEffort"
+    },
+    {
+      "name": "ErrorMessage",
+      "type": "picklist",
+      "label": "ErrorMessage"
+    },
+    {
+      "name": "ItemCount",
+      "type": "int",
+      "label": "ItemCount"
+    },
+    {
+      "name": "FeatureLimit",
+      "type": "int",
+      "label": "FeatureLimit"
+    },
+    {
+      "name": "Unit",
+      "type": "string",
+      "label": "Unit"
+    },
+    {
+      "name": "PercentUsage",
+      "type": "percent",
+      "label": "PercentUsage"
+    },
+    {
+      "name": "ScanDate",
+      "type": "datetime",
+      "label": "ScanDate"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "OrgMetric",
+      "type": "parent",
+      "parentObject": "OrgMetric",
+      "field": "OrgMetricId"
+    },
+    {
+      "name": "OrgMetrics",
+      "type": "child",
+      "childObject": "OrgMetric",
+      "field": "LatestOrgMetricScanSummaryId"
+    },
+    {
+      "name": "OrgMetricScanResults",
+      "type": "child",
+      "childObject": "OrgMetricScanResult",
+      "field": "OrgMetricScanSummaryId"
+    }
+  ]
+}

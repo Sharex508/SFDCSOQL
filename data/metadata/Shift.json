@@ -1,0 +1,221 @@
+{
+  "label": "Shift",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ShiftNumber",
+      "type": "string",
+      "label": "ShiftNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "StartTime",
+      "type": "datetime",
+      "label": "StartTime"
+    },
+    {
+      "name": "EndTime",
+      "type": "datetime",
+      "label": "EndTime"
+    },
+    {
+      "name": "ServiceResourceId",
+      "type": "reference",
+      "label": "ServiceResourceId",
+      "referenceTo": "ServiceResource"
+    },
+    {
+      "name": "ServiceTerritoryId",
+      "type": "reference",
+      "label": "ServiceTerritoryId",
+      "referenceTo": "ServiceTerritory"
+    },
+    {
+      "name": "StatusCategory",
+      "type": "picklist",
+      "label": "StatusCategory"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "TimeSlotType",
+      "type": "picklist",
+      "label": "TimeSlotType"
+    },
+    {
+      "name": "WorkTypeId",
+      "type": "reference",
+      "label": "WorkTypeId",
+      "referenceTo": "WorkType"
+    },
+    {
+      "name": "WorkTypeGroupId",
+      "type": "reference",
+      "label": "WorkTypeGroupId",
+      "referenceTo": "WorkTypeGroup"
+    },
+    {
+      "name": "BackgroundColor",
+      "type": "string",
+      "label": "BackgroundColor"
+    },
+    {
+      "name": "RecurrenceStartDate",
+      "type": "date",
+      "label": "RecurrenceStartDate"
+    },
+    {
+      "name": "RecurrenceEndDate",
+      "type": "date",
+      "label": "RecurrenceEndDate"
+    },
+    {
+      "name": "RecurrencePattern",
+      "type": "string",
+      "label": "RecurrencePattern"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ServiceResource",
+      "type": "parent",
+      "parentObject": "ServiceResource",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "ServiceTerritory",
+      "type": "parent",
+      "parentObject": "ServiceTerritory",
+      "field": "ServiceTerritoryId"
+    },
+    {
+      "name": "WorkType",
+      "type": "parent",
+      "parentObject": "WorkType",
+      "field": "WorkTypeId"
+    },
+    {
+      "name": "WorkTypeGroup",
+      "type": "parent",
+      "parentObject": "WorkTypeGroup",
+      "field": "WorkTypeGroupId"
+    },
+    {
+      "name": "ShiftEngagementChannels",
+      "type": "child",
+      "childObject": "ShiftEngagementChannel",
+      "field": "ShiftId"
+    },
+    {
+      "name": "ShiftFeeds",
+      "type": "child",
+      "childObject": "ShiftFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ShiftHistories",
+      "type": "child",
+      "childObject": "ShiftHistory",
+      "field": "ShiftId"
+    },
+    {
+      "name": "ShiftShares",
+      "type": "child",
+      "childObject": "ShiftShare",
+      "field": "ParentId"
+    },
+    {
+      "name": "ShiftWorkTopics",
+      "type": "child",
+      "childObject": "ShiftWorkTopic",
+      "field": "ShiftId"
+    }
+  ]
+}

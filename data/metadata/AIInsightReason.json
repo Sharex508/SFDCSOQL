@@ -1,0 +1,141 @@
+{
+  "label": "AIInsightReason",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "AiInsightValueId",
+      "type": "reference",
+      "label": "AiInsightValueId",
+      "referenceTo": "AIInsightValue"
+    },
+    {
+      "name": "Intensity",
+      "type": "double",
+      "label": "Intensity"
+    },
+    {
+      "name": "Contribution",
+      "type": "double",
+      "label": "Contribution"
+    },
+    {
+      "name": "Variance",
+      "type": "double",
+      "label": "Variance"
+    },
+    {
+      "name": "FieldName",
+      "type": "string",
+      "label": "FieldName"
+    },
+    {
+      "name": "Operator",
+      "type": "picklist",
+      "label": "Operator"
+    },
+    {
+      "name": "FieldValue",
+      "type": "string",
+      "label": "FieldValue"
+    },
+    {
+      "name": "FeatureValue",
+      "type": "string",
+      "label": "FeatureValue"
+    },
+    {
+      "name": "FeatureType",
+      "type": "picklist",
+      "label": "FeatureType"
+    },
+    {
+      "name": "RelatedInsightReasonId",
+      "type": "reference",
+      "label": "RelatedInsightReasonId",
+      "referenceTo": "AIInsightReason"
+    },
+    {
+      "name": "SortOrder",
+      "type": "int",
+      "label": "SortOrder"
+    },
+    {
+      "name": "ReasonLabelKey",
+      "type": "string",
+      "label": "ReasonLabelKey"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AIInsightValue",
+      "type": "parent",
+      "parentObject": "AIInsightValue",
+      "field": "AiInsightValueId"
+    },
+    {
+      "name": "AIInsightReason",
+      "type": "parent",
+      "parentObject": "AIInsightReason",
+      "field": "RelatedInsightReasonId"
+    },
+    {
+      "name": "AIInsightReasons",
+      "type": "child",
+      "childObject": "AIInsightReason",
+      "field": "RelatedInsightReasonId"
+    }
+  ]
+}

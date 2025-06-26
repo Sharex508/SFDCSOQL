@@ -1,0 +1,181 @@
+{
+  "label": "ApexClass",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "ApiVersion",
+      "type": "double",
+      "label": "ApiVersion"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "IsValid",
+      "type": "boolean",
+      "label": "IsValid"
+    },
+    {
+      "name": "BodyCrc",
+      "type": "double",
+      "label": "BodyCrc"
+    },
+    {
+      "name": "Body",
+      "type": "textarea",
+      "label": "Body"
+    },
+    {
+      "name": "LengthWithoutComments",
+      "type": "int",
+      "label": "LengthWithoutComments"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ApexTestQueueItems",
+      "type": "child",
+      "childObject": "ApexTestQueueItem",
+      "field": "ApexClassId"
+    },
+    {
+      "name": "ApexTestResults",
+      "type": "child",
+      "childObject": "ApexTestResult",
+      "field": "ApexClassId"
+    },
+    {
+      "name": "ApexTypeImplementors",
+      "type": "child",
+      "childObject": "ApexTypeImplementor",
+      "field": "ApexClassId"
+    },
+    {
+      "name": "ApexTypeImplementors",
+      "type": "child",
+      "childObject": "ApexTypeImplementor",
+      "field": "InterfaceApexClassId"
+    },
+    {
+      "name": "AppointmentSchedulingPolicies",
+      "type": "child",
+      "childObject": "AppointmentSchedulingPolicy",
+      "field": "ExtCalEventHandlerId"
+    },
+    {
+      "name": "AsyncApexJobs",
+      "type": "child",
+      "childObject": "AsyncApexJob",
+      "field": "ApexClassId"
+    },
+    {
+      "name": "AuthProviders",
+      "type": "child",
+      "childObject": "AuthProvider",
+      "field": "RegistrationHandlerId"
+    },
+    {
+      "name": "AuthProviders",
+      "type": "child",
+      "childObject": "AuthProvider",
+      "field": "PluginId"
+    },
+    {
+      "name": "ConversationVendorInfos",
+      "type": "child",
+      "childObject": "ConversationVendorInfo",
+      "field": "IntegrationClassId"
+    },
+    {
+      "name": "EmailServicesFunctions",
+      "type": "child",
+      "childObject": "EmailServicesFunction",
+      "field": "ApexClassId"
+    },
+    {
+      "name": "MyDomainDiscoverableLogins",
+      "type": "child",
+      "childObject": "MyDomainDiscoverableLogin",
+      "field": "ApexHandlerId"
+    },
+    {
+      "name": "PaymentGatewayProviders",
+      "type": "child",
+      "childObject": "PaymentGatewayProvider",
+      "field": "ApexAdapterId"
+    },
+    {
+      "name": "SamlSsoConfigs",
+      "type": "child",
+      "childObject": "SamlSsoConfig",
+      "field": "SamlJitHandlerId"
+    },
+    {
+      "name": "TestSuiteMemberships",
+      "type": "child",
+      "childObject": "TestSuiteMembership",
+      "field": "ApexClassId"
+    },
+    {
+      "name": "TransactionSecurityPolicies",
+      "type": "child",
+      "childObject": "TransactionSecurityPolicy",
+      "field": "ApexPolicyId"
+    }
+  ]
+}

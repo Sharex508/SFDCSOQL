@@ -1,0 +1,251 @@
+{
+  "label": "Invoice",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "DocumentNumber",
+      "type": "string",
+      "label": "DocumentNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "ReferenceEntityId",
+      "type": "reference",
+      "label": "ReferenceEntityId",
+      "referenceTo": "CreditMemo, Order"
+    },
+    {
+      "name": "InvoiceNumber",
+      "type": "string",
+      "label": "InvoiceNumber"
+    },
+    {
+      "name": "BillingAccountId",
+      "type": "reference",
+      "label": "BillingAccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "TotalAmount",
+      "type": "currency",
+      "label": "TotalAmount"
+    },
+    {
+      "name": "TotalAmountWithTax",
+      "type": "currency",
+      "label": "TotalAmountWithTax"
+    },
+    {
+      "name": "TotalChargeAmount",
+      "type": "currency",
+      "label": "TotalChargeAmount"
+    },
+    {
+      "name": "TotalAdjustmentAmount",
+      "type": "currency",
+      "label": "TotalAdjustmentAmount"
+    },
+    {
+      "name": "TotalTaxAmount",
+      "type": "currency",
+      "label": "TotalTaxAmount"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "InvoiceDate",
+      "type": "date",
+      "label": "InvoiceDate"
+    },
+    {
+      "name": "DueDate",
+      "type": "date",
+      "label": "DueDate"
+    },
+    {
+      "name": "BillToContactId",
+      "type": "reference",
+      "label": "BillToContactId",
+      "referenceTo": "Contact"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "Balance",
+      "type": "currency",
+      "label": "Balance"
+    },
+    {
+      "name": "TotalChargeTaxAmount",
+      "type": "currency",
+      "label": "TotalChargeTaxAmount"
+    },
+    {
+      "name": "TotalChargeAmountWithTax",
+      "type": "currency",
+      "label": "TotalChargeAmountWithTax"
+    },
+    {
+      "name": "TotalAdjustmentTaxAmount",
+      "type": "currency",
+      "label": "TotalAdjustmentTaxAmount"
+    },
+    {
+      "name": "TotalAdjustmentAmountWithTax",
+      "type": "currency",
+      "label": "TotalAdjustmentAmountWithTax"
+    },
+    {
+      "name": "NetCreditsApplied",
+      "type": "currency",
+      "label": "NetCreditsApplied"
+    },
+    {
+      "name": "NetPaymentsApplied",
+      "type": "currency",
+      "label": "NetPaymentsApplied"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "CreditMemo, Order",
+      "type": "parent",
+      "parentObject": "CreditMemo, Order",
+      "field": "ReferenceEntityId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "BillingAccountId"
+    },
+    {
+      "name": "Contact",
+      "type": "parent",
+      "parentObject": "Contact",
+      "field": "BillToContactId"
+    },
+    {
+      "name": "CreditMemoInvApplications",
+      "type": "child",
+      "childObject": "CreditMemoInvApplication",
+      "field": "InvoiceId"
+    },
+    {
+      "name": "FulfillmentOrders",
+      "type": "child",
+      "childObject": "FulfillmentOrder",
+      "field": "InvoiceId"
+    },
+    {
+      "name": "InvoiceFeeds",
+      "type": "child",
+      "childObject": "InvoiceFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "InvoiceHistories",
+      "type": "child",
+      "childObject": "InvoiceHistory",
+      "field": "InvoiceId"
+    },
+    {
+      "name": "InvoiceLines",
+      "type": "child",
+      "childObject": "InvoiceLine",
+      "field": "InvoiceId"
+    },
+    {
+      "name": "InvoiceShares",
+      "type": "child",
+      "childObject": "InvoiceShare",
+      "field": "ParentId"
+    },
+    {
+      "name": "PaymentLineInvoices",
+      "type": "child",
+      "childObject": "PaymentLineInvoice",
+      "field": "InvoiceId"
+    }
+  ]
+}

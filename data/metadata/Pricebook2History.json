@@ -1,0 +1,71 @@
+{
+  "label": "Pricebook2History",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Pricebook2Id",
+      "type": "reference",
+      "label": "Pricebook2Id",
+      "referenceTo": "Pricebook2"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "Field",
+      "type": "picklist",
+      "label": "Field"
+    },
+    {
+      "name": "DataType",
+      "type": "picklist",
+      "label": "DataType"
+    },
+    {
+      "name": "OldValue",
+      "type": "anytype",
+      "label": "OldValue"
+    },
+    {
+      "name": "NewValue",
+      "type": "anytype",
+      "label": "NewValue"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Pricebook2",
+      "type": "parent",
+      "parentObject": "Pricebook2",
+      "field": "Pricebook2Id"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    }
+  ]
+}

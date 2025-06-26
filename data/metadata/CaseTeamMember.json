@@ -1,0 +1,116 @@
+{
+  "label": "CaseTeamMember",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "Case"
+    },
+    {
+      "name": "MemberId",
+      "type": "reference",
+      "label": "MemberId",
+      "referenceTo": "Contact, User"
+    },
+    {
+      "name": "TeamTemplateMemberId",
+      "type": "reference",
+      "label": "TeamTemplateMemberId",
+      "referenceTo": "CaseTeamTemplateMember"
+    },
+    {
+      "name": "TeamRoleId",
+      "type": "reference",
+      "label": "TeamRoleId",
+      "referenceTo": "CaseTeamRole"
+    },
+    {
+      "name": "TeamTemplateId",
+      "type": "reference",
+      "label": "TeamTemplateId",
+      "referenceTo": "CaseTeamTemplate"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Case",
+      "type": "parent",
+      "parentObject": "Case",
+      "field": "ParentId"
+    },
+    {
+      "name": "Contact, User",
+      "type": "parent",
+      "parentObject": "Contact, User",
+      "field": "MemberId"
+    },
+    {
+      "name": "CaseTeamTemplateMember",
+      "type": "parent",
+      "parentObject": "CaseTeamTemplateMember",
+      "field": "TeamTemplateMemberId"
+    },
+    {
+      "name": "CaseTeamRole",
+      "type": "parent",
+      "parentObject": "CaseTeamRole",
+      "field": "TeamRoleId"
+    },
+    {
+      "name": "CaseTeamTemplate",
+      "type": "parent",
+      "parentObject": "CaseTeamTemplate",
+      "field": "TeamTemplateId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

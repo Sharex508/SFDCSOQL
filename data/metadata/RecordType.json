@@ -1,0 +1,135 @@
+{
+  "label": "RecordType",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "DeveloperName",
+      "type": "string",
+      "label": "DeveloperName"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "BusinessProcessId",
+      "type": "reference",
+      "label": "BusinessProcessId",
+      "referenceTo": "BusinessProcess"
+    },
+    {
+      "name": "SobjectType",
+      "type": "picklist",
+      "label": "SobjectType"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "BusinessProcess",
+      "type": "parent",
+      "parentObject": "BusinessProcess",
+      "field": "BusinessProcessId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Campaigns",
+      "type": "child",
+      "childObject": "Campaign",
+      "field": "CampaignMemberRecordTypeId"
+    },
+    {
+      "name": "ContentWorkspaces",
+      "type": "child",
+      "childObject": "ContentWorkspace",
+      "field": "DefaultRecordTypeId"
+    },
+    {
+      "name": "GtwyProvPaymentMethodTypes",
+      "type": "child",
+      "childObject": "GtwyProvPaymentMethodType",
+      "field": "RecordTypeId"
+    },
+    {
+      "name": "Ideas",
+      "type": "child",
+      "childObject": "Idea",
+      "field": "RecordTypeId"
+    },
+    {
+      "name": "MessagingLinks",
+      "type": "child",
+      "childObject": "MessagingLink",
+      "field": "RecordTypeId"
+    },
+    {
+      "name": "PromptVersions",
+      "type": "child",
+      "childObject": "PromptVersion",
+      "field": "TargetRecordTypeId"
+    },
+    {
+      "name": "RecentlyVieweds",
+      "type": "child",
+      "childObject": "RecentlyViewed",
+      "field": "RecordTypeId"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "label": "LoginGeo",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LoginTime",
+      "type": "datetime",
+      "label": "LoginTime"
+    },
+    {
+      "name": "CountryIso",
+      "type": "string",
+      "label": "CountryIso"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "Latitude",
+      "type": "double",
+      "label": "Latitude"
+    },
+    {
+      "name": "Longitude",
+      "type": "double",
+      "label": "Longitude"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Subdivision",
+      "type": "string",
+      "label": "Subdivision"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AuthSessions",
+      "type": "child",
+      "childObject": "AuthSession",
+      "field": "LoginGeoId"
+    },
+    {
+      "name": "LoginHistories",
+      "type": "child",
+      "childObject": "LoginHistory",
+      "field": "LoginGeoId"
+    },
+    {
+      "name": "VerificationHistories",
+      "type": "child",
+      "childObject": "VerificationHistory",
+      "field": "LoginGeoId"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "label": "OpportunityPartner",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OpportunityId",
+      "type": "reference",
+      "label": "OpportunityId",
+      "referenceTo": "Opportunity"
+    },
+    {
+      "name": "AccountToId",
+      "type": "reference",
+      "label": "AccountToId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "Role",
+      "type": "picklist",
+      "label": "Role"
+    },
+    {
+      "name": "IsPrimary",
+      "type": "boolean",
+      "label": "IsPrimary"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ReversePartnerId",
+      "type": "reference",
+      "label": "ReversePartnerId",
+      "referenceTo": "OpportunityPartner"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Opportunity",
+      "type": "parent",
+      "parentObject": "Opportunity",
+      "field": "OpportunityId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountToId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "OpportunityPartner",
+      "type": "parent",
+      "parentObject": "OpportunityPartner",
+      "field": "ReversePartnerId"
+    },
+    {
+      "name": "OpportunityPartners",
+      "type": "child",
+      "childObject": "OpportunityPartner",
+      "field": "ReversePartnerId"
+    }
+  ]
+}

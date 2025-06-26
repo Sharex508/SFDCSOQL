@@ -1,0 +1,71 @@
+{
+  "label": "ServiceResourceHistory",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ServiceResourceId",
+      "type": "reference",
+      "label": "ServiceResourceId",
+      "referenceTo": "ServiceResource"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "Field",
+      "type": "picklist",
+      "label": "Field"
+    },
+    {
+      "name": "DataType",
+      "type": "picklist",
+      "label": "DataType"
+    },
+    {
+      "name": "OldValue",
+      "type": "anytype",
+      "label": "OldValue"
+    },
+    {
+      "name": "NewValue",
+      "type": "anytype",
+      "label": "NewValue"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "ServiceResource",
+      "type": "parent",
+      "parentObject": "ServiceResource",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    }
+  ]
+}

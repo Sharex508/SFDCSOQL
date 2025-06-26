@@ -1,0 +1,241 @@
+{
+  "label": "PaymentAuthorization",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "PaymentAuthorizationNumber",
+      "type": "string",
+      "label": "PaymentAuthorizationNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "PaymentGroupId",
+      "type": "reference",
+      "label": "PaymentGroupId",
+      "referenceTo": "PaymentGroup"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "Date",
+      "type": "datetime",
+      "label": "Date"
+    },
+    {
+      "name": "GatewayDate",
+      "type": "datetime",
+      "label": "GatewayDate"
+    },
+    {
+      "name": "ExpirationDate",
+      "type": "datetime",
+      "label": "ExpirationDate"
+    },
+    {
+      "name": "EffectiveDate",
+      "type": "datetime",
+      "label": "EffectiveDate"
+    },
+    {
+      "name": "Amount",
+      "type": "currency",
+      "label": "Amount"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "ProcessingMode",
+      "type": "picklist",
+      "label": "ProcessingMode"
+    },
+    {
+      "name": "PaymentMethodId",
+      "type": "reference",
+      "label": "PaymentMethodId",
+      "referenceTo": "PaymentMethod"
+    },
+    {
+      "name": "Comments",
+      "type": "textarea",
+      "label": "Comments"
+    },
+    {
+      "name": "GatewayRefDetails",
+      "type": "textarea",
+      "label": "GatewayRefDetails"
+    },
+    {
+      "name": "GatewayRefNumber",
+      "type": "string",
+      "label": "GatewayRefNumber"
+    },
+    {
+      "name": "GatewayResultCode",
+      "type": "string",
+      "label": "GatewayResultCode"
+    },
+    {
+      "name": "SfResultCode",
+      "type": "picklist",
+      "label": "SfResultCode"
+    },
+    {
+      "name": "GatewayAuthCode",
+      "type": "string",
+      "label": "GatewayAuthCode"
+    },
+    {
+      "name": "TotalAuthReversalAmount",
+      "type": "currency",
+      "label": "TotalAuthReversalAmount"
+    },
+    {
+      "name": "GatewayResultCodeDescription",
+      "type": "string",
+      "label": "GatewayResultCodeDescription"
+    },
+    {
+      "name": "Balance",
+      "type": "currency",
+      "label": "Balance"
+    },
+    {
+      "name": "TotalPaymentCaptureAmount",
+      "type": "currency",
+      "label": "TotalPaymentCaptureAmount"
+    },
+    {
+      "name": "IpAddress",
+      "type": "string",
+      "label": "IpAddress"
+    },
+    {
+      "name": "MacAddress",
+      "type": "string",
+      "label": "MacAddress"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "label": "Email"
+    },
+    {
+      "name": "PaymentGatewayId",
+      "type": "reference",
+      "label": "PaymentGatewayId",
+      "referenceTo": "PaymentGateway"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "PaymentGroup",
+      "type": "parent",
+      "parentObject": "PaymentGroup",
+      "field": "PaymentGroupId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    },
+    {
+      "name": "PaymentMethod",
+      "type": "parent",
+      "parentObject": "PaymentMethod",
+      "field": "PaymentMethodId"
+    },
+    {
+      "name": "PaymentGateway",
+      "type": "parent",
+      "parentObject": "PaymentGateway",
+      "field": "PaymentGatewayId"
+    },
+    {
+      "name": "Payments",
+      "type": "child",
+      "childObject": "Payment",
+      "field": "PaymentAuthorizationId"
+    },
+    {
+      "name": "PaymentAuthAdjustments",
+      "type": "child",
+      "childObject": "PaymentAuthAdjustment",
+      "field": "PaymentAuthorizationId"
+    }
+  ]
+}

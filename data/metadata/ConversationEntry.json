@@ -1,0 +1,187 @@
+{
+  "label": "ConversationEntry",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "ConversationEntityId",
+      "type": "reference",
+      "label": "ConversationEntityId",
+      "referenceTo": "Conversation"
+    },
+    {
+      "name": "ConversationId",
+      "type": "reference",
+      "label": "ConversationId",
+      "referenceTo": "Conversation, MessagingSession, VoiceCall"
+    },
+    {
+      "name": "Seq",
+      "type": "int",
+      "label": "Seq"
+    },
+    {
+      "name": "EntryTime",
+      "type": "datetime",
+      "label": "EntryTime"
+    },
+    {
+      "name": "EntryTimeMilliSecs",
+      "type": "int",
+      "label": "EntryTimeMilliSecs"
+    },
+    {
+      "name": "EntryType",
+      "type": "picklist",
+      "label": "EntryType"
+    },
+    {
+      "name": "ActorType",
+      "type": "picklist",
+      "label": "ActorType"
+    },
+    {
+      "name": "ActorId",
+      "type": "reference",
+      "label": "ActorId",
+      "referenceTo": "ConversationParticipant, MessagingEndUser, User"
+    },
+    {
+      "name": "ActorName",
+      "type": "string",
+      "label": "ActorName"
+    },
+    {
+      "name": "Message",
+      "type": "textarea",
+      "label": "Message"
+    },
+    {
+      "name": "MessageStatus",
+      "type": "picklist",
+      "label": "MessageStatus"
+    },
+    {
+      "name": "MessageStatusCode",
+      "type": "string",
+      "label": "MessageStatusCode"
+    },
+    {
+      "name": "MessageSendTime",
+      "type": "datetime",
+      "label": "MessageSendTime"
+    },
+    {
+      "name": "MessageDeliverTime",
+      "type": "datetime",
+      "label": "MessageDeliverTime"
+    },
+    {
+      "name": "MessageReadTime",
+      "type": "datetime",
+      "label": "MessageReadTime"
+    },
+    {
+      "name": "MessageIdentifier",
+      "type": "string",
+      "label": "MessageIdentifier"
+    },
+    {
+      "name": "HasAttachments",
+      "type": "boolean",
+      "label": "HasAttachments"
+    },
+    {
+      "name": "EntryEndTime",
+      "type": "datetime",
+      "label": "EntryEndTime"
+    },
+    {
+      "name": "ClientTimestamp",
+      "type": "datetime",
+      "label": "ClientTimestamp"
+    },
+    {
+      "name": "ClientDuration",
+      "type": "int",
+      "label": "ClientDuration"
+    },
+    {
+      "name": "ServerReceivedTimestamp",
+      "type": "datetime",
+      "label": "ServerReceivedTimestamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Conversation",
+      "type": "parent",
+      "parentObject": "Conversation",
+      "field": "ConversationEntityId"
+    },
+    {
+      "name": "Conversation, MessagingSession, VoiceCall",
+      "type": "parent",
+      "parentObject": "Conversation, MessagingSession, VoiceCall",
+      "field": "ConversationId"
+    },
+    {
+      "name": "ConversationParticipant, MessagingEndUser, User",
+      "type": "parent",
+      "parentObject": "ConversationParticipant, MessagingEndUser, User",
+      "field": "ActorId"
+    }
+  ]
+}

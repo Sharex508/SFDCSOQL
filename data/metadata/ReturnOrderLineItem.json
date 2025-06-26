@@ -1,0 +1,299 @@
+{
+  "label": "ReturnOrderLineItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ReturnOrderLineItemNumber",
+      "type": "string",
+      "label": "ReturnOrderLineItemNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "ReturnOrderId",
+      "type": "reference",
+      "label": "ReturnOrderId",
+      "referenceTo": "ReturnOrder"
+    },
+    {
+      "name": "OrderItemId",
+      "type": "reference",
+      "label": "OrderItemId",
+      "referenceTo": "OrderItem"
+    },
+    {
+      "name": "Product2Id",
+      "type": "reference",
+      "label": "Product2Id",
+      "referenceTo": "Product2"
+    },
+    {
+      "name": "QuantityReturned",
+      "type": "double",
+      "label": "QuantityReturned"
+    },
+    {
+      "name": "QuantityUnitOfMeasure",
+      "type": "picklist",
+      "label": "QuantityUnitOfMeasure"
+    },
+    {
+      "name": "SourceLocationId",
+      "type": "reference",
+      "label": "SourceLocationId",
+      "referenceTo": "Location"
+    },
+    {
+      "name": "DestinationLocationId",
+      "type": "reference",
+      "label": "DestinationLocationId",
+      "referenceTo": "Location"
+    },
+    {
+      "name": "AssetId",
+      "type": "reference",
+      "label": "AssetId",
+      "referenceTo": "Asset"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "ReasonForReturn",
+      "type": "picklist",
+      "label": "ReasonForReturn"
+    },
+    {
+      "name": "ProcessingPlan",
+      "type": "picklist",
+      "label": "ProcessingPlan"
+    },
+    {
+      "name": "RepaymentMethod",
+      "type": "picklist",
+      "label": "RepaymentMethod"
+    },
+    {
+      "name": "ChangeOrderItemId",
+      "type": "reference",
+      "label": "ChangeOrderItemId",
+      "referenceTo": "OrderItem"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "TypeCode",
+      "type": "picklist",
+      "label": "TypeCode"
+    },
+    {
+      "name": "QuantityReceived",
+      "type": "double",
+      "label": "QuantityReceived"
+    },
+    {
+      "name": "QuantityExpected",
+      "type": "double",
+      "label": "QuantityExpected"
+    },
+    {
+      "name": "QuantityRejected",
+      "type": "double",
+      "label": "QuantityRejected"
+    },
+    {
+      "name": "ReasonForRejection",
+      "type": "picklist",
+      "label": "ReasonForRejection"
+    },
+    {
+      "name": "UnitPrice",
+      "type": "currency",
+      "label": "UnitPrice"
+    },
+    {
+      "name": "GrossUnitPrice",
+      "type": "currency",
+      "label": "GrossUnitPrice"
+    },
+    {
+      "name": "TotalLineAmount",
+      "type": "currency",
+      "label": "TotalLineAmount"
+    },
+    {
+      "name": "TotalLineTaxAmount",
+      "type": "currency",
+      "label": "TotalLineTaxAmount"
+    },
+    {
+      "name": "TotalAdjustmentTaxAmount",
+      "type": "currency",
+      "label": "TotalAdjustmentTaxAmount"
+    },
+    {
+      "name": "TotalAdjustmentAmount",
+      "type": "currency",
+      "label": "TotalAdjustmentAmount"
+    },
+    {
+      "name": "TotalLineAmountWithTax",
+      "type": "currency",
+      "label": "TotalLineAmountWithTax"
+    },
+    {
+      "name": "TotalAdjustmentAmountWithTax",
+      "type": "currency",
+      "label": "TotalAdjustmentAmountWithTax"
+    },
+    {
+      "name": "TotalPrice",
+      "type": "currency",
+      "label": "TotalPrice"
+    },
+    {
+      "name": "TotalTaxAmount",
+      "type": "currency",
+      "label": "TotalTaxAmount"
+    },
+    {
+      "name": "TotalAmount",
+      "type": "currency",
+      "label": "TotalAmount"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ReturnOrder",
+      "type": "parent",
+      "parentObject": "ReturnOrder",
+      "field": "ReturnOrderId"
+    },
+    {
+      "name": "OrderItem",
+      "type": "parent",
+      "parentObject": "OrderItem",
+      "field": "OrderItemId"
+    },
+    {
+      "name": "Product2",
+      "type": "parent",
+      "parentObject": "Product2",
+      "field": "Product2Id"
+    },
+    {
+      "name": "Location",
+      "type": "parent",
+      "parentObject": "Location",
+      "field": "SourceLocationId"
+    },
+    {
+      "name": "Location",
+      "type": "parent",
+      "parentObject": "Location",
+      "field": "DestinationLocationId"
+    },
+    {
+      "name": "Asset",
+      "type": "parent",
+      "parentObject": "Asset",
+      "field": "AssetId"
+    },
+    {
+      "name": "OrderItem",
+      "type": "parent",
+      "parentObject": "OrderItem",
+      "field": "ChangeOrderItemId"
+    },
+    {
+      "name": "ReturnOrderItemAdjustments",
+      "type": "child",
+      "childObject": "ReturnOrderItemAdjustment",
+      "field": "ReturnOrderLineItemId"
+    },
+    {
+      "name": "ReturnOrderItemTaxs",
+      "type": "child",
+      "childObject": "ReturnOrderItemTax",
+      "field": "ReturnOrderLineItemId"
+    },
+    {
+      "name": "ReturnOrderLineItemFeeds",
+      "type": "child",
+      "childObject": "ReturnOrderLineItemFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ReturnOrderLineItemHistories",
+      "type": "child",
+      "childObject": "ReturnOrderLineItemHistory",
+      "field": "ReturnOrderLineItemId"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "label": "OperatingHours",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "TimeZone",
+      "type": "picklist",
+      "label": "TimeZone"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Accounts",
+      "type": "child",
+      "childObject": "Account",
+      "field": "OperatingHoursId"
+    },
+    {
+      "name": "AppointmentTopicTimeSlots",
+      "type": "child",
+      "childObject": "AppointmentTopicTimeSlot",
+      "field": "OperatingHoursId"
+    },
+    {
+      "name": "Entitlements",
+      "type": "child",
+      "childObject": "Entitlement",
+      "field": "SvcApptBookingWindowsId"
+    },
+    {
+      "name": "OperatingHoursFeeds",
+      "type": "child",
+      "childObject": "OperatingHoursFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "OperatingHoursHolidaies",
+      "type": "child",
+      "childObject": "OperatingHoursHoliday",
+      "field": "OperatingHoursId"
+    },
+    {
+      "name": "OperatingHoursShares",
+      "type": "child",
+      "childObject": "OperatingHoursShare",
+      "field": "ParentId"
+    },
+    {
+      "name": "ServiceTerritories",
+      "type": "child",
+      "childObject": "ServiceTerritory",
+      "field": "OperatingHoursId"
+    },
+    {
+      "name": "ServiceTerritoryMembers",
+      "type": "child",
+      "childObject": "ServiceTerritoryMember",
+      "field": "OperatingHoursId"
+    },
+    {
+      "name": "TimeSlots",
+      "type": "child",
+      "childObject": "TimeSlot",
+      "field": "OperatingHoursId"
+    },
+    {
+      "name": "WorkTypes",
+      "type": "child",
+      "childObject": "WorkType",
+      "field": "OperatingHoursId"
+    }
+  ]
+}

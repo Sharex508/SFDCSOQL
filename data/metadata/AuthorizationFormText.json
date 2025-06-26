@@ -1,0 +1,139 @@
+{
+  "label": "AuthorizationFormText",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "AuthorizationFormId",
+      "type": "reference",
+      "label": "AuthorizationFormId",
+      "referenceTo": "AuthorizationForm"
+    },
+    {
+      "name": "FullAuthorizationFormUrl",
+      "type": "string",
+      "label": "FullAuthorizationFormUrl"
+    },
+    {
+      "name": "SummaryAuthFormText",
+      "type": "string",
+      "label": "SummaryAuthFormText"
+    },
+    {
+      "name": "Locale",
+      "type": "picklist",
+      "label": "Locale"
+    },
+    {
+      "name": "LocaleSelection",
+      "type": "picklist",
+      "label": "LocaleSelection"
+    },
+    {
+      "name": "ContentDocumentId",
+      "type": "reference",
+      "label": "ContentDocumentId",
+      "referenceTo": "ContentDocument"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "AuthorizationForm",
+      "type": "parent",
+      "parentObject": "AuthorizationForm",
+      "field": "AuthorizationFormId"
+    },
+    {
+      "name": "ContentDocument",
+      "type": "parent",
+      "parentObject": "ContentDocument",
+      "field": "ContentDocumentId"
+    },
+    {
+      "name": "AuthorizationForms",
+      "type": "child",
+      "childObject": "AuthorizationForm",
+      "field": "DefaultAuthFormTextId"
+    },
+    {
+      "name": "AuthorizationFormConsents",
+      "type": "child",
+      "childObject": "AuthorizationFormConsent",
+      "field": "AuthorizationFormTextId"
+    },
+    {
+      "name": "AuthorizationFormTextFeeds",
+      "type": "child",
+      "childObject": "AuthorizationFormTextFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "AuthorizationFormTextHistories",
+      "type": "child",
+      "childObject": "AuthorizationFormTextHistory",
+      "field": "AuthorizationFormTextId"
+    }
+  ]
+}

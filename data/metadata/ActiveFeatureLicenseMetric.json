@@ -1,0 +1,46 @@
+{
+  "label": "ActiveFeatureLicenseMetric",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "MetricsDate",
+      "type": "date",
+      "label": "MetricsDate"
+    },
+    {
+      "name": "FeatureType",
+      "type": "picklist",
+      "label": "FeatureType"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "AssignedUserCount",
+      "type": "int",
+      "label": "AssignedUserCount"
+    },
+    {
+      "name": "ActiveUserCount",
+      "type": "int",
+      "label": "ActiveUserCount"
+    },
+    {
+      "name": "TotalLicenseCount",
+      "type": "int",
+      "label": "TotalLicenseCount"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

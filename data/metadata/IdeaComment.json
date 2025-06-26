@@ -1,0 +1,104 @@
+{
+  "label": "IdeaComment",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IdeaId",
+      "type": "reference",
+      "label": "IdeaId",
+      "referenceTo": "Idea"
+    },
+    {
+      "name": "CommunityId",
+      "type": "reference",
+      "label": "CommunityId",
+      "referenceTo": "Community"
+    },
+    {
+      "name": "CommentBody",
+      "type": "textarea",
+      "label": "CommentBody"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "IsHtml",
+      "type": "boolean",
+      "label": "IsHtml"
+    },
+    {
+      "name": "CreatorFullPhotoUrl",
+      "type": "string",
+      "label": "CreatorFullPhotoUrl"
+    },
+    {
+      "name": "CreatorSmallPhotoUrl",
+      "type": "string",
+      "label": "CreatorSmallPhotoUrl"
+    },
+    {
+      "name": "CreatorName",
+      "type": "string",
+      "label": "CreatorName"
+    },
+    {
+      "name": "UpVotes",
+      "type": "int",
+      "label": "UpVotes"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Idea",
+      "type": "parent",
+      "parentObject": "Idea",
+      "field": "IdeaId"
+    },
+    {
+      "name": "Community",
+      "type": "parent",
+      "parentObject": "Community",
+      "field": "CommunityId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "Ideas",
+      "type": "child",
+      "childObject": "Idea",
+      "field": "LastCommentId"
+    }
+  ]
+}

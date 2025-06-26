@@ -1,0 +1,191 @@
+{
+  "label": "LoginHistory",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LoginTime",
+      "type": "datetime",
+      "label": "LoginTime"
+    },
+    {
+      "name": "LoginType",
+      "type": "picklist",
+      "label": "LoginType"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "LoginUrl",
+      "type": "string",
+      "label": "LoginUrl"
+    },
+    {
+      "name": "AuthenticationServiceId",
+      "type": "reference",
+      "label": "AuthenticationServiceId",
+      "referenceTo": "AuthProvider, SamlSsoConfig"
+    },
+    {
+      "name": "LoginGeoId",
+      "type": "reference",
+      "label": "LoginGeoId",
+      "referenceTo": "LoginGeo"
+    },
+    {
+      "name": "TlsProtocol",
+      "type": "picklist",
+      "label": "TlsProtocol"
+    },
+    {
+      "name": "CipherSuite",
+      "type": "picklist",
+      "label": "CipherSuite"
+    },
+    {
+      "name": "OptionsIsGet",
+      "type": "boolean",
+      "label": "OptionsIsGet"
+    },
+    {
+      "name": "OptionsIsPost",
+      "type": "boolean",
+      "label": "OptionsIsPost"
+    },
+    {
+      "name": "Browser",
+      "type": "string",
+      "label": "Browser"
+    },
+    {
+      "name": "Platform",
+      "type": "string",
+      "label": "Platform"
+    },
+    {
+      "name": "Status",
+      "type": "string",
+      "label": "Status"
+    },
+    {
+      "name": "Application",
+      "type": "string",
+      "label": "Application"
+    },
+    {
+      "name": "ClientVersion",
+      "type": "string",
+      "label": "ClientVersion"
+    },
+    {
+      "name": "ApiType",
+      "type": "string",
+      "label": "ApiType"
+    },
+    {
+      "name": "ApiVersion",
+      "type": "string",
+      "label": "ApiVersion"
+    },
+    {
+      "name": "CountryIso",
+      "type": "string",
+      "label": "CountryIso"
+    },
+    {
+      "name": "AuthMethodReference",
+      "type": "string",
+      "label": "AuthMethodReference"
+    },
+    {
+      "name": "LoginSubType",
+      "type": "picklist",
+      "label": "LoginSubType"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "AuthProvider, SamlSsoConfig",
+      "type": "parent",
+      "parentObject": "AuthProvider, SamlSsoConfig",
+      "field": "AuthenticationServiceId"
+    },
+    {
+      "name": "LoginGeo",
+      "type": "parent",
+      "parentObject": "LoginGeo",
+      "field": "LoginGeoId"
+    },
+    {
+      "name": "ApiEvents",
+      "type": "child",
+      "childObject": "ApiEvent",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "AuthSessions",
+      "type": "child",
+      "childObject": "AuthSession",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "BulkApiResultEventStores",
+      "type": "child",
+      "childObject": "BulkApiResultEventStore",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "IdentityVerificationEvents",
+      "type": "child",
+      "childObject": "IdentityVerificationEvent",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "ListViewEvents",
+      "type": "child",
+      "childObject": "ListViewEvent",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "PermissionSetEventStores",
+      "type": "child",
+      "childObject": "PermissionSetEventStore",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "ReportEvents",
+      "type": "child",
+      "childObject": "ReportEvent",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "VerificationHistories",
+      "type": "child",
+      "childObject": "VerificationHistory",
+      "field": "LoginHistoryId"
+    }
+  ]
+}

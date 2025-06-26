@@ -1,0 +1,144 @@
+{
+  "label": "InventoryItemReservation",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "InventoryItemReservationName",
+      "type": "string",
+      "label": "InventoryItemReservationName"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "InventoryReservationId",
+      "type": "reference",
+      "label": "InventoryReservationId",
+      "referenceTo": "InventoryReservation"
+    },
+    {
+      "name": "ItemReservationSourceId",
+      "type": "reference",
+      "label": "ItemReservationSourceId",
+      "referenceTo": "CartItem, Coin__c"
+    },
+    {
+      "name": "ProductId",
+      "type": "reference",
+      "label": "ProductId",
+      "referenceTo": "Product2"
+    },
+    {
+      "name": "StockKeepingUnit",
+      "type": "string",
+      "label": "StockKeepingUnit"
+    },
+    {
+      "name": "Quantity",
+      "type": "double",
+      "label": "Quantity"
+    },
+    {
+      "name": "ReservedAtLocationId",
+      "type": "reference",
+      "label": "ReservedAtLocationId",
+      "referenceTo": "Location, LocationGroup"
+    },
+    {
+      "name": "ErrorMessage",
+      "type": "textarea",
+      "label": "ErrorMessage"
+    },
+    {
+      "name": "ErrorCode",
+      "type": "string",
+      "label": "ErrorCode"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "InventoryReservation",
+      "type": "parent",
+      "parentObject": "InventoryReservation",
+      "field": "InventoryReservationId"
+    },
+    {
+      "name": "CartItem, Coin__c",
+      "type": "parent",
+      "parentObject": "CartItem, Coin__c",
+      "field": "ItemReservationSourceId"
+    },
+    {
+      "name": "Product2",
+      "type": "parent",
+      "parentObject": "Product2",
+      "field": "ProductId"
+    },
+    {
+      "name": "Location, LocationGroup",
+      "type": "parent",
+      "parentObject": "Location, LocationGroup",
+      "field": "ReservedAtLocationId"
+    }
+  ]
+}

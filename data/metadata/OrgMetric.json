@@ -1,0 +1,89 @@
+{
+  "label": "OrgMetric",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LatestOrgMetricScanSummaryId",
+      "type": "reference",
+      "label": "LatestOrgMetricScanSummaryId",
+      "referenceTo": "OrgMetricScanSummary"
+    },
+    {
+      "name": "FeatureType",
+      "type": "picklist",
+      "label": "FeatureType"
+    },
+    {
+      "name": "Category",
+      "type": "picklist",
+      "label": "Category"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "OrgMetricScanSummary",
+      "type": "parent",
+      "parentObject": "OrgMetricScanSummary",
+      "field": "LatestOrgMetricScanSummaryId"
+    },
+    {
+      "name": "OrgMetricScanSummaries",
+      "type": "child",
+      "childObject": "OrgMetricScanSummary",
+      "field": "OrgMetricId"
+    }
+  ]
+}

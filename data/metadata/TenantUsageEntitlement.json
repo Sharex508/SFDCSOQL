@@ -1,0 +1,121 @@
+{
+  "label": "TenantUsageEntitlement",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ResourceGroupKey",
+      "type": "string",
+      "label": "ResourceGroupKey"
+    },
+    {
+      "name": "Setting",
+      "type": "string",
+      "label": "Setting"
+    },
+    {
+      "name": "StartDate",
+      "type": "date",
+      "label": "StartDate"
+    },
+    {
+      "name": "EndDate",
+      "type": "date",
+      "label": "EndDate"
+    },
+    {
+      "name": "CurrentAmountAllowed",
+      "type": "double",
+      "label": "CurrentAmountAllowed"
+    },
+    {
+      "name": "Frequency",
+      "type": "picklist",
+      "label": "Frequency"
+    },
+    {
+      "name": "IsPersistentResource",
+      "type": "boolean",
+      "label": "IsPersistentResource"
+    },
+    {
+      "name": "HasRollover",
+      "type": "boolean",
+      "label": "HasRollover"
+    },
+    {
+      "name": "OverageGrace",
+      "type": "percent",
+      "label": "OverageGrace"
+    },
+    {
+      "name": "AmountUsed",
+      "type": "double",
+      "label": "AmountUsed"
+    },
+    {
+      "name": "UsageDate",
+      "type": "datetime",
+      "label": "UsageDate"
+    },
+    {
+      "name": "MasterLabel",
+      "type": "string",
+      "label": "MasterLabel"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

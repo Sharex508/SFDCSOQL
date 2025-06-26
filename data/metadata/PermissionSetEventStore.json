@@ -1,0 +1,163 @@
+{
+  "label": "PermissionSetEventStore",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "EventIdentifier",
+      "type": "string",
+      "label": "EventIdentifier"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Username",
+      "type": "string",
+      "label": "Username"
+    },
+    {
+      "name": "EventDate",
+      "type": "datetime",
+      "label": "EventDate"
+    },
+    {
+      "name": "RelatedEventIdentifier",
+      "type": "string",
+      "label": "RelatedEventIdentifier"
+    },
+    {
+      "name": "PolicyId",
+      "type": "reference",
+      "label": "PolicyId",
+      "referenceTo": "TransactionSecurityPolicy"
+    },
+    {
+      "name": "PolicyOutcome",
+      "type": "picklist",
+      "label": "PolicyOutcome"
+    },
+    {
+      "name": "EvaluationTime",
+      "type": "double",
+      "label": "EvaluationTime"
+    },
+    {
+      "name": "SessionKey",
+      "type": "string",
+      "label": "SessionKey"
+    },
+    {
+      "name": "LoginKey",
+      "type": "string",
+      "label": "LoginKey"
+    },
+    {
+      "name": "SessionLevel",
+      "type": "picklist",
+      "label": "SessionLevel"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "LoginHistoryId",
+      "type": "reference",
+      "label": "LoginHistoryId",
+      "referenceTo": "LoginHistory"
+    },
+    {
+      "name": "EventSource",
+      "type": "picklist",
+      "label": "EventSource"
+    },
+    {
+      "name": "Operation",
+      "type": "picklist",
+      "label": "Operation"
+    },
+    {
+      "name": "ParentIdList",
+      "type": "json",
+      "label": "ParentIdList"
+    },
+    {
+      "name": "ParentNameList",
+      "type": "json",
+      "label": "ParentNameList"
+    },
+    {
+      "name": "PermissionType",
+      "type": "string",
+      "label": "PermissionType"
+    },
+    {
+      "name": "PermissionList",
+      "type": "json",
+      "label": "PermissionList"
+    },
+    {
+      "name": "HasExternalUsers",
+      "type": "boolean",
+      "label": "HasExternalUsers"
+    },
+    {
+      "name": "ImpactedUserIds",
+      "type": "json",
+      "label": "ImpactedUserIds"
+    },
+    {
+      "name": "UserCount",
+      "type": "string",
+      "label": "UserCount"
+    },
+    {
+      "name": "PermissionExpiration",
+      "type": "datetime",
+      "label": "PermissionExpiration"
+    },
+    {
+      "name": "PermissionExpirationList",
+      "type": "json",
+      "label": "PermissionExpirationList"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "TransactionSecurityPolicy",
+      "type": "parent",
+      "parentObject": "TransactionSecurityPolicy",
+      "field": "PolicyId"
+    },
+    {
+      "name": "LoginHistory",
+      "type": "parent",
+      "parentObject": "LoginHistory",
+      "field": "LoginHistoryId"
+    }
+  ]
+}

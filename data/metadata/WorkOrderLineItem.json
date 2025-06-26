@@ -1,0 +1,367 @@
+{
+  "label": "WorkOrderLineItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "LineItemNumber",
+      "type": "string",
+      "label": "LineItemNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "WorkOrderId",
+      "type": "reference",
+      "label": "WorkOrderId",
+      "referenceTo": "WorkOrder"
+    },
+    {
+      "name": "ParentWorkOrderLineItemId",
+      "type": "reference",
+      "label": "ParentWorkOrderLineItemId",
+      "referenceTo": "WorkOrderLineItem"
+    },
+    {
+      "name": "Product2Id",
+      "type": "reference",
+      "label": "Product2Id",
+      "referenceTo": "Product2"
+    },
+    {
+      "name": "AssetId",
+      "type": "reference",
+      "label": "AssetId",
+      "referenceTo": "Asset"
+    },
+    {
+      "name": "OrderId",
+      "type": "reference",
+      "label": "OrderId",
+      "referenceTo": "Order"
+    },
+    {
+      "name": "RootWorkOrderLineItemId",
+      "type": "reference",
+      "label": "RootWorkOrderLineItemId",
+      "referenceTo": "WorkOrderLineItem"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "StartDate",
+      "type": "datetime",
+      "label": "StartDate"
+    },
+    {
+      "name": "EndDate",
+      "type": "datetime",
+      "label": "EndDate"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "PricebookEntryId",
+      "type": "reference",
+      "label": "PricebookEntryId",
+      "referenceTo": "PricebookEntry"
+    },
+    {
+      "name": "Quantity",
+      "type": "double",
+      "label": "Quantity"
+    },
+    {
+      "name": "UnitPrice",
+      "type": "currency",
+      "label": "UnitPrice"
+    },
+    {
+      "name": "Discount",
+      "type": "percent",
+      "label": "Discount"
+    },
+    {
+      "name": "ListPrice",
+      "type": "currency",
+      "label": "ListPrice"
+    },
+    {
+      "name": "Subtotal",
+      "type": "currency",
+      "label": "Subtotal"
+    },
+    {
+      "name": "TotalPrice",
+      "type": "currency",
+      "label": "TotalPrice"
+    },
+    {
+      "name": "Duration",
+      "type": "double",
+      "label": "Duration"
+    },
+    {
+      "name": "DurationType",
+      "type": "picklist",
+      "label": "DurationType"
+    },
+    {
+      "name": "DurationInMinutes",
+      "type": "double",
+      "label": "DurationInMinutes"
+    },
+    {
+      "name": "WorkTypeId",
+      "type": "reference",
+      "label": "WorkTypeId",
+      "referenceTo": "WorkType"
+    },
+    {
+      "name": "Street",
+      "type": "textarea",
+      "label": "Street"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "label": "State"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "Latitude",
+      "type": "double",
+      "label": "Latitude"
+    },
+    {
+      "name": "Longitude",
+      "type": "double",
+      "label": "Longitude"
+    },
+    {
+      "name": "GeocodeAccuracy",
+      "type": "picklist",
+      "label": "GeocodeAccuracy"
+    },
+    {
+      "name": "Address",
+      "type": "address",
+      "label": "Address"
+    },
+    {
+      "name": "ServiceTerritoryId",
+      "type": "reference",
+      "label": "ServiceTerritoryId",
+      "referenceTo": "ServiceTerritory"
+    },
+    {
+      "name": "Subject",
+      "type": "string",
+      "label": "Subject"
+    },
+    {
+      "name": "StatusCategory",
+      "type": "picklist",
+      "label": "StatusCategory"
+    },
+    {
+      "name": "IsClosed",
+      "type": "boolean",
+      "label": "IsClosed"
+    },
+    {
+      "name": "Priority",
+      "type": "picklist",
+      "label": "Priority"
+    },
+    {
+      "name": "ServiceAppointmentCount",
+      "type": "int",
+      "label": "ServiceAppointmentCount"
+    },
+    {
+      "name": "LocationId",
+      "type": "reference",
+      "label": "LocationId",
+      "referenceTo": "Location"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "WorkOrder",
+      "type": "parent",
+      "parentObject": "WorkOrder",
+      "field": "WorkOrderId"
+    },
+    {
+      "name": "WorkOrderLineItem",
+      "type": "parent",
+      "parentObject": "WorkOrderLineItem",
+      "field": "ParentWorkOrderLineItemId"
+    },
+    {
+      "name": "Product2",
+      "type": "parent",
+      "parentObject": "Product2",
+      "field": "Product2Id"
+    },
+    {
+      "name": "Asset",
+      "type": "parent",
+      "parentObject": "Asset",
+      "field": "AssetId"
+    },
+    {
+      "name": "Order",
+      "type": "parent",
+      "parentObject": "Order",
+      "field": "OrderId"
+    },
+    {
+      "name": "WorkOrderLineItem",
+      "type": "parent",
+      "parentObject": "WorkOrderLineItem",
+      "field": "RootWorkOrderLineItemId"
+    },
+    {
+      "name": "PricebookEntry",
+      "type": "parent",
+      "parentObject": "PricebookEntry",
+      "field": "PricebookEntryId"
+    },
+    {
+      "name": "WorkType",
+      "type": "parent",
+      "parentObject": "WorkType",
+      "field": "WorkTypeId"
+    },
+    {
+      "name": "ServiceTerritory",
+      "type": "parent",
+      "parentObject": "ServiceTerritory",
+      "field": "ServiceTerritoryId"
+    },
+    {
+      "name": "Location",
+      "type": "parent",
+      "parentObject": "Location",
+      "field": "LocationId"
+    },
+    {
+      "name": "WorkOrderLineItems",
+      "type": "child",
+      "childObject": "WorkOrderLineItem",
+      "field": "ParentWorkOrderLineItemId"
+    },
+    {
+      "name": "WorkOrderLineItems",
+      "type": "child",
+      "childObject": "WorkOrderLineItem",
+      "field": "RootWorkOrderLineItemId"
+    },
+    {
+      "name": "WorkOrderLineItemFeeds",
+      "type": "child",
+      "childObject": "WorkOrderLineItemFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "WorkOrderLineItemHistories",
+      "type": "child",
+      "childObject": "WorkOrderLineItemHistory",
+      "field": "WorkOrderLineItemId"
+    },
+    {
+      "name": "WorkPlans",
+      "type": "child",
+      "childObject": "WorkPlan",
+      "field": "WorkOrderLineItemId"
+    },
+    {
+      "name": "WorkSteps",
+      "type": "child",
+      "childObject": "WorkStep",
+      "field": "WorkOrderLineItemId"
+    }
+  ]
+}

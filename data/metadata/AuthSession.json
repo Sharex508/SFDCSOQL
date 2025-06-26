@@ -1,0 +1,139 @@
+{
+  "label": "AuthSession",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "UsersId",
+      "type": "reference",
+      "label": "UsersId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "NumSecondsValid",
+      "type": "int",
+      "label": "NumSecondsValid"
+    },
+    {
+      "name": "UserType",
+      "type": "picklist",
+      "label": "UserType"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "LoginType",
+      "type": "picklist",
+      "label": "LoginType"
+    },
+    {
+      "name": "SessionType",
+      "type": "picklist",
+      "label": "SessionType"
+    },
+    {
+      "name": "SessionSecurityLevel",
+      "type": "picklist",
+      "label": "SessionSecurityLevel"
+    },
+    {
+      "name": "LogoutUrl",
+      "type": "string",
+      "label": "LogoutUrl"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "AuthSession"
+    },
+    {
+      "name": "LoginHistoryId",
+      "type": "reference",
+      "label": "LoginHistoryId",
+      "referenceTo": "LoginHistory"
+    },
+    {
+      "name": "LoginGeoId",
+      "type": "reference",
+      "label": "LoginGeoId",
+      "referenceTo": "LoginGeo"
+    },
+    {
+      "name": "IsCurrent",
+      "type": "boolean",
+      "label": "IsCurrent"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UsersId"
+    },
+    {
+      "name": "AuthSession",
+      "type": "parent",
+      "parentObject": "AuthSession",
+      "field": "ParentId"
+    },
+    {
+      "name": "LoginHistory",
+      "type": "parent",
+      "parentObject": "LoginHistory",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "LoginGeo",
+      "type": "parent",
+      "parentObject": "LoginGeo",
+      "field": "LoginGeoId"
+    },
+    {
+      "name": "AuthSessions",
+      "type": "child",
+      "childObject": "AuthSession",
+      "field": "ParentId"
+    },
+    {
+      "name": "IdentityProviderEventStores",
+      "type": "child",
+      "childObject": "IdentityProviderEventStore",
+      "field": "AuthSessionId"
+    },
+    {
+      "name": "IdpEventLogs",
+      "type": "child",
+      "childObject": "IdpEventLog",
+      "field": "AuthSessionId"
+    },
+    {
+      "name": "SessionPermSetActivations",
+      "type": "child",
+      "childObject": "SessionPermSetActivation",
+      "field": "AuthSessionId"
+    }
+  ]
+}

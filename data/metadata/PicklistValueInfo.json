@@ -1,0 +1,51 @@
+{
+  "label": "PicklistValueInfo",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "Value",
+      "type": "string",
+      "label": "Value"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "IsDefaultValue",
+      "type": "boolean",
+      "label": "IsDefaultValue"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "ValidFor",
+      "type": "string",
+      "label": "ValidFor"
+    },
+    {
+      "name": "EntityParticleId",
+      "type": "string",
+      "label": "EntityParticleId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}

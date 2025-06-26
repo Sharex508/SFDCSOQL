@@ -1,0 +1,102 @@
+{
+  "label": "PaymentGroup",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "PaymentGroupNumber",
+      "type": "string",
+      "label": "PaymentGroupNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "SourceObjectId",
+      "type": "reference",
+      "label": "SourceObjectId",
+      "referenceTo": "Order"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Order",
+      "type": "parent",
+      "parentObject": "Order",
+      "field": "SourceObjectId"
+    },
+    {
+      "name": "Payments",
+      "type": "child",
+      "childObject": "Payment",
+      "field": "PaymentGroupId"
+    },
+    {
+      "name": "PaymentAuthorizations",
+      "type": "child",
+      "childObject": "PaymentAuthorization",
+      "field": "PaymentGroupId"
+    },
+    {
+      "name": "Refunds",
+      "type": "child",
+      "childObject": "Refund",
+      "field": "PaymentGroupId"
+    },
+    {
+      "name": "WebCarts",
+      "type": "child",
+      "childObject": "WebCart",
+      "field": "PaymentGroupId"
+    }
+  ]
+}

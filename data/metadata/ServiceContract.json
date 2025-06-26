@@ -1,0 +1,366 @@
+{
+  "label": "ServiceContract",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "ContactId",
+      "type": "reference",
+      "label": "ContactId",
+      "referenceTo": "Contact"
+    },
+    {
+      "name": "Term",
+      "type": "int",
+      "label": "Term"
+    },
+    {
+      "name": "StartDate",
+      "type": "date",
+      "label": "StartDate"
+    },
+    {
+      "name": "EndDate",
+      "type": "date",
+      "label": "EndDate"
+    },
+    {
+      "name": "ActivationDate",
+      "type": "datetime",
+      "label": "ActivationDate"
+    },
+    {
+      "name": "ApprovalStatus",
+      "type": "picklist",
+      "label": "ApprovalStatus"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "BillingStreet",
+      "type": "textarea",
+      "label": "BillingStreet"
+    },
+    {
+      "name": "BillingCity",
+      "type": "string",
+      "label": "BillingCity"
+    },
+    {
+      "name": "BillingState",
+      "type": "string",
+      "label": "BillingState"
+    },
+    {
+      "name": "BillingPostalCode",
+      "type": "string",
+      "label": "BillingPostalCode"
+    },
+    {
+      "name": "BillingCountry",
+      "type": "string",
+      "label": "BillingCountry"
+    },
+    {
+      "name": "BillingLatitude",
+      "type": "double",
+      "label": "BillingLatitude"
+    },
+    {
+      "name": "BillingLongitude",
+      "type": "double",
+      "label": "BillingLongitude"
+    },
+    {
+      "name": "BillingGeocodeAccuracy",
+      "type": "picklist",
+      "label": "BillingGeocodeAccuracy"
+    },
+    {
+      "name": "BillingAddress",
+      "type": "address",
+      "label": "BillingAddress"
+    },
+    {
+      "name": "ShippingStreet",
+      "type": "textarea",
+      "label": "ShippingStreet"
+    },
+    {
+      "name": "ShippingCity",
+      "type": "string",
+      "label": "ShippingCity"
+    },
+    {
+      "name": "ShippingState",
+      "type": "string",
+      "label": "ShippingState"
+    },
+    {
+      "name": "ShippingPostalCode",
+      "type": "string",
+      "label": "ShippingPostalCode"
+    },
+    {
+      "name": "ShippingCountry",
+      "type": "string",
+      "label": "ShippingCountry"
+    },
+    {
+      "name": "ShippingLatitude",
+      "type": "double",
+      "label": "ShippingLatitude"
+    },
+    {
+      "name": "ShippingLongitude",
+      "type": "double",
+      "label": "ShippingLongitude"
+    },
+    {
+      "name": "ShippingGeocodeAccuracy",
+      "type": "picklist",
+      "label": "ShippingGeocodeAccuracy"
+    },
+    {
+      "name": "ShippingAddress",
+      "type": "address",
+      "label": "ShippingAddress"
+    },
+    {
+      "name": "Pricebook2Id",
+      "type": "reference",
+      "label": "Pricebook2Id",
+      "referenceTo": "Pricebook2"
+    },
+    {
+      "name": "ShippingHandling",
+      "type": "currency",
+      "label": "ShippingHandling"
+    },
+    {
+      "name": "Tax",
+      "type": "currency",
+      "label": "Tax"
+    },
+    {
+      "name": "Subtotal",
+      "type": "currency",
+      "label": "Subtotal"
+    },
+    {
+      "name": "TotalPrice",
+      "type": "currency",
+      "label": "TotalPrice"
+    },
+    {
+      "name": "LineItemCount",
+      "type": "int",
+      "label": "LineItemCount"
+    },
+    {
+      "name": "ContractNumber",
+      "type": "string",
+      "label": "ContractNumber"
+    },
+    {
+      "name": "SpecialTerms",
+      "type": "textarea",
+      "label": "SpecialTerms"
+    },
+    {
+      "name": "Discount",
+      "type": "percent",
+      "label": "Discount"
+    },
+    {
+      "name": "GrandTotal",
+      "type": "currency",
+      "label": "GrandTotal"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "ParentServiceContractId",
+      "type": "reference",
+      "label": "ParentServiceContractId",
+      "referenceTo": "ServiceContract"
+    },
+    {
+      "name": "RootServiceContractId",
+      "type": "reference",
+      "label": "RootServiceContractId",
+      "referenceTo": "ServiceContract"
+    },
+    {
+      "name": "AdditionalDiscount",
+      "type": "percent",
+      "label": "AdditionalDiscount"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    },
+    {
+      "name": "Contact",
+      "type": "parent",
+      "parentObject": "Contact",
+      "field": "ContactId"
+    },
+    {
+      "name": "Pricebook2",
+      "type": "parent",
+      "parentObject": "Pricebook2",
+      "field": "Pricebook2Id"
+    },
+    {
+      "name": "ServiceContract",
+      "type": "parent",
+      "parentObject": "ServiceContract",
+      "field": "ParentServiceContractId"
+    },
+    {
+      "name": "ServiceContract",
+      "type": "parent",
+      "parentObject": "ServiceContract",
+      "field": "RootServiceContractId"
+    },
+    {
+      "name": "ContractLineItems",
+      "type": "child",
+      "childObject": "ContractLineItem",
+      "field": "ServiceContractId"
+    },
+    {
+      "name": "Entitlements",
+      "type": "child",
+      "childObject": "Entitlement",
+      "field": "ServiceContractId"
+    },
+    {
+      "name": "ServiceContracts",
+      "type": "child",
+      "childObject": "ServiceContract",
+      "field": "ParentServiceContractId"
+    },
+    {
+      "name": "ServiceContracts",
+      "type": "child",
+      "childObject": "ServiceContract",
+      "field": "RootServiceContractId"
+    },
+    {
+      "name": "ServiceContractFeeds",
+      "type": "child",
+      "childObject": "ServiceContractFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ServiceContractHistories",
+      "type": "child",
+      "childObject": "ServiceContractHistory",
+      "field": "ServiceContractId"
+    },
+    {
+      "name": "ServiceContractShares",
+      "type": "child",
+      "childObject": "ServiceContractShare",
+      "field": "ParentId"
+    },
+    {
+      "name": "WorkOrders",
+      "type": "child",
+      "childObject": "WorkOrder",
+      "field": "ServiceContractId"
+    }
+  ]
+}

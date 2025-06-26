@@ -1,0 +1,133 @@
+{
+  "label": "FulfillmentOrderItemTax",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "FulfillmentOrderItemTaxNumber",
+      "type": "string",
+      "label": "FulfillmentOrderItemTaxNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "FulfillmentOrderLineItemId",
+      "type": "reference",
+      "label": "FulfillmentOrderLineItemId",
+      "referenceTo": "FulfillmentOrderLineItem"
+    },
+    {
+      "name": "FulfillmentOrderId",
+      "type": "reference",
+      "label": "FulfillmentOrderId",
+      "referenceTo": "FulfillmentOrder"
+    },
+    {
+      "name": "FulfillmentOrderItemAdjustId",
+      "type": "reference",
+      "label": "FulfillmentOrderItemAdjustId",
+      "referenceTo": "FulfillmentOrderItemAdjustment"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Amount",
+      "type": "currency",
+      "label": "Amount"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "Rate",
+      "type": "percent",
+      "label": "Rate"
+    },
+    {
+      "name": "TaxEffectiveDate",
+      "type": "date",
+      "label": "TaxEffectiveDate"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "FulfillmentOrderLineItem",
+      "type": "parent",
+      "parentObject": "FulfillmentOrderLineItem",
+      "field": "FulfillmentOrderLineItemId"
+    },
+    {
+      "name": "FulfillmentOrder",
+      "type": "parent",
+      "parentObject": "FulfillmentOrder",
+      "field": "FulfillmentOrderId"
+    },
+    {
+      "name": "FulfillmentOrderItemAdjustment",
+      "type": "parent",
+      "parentObject": "FulfillmentOrderItemAdjustment",
+      "field": "FulfillmentOrderItemAdjustId"
+    },
+    {
+      "name": "FulfillmentOrderItemTaxFeeds",
+      "type": "child",
+      "childObject": "FulfillmentOrderItemTaxFeed",
+      "field": "ParentId"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "label": "ChangeRequest",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "ChangeRequestNumber",
+      "type": "string",
+      "label": "ChangeRequestNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "Subject",
+      "type": "string",
+      "label": "Subject"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "StatusCode",
+      "type": "picklist",
+      "label": "StatusCode"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "Priority",
+      "type": "picklist",
+      "label": "Priority"
+    },
+    {
+      "name": "Impact",
+      "type": "picklist",
+      "label": "Impact"
+    },
+    {
+      "name": "RiskLevel",
+      "type": "picklist",
+      "label": "RiskLevel"
+    },
+    {
+      "name": "Category",
+      "type": "picklist",
+      "label": "Category"
+    },
+    {
+      "name": "ChangeType",
+      "type": "picklist",
+      "label": "ChangeType"
+    },
+    {
+      "name": "ReviewerId",
+      "type": "reference",
+      "label": "ReviewerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "FinalReviewNotes",
+      "type": "textarea",
+      "label": "FinalReviewNotes"
+    },
+    {
+      "name": "FinalReviewDateTime",
+      "type": "datetime",
+      "label": "FinalReviewDateTime"
+    },
+    {
+      "name": "BusinessReason",
+      "type": "picklist",
+      "label": "BusinessReason"
+    },
+    {
+      "name": "BusinessJustification",
+      "type": "textarea",
+      "label": "BusinessJustification"
+    },
+    {
+      "name": "RiskImpactAnalysis",
+      "type": "textarea",
+      "label": "RiskImpactAnalysis"
+    },
+    {
+      "name": "RemediationPlan",
+      "type": "textarea",
+      "label": "RemediationPlan"
+    },
+    {
+      "name": "EstimatedStartTime",
+      "type": "datetime",
+      "label": "EstimatedStartTime"
+    },
+    {
+      "name": "EstimatedEndTime",
+      "type": "datetime",
+      "label": "EstimatedEndTime"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "ReviewerId"
+    },
+    {
+      "name": "ChangeRequestFeeds",
+      "type": "child",
+      "childObject": "ChangeRequestFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ChangeRequestHistories",
+      "type": "child",
+      "childObject": "ChangeRequestHistory",
+      "field": "ChangeRequestId"
+    },
+    {
+      "name": "ChangeRequestRelatedIssues",
+      "type": "child",
+      "childObject": "ChangeRequestRelatedIssue",
+      "field": "ChangeRequestId"
+    },
+    {
+      "name": "ChangeRequestRelatedItems",
+      "type": "child",
+      "childObject": "ChangeRequestRelatedItem",
+      "field": "ChangeRequestId"
+    },
+    {
+      "name": "ChangeRequestShares",
+      "type": "child",
+      "childObject": "ChangeRequestShare",
+      "field": "ParentId"
+    }
+  ]
+}

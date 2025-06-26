@@ -1,0 +1,137 @@
+{
+  "label": "ContentWorkspacePermission",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "PermissionsManageWorkspace",
+      "type": "boolean",
+      "label": "PermissionsManageWorkspace"
+    },
+    {
+      "name": "PermissionsAddContent",
+      "type": "boolean",
+      "label": "PermissionsAddContent"
+    },
+    {
+      "name": "PermissionsAddContentOBO",
+      "type": "boolean",
+      "label": "PermissionsAddContentOBO"
+    },
+    {
+      "name": "PermissionsArchiveContent",
+      "type": "boolean",
+      "label": "PermissionsArchiveContent"
+    },
+    {
+      "name": "PermissionsDeleteContent",
+      "type": "boolean",
+      "label": "PermissionsDeleteContent"
+    },
+    {
+      "name": "PermissionsFeatureContent",
+      "type": "boolean",
+      "label": "PermissionsFeatureContent"
+    },
+    {
+      "name": "PermissionsViewComments",
+      "type": "boolean",
+      "label": "PermissionsViewComments"
+    },
+    {
+      "name": "PermissionsAddComment",
+      "type": "boolean",
+      "label": "PermissionsAddComment"
+    },
+    {
+      "name": "PermissionsModifyComments",
+      "type": "boolean",
+      "label": "PermissionsModifyComments"
+    },
+    {
+      "name": "PermissionsTagContent",
+      "type": "boolean",
+      "label": "PermissionsTagContent"
+    },
+    {
+      "name": "PermissionsDeliverContent",
+      "type": "boolean",
+      "label": "PermissionsDeliverContent"
+    },
+    {
+      "name": "PermissionsChatterSharing",
+      "type": "boolean",
+      "label": "PermissionsChatterSharing"
+    },
+    {
+      "name": "PermissionsOrganizeFileAndFolder",
+      "type": "boolean",
+      "label": "PermissionsOrganizeFileAndFolder"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ContentWorkspaceMembers",
+      "type": "child",
+      "childObject": "ContentWorkspaceMember",
+      "field": "ContentWorkspacePermissionId"
+    }
+  ]
+}

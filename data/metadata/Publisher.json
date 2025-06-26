@@ -1,0 +1,41 @@
+{
+  "label": "Publisher",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    },
+    {
+      "name": "IsSalesforce",
+      "type": "boolean",
+      "label": "IsSalesforce"
+    },
+    {
+      "name": "MajorVersion",
+      "type": "int",
+      "label": "MajorVersion"
+    },
+    {
+      "name": "MinorVersion",
+      "type": "int",
+      "label": "MinorVersion"
+    }
+  ],
+  "relationships": []
+}

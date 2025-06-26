@@ -1,0 +1,112 @@
+{
+  "label": "IncidentRelatedItem",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "IncidentId",
+      "type": "reference",
+      "label": "IncidentId",
+      "referenceTo": "Incident"
+    },
+    {
+      "name": "AssetId",
+      "type": "reference",
+      "label": "AssetId",
+      "referenceTo": "Asset"
+    },
+    {
+      "name": "ImpactType",
+      "type": "picklist",
+      "label": "ImpactType"
+    },
+    {
+      "name": "ImpactLevel",
+      "type": "picklist",
+      "label": "ImpactLevel"
+    },
+    {
+      "name": "Comment",
+      "type": "textarea",
+      "label": "Comment"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Incident",
+      "type": "parent",
+      "parentObject": "Incident",
+      "field": "IncidentId"
+    },
+    {
+      "name": "Asset",
+      "type": "parent",
+      "parentObject": "Asset",
+      "field": "AssetId"
+    },
+    {
+      "name": "IncidentRelatedItemFeeds",
+      "type": "child",
+      "childObject": "IncidentRelatedItemFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "IncidentRelatedItemHistories",
+      "type": "child",
+      "childObject": "IncidentRelatedItemHistory",
+      "field": "IncidentRelatedItemId"
+    }
+  ]
+}

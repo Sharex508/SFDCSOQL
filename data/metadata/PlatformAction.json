@@ -1,0 +1,174 @@
+{
+  "label": "PlatformAction",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ExternalId",
+      "type": "string",
+      "label": "ExternalId"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Subtype",
+      "type": "string",
+      "label": "Subtype"
+    },
+    {
+      "name": "ApiName",
+      "type": "string",
+      "label": "ApiName"
+    },
+    {
+      "name": "ActionTarget",
+      "type": "textarea",
+      "label": "ActionTarget"
+    },
+    {
+      "name": "ActionTargetType",
+      "type": "picklist",
+      "label": "ActionTargetType"
+    },
+    {
+      "name": "ConfirmationMessage",
+      "type": "string",
+      "label": "ConfirmationMessage"
+    },
+    {
+      "name": "GroupId",
+      "type": "reference",
+      "label": "GroupId"
+    },
+    {
+      "name": "IsGroupDefault",
+      "type": "boolean",
+      "label": "IsGroupDefault"
+    },
+    {
+      "name": "Category",
+      "type": "picklist",
+      "label": "Category"
+    },
+    {
+      "name": "InvocationStatus",
+      "type": "picklist",
+      "label": "InvocationStatus"
+    },
+    {
+      "name": "InvokedByUserId",
+      "type": "reference",
+      "label": "InvokedByUserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SourceEntity",
+      "type": "string",
+      "label": "SourceEntity"
+    },
+    {
+      "name": "ActionListContext",
+      "type": "picklist",
+      "label": "ActionListContext"
+    },
+    {
+      "name": "DeviceFormat",
+      "type": "picklist",
+      "label": "DeviceFormat"
+    },
+    {
+      "name": "RetrievalMode",
+      "type": "picklist",
+      "label": "RetrievalMode"
+    },
+    {
+      "name": "IconContentType",
+      "type": "string",
+      "label": "IconContentType"
+    },
+    {
+      "name": "IconHeight",
+      "type": "int",
+      "label": "IconHeight"
+    },
+    {
+      "name": "IconWidth",
+      "type": "int",
+      "label": "IconWidth"
+    },
+    {
+      "name": "IconUrl",
+      "type": "url",
+      "label": "IconUrl"
+    },
+    {
+      "name": "IsMassAction",
+      "type": "boolean",
+      "label": "IsMassAction"
+    },
+    {
+      "name": "PrimaryColor",
+      "type": "string",
+      "label": "PrimaryColor"
+    },
+    {
+      "name": "RelatedSourceEntity",
+      "type": "string",
+      "label": "RelatedSourceEntity"
+    },
+    {
+      "name": "Section",
+      "type": "picklist",
+      "label": "Section"
+    },
+    {
+      "name": "RelatedListRecordId",
+      "type": "string",
+      "label": "RelatedListRecordId"
+    },
+    {
+      "name": "TargetUrl",
+      "type": "string",
+      "label": "TargetUrl"
+    },
+    {
+      "name": "TargetObject",
+      "type": "string",
+      "label": "TargetObject"
+    },
+    {
+      "name": "OpenType",
+      "type": "picklist",
+      "label": "OpenType"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "InvokedByUserId"
+    }
+  ]
+}

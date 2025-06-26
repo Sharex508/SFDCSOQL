@@ -1,0 +1,85 @@
+{
+  "label": "DomainSite",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DomainId",
+      "type": "reference",
+      "label": "DomainId",
+      "referenceTo": "Domain"
+    },
+    {
+      "name": "SiteId",
+      "type": "reference",
+      "label": "SiteId",
+      "referenceTo": "Site"
+    },
+    {
+      "name": "PathPrefix",
+      "type": "string",
+      "label": "PathPrefix"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Domain",
+      "type": "parent",
+      "parentObject": "Domain",
+      "field": "DomainId"
+    },
+    {
+      "name": "Site",
+      "type": "parent",
+      "parentObject": "Site",
+      "field": "SiteId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

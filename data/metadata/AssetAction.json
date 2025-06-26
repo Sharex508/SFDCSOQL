@@ -1,0 +1,204 @@
+{
+  "label": "AssetAction",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "AssetActionNumber",
+      "type": "string",
+      "label": "AssetActionNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "AssetId",
+      "type": "reference",
+      "label": "AssetId",
+      "referenceTo": "Asset"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "Category",
+      "type": "picklist",
+      "label": "Category"
+    },
+    {
+      "name": "CategoryEnum",
+      "type": "picklist",
+      "label": "CategoryEnum"
+    },
+    {
+      "name": "ActionDate",
+      "type": "datetime",
+      "label": "ActionDate"
+    },
+    {
+      "name": "ProductAmountChange",
+      "type": "currency",
+      "label": "ProductAmountChange"
+    },
+    {
+      "name": "AdjustmentAmountChange",
+      "type": "currency",
+      "label": "AdjustmentAmountChange"
+    },
+    {
+      "name": "EstimatedTaxChange",
+      "type": "currency",
+      "label": "EstimatedTaxChange"
+    },
+    {
+      "name": "ActualTaxChange",
+      "type": "currency",
+      "label": "ActualTaxChange"
+    },
+    {
+      "name": "SubtotalChange",
+      "type": "currency",
+      "label": "SubtotalChange"
+    },
+    {
+      "name": "QuantityChange",
+      "type": "double",
+      "label": "QuantityChange"
+    },
+    {
+      "name": "MrrChange",
+      "type": "currency",
+      "label": "MrrChange"
+    },
+    {
+      "name": "Amount",
+      "type": "currency",
+      "label": "Amount"
+    },
+    {
+      "name": "TotalInitialSaleAmount",
+      "type": "currency",
+      "label": "TotalInitialSaleAmount"
+    },
+    {
+      "name": "TotalRenewalsAmount",
+      "type": "currency",
+      "label": "TotalRenewalsAmount"
+    },
+    {
+      "name": "TotalUpsellsAmount",
+      "type": "currency",
+      "label": "TotalUpsellsAmount"
+    },
+    {
+      "name": "TotalDownsellsAmount",
+      "type": "currency",
+      "label": "TotalDownsellsAmount"
+    },
+    {
+      "name": "TotalCrossSellsAmount",
+      "type": "currency",
+      "label": "TotalCrossSellsAmount"
+    },
+    {
+      "name": "TotalCancellationsAmount",
+      "type": "currency",
+      "label": "TotalCancellationsAmount"
+    },
+    {
+      "name": "TotalTransfersAmount",
+      "type": "currency",
+      "label": "TotalTransfersAmount"
+    },
+    {
+      "name": "TotalTermsAndConditionsAmount",
+      "type": "currency",
+      "label": "TotalTermsAndConditionsAmount"
+    },
+    {
+      "name": "TotalOtherAmount",
+      "type": "currency",
+      "label": "TotalOtherAmount"
+    },
+    {
+      "name": "TotalAmount",
+      "type": "currency",
+      "label": "TotalAmount"
+    },
+    {
+      "name": "TotalQuantity",
+      "type": "double",
+      "label": "TotalQuantity"
+    },
+    {
+      "name": "TotalMrr",
+      "type": "currency",
+      "label": "TotalMrr"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Asset",
+      "type": "parent",
+      "parentObject": "Asset",
+      "field": "AssetId"
+    },
+    {
+      "name": "AssetActionSources",
+      "type": "child",
+      "childObject": "AssetActionSource",
+      "field": "AssetActionId"
+    }
+  ]
+}

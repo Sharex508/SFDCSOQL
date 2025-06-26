@@ -1,0 +1,103 @@
+{
+  "label": "ObjectPermissions",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "ParentId",
+      "type": "reference",
+      "label": "ParentId",
+      "referenceTo": "PermissionSet"
+    },
+    {
+      "name": "SobjectType",
+      "type": "picklist",
+      "label": "SobjectType"
+    },
+    {
+      "name": "PermissionsCreate",
+      "type": "boolean",
+      "label": "PermissionsCreate"
+    },
+    {
+      "name": "PermissionsRead",
+      "type": "boolean",
+      "label": "PermissionsRead"
+    },
+    {
+      "name": "PermissionsEdit",
+      "type": "boolean",
+      "label": "PermissionsEdit"
+    },
+    {
+      "name": "PermissionsDelete",
+      "type": "boolean",
+      "label": "PermissionsDelete"
+    },
+    {
+      "name": "PermissionsViewAllRecords",
+      "type": "boolean",
+      "label": "PermissionsViewAllRecords"
+    },
+    {
+      "name": "PermissionsModifyAllRecords",
+      "type": "boolean",
+      "label": "PermissionsModifyAllRecords"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "PermissionSet",
+      "type": "parent",
+      "parentObject": "PermissionSet",
+      "field": "ParentId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    }
+  ]
+}

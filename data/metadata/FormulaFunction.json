@@ -1,0 +1,41 @@
+{
+  "label": "FormulaFunction",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "Label",
+      "type": "string",
+      "label": "Label"
+    },
+    {
+      "name": "CategoryId",
+      "type": "string",
+      "label": "CategoryId"
+    },
+    {
+      "name": "Description",
+      "type": "string",
+      "label": "Description"
+    },
+    {
+      "name": "ExampleString",
+      "type": "string",
+      "label": "ExampleString"
+    }
+  ],
+  "relationships": []
+}

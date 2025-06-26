@@ -1,0 +1,118 @@
+{
+  "label": "AssignedResource",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "AssignedResourceNumber",
+      "type": "string",
+      "label": "AssignedResourceNumber"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ServiceAppointmentId",
+      "type": "reference",
+      "label": "ServiceAppointmentId",
+      "referenceTo": "ServiceAppointment"
+    },
+    {
+      "name": "ServiceResourceId",
+      "type": "reference",
+      "label": "ServiceResourceId",
+      "referenceTo": "ServiceResource"
+    },
+    {
+      "name": "IsRequiredResource",
+      "type": "boolean",
+      "label": "IsRequiredResource"
+    },
+    {
+      "name": "Role",
+      "type": "picklist",
+      "label": "Role"
+    },
+    {
+      "name": "EventId",
+      "type": "reference",
+      "label": "EventId",
+      "referenceTo": "Event"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ServiceAppointment",
+      "type": "parent",
+      "parentObject": "ServiceAppointment",
+      "field": "ServiceAppointmentId"
+    },
+    {
+      "name": "ServiceResource",
+      "type": "parent",
+      "parentObject": "ServiceResource",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "Event",
+      "type": "parent",
+      "parentObject": "Event",
+      "field": "EventId"
+    },
+    {
+      "name": "AssignedResourceFeeds",
+      "type": "child",
+      "childObject": "AssignedResourceFeed",
+      "field": "ParentId"
+    }
+  ]
+}

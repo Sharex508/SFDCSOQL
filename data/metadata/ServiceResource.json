@@ -1,0 +1,206 @@
+{
+  "label": "ServiceResource",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "OwnerId",
+      "type": "reference",
+      "label": "OwnerId",
+      "referenceTo": "Group, User"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "RelatedRecordId",
+      "type": "reference",
+      "label": "RelatedRecordId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "ResourceType",
+      "type": "picklist",
+      "label": "ResourceType"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "IsActive",
+      "type": "boolean",
+      "label": "IsActive"
+    },
+    {
+      "name": "LocationId",
+      "type": "reference",
+      "label": "LocationId",
+      "referenceTo": "Location"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
+    },
+    {
+      "name": "IsPrimary",
+      "type": "boolean",
+      "label": "IsPrimary"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Group, User",
+      "type": "parent",
+      "parentObject": "Group, User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "RelatedRecordId"
+    },
+    {
+      "name": "Location",
+      "type": "parent",
+      "parentObject": "Location",
+      "field": "LocationId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    },
+    {
+      "name": "AppointmentInvitees",
+      "type": "child",
+      "childObject": "AppointmentInvitee",
+      "field": "ParticipantServiceResourceId"
+    },
+    {
+      "name": "AppointmentScheduleAggrs",
+      "type": "child",
+      "childObject": "AppointmentScheduleAggr",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "AppointmentScheduleLogs",
+      "type": "child",
+      "childObject": "AppointmentScheduleLog",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "AssignedResources",
+      "type": "child",
+      "childObject": "AssignedResource",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "ResourceAbsences",
+      "type": "child",
+      "childObject": "ResourceAbsence",
+      "field": "ResourceId"
+    },
+    {
+      "name": "ResourcePreferences",
+      "type": "child",
+      "childObject": "ResourcePreference",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "ServiceResourceFeeds",
+      "type": "child",
+      "childObject": "ServiceResourceFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ServiceResourceHistories",
+      "type": "child",
+      "childObject": "ServiceResourceHistory",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "ServiceResourceShares",
+      "type": "child",
+      "childObject": "ServiceResourceShare",
+      "field": "ParentId"
+    },
+    {
+      "name": "ServiceResourceSkills",
+      "type": "child",
+      "childObject": "ServiceResourceSkill",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "ServiceTerritoryMembers",
+      "type": "child",
+      "childObject": "ServiceTerritoryMember",
+      "field": "ServiceResourceId"
+    },
+    {
+      "name": "Shifts",
+      "type": "child",
+      "childObject": "Shift",
+      "field": "ServiceResourceId"
+    }
+  ]
+}

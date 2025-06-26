@@ -1,0 +1,111 @@
+{
+  "label": "EntitlementTemplate",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "BusinessHoursId",
+      "type": "reference",
+      "label": "BusinessHoursId",
+      "referenceTo": "BusinessHours"
+    },
+    {
+      "name": "Type",
+      "type": "picklist",
+      "label": "Type"
+    },
+    {
+      "name": "SlaProcessId",
+      "type": "reference",
+      "label": "SlaProcessId",
+      "referenceTo": "SlaProcess"
+    },
+    {
+      "name": "IsPerIncident",
+      "type": "boolean",
+      "label": "IsPerIncident"
+    },
+    {
+      "name": "CasesPerEntitlement",
+      "type": "int",
+      "label": "CasesPerEntitlement"
+    },
+    {
+      "name": "Term",
+      "type": "int",
+      "label": "Term"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "NamespacePrefix",
+      "type": "string",
+      "label": "NamespacePrefix"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "BusinessHours",
+      "type": "parent",
+      "parentObject": "BusinessHours",
+      "field": "BusinessHoursId"
+    },
+    {
+      "name": "SlaProcess",
+      "type": "parent",
+      "parentObject": "SlaProcess",
+      "field": "SlaProcessId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "ProductEntitlementTemplates",
+      "type": "child",
+      "childObject": "ProductEntitlementTemplate",
+      "field": "EntitlementTemplateId"
+    }
+  ]
+}

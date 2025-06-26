@@ -1,0 +1,59 @@
+{
+  "label": "UserFieldAccess",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "DurableId",
+      "type": "string",
+      "label": "DurableId"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "IsUpdatable",
+      "type": "boolean",
+      "label": "IsUpdatable"
+    },
+    {
+      "name": "IsCreatable",
+      "type": "boolean",
+      "label": "IsCreatable"
+    },
+    {
+      "name": "IsAccessible",
+      "type": "boolean",
+      "label": "IsAccessible"
+    },
+    {
+      "name": "EntityDefinitionId",
+      "type": "string",
+      "label": "EntityDefinitionId"
+    },
+    {
+      "name": "FieldDefinitionId",
+      "type": "string",
+      "label": "FieldDefinitionId"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    }
+  ]
+}

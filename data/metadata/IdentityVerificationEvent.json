@@ -1,0 +1,158 @@
+{
+  "label": "IdentityVerificationEvent",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "EventIdentifier",
+      "type": "string",
+      "label": "EventIdentifier"
+    },
+    {
+      "name": "UserId",
+      "type": "reference",
+      "label": "UserId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "Username",
+      "type": "string",
+      "label": "Username"
+    },
+    {
+      "name": "EventDate",
+      "type": "datetime",
+      "label": "EventDate"
+    },
+    {
+      "name": "SessionKey",
+      "type": "string",
+      "label": "SessionKey"
+    },
+    {
+      "name": "LoginKey",
+      "type": "string",
+      "label": "LoginKey"
+    },
+    {
+      "name": "SessionLevel",
+      "type": "picklist",
+      "label": "SessionLevel"
+    },
+    {
+      "name": "SourceIp",
+      "type": "string",
+      "label": "SourceIp"
+    },
+    {
+      "name": "LoginHistoryId",
+      "type": "reference",
+      "label": "LoginHistoryId",
+      "referenceTo": "LoginHistory"
+    },
+    {
+      "name": "VerificationMethod",
+      "type": "picklist",
+      "label": "VerificationMethod"
+    },
+    {
+      "name": "Activity",
+      "type": "picklist",
+      "label": "Activity"
+    },
+    {
+      "name": "Status",
+      "type": "picklist",
+      "label": "Status"
+    },
+    {
+      "name": "Remarks",
+      "type": "string",
+      "label": "Remarks"
+    },
+    {
+      "name": "ResourceId",
+      "type": "reference",
+      "label": "ResourceId",
+      "referenceTo": "ConnectedApplication"
+    },
+    {
+      "name": "Policy",
+      "type": "picklist",
+      "label": "Policy"
+    },
+    {
+      "name": "EventGroup",
+      "type": "string",
+      "label": "EventGroup"
+    },
+    {
+      "name": "CountryIso",
+      "type": "string",
+      "label": "CountryIso"
+    },
+    {
+      "name": "Country",
+      "type": "string",
+      "label": "Country"
+    },
+    {
+      "name": "Latitude",
+      "type": "double",
+      "label": "Latitude"
+    },
+    {
+      "name": "Longitude",
+      "type": "double",
+      "label": "Longitude"
+    },
+    {
+      "name": "City",
+      "type": "string",
+      "label": "City"
+    },
+    {
+      "name": "PostalCode",
+      "type": "string",
+      "label": "PostalCode"
+    },
+    {
+      "name": "Subdivision",
+      "type": "string",
+      "label": "Subdivision"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "UserId"
+    },
+    {
+      "name": "LoginHistory",
+      "type": "parent",
+      "parentObject": "LoginHistory",
+      "field": "LoginHistoryId"
+    },
+    {
+      "name": "ConnectedApplication",
+      "type": "parent",
+      "parentObject": "ConnectedApplication",
+      "field": "ResourceId"
+    }
+  ]
+}

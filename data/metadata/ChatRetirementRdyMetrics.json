@@ -1,0 +1,161 @@
+{
+  "label": "ChatRetirementRdyMetrics",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Id"
+    },
+    {
+      "name": "MetricsDate",
+      "type": "date",
+      "label": "MetricsDate"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "ActiveChatDeployments",
+      "type": "int",
+      "label": "ActiveChatDeployments"
+    },
+    {
+      "name": "EmbeddedServiceDeployments",
+      "type": "int",
+      "label": "EmbeddedServiceDeployments"
+    },
+    {
+      "name": "ActiveVfDeployments",
+      "type": "int",
+      "label": "ActiveVfDeployments"
+    },
+    {
+      "name": "ActiveChatButtons",
+      "type": "int",
+      "label": "ActiveChatButtons"
+    },
+    {
+      "name": "ActiveChatInvitations",
+      "type": "int",
+      "label": "ActiveChatInvitations"
+    },
+    {
+      "name": "ActiveSbrButtons",
+      "type": "int",
+      "label": "ActiveSbrButtons"
+    },
+    {
+      "name": "ActiveQbrButtons",
+      "type": "int",
+      "label": "ActiveQbrButtons"
+    },
+    {
+      "name": "Queues",
+      "type": "int",
+      "label": "Queues"
+    },
+    {
+      "name": "Skills",
+      "type": "int",
+      "label": "Skills"
+    },
+    {
+      "name": "SkillBasedRoutingRules",
+      "type": "int",
+      "label": "SkillBasedRoutingRules"
+    },
+    {
+      "name": "CustomLabels",
+      "type": "int",
+      "label": "CustomLabels"
+    },
+    {
+      "name": "CustomWebComponents",
+      "type": "int",
+      "label": "CustomWebComponents"
+    },
+    {
+      "name": "ChatBots",
+      "type": "int",
+      "label": "ChatBots"
+    },
+    {
+      "name": "IpBlockingRules",
+      "type": "int",
+      "label": "IpBlockingRules"
+    },
+    {
+      "name": "ChatApexClasses",
+      "type": "int",
+      "label": "ChatApexClasses"
+    },
+    {
+      "name": "ChatApexClassList",
+      "type": "string",
+      "label": "ChatApexClassList"
+    },
+    {
+      "name": "ChatObjectsInApexList",
+      "type": "string",
+      "label": "ChatObjectsInApexList"
+    },
+    {
+      "name": "ChatFlowCount",
+      "type": "int",
+      "label": "ChatFlowCount"
+    },
+    {
+      "name": "ChatFlowList",
+      "type": "string",
+      "label": "ChatFlowList"
+    },
+    {
+      "name": "ChatObjectsInFlowList",
+      "type": "string",
+      "label": "ChatObjectsInFlowList"
+    },
+    {
+      "name": "PrimaryChatReportTypes",
+      "type": "int",
+      "label": "PrimaryChatReportTypes"
+    },
+    {
+      "name": "PrimaryChatReportTypeList",
+      "type": "string",
+      "label": "PrimaryChatReportTypeList"
+    },
+    {
+      "name": "PrimaryChatReportList",
+      "type": "string",
+      "label": "PrimaryChatReportList"
+    },
+    {
+      "name": "SecondaryChatReportTypes",
+      "type": "int",
+      "label": "SecondaryChatReportTypes"
+    },
+    {
+      "name": "SecondaryChatReportTypeList",
+      "type": "string",
+      "label": "SecondaryChatReportTypeList"
+    },
+    {
+      "name": "SecondaryChatReportList",
+      "type": "string",
+      "label": "SecondaryChatReportList"
+    },
+    {
+      "name": "UniqueChatObjectsInReport",
+      "type": "string",
+      "label": "UniqueChatObjectsInReport"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    }
+  ],
+  "relationships": []
+}
