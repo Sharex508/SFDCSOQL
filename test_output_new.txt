@@ -1,0 +1,2230 @@
+SOQL Query Generator 100 Prompts Tester
+----------------------------------
+Found 100 prompt-answer pairs.
+Setting up Salesforce metadata...
+Loading metadata from Salesforce_Complete_Metadata.xlsx...
+Saved metadata for AIApplication
+Saved metadata for AIApplicationConfig
+Saved metadata for AIInsightAction
+Saved metadata for AIInsightFeedback
+Saved metadata for AIInsightReason
+Saved metadata for AIInsightValue
+Saved metadata for AIRecordInsight
+Saved metadata for AcceptedEventRelation
+Saved metadata for Account
+Saved metadata for AccountCleanInfo
+Saved metadata for AccountContactRole
+Saved metadata for AccountFeed
+Saved metadata for AccountHistory
+Saved metadata for AccountPartner
+Saved metadata for AccountShare
+Saved metadata for ActionLinkGroupTemplate
+Saved metadata for ActionLinkTemplate
+Saved metadata for ActiveFeatureLicenseMetric
+Saved metadata for ActivePermSetLicenseMetric
+Saved metadata for ActiveProfileMetric
+Saved metadata for ActivityFieldHistory
+Saved metadata for AdditionalNumber
+Saved metadata for Address
+Saved metadata for AddressHistory
+Saved metadata for AlternativePaymentMethod
+Saved metadata for AlternativePaymentMethodShare
+Saved metadata for Announcement
+Saved metadata for ApexClass
+Saved metadata for ApexComponent
+Saved metadata for ApexEmailNotification
+Saved metadata for ApexLog
+Saved metadata for ApexPage
+Saved metadata for ApexPageInfo
+Saved metadata for ApexTestQueueItem
+Saved metadata for ApexTestResult
+Saved metadata for ApexTestResultLimits
+Saved metadata for ApexTestRunResult
+Saved metadata for ApexTestSuite
+Saved metadata for ApexTrigger
+Saved metadata for ApexTypeImplementor
+Saved metadata for ApiAnomalyEventStore
+Saved metadata for ApiAnomalyEventStoreFeed
+Saved metadata for ApiEvent
+Saved metadata for AppAnalyticsQueryRequest
+Saved metadata for AppDefinition
+Saved metadata for AppMenuItem
+Saved metadata for AppTabMember
+Saved metadata for AppUsageAssignment
+Saved metadata for AppointmentAssignmentPolicy
+Saved metadata for AppointmentInvitation
+Saved metadata for AppointmentInvitationFeed
+Saved metadata for AppointmentInvitationHistory
+Saved metadata for AppointmentInvitationShare
+Saved metadata for AppointmentInvitee
+Saved metadata for AppointmentScheduleAggr
+Saved metadata for AppointmentScheduleLog
+Saved metadata for AppointmentSchedulingPolicy
+Saved metadata for AppointmentTopicTimeSlot
+Saved metadata for AppointmentTopicTimeSlotFeed
+Saved metadata for AppointmentTopicTimeSlotHistory
+Saved metadata for Asset
+Saved metadata for AssetAction
+Saved metadata for AssetActionSource
+Saved metadata for AssetFeed
+Saved metadata for AssetHistory
+Saved metadata for AssetRelationship
+Saved metadata for AssetRelationshipFeed
+Saved metadata for AssetRelationshipHistory
+Saved metadata for AssetShare
+Saved metadata for AssetStatePeriod
+Saved metadata for AssignedResource
+Saved metadata for AssignedResourceFeed
+Saved metadata for AssignmentRule
+Saved metadata for AssociatedLocation
+Saved metadata for AssociatedLocationHistory
+Saved metadata for AsyncApexJob
+Saved metadata for AsyncOperationLog
+Saved metadata for Attachment
+Saved metadata for AuraDefinition
+Saved metadata for AuraDefinitionBundle
+Saved metadata for AuraDefinitionBundleInfo
+Saved metadata for AuraDefinitionInfo
+Saved metadata for AuthConfig
+Saved metadata for AuthConfigProviders
+Saved metadata for AuthProvider
+Saved metadata for AuthSession
+Saved metadata for AuthorizationForm
+Saved metadata for AuthorizationFormConsent
+Saved metadata for AuthorizationFormConsentHistory
+Saved metadata for AuthorizationFormConsentShare
+Saved metadata for AuthorizationFormDataUse
+Saved metadata for AuthorizationFormDataUseHistory
+Saved metadata for AuthorizationFormDataUseShare
+Saved metadata for AuthorizationFormHistory
+Saved metadata for AuthorizationFormShare
+Saved metadata for AuthorizationFormText
+Saved metadata for AuthorizationFormTextFeed
+Saved metadata for AuthorizationFormTextHistory
+Saved metadata for BackgroundOperation
+Saved metadata for BrandTemplate
+Saved metadata for BrandingSet
+Saved metadata for BrandingSetProperty
+Saved metadata for BriefcaseAssignment
+Saved metadata for BriefcaseDefinition
+Saved metadata for BriefcaseRule
+Saved metadata for BriefcaseRuleFilter
+Saved metadata for BulkApiResultEventStore
+Saved metadata for BusinessBrand
+Saved metadata for BusinessBrandShare
+Saved metadata for BusinessHours
+Saved metadata for BusinessProcess
+Saved metadata for BuyerGroup
+Saved metadata for BuyerGroupFeed
+Saved metadata for BuyerGroupHistory
+Saved metadata for BuyerGroupShare
+Saved metadata for Calendar
+Saved metadata for CalendarView
+Saved metadata for CalendarViewShare
+Saved metadata for CallCenter
+Saved metadata for CallCenterRoutingMap
+Saved metadata for CallCoachingMediaProvider
+Saved metadata for Campaign
+Saved metadata for CampaignFeed
+Saved metadata for CampaignHistory
+Saved metadata for CampaignMember
+Saved metadata for CampaignMemberStatus
+Saved metadata for CampaignShare
+Saved metadata for CardPaymentMethod
+Saved metadata for CartCheckoutSession
+Saved metadata for CartDeliveryGroup
+Saved metadata for CartDeliveryGroupMethod
+Saved metadata for CartItem
+Saved metadata for CartItemPriceAdjustment
+Saved metadata for CartRelatedItem
+Saved metadata for CartTax
+Saved metadata for CartValidationOutput
+Saved metadata for Case
+Saved metadata for CaseComment
+Saved metadata for CaseContactRole
+Saved metadata for CaseFeed
+Saved metadata for CaseHistory
+Saved metadata for CaseMilestone
+Saved metadata for CaseRelatedIssue
+Saved metadata for CaseRelatedIssueFeed
+Saved metadata for CaseRelatedIssueHistory
+Saved metadata for CaseShare
+Saved metadata for CaseSolution
+Saved metadata for CaseStatus
+Saved metadata for CaseTeamMember
+Saved metadata for CaseTeamRole
+Saved metadata for CaseTeamTemplate
+Saved metadata for CaseTeamTemplateMember
+Saved metadata for CaseTeamTemplateRecord
+Saved metadata for CategoryData
+Saved metadata for CategoryNode
+Saved metadata for ChangeRequest
+Saved metadata for ChangeRequestFeed
+Saved metadata for ChangeRequestHistory
+Saved metadata for ChangeRequestRelatedIssue
+Saved metadata for ChangeRequestRelatedIssueFeed
+Saved metadata for ChangeRequestRelatedIssueHistory
+Saved metadata for ChangeRequestRelatedItem
+Saved metadata for ChangeRequestRelatedItemFeed
+Saved metadata for ChangeRequestRelatedItemHistory
+Saved metadata for ChangeRequestShare
+Saved metadata for ChatRetirementRdyMetrics
+Saved metadata for ChatterActivity
+Saved metadata for ChatterExtension
+Saved metadata for ChatterExtensionConfig
+Saved metadata for ClientBrowser
+Saved metadata for Coin__Share
+Saved metadata for Coin__c
+Saved metadata for CollaborationGroup
+Saved metadata for CollaborationGroupFeed
+Saved metadata for CollaborationGroupMember
+Saved metadata for CollaborationGroupMemberRequest
+Saved metadata for CollaborationGroupRecord
+Saved metadata for CollaborationInvitation
+Saved metadata for ColorDefinition
+Saved metadata for CommSubscription
+Saved metadata for CommSubscriptionChannelType
+Saved metadata for CommSubscriptionChannelTypeFeed
+Saved metadata for CommSubscriptionChannelTypeHistory
+Saved metadata for CommSubscriptionChannelTypeShare
+Saved metadata for CommSubscriptionConsent
+Saved metadata for CommSubscriptionConsentFeed
+Saved metadata for CommSubscriptionConsentHistory
+Saved metadata for CommSubscriptionConsentShare
+Saved metadata for CommSubscriptionFeed
+Saved metadata for CommSubscriptionHistory
+Saved metadata for CommSubscriptionShare
+Saved metadata for CommSubscriptionTiming
+Saved metadata for CommSubscriptionTimingFeed
+Saved metadata for CommSubscriptionTimingHistory
+Saved metadata for Community
+Saved metadata for ConferenceNumber
+Saved metadata for ConnectedApplication
+Saved metadata for ConsumptionRate
+Saved metadata for ConsumptionRateHistory
+Saved metadata for ConsumptionSchedule
+Saved metadata for ConsumptionScheduleFeed
+Saved metadata for ConsumptionScheduleHistory
+Saved metadata for ConsumptionScheduleShare
+Saved metadata for Contact
+Saved metadata for ContactCenterChannel
+Saved metadata for ContactCleanInfo
+Saved metadata for ContactFeed
+Saved metadata for ContactHistory
+Saved metadata for ContactPointAddress
+Saved metadata for ContactPointAddressHistory
+Saved metadata for ContactPointAddressShare
+Saved metadata for ContactPointConsent
+Saved metadata for ContactPointConsentHistory
+Saved metadata for ContactPointConsentShare
+Saved metadata for ContactPointEmail
+Saved metadata for ContactPointEmailHistory
+Saved metadata for ContactPointEmailShare
+Saved metadata for ContactPointPhone
+Saved metadata for ContactPointPhoneHistory
+Saved metadata for ContactPointPhoneShare
+Saved metadata for ContactPointTypeConsent
+Saved metadata for ContactPointTypeConsentHistory
+Saved metadata for ContactPointTypeConsentShare
+Saved metadata for ContactRequest
+Saved metadata for ContactRequestShare
+Saved metadata for ContactShare
+Saved metadata for ContentAsset
+Saved metadata for ContentDistribution
+Saved metadata for ContentDistributionView
+Saved metadata for ContentDocument
+Saved metadata for ContentDocumentFeed
+Saved metadata for ContentDocumentHistory
+Saved metadata for ContentDocumentLink
+Saved metadata for ContentDocumentSubscription
+Saved metadata for ContentFolder
+Saved metadata for ContentFolderItem
+Saved metadata for ContentFolderLink
+Saved metadata for ContentFolderMember
+Saved metadata for ContentNotification
+Saved metadata for ContentTagSubscription
+Saved metadata for ContentUserSubscription
+Saved metadata for ContentVersion
+Saved metadata for ContentVersionComment
+Saved metadata for ContentVersionHistory
+Saved metadata for ContentVersionRating
+Saved metadata for ContentWorkspace
+Saved metadata for ContentWorkspaceDoc
+Saved metadata for ContentWorkspaceMember
+Saved metadata for ContentWorkspacePermission
+Saved metadata for ContentWorkspaceSubscription
+Saved metadata for ContextParamMap
+Saved metadata for Contract
+Saved metadata for ContractContactRole
+Saved metadata for ContractFeed
+Saved metadata for ContractHistory
+Saved metadata for ContractLineItem
+Saved metadata for ContractLineItemFeed
+Saved metadata for ContractLineItemHistory
+Saved metadata for ContractStatus
+Saved metadata for ConvIntelligenceSignalRule
+Saved metadata for ConvIntelligenceSignalSubRule
+Saved metadata for Conversation
+Saved metadata for ConversationEntry
+Saved metadata for ConversationParticipant
+Saved metadata for ConversationVendorInfo
+Saved metadata for CorsWhitelistEntry
+Saved metadata for Coupon
+Saved metadata for CouponCodeRedemption
+Saved metadata for CouponCodeRedemptionShare
+Saved metadata for CouponFeed
+Saved metadata for CouponHistory
+Saved metadata for CouponShare
+Saved metadata for CredentialStuffingEventStore
+Saved metadata for CredentialStuffingEventStoreFeed
+Saved metadata for CreditMemo
+Saved metadata for CreditMemoFeed
+Saved metadata for CreditMemoHistory
+Saved metadata for CreditMemoInvApplication
+Saved metadata for CreditMemoInvApplicationFeed
+Saved metadata for CreditMemoInvApplicationHistory
+Saved metadata for CreditMemoLine
+Saved metadata for CreditMemoLineFeed
+Saved metadata for CreditMemoLineHistory
+Saved metadata for CreditMemoShare
+Saved metadata for CronJobDetail
+Saved metadata for CronTrigger
+Saved metadata for CspTrustedSite
+Saved metadata for CustomBrand
+Saved metadata for CustomBrandAsset
+Saved metadata for CustomHelpMenuItem
+Saved metadata for CustomHelpMenuSection
+Saved metadata for CustomHttpHeader
+Saved metadata for CustomNotificationType
+Saved metadata for CustomObjectUserLicenseMetrics
+Saved metadata for CustomPermission
+Saved metadata for CustomPermissionDependency
+Saved metadata for Customer
+Saved metadata for CustomerShare
+Saved metadata for DandBCompany
+Saved metadata for Dashboard
+Saved metadata for DashboardComponent
+Saved metadata for DashboardComponentFeed
+Saved metadata for DashboardFeed
+Saved metadata for DataAssessmentFieldMetric
+Saved metadata for DataAssessmentMetric
+Saved metadata for DataAssessmentValueMetric
+Saved metadata for DataStatistics
+Saved metadata for DataType
+Saved metadata for DataUseLegalBasis
+Saved metadata for DataUseLegalBasisHistory
+Saved metadata for DataUseLegalBasisShare
+Saved metadata for DataUsePurpose
+Saved metadata for DataUsePurposeHistory
+Saved metadata for DataUsePurposeShare
+Saved metadata for DatacloudAddress
+Saved metadata for DatacloudCompany
+Saved metadata for DatacloudContact
+Saved metadata for DatacloudDandBCompany
+Saved metadata for DatacloudOwnedEntity
+Saved metadata for DatacloudPurchaseUsage
+Saved metadata for DeclinedEventRelation
+Saved metadata for DeleteEvent
+Saved metadata for DigitalWallet
+Saved metadata for Document
+Saved metadata for DocumentAttachmentMap
+Saved metadata for Domain
+Saved metadata for DomainSite
+Saved metadata for DuplicateRecordItem
+Saved metadata for DuplicateRecordSet
+Saved metadata for DuplicateRule
+Saved metadata for EmailCapture
+Saved metadata for EmailDomainFilter
+Saved metadata for EmailDomainKey
+Saved metadata for EmailMessage
+Saved metadata for EmailMessageRelation
+Saved metadata for EmailRelay
+Saved metadata for EmailServicesAddress
+Saved metadata for EmailServicesFunction
+Saved metadata for EmailTemplate
+Saved metadata for EmbeddedServiceDetail
+Saved metadata for EmbeddedServiceLabel
+Saved metadata for EngagementChannelType
+Saved metadata for EngagementChannelTypeFeed
+Saved metadata for EngagementChannelTypeHistory
+Saved metadata for EngagementChannelTypeShare
+Saved metadata for EngagementChannelWorkType
+Saved metadata for EngagementChannelWorkTypeFeed
+Saved metadata for EngagementChannelWorkTypeHistory
+Saved metadata for EnhancedLetterhead
+Saved metadata for EnhancedLetterheadFeed
+Saved metadata for Entitlement
+Saved metadata for EntitlementContact
+Saved metadata for EntitlementFeed
+Saved metadata for EntitlementHistory
+Saved metadata for EntitlementTemplate
+Saved metadata for EntityDefinition
+Saved metadata for EntityMilestone
+Saved metadata for EntityMilestoneFeed
+Saved metadata for EntityMilestoneHistory
+Saved metadata for EntityParticle
+Saved metadata for EntitySubscription
+Saved metadata for Event
+Saved metadata for EventBusSubscriber
+Saved metadata for EventFeed
+Saved metadata for EventLogFile
+Saved metadata for EventRelation
+Saved metadata for EventRelayConfig
+Saved metadata for EventRelayFeedback
+Saved metadata for ExpressionFilter
+Saved metadata for ExpressionFilterCriteria
+Saved metadata for ExpressionSetView
+Saved metadata for ExternalClientApplication
+Saved metadata for ExternalDataSource
+Saved metadata for ExternalDataSrcDescriptor
+Saved metadata for ExternalDataUserAuth
+Saved metadata for ExternalEvent
+Saved metadata for ExternalEventMapping
+Saved metadata for ExternalEventMappingShare
+Saved metadata for ExtlClntAppOauthPlcyCnfg
+Saved metadata for ExtlClntAppOauthSettings
+Saved metadata for ExtlClntAppSamplePlcyCnfg
+Saved metadata for ExtlClntAppSampleSettings
+Saved metadata for FeedAttachment
+Saved metadata for FeedComment
+Saved metadata for FeedItem
+Saved metadata for FeedPollChoice
+Saved metadata for FeedPollVote
+Saved metadata for FeedRevision
+Saved metadata for FieldDefinition
+Saved metadata for FieldPermissions
+Saved metadata for FieldSecurityClassification
+Saved metadata for FileEventStore
+Saved metadata for FileSearchActivity
+Saved metadata for FinanceBalanceSnapshot
+Saved metadata for FinanceBalanceSnapshotShare
+Saved metadata for FinanceTransaction
+Saved metadata for FinanceTransactionShare
+Saved metadata for FiscalYearSettings
+Saved metadata for FlexQueueItem
+Saved metadata for FlowDefinitionView
+Saved metadata for FlowInterview
+Saved metadata for FlowInterviewLog
+Saved metadata for FlowInterviewLogEntry
+Saved metadata for FlowInterviewLogShare
+Saved metadata for FlowInterviewShare
+Saved metadata for FlowOrchestrationInstance
+Saved metadata for FlowOrchestrationInstanceShare
+Saved metadata for FlowOrchestrationLog
+Saved metadata for FlowOrchestrationStageInstance
+Saved metadata for FlowOrchestrationStageInstanceShare
+Saved metadata for FlowOrchestrationStepInstance
+Saved metadata for FlowOrchestrationStepInstanceShare
+Saved metadata for FlowOrchestrationWorkItem
+Saved metadata for FlowOrchestrationWorkItemShare
+Saved metadata for FlowRecordRelation
+Saved metadata for FlowStageRelation
+Saved metadata for FlowTestResult
+Saved metadata for FlowTestResultShare
+Saved metadata for FlowTestView
+Saved metadata for FlowVariableView
+Saved metadata for FlowVersionView
+Saved metadata for Folder
+Saved metadata for FormulaFunction
+Saved metadata for FormulaFunctionAllowedType
+Saved metadata for FormulaFunctionCategory
+Saved metadata for FulfillmentOrder
+Saved metadata for FulfillmentOrderFeed
+Saved metadata for FulfillmentOrderItemAdjustment
+Saved metadata for FulfillmentOrderItemAdjustmentFeed
+Saved metadata for FulfillmentOrderItemTax
+Saved metadata for FulfillmentOrderItemTaxFeed
+Saved metadata for FulfillmentOrderLineItem
+Saved metadata for FulfillmentOrderLineItemFeed
+Saved metadata for FulfillmentOrderShare
+Saved metadata for GrantedByLicense
+Saved metadata for Group
+Saved metadata for GroupMember
+Saved metadata for GtwyProvPaymentMethodType
+Saved metadata for Holiday
+Saved metadata for IPAddressRange
+Saved metadata for IconDefinition
+Saved metadata for Idea
+Saved metadata for IdeaComment
+Saved metadata for IdentityProviderEventStore
+Saved metadata for IdentityVerificationEvent
+Saved metadata for IdpEventLog
+Saved metadata for IframeWhiteListUrl
+Saved metadata for Image
+Saved metadata for ImageFeed
+Saved metadata for ImageHistory
+Saved metadata for ImageShare
+Saved metadata for Incident
+Saved metadata for IncidentFeed
+Saved metadata for IncidentHistory
+Saved metadata for IncidentRelatedItem
+Saved metadata for IncidentRelatedItemFeed
+Saved metadata for IncidentRelatedItemHistory
+Saved metadata for IncidentShare
+Saved metadata for Individual
+Saved metadata for IndividualHistory
+Saved metadata for IndividualShare
+Saved metadata for InstalledMobileApp
+Saved metadata for InventoryItemReservation
+Saved metadata for InventoryReservation
+Saved metadata for InventoryReservationShare
+Saved metadata for Invoice
+Saved metadata for InvoiceFeed
+Saved metadata for InvoiceHistory
+Saved metadata for InvoiceLine
+Saved metadata for InvoiceLineFeed
+Saved metadata for InvoiceLineHistory
+Saved metadata for InvoiceShare
+Saved metadata for KnowledgeableUser
+Saved metadata for Lead
+Saved metadata for LeadCleanInfo
+Saved metadata for LeadFeed
+Saved metadata for LeadHistory
+Saved metadata for LeadShare
+Saved metadata for LeadStatus
+Saved metadata for LearningItem
+Saved metadata for LearningItemShare
+Saved metadata for LegalEntity
+Saved metadata for LegalEntityFeed
+Saved metadata for LegalEntityHistory
+Saved metadata for LegalEntityShare
+Saved metadata for LightningExitByPageMetrics
+Saved metadata for LightningExperienceTheme
+Saved metadata for LightningOnboardingConfig
+Saved metadata for LightningToggleMetrics
+Saved metadata for LightningUriEvent
+Saved metadata for LightningUsageByAppTypeMetrics
+Saved metadata for LightningUsageByBrowserMetrics
+Saved metadata for LightningUsageByFlexiPageMetrics
+Saved metadata for LightningUsageByPageMetrics
+Saved metadata for ListEmail
+Saved metadata for ListEmailIndividualRecipient
+Saved metadata for ListEmailRecipientSource
+Saved metadata for ListEmailShare
+Saved metadata for ListView
+Saved metadata for ListViewChart
+Saved metadata for ListViewChartInstance
+Saved metadata for ListViewEvent
+Saved metadata for LiveChatSensitiveDataRule
+Saved metadata for Location
+Saved metadata for LocationFeed
+Saved metadata for LocationGroup
+Saved metadata for LocationGroupAssignment
+Saved metadata for LocationGroupFeed
+Saved metadata for LocationGroupHistory
+Saved metadata for LocationGroupShare
+Saved metadata for LocationHistory
+Saved metadata for LocationShare
+Saved metadata for LoginAsEvent
+Saved metadata for LoginEvent
+Saved metadata for LoginGeo
+Saved metadata for LoginHistory
+Saved metadata for LoginIp
+Saved metadata for LogoutEvent
+Saved metadata for MLModel
+Saved metadata for MLModelFactor
+Saved metadata for MLModelFactorComponent
+Saved metadata for MLModelMetric
+Saved metadata for MLPredictionDefinition
+Saved metadata for MLRecommendationDefinition
+Saved metadata for Macro
+Saved metadata for MacroHistory
+Saved metadata for MacroInstruction
+Saved metadata for MacroShare
+Saved metadata for MacroUsage
+Saved metadata for MacroUsageShare
+Saved metadata for MailmergeTemplate
+Saved metadata for ManagedContent
+Saved metadata for ManagedContentChannel
+Saved metadata for ManagedContentSpace
+Saved metadata for ManagedContentVariant
+Saved metadata for MatchingInformation
+Saved metadata for MatchingRule
+Saved metadata for MatchingRuleItem
+Saved metadata for MessagingChannel
+Saved metadata for MessagingChannelSkill
+Saved metadata for MessagingConfiguration
+Saved metadata for MessagingDeliveryError
+Saved metadata for MessagingEndUser
+Saved metadata for MessagingEndUserHistory
+Saved metadata for MessagingEndUserShare
+Saved metadata for MessagingLink
+Saved metadata for MessagingSession
+Saved metadata for MessagingSessionFeed
+Saved metadata for MessagingSessionHistory
+Saved metadata for MessagingSessionShare
+Saved metadata for MessagingTemplate
+Saved metadata for MilestoneType
+Saved metadata for MlFeatureValueMetric
+Saved metadata for MobileApplicationDetail
+Saved metadata for MsgChannelLanguageKeyword
+Saved metadata for MutingPermissionSet
+Saved metadata for MyDomainDiscoverableLogin
+Saved metadata for NamedCredential
+Saved metadata for Note
+Saved metadata for OauthCustomScope
+Saved metadata for OauthCustomScopeApp
+Saved metadata for OauthToken
+Saved metadata for ObjectPermissions
+Saved metadata for OnboardingMetrics
+Saved metadata for OperatingHours
+Saved metadata for OperatingHoursFeed
+Saved metadata for OperatingHoursHoliday
+Saved metadata for OperatingHoursHolidayFeed
+Saved metadata for OperatingHoursShare
+Saved metadata for Opportunity
+Saved metadata for OpportunityCompetitor
+Saved metadata for OpportunityContactRole
+Saved metadata for OpportunityFeed
+Saved metadata for OpportunityFieldHistory
+Saved metadata for OpportunityHistory
+Saved metadata for OpportunityLineItem
+Saved metadata for OpportunityPartner
+Saved metadata for OpportunityShare
+Saved metadata for OpportunityStage
+Saved metadata for Order
+Saved metadata for OrderFeed
+Saved metadata for OrderHistory
+Saved metadata for OrderItem
+Saved metadata for OrderItemFeed
+Saved metadata for OrderItemHistory
+Saved metadata for OrderShare
+Saved metadata for OrderStatus
+Saved metadata for OrgDeleteRequest
+Saved metadata for OrgDeleteRequestShare
+Saved metadata for OrgMetric
+Saved metadata for OrgMetricScanResult
+Saved metadata for OrgMetricScanSummary
+Saved metadata for OrgWideEmailAddress
+Saved metadata for Organization
+Saved metadata for OutgoingEmail
+Saved metadata for OutgoingEmailRelation
+Saved metadata for OwnerChangeOptionInfo
+Saved metadata for PackageLicense
+Saved metadata for Participant
+Saved metadata for Partner
+Saved metadata for PartnerRole
+Saved metadata for PartyConsent
+Saved metadata for PartyConsentFeed
+Saved metadata for PartyConsentHistory
+Saved metadata for PartyConsentShare
+Saved metadata for Payment
+Saved metadata for PaymentAuthAdjustment
+Saved metadata for PaymentAuthorization
+Saved metadata for PaymentFeed
+Saved metadata for PaymentGateway
+Saved metadata for PaymentGatewayLog
+Saved metadata for PaymentGatewayProvider
+Saved metadata for PaymentGroup
+Saved metadata for PaymentLineInvoice
+Saved metadata for PaymentMethod
+Saved metadata for PendingOrderSummary
+Saved metadata for Period
+Saved metadata for PermissionSet
+Saved metadata for PermissionSetAssignment
+Saved metadata for PermissionSetEventStore
+Saved metadata for PermissionSetGroup
+Saved metadata for PermissionSetGroupComponent
+Saved metadata for PermissionSetLicense
+Saved metadata for PermissionSetLicenseAssign
+Saved metadata for PermissionSetTabSetting
+Saved metadata for PicklistValueInfo
+Saved metadata for PipelineInspectionListView
+Saved metadata for PlatformAction
+Saved metadata for PlatformCachePartition
+Saved metadata for PlatformCachePartitionType
+Saved metadata for PlatformEventUsageMetric
+Saved metadata for Pricebook2
+Saved metadata for Pricebook2History
+Saved metadata for PricebookEntry
+Saved metadata for PricebookEntryHistory
+Saved metadata for PrivacyJobSession
+Saved metadata for PrivacyJobSessionShare
+Saved metadata for PrivacyObjectSession
+Saved metadata for PrivacyObjectSessionShare
+Saved metadata for PrivacyPolicy
+Saved metadata for PrivacyPolicyDefinition
+Saved metadata for Problem
+Saved metadata for ProblemFeed
+Saved metadata for ProblemHistory
+Saved metadata for ProblemIncident
+Saved metadata for ProblemIncidentFeed
+Saved metadata for ProblemIncidentHistory
+Saved metadata for ProblemRelatedItem
+Saved metadata for ProblemRelatedItemFeed
+Saved metadata for ProblemRelatedItemHistory
+Saved metadata for ProblemShare
+Saved metadata for ProcessDefinition
+Saved metadata for ProcessException
+Saved metadata for ProcessExceptionShare
+Saved metadata for ProcessFlowMigration
+Saved metadata for ProcessInstance
+Saved metadata for ProcessInstanceNode
+Saved metadata for ProcessInstanceStep
+Saved metadata for ProcessInstanceWorkitem
+Saved metadata for ProcessNode
+Saved metadata for Product2
+Saved metadata for Product2Feed
+Saved metadata for Product2History
+Saved metadata for ProductAttribute
+Saved metadata for ProductAttributeSet
+Saved metadata for ProductAttributeSetItem
+Saved metadata for ProductAttributeSetProduct
+Saved metadata for ProductCatalog
+Saved metadata for ProductCatalogFeed
+Saved metadata for ProductCatalogHistory
+Saved metadata for ProductCatalogShare
+Saved metadata for ProductCategory
+Saved metadata for ProductCategoryFeed
+Saved metadata for ProductCategoryHistory
+Saved metadata for ProductCategoryProduct
+Saved metadata for ProductCategoryProductHistory
+Saved metadata for ProductConsumptionSchedule
+Saved metadata for ProductEntitlementTemplate
+Saved metadata for Profile
+Saved metadata for Promotion
+Saved metadata for PromotionFeed
+Saved metadata for PromotionHistory
+Saved metadata for PromotionMarketSegment
+Saved metadata for PromotionMarketSegmentFeed
+Saved metadata for PromotionMarketSegmentHistory
+Saved metadata for PromotionQualifier
+Saved metadata for PromotionQualifierFeed
+Saved metadata for PromotionQualifierHistory
+Saved metadata for PromotionSegment
+Saved metadata for PromotionSegmentBuyerGroup
+Saved metadata for PromotionSegmentBuyerGroupFeed
+Saved metadata for PromotionSegmentBuyerGroupHistory
+Saved metadata for PromotionSegmentFeed
+Saved metadata for PromotionSegmentHistory
+Saved metadata for PromotionSegmentSalesStore
+Saved metadata for PromotionSegmentSalesStoreFeed
+Saved metadata for PromotionSegmentSalesStoreHistory
+Saved metadata for PromotionSegmentShare
+Saved metadata for PromotionShare
+Saved metadata for PromotionTarget
+Saved metadata for PromotionTargetFeed
+Saved metadata for PromotionTargetHistory
+Saved metadata for PromotionTier
+Saved metadata for PromotionTierFeed
+Saved metadata for PromotionTierHistory
+Saved metadata for Prompt
+Saved metadata for PromptAction
+Saved metadata for PromptActionShare
+Saved metadata for PromptError
+Saved metadata for PromptErrorShare
+Saved metadata for PromptVersion
+Saved metadata for Publisher
+Saved metadata for PushTopic
+Saved metadata for QueueSobject
+Saved metadata for QuickText
+Saved metadata for QuickTextHistory
+Saved metadata for QuickTextShare
+Saved metadata for QuickTextUsage
+Saved metadata for QuickTextUsageShare
+Saved metadata for RecentlyViewed
+Saved metadata for Recommendation
+Saved metadata for RecommendationResponse
+Saved metadata for RecordAction
+Saved metadata for RecordActionHistory
+Saved metadata for RecordType
+Saved metadata for RedirectWhitelistUrl
+Saved metadata for Refund
+Saved metadata for RefundLinePayment
+Saved metadata for RelatedListColumnDefinition
+Saved metadata for RelatedListDefinition
+Saved metadata for RelationshipDomain
+Saved metadata for RelationshipInfo
+Saved metadata for Report
+Saved metadata for ReportAnomalyEventStore
+Saved metadata for ReportAnomalyEventStoreFeed
+Saved metadata for ReportEvent
+Saved metadata for ReportFeed
+Saved metadata for ResourceAbsence
+Saved metadata for ResourceAbsenceFeed
+Saved metadata for ResourceAbsenceHistory
+Saved metadata for ResourcePreference
+Saved metadata for ResourcePreferenceFeed
+Saved metadata for ResourcePreferenceHistory
+Saved metadata for ReturnOrder
+Saved metadata for ReturnOrderFeed
+Saved metadata for ReturnOrderHistory
+Saved metadata for ReturnOrderItemAdjustment
+Saved metadata for ReturnOrderItemTax
+Saved metadata for ReturnOrderLineItem
+Saved metadata for ReturnOrderLineItemFeed
+Saved metadata for ReturnOrderLineItemHistory
+Saved metadata for ReturnOrderShare
+Saved metadata for SPSamlAttributes
+Saved metadata for SalesStore
+Saved metadata for SamlSsoConfig
+Saved metadata for Scontrol
+Saved metadata for Scorecard
+Saved metadata for ScorecardAssociation
+Saved metadata for ScorecardMetric
+Saved metadata for ScorecardShare
+Saved metadata for SearchLayout
+Saved metadata for SearchPromotionRule
+Saved metadata for SecurityCustomBaseline
+Saved metadata for Seller
+Saved metadata for SellerHistory
+Saved metadata for SellerShare
+Saved metadata for ServiceAppointment
+Saved metadata for ServiceAppointmentFeed
+Saved metadata for ServiceAppointmentHistory
+Saved metadata for ServiceAppointmentShare
+Saved metadata for ServiceAppointmentStatus
+Saved metadata for ServiceContract
+Saved metadata for ServiceContractFeed
+Saved metadata for ServiceContractHistory
+Saved metadata for ServiceContractShare
+Saved metadata for ServiceResource
+Saved metadata for ServiceResourceFeed
+Saved metadata for ServiceResourceHistory
+Saved metadata for ServiceResourceShare
+Saved metadata for ServiceResourceSkill
+Saved metadata for ServiceResourceSkillFeed
+Saved metadata for ServiceResourceSkillHistory
+Saved metadata for ServiceSetupProvisioning
+Saved metadata for ServiceTerritory
+Saved metadata for ServiceTerritoryFeed
+Saved metadata for ServiceTerritoryHistory
+Saved metadata for ServiceTerritoryMember
+Saved metadata for ServiceTerritoryMemberFeed
+Saved metadata for ServiceTerritoryMemberHistory
+Saved metadata for ServiceTerritoryShare
+Saved metadata for ServiceTerritoryWorkType
+Saved metadata for ServiceTerritoryWorkTypeFeed
+Saved metadata for ServiceTerritoryWorkTypeHistory
+Saved metadata for SessionHijackingEventStore
+Saved metadata for SessionHijackingEventStoreFeed
+Saved metadata for SessionPermSetActivation
+Saved metadata for SetupAssistantStep
+Saved metadata for SetupAuditTrail
+Saved metadata for SetupEntityAccess
+Saved metadata for Shift
+Saved metadata for ShiftEngagementChannel
+Saved metadata for ShiftEngagementChannelFeed
+Saved metadata for ShiftEngagementChannelHistory
+Saved metadata for ShiftFeed
+Saved metadata for ShiftHistory
+Saved metadata for ShiftShare
+Saved metadata for ShiftStatus
+Saved metadata for ShiftWorkTopic
+Saved metadata for ShiftWorkTopicFeed
+Saved metadata for ShiftWorkTopicHistory
+Saved metadata for Shipment
+Saved metadata for ShipmentFeed
+Saved metadata for ShipmentHistory
+Saved metadata for ShipmentItem
+Saved metadata for ShipmentItemFeed
+Saved metadata for ShipmentItemHistory
+Saved metadata for ShipmentShare
+Saved metadata for Site
+Saved metadata for SiteDetail
+Saved metadata for SiteFeed
+Saved metadata for SiteHistory
+Saved metadata for SiteIframeWhiteListUrl
+Saved metadata for SiteRedirectMapping
+Saved metadata for Skill
+Saved metadata for SkillRequirement
+Saved metadata for SkillRequirementFeed
+Saved metadata for SkillRequirementHistory
+Saved metadata for SlaProcess
+Saved metadata for Solution
+Saved metadata for SolutionFeed
+Saved metadata for SolutionHistory
+Saved metadata for SolutionStatus
+Saved metadata for Stamp
+Saved metadata for StampAssignment
+Saved metadata for StaticResource
+Saved metadata for StreamingChannel
+Saved metadata for StreamingChannelShare
+Saved metadata for TabDefinition
+Saved metadata for Task
+Saved metadata for TaskFeed
+Saved metadata for TaskPriority
+Saved metadata for TaskStatus
+Saved metadata for TenantUsageEntitlement
+Saved metadata for TestSuiteMembership
+Saved metadata for ThirdPartyAccountLink
+Saved metadata for ThreatDetectionFeedback
+Saved metadata for ThreatDetectionFeedbackFeed
+Saved metadata for TimeSlot
+Saved metadata for TodayGoal
+Saved metadata for TodayGoalShare
+Saved metadata for Topic
+Saved metadata for TopicAssignment
+Saved metadata for TopicFeed
+Saved metadata for TopicUserEvent
+Saved metadata for TransactionSecurityPolicy
+Saved metadata for Translation
+Saved metadata for UiFormulaCriterion
+Saved metadata for UiFormulaRule
+Saved metadata for UndecidedEventRelation
+Saved metadata for UriEvent
+Saved metadata for User
+Saved metadata for UserAppInfo
+Saved metadata for UserAppMenuCustomization
+Saved metadata for UserAppMenuCustomizationShare
+Saved metadata for UserAppMenuItem
+Saved metadata for UserDefinedLabel
+Saved metadata for UserDefinedLabelAssignment
+Saved metadata for UserDefinedLabelAssignmentShare
+Saved metadata for UserDefinedLabelShare
+Saved metadata for UserEmailPreferredPerson
+Saved metadata for UserEmailPreferredPersonShare
+Saved metadata for UserEntityAccess
+Saved metadata for UserFeed
+Saved metadata for UserFieldAccess
+Saved metadata for UserLicense
+Saved metadata for UserListView
+Saved metadata for UserListViewCriterion
+Saved metadata for UserLogin
+Saved metadata for UserPackageLicense
+Saved metadata for UserPermissionAccess
+Saved metadata for UserPreference
+Saved metadata for UserPrioritizedRecord
+Saved metadata for UserPrioritizedRecordShare
+Saved metadata for UserProvAccount
+Saved metadata for UserProvAccountStaging
+Saved metadata for UserProvMockTarget
+Saved metadata for UserProvisioningConfig
+Saved metadata for UserProvisioningLog
+Saved metadata for UserProvisioningRequest
+Saved metadata for UserProvisioningRequestShare
+Saved metadata for UserRecordAccess
+Saved metadata for UserRole
+Saved metadata for UserSetupEntityAccess
+Saved metadata for UserShare
+Saved metadata for VerificationHistory
+Saved metadata for VisualforceAccessMetrics
+Saved metadata for VoiceCall
+Saved metadata for VoiceCallFeed
+Saved metadata for VoiceCallMetrics
+Saved metadata for VoiceCallRecording
+Saved metadata for VoiceCallShare
+Saved metadata for VoiceVendorInfo
+Saved metadata for Vote
+Saved metadata for WaveAutoInstallRequest
+Saved metadata for WaveCompatibilityCheckItem
+Saved metadata for WebCart
+Saved metadata for WebCartAdjustmentBasis
+Saved metadata for WebCartAdjustmentGroup
+Saved metadata for WebCartHistory
+Saved metadata for WebCartShare
+Saved metadata for WebLink
+Saved metadata for WebStore
+Saved metadata for WebStoreBuyerGroup
+Saved metadata for WebStoreCatalog
+Saved metadata for WebStoreCatalogHistory
+Saved metadata for WebStoreInventorySource
+Saved metadata for WebStoreShare
+Saved metadata for WorkOrder
+Saved metadata for WorkOrderFeed
+Saved metadata for WorkOrderHistory
+Saved metadata for WorkOrderLineItem
+Saved metadata for WorkOrderLineItemFeed
+Saved metadata for WorkOrderLineItemHistory
+Saved metadata for WorkOrderLineItemStatus
+Saved metadata for WorkOrderShare
+Saved metadata for WorkOrderStatus
+Saved metadata for WorkPlan
+Saved metadata for WorkPlanFeed
+Saved metadata for WorkPlanHistory
+Saved metadata for WorkPlanShare
+Saved metadata for WorkPlanTemplate
+Saved metadata for WorkPlanTemplateEntry
+Saved metadata for WorkPlanTemplateEntryFeed
+Saved metadata for WorkPlanTemplateEntryHistory
+Saved metadata for WorkPlanTemplateFeed
+Saved metadata for WorkPlanTemplateHistory
+Saved metadata for WorkPlanTemplateShare
+Saved metadata for WorkStep
+Saved metadata for WorkStepFeed
+Saved metadata for WorkStepHistory
+Saved metadata for WorkStepStatus
+Saved metadata for WorkStepTemplate
+Saved metadata for WorkStepTemplateFeed
+Saved metadata for WorkStepTemplateHistory
+Saved metadata for WorkStepTemplateShare
+Saved metadata for WorkType
+Saved metadata for WorkTypeFeed
+Saved metadata for WorkTypeGroup
+Saved metadata for WorkTypeGroupFeed
+Saved metadata for WorkTypeGroupHistory
+Saved metadata for WorkTypeGroupMember
+Saved metadata for WorkTypeGroupMemberFeed
+Saved metadata for WorkTypeGroupMemberHistory
+Saved metadata for WorkTypeGroupShare
+Saved metadata for WorkTypeHistory
+Saved metadata for WorkTypeShare
+Creating child relationships...
+Saved metadata for User
+Saved metadata for AIRecordInsight
+Saved metadata for AIInsightValue
+Saved metadata for AIInsightReason
+Saved metadata for AIInsightAction
+Saved metadata for AIApplication
+Saved metadata for MLModel
+Saved metadata for MLPredictionDefinition
+Saved metadata for Event
+Saved metadata for Account
+Saved metadata for DandBCompany
+Saved metadata for OperatingHours
+Saved metadata for Contact
+Saved metadata for ContentVersion
+Saved metadata for FeedComment
+Saved metadata for Opportunity
+Saved metadata for AccountPartner
+Saved metadata for ActionLinkGroupTemplate
+Saved metadata for PermissionSetLicense
+Saved metadata for UserLicense
+Saved metadata for Profile
+Saved metadata for CallCenter
+Saved metadata for Location
+Saved metadata for Address
+Saved metadata for PaymentGateway
+Saved metadata for AlternativePaymentMethod
+Saved metadata for FeedItem
+Saved metadata for CollaborationGroup
+Saved metadata for ApexClass
+Saved metadata for AsyncApexJob
+Saved metadata for ApexTestRunResult
+Saved metadata for ApexTestQueueItem
+Saved metadata for ApexLog
+Saved metadata for ApexTestResult
+Saved metadata for TransactionSecurityPolicy
+Saved metadata for ApiAnomalyEventStore
+Saved metadata for LoginHistory
+Saved metadata for ConnectedApplication
+Saved metadata for Order
+Saved metadata for ServiceTerritory
+Saved metadata for EngagementChannelType
+Saved metadata for AppointmentInvitation
+Saved metadata for ServiceResource
+Saved metadata for AppointmentScheduleAggr
+Saved metadata for TimeSlot
+Saved metadata for WorkType
+Saved metadata for WorkTypeGroup
+Saved metadata for AppointmentTopicTimeSlot
+Saved metadata for Asset
+Saved metadata for Product2
+Saved metadata for AssetAction
+Saved metadata for AssetRelationship
+Saved metadata for ServiceAppointment
+Saved metadata for AssignedResource
+Saved metadata for AssociatedLocation
+Saved metadata for CronTrigger
+Saved metadata for AuraDefinitionBundle
+Saved metadata for AuthConfig
+Saved metadata for AuthSession
+Saved metadata for LoginGeo
+Saved metadata for AuthorizationFormText
+Saved metadata for AuthorizationFormConsent
+Saved metadata for AuthorizationForm
+Saved metadata for DataUsePurpose
+Saved metadata for AuthorizationFormDataUse
+Saved metadata for ContentDocument
+Saved metadata for BackgroundOperation
+Saved metadata for BrandingSet
+Saved metadata for BriefcaseDefinition
+Saved metadata for BriefcaseRule
+Saved metadata for BusinessBrand
+Saved metadata for BuyerGroup
+Saved metadata for ListView
+Saved metadata for CalendarView
+Saved metadata for ConversationVendorInfo
+Saved metadata for Campaign
+Saved metadata for RecordType
+Saved metadata for Lead
+Saved metadata for WebCart
+Saved metadata for CartDeliveryGroup
+Saved metadata for CartCheckoutSession
+Saved metadata for CartItem
+Saved metadata for WebCartAdjustmentGroup
+Saved metadata for Promotion
+Saved metadata for Coupon
+Saved metadata for CartItemPriceAdjustment
+Saved metadata for Case
+Saved metadata for MilestoneType
+Saved metadata for BusinessHours
+Saved metadata for CaseRelatedIssue
+Saved metadata for Solution
+Saved metadata for CaseTeamTemplateMember
+Saved metadata for CaseTeamRole
+Saved metadata for CaseTeamTemplate
+Saved metadata for CategoryNode
+Saved metadata for ChangeRequest
+Saved metadata for ChangeRequestRelatedIssue
+Saved metadata for ChangeRequestRelatedItem
+Saved metadata for ContentAsset
+Saved metadata for ChatterExtension
+Saved metadata for Coin__c
+Saved metadata for Announcement
+Saved metadata for CollaborationInvitation
+Saved metadata for CommSubscription
+Saved metadata for CommSubscriptionChannelType
+Saved metadata for Individual
+Saved metadata for CommSubscriptionConsent
+Saved metadata for CommSubscriptionTiming
+Saved metadata for ExternalEvent
+Saved metadata for ConsumptionSchedule
+Saved metadata for ConsumptionRate
+Saved metadata for MessagingChannel
+Saved metadata for Group
+Saved metadata for ContactPointPhone
+Saved metadata for ContactPointAddress
+Saved metadata for ContactPointConsent
+Saved metadata for ContactPointEmail
+Saved metadata for ContactPointTypeConsent
+Saved metadata for ContactRequest
+Saved metadata for ContentDistribution
+Saved metadata for ContentDistributionView
+Saved metadata for ContentWorkspace
+Saved metadata for ContentFolder
+Saved metadata for ExternalDataSource
+Saved metadata for ContentWorkspacePermission
+Saved metadata for Pricebook2
+Saved metadata for Contract
+Saved metadata for ServiceContract
+Saved metadata for PricebookEntry
+Saved metadata for ContractLineItem
+Saved metadata for ConvIntelligenceSignalRule
+Saved metadata for Conversation
+Saved metadata for NamedCredential
+Saved metadata for CouponCodeRedemption
+Saved metadata for CredentialStuffingEventStore
+Saved metadata for CreditMemo
+Saved metadata for Invoice
+Saved metadata for CreditMemoInvApplication
+Saved metadata for CreditMemoLine
+Saved metadata for CronJobDetail
+Saved metadata for CustomBrand
+Saved metadata for CustomHelpMenuSection
+Saved metadata for CustomPermission
+Saved metadata for Customer
+Saved metadata for Dashboard
+Saved metadata for Report
+Saved metadata for DashboardComponent
+Saved metadata for DataAssessmentMetric
+Saved metadata for DataAssessmentFieldMetric
+Saved metadata for DataUseLegalBasis
+Saved metadata for DatacloudPurchaseUsage
+Saved metadata for EmailTemplate
+Saved metadata for Document
+Saved metadata for Domain
+Saved metadata for Site
+Saved metadata for DuplicateRecordSet
+Saved metadata for DuplicateRule
+Saved metadata for EmailRelay
+Saved metadata for Task
+Saved metadata for EmailMessage
+Saved metadata for EmailServicesFunction
+Saved metadata for BrandTemplate
+Saved metadata for EnhancedLetterhead
+Saved metadata for EngagementChannelWorkType
+Saved metadata for SlaProcess
+Saved metadata for Entitlement
+Saved metadata for EntityMilestone
+Saved metadata for EventRelayConfig
+Saved metadata for MacroInstruction
+Saved metadata for ExpressionFilter
+Saved metadata for AuthProvider
+Saved metadata for StaticResource
+Saved metadata for ExternalEventMapping
+Saved metadata for ExternalClientApplication
+Saved metadata for FeedPollChoice
+Saved metadata for PermissionSet
+Saved metadata for FinanceTransaction
+Saved metadata for FinanceBalanceSnapshot
+Saved metadata for Period
+Saved metadata for FlowInterviewLog
+Saved metadata for FlowInterview
+Saved metadata for FlowOrchestrationInstance
+Saved metadata for FlowOrchestrationStageInstance
+Saved metadata for FlowOrchestrationStepInstance
+Saved metadata for FlowOrchestrationWorkItem
+Saved metadata for FlowTestResult
+Saved metadata for Folder
+Saved metadata for FulfillmentOrder
+Saved metadata for FulfillmentOrderLineItem
+Saved metadata for FulfillmentOrderItemAdjustment
+Saved metadata for FulfillmentOrderItemTax
+Saved metadata for OrderItem
+Saved metadata for PaymentGatewayProvider
+Saved metadata for Community
+Saved metadata for IdeaComment
+Saved metadata for Idea
+Saved metadata for Image
+Saved metadata for Incident
+Saved metadata for IncidentRelatedItem
+Saved metadata for InventoryReservation
+Saved metadata for InvoiceLine
+Saved metadata for Topic
+Saved metadata for LearningItem
+Saved metadata for LegalEntity
+Saved metadata for ListEmail
+Saved metadata for ListViewChart
+Saved metadata for LocationGroup
+Saved metadata for MLRecommendationDefinition
+Saved metadata for MLModelFactor
+Saved metadata for Macro
+Saved metadata for MacroUsage
+Saved metadata for ManagedContentSpace
+Saved metadata for ManagedContent
+Saved metadata for MatchingRule
+Saved metadata for Skill
+Saved metadata for MessagingTemplate
+Saved metadata for MessagingEndUser
+Saved metadata for MessagingSession
+Saved metadata for OauthCustomScope
+Saved metadata for AppMenuItem
+Saved metadata for Holiday
+Saved metadata for OperatingHoursHoliday
+Saved metadata for OpportunityHistory
+Saved metadata for OpportunityPartner
+Saved metadata for OrgDeleteRequest
+Saved metadata for OrgMetricScanSummary
+Saved metadata for OrgMetric
+Saved metadata for Partner
+Saved metadata for PartyConsent
+Saved metadata for PaymentGroup
+Saved metadata for PaymentAuthorization
+Saved metadata for PaymentMethod
+Saved metadata for Payment
+Saved metadata for PaymentLineInvoice
+Saved metadata for WebStore
+Saved metadata for FiscalYearSettings
+Saved metadata for PermissionSetGroup
+Saved metadata for PlatformCachePartition
+Saved metadata for PrivacyPolicyDefinition
+Saved metadata for PrivacyJobSession
+Saved metadata for PrivacyObjectSession
+Saved metadata for Problem
+Saved metadata for ProblemIncident
+Saved metadata for ProblemRelatedItem
+Saved metadata for ProcessException
+Saved metadata for ProcessDefinition
+Saved metadata for ProcessInstance
+Saved metadata for ProcessNode
+Saved metadata for ProductAttributeSet
+Saved metadata for ProductCatalog
+Saved metadata for ProductCategory
+Saved metadata for ProductCategoryProduct
+Saved metadata for EntitlementTemplate
+Saved metadata for PromotionSegment
+Saved metadata for PromotionMarketSegment
+Saved metadata for PromotionTier
+Saved metadata for PromotionQualifier
+Saved metadata for PromotionSegmentBuyerGroup
+Saved metadata for PromotionSegmentSalesStore
+Saved metadata for PromotionTarget
+Saved metadata for PromptVersion
+Saved metadata for PromptAction
+Saved metadata for PromptError
+Saved metadata for Prompt
+Saved metadata for QuickText
+Saved metadata for QuickTextUsage
+Saved metadata for UserRole
+Saved metadata for BusinessProcess
+Saved metadata for Refund
+Saved metadata for RefundLinePayment
+Saved metadata for ReportAnomalyEventStore
+Saved metadata for ResourceAbsence
+Saved metadata for ResourcePreference
+Saved metadata for ReturnOrder
+Saved metadata for ReturnOrderLineItem
+Saved metadata for ReturnOrderItemAdjustment
+Saved metadata for Scorecard
+Saved metadata for Seller
+Saved metadata for ServiceResourceSkill
+Saved metadata for ServiceTerritoryMember
+Saved metadata for ServiceTerritoryWorkType
+Saved metadata for SessionHijackingEventStore
+Saved metadata for Shift
+Saved metadata for ShiftEngagementChannel
+Saved metadata for ShiftWorkTopic
+Saved metadata for Shipment
+Saved metadata for ShipmentItem
+Saved metadata for SkillRequirement
+Saved metadata for Organization
+Saved metadata for Stamp
+Saved metadata for StreamingChannel
+Saved metadata for ApexTestSuite
+Saved metadata for ThreatDetectionFeedback
+Saved metadata for TodayGoal
+Saved metadata for UiFormulaRule
+Saved metadata for AppDefinition
+Saved metadata for UserAppMenuCustomization
+Saved metadata for UserDefinedLabel
+Saved metadata for UserDefinedLabelAssignment
+Saved metadata for UserEmailPreferredPerson
+Saved metadata for UserListView
+Saved metadata for PackageLicense
+Saved metadata for UserPrioritizedRecord
+Saved metadata for UserProvisioningRequest
+Saved metadata for UserProvisioningConfig
+Saved metadata for UserProvAccount
+Saved metadata for ApexPage
+Saved metadata for VoiceCallRecording
+Saved metadata for ConversationParticipant
+Saved metadata for VoiceCall
+Saved metadata for CallCoachingMediaProvider
+Saved metadata for WaveAutoInstallRequest
+Saved metadata for WebStoreCatalog
+Saved metadata for WorkOrder
+Saved metadata for WorkOrderLineItem
+Saved metadata for WorkPlanTemplate
+Saved metadata for WorkPlan
+Saved metadata for WorkStepTemplate
+Saved metadata for WorkPlanTemplateEntry
+Saved metadata for WorkStep
+Saved metadata for WorkTypeGroupMember
+Loaded metadata for 956 objects
+MODULAR_ARCHITECTURE_AVAILABLE: True
+Using modular architecture
+Number of models: 7
+Model 1: AdvancedFeaturesModel
+Model 2: RelationshipModel
+Model 3: WhereClauseModel
+Model 4: AggregationModel
+Model 5: DateFilterModel
+Model 6: SortingModel
+Model 7: BasicQueryModel
+
+Testing prompt 1/100: "Get all Account IDs and Names."
+Expected answer: SELECT Id, Name FROM Account
+Handling model: BasicQueryModel
+Identified object: Account
+Generated answer: SELECT Id, Name, Type, Industry, Phone, Website FROM Account
+Match: ❌ (similarity: 0.44)
+Missing terms: Name
+Extra terms: Name,, Phone,, Website, Industry,, Type,
+
+Testing prompt 2/100: "Get all Contact IDs, First Names, and Last Names."
+Expected answer: SELECT Id, FirstName, LastName FROM Contact
+Handling model: BasicQueryModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName FROM Contact
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 3/100: "Get all open Opportunities with ID, Name, and Stage."
+Expected answer: SELECT Id, Name, StageName FROM Opportunity WHERE IsClosed = FALSE
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name, StageName FROM Opportunity
+Match: ❌ (similarity: 0.60)
+Missing terms: WHERE, IsClosed, FALSE, =
+
+Testing prompt 4/100: "Get Leads where Status is 'Open – Not Contacted'."
+Expected answer: SELECT Id, Name FROM Lead WHERE Status = 'Open - Not Contacted'
+Handling model: WhereClauseModel
+Identified object: Lead
+Generated answer: SELECT Id, Name, Status FROM Lead WHERE Status = 'Open - Not Contacted'
+Match: ❌ (similarity: 0.92)
+Missing terms: Name
+Extra terms: Name,
+
+Testing prompt 5/100: "Get Cases where Priority is 'High'."
+Expected answer: SELECT Id, Subject FROM Case WHERE Priority = 'High'
+Handling model: WhereClauseModel
+Identified object: Case
+Generated answer: SELECT Id, Subject, Priority FROM Case WHERE Priority = 'High'
+Match: ❌ (similarity: 0.89)
+Missing terms: Subject
+Extra terms: Subject,
+
+Testing prompt 6/100: "Get all Accounts where Industry is 'Technology'."
+Expected answer: SELECT Id, Name FROM Account WHERE Industry = 'Technology'
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name, Industry FROM Account WHERE Industry = 'technology'
+Match: ❌ (similarity: 0.78)
+Missing terms: Name, 'Technology'
+Extra terms: 'technology', Name,
+
+Testing prompt 7/100: "Count Contacts where Mailing Country is 'USA'."
+Expected answer: SELECT COUNT(Id) FROM Contact WHERE MailingCountry = 'USA'
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT COUNT(Id) FROM Contact WHERE MailingCountry = 'USA'
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 8/100: "Get User Names where IsActive is true."
+Expected answer: SELECT Id, Name FROM User WHERE IsActive = TRUE
+Handling model: WhereClauseModel
+Identified object: User
+Generated answer: SELECT Id, Name, IsActive FROM User WHERE IsActive = TRUE
+Match: ❌ (similarity: 0.89)
+Missing terms: Name
+Extra terms: Name,
+
+Testing prompt 9/100: "Get Leads created in the last 30 days with Email."
+Expected answer: SELECT Id, Email FROM Lead WHERE CreatedDate = LAST_N_DAYS:30
+Handling model: WhereClauseModel
+Identified object: Lead
+Generated answer: SELECT Id, Email FROM Lead WHERE CreatedDate = LAST_N_DAYS:30 AND CreatedDate = LAST_N_DAYS:30
+Match: ❌ (similarity: 0.90)
+Extra terms: AND
+
+Testing prompt 10/100: "Get Opportunities closing in the next 3 months."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE CloseDate = NEXT_N_MONTHS:3
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name FROM Opportunity WHERE CreatedDate = NEXT_N_MONTHS:3 AND CloseDate = NEXT_N_MONTHS:3
+Match: ❌ (similarity: 0.82)
+Extra terms: CreatedDate, AND
+
+Testing prompt 11/100: "Get Accounts with their related Contacts."
+Expected answer: SELECT Id, Name, (SELECT Id, FirstName, LastName FROM Contacts) FROM Account
+Handling model: RelationshipModel
+Identified object: Account
+Generated answer: SELECT Id, Name, (SELECT Id, FirstName, LastName FROM Contacts) FROM Account
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 12/100: "Get Contacts with their related Account Names."
+Expected answer: SELECT Id, FirstName, LastName, Account.Name FROM Contact
+Handling model: RelationshipModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName, Account.Name FROM Contact
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 13/100: "Get quotelines with related quote Name and Subject."
+Expected answer: SELECT Id, Subject, Account.Name FROM Case
+Handling model: RelationshipModel
+Identified object: Case
+Generated answer: SELECT Id, Subject, Quote.Name FROM QuoteLineItem
+Match: ❌ (similarity: 0.67)
+Missing terms: Case, Account.Name
+Extra terms: QuoteLineItem, Quote.Name
+
+Testing prompt 14/100: "Get Opportunities related to Accounts in 'Finance' Industry."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE Account.Industry = 'Finance'
+Handling model: RelationshipModel
+Identified object: Account
+Generated answer: SELECT Id, Name, (SELECT Id, Name FROM Opportunities) FROM Account WHERE Industry = 'Finance'
+Match: ❌ (similarity: 0.58)
+Missing terms: Opportunity, Account.Industry
+Extra terms: Name,, Industry, Opportunities), Account, (SELECT
+
+Testing prompt 15/100: "Get Account Names with their Owner Names."
+Expected answer: SELECT Id, Name, Owner.Name FROM Account
+Handling model: RelationshipModel
+Identified object: Account
+Generated answer: SELECT Id, Name, Owner.Name FROM Account
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 16/100: "Get Contacts with CreatedBy User Names."
+Expected answer: SELECT Id, FirstName, LastName, CreatedBy.Name FROM Contact
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName FROM Contact WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.50)
+Missing terms: CreatedBy.Name, LastName,
+Extra terms: LastName, CreatedDate, WHERE, TODAY, =
+
+Testing prompt 17/100: "Get Opportunities with their related Tasks."
+Expected answer: SELECT Id, Name, (SELECT Id, Subject FROM Tasks) FROM Opportunity
+Handling model: RelationshipModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name FROM Opportunity
+Match: ❌ (similarity: 0.50)
+Missing terms: Tasks), Subject, (SELECT, Name,
+Extra terms: Name
+
+Testing prompt 18/100: "Get Cases with their Case Comments."
+Expected answer: SELECT Id, Subject, (SELECT Id, CommentBody FROM CaseComments) FROM Case
+Handling model: RelationshipModel
+Identified object: Case
+Generated answer: SELECT Id, Subject, (SELECT Id, CommentBody FROM CaseComments) FROM Case
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 19/100: "Get Quotes with their Quote Line Items."
+Expected answer: SELECT Id, Name, (SELECT Id, Product2.Name, Quantity FROM QuoteLineItems) FROM Quote
+Handling model: RelationshipModel
+Identified object: Quote
+Generated answer: SELECT Id, Name, (SELECT Id, Product2.Name, Quantity FROM QuoteLineItems) FROM Quote
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 20/100: "Get Accounts with their Orders."
+Expected answer: SELECT Id, Name, (SELECT Id, Name FROM Orders) FROM Account
+Handling model: RelationshipModel
+Identified object: Account
+Generated answer: SELECT Id, Name, (SELECT Id, Name FROM Orders) FROM Account
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 21/100: "Get Accounts where Name starts with 'Acme'."
+Expected answer: SELECT Id, Name FROM Account WHERE Name LIKE 'Acme%'
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE Name LIKE 'acme%'
+Match: ❌ (similarity: 0.88)
+Missing terms: 'Acme%'
+Extra terms: 'acme%'
+
+Testing prompt 22/100: "Get Contacts where Mailing State is 'CA' or 'TX'."
+Expected answer: SELECT Id, FirstName, MailingState FROM Contact WHERE MailingState IN ('CA', 'TX')
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName, MailingState FROM Contact WHERE MailingState IN ('CA', 'TX')
+Match: ❌ (similarity: 0.91)
+Extra terms: LastName,
+
+Testing prompt 23/100: "Get Leads with AnnualRevenue greater than 1 million."
+Expected answer: SELECT Id, Name FROM Lead WHERE AnnualRevenue > 1000000
+Handling model: WhereClauseModel
+Identified object: Lead
+Generated answer: SELECT Id, Name, AnnualRevenue FROM Lead WHERE AnnualRevenue > 1000000
+Match: ❌ (similarity: 0.89)
+Missing terms: Name
+Extra terms: Name,
+
+Testing prompt 24/100: "Get Opportunities where Amount is less than or equal to 50,000."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE Amount <= 50000
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name FROM Opportunity WHERE Amount <= 50000
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 25/100: "show me all Cases where Status equal to not 'Closed'."
+Expected answer: SELECT Id, Subject FROM Case WHERE Status != 'Closed'
+Handling model: WhereClauseModel
+Identified object: Case
+Generated answer: SELECT Id, Subject FROM Case WHERE Status != 'Closed' AND ClosedDate = TODAY
+Match: ❌ (similarity: 0.69)
+Extra terms: ClosedDate, AND, TODAY, =
+
+Testing prompt 26/100: "Get Accounts created after January 1, 2024."
+Expected answer: SELECT Id, Name FROM Account WHERE CreatedDate > 2024-01-01T00:00:00Z
+Handling model: DateFilterModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.78)
+Missing terms: 2024-01-01T00:00:00Z, >
+Extra terms: TODAY, =
+
+Testing prompt 27/100: "Get Contacts where Mailing City is 'Mumbai'."
+Expected answer: SELECT Id, FirstName FROM Contact WHERE MailingCity = 'Mumbai'
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName, MailingCity FROM Contact WHERE MailingCity = 'Mumbai'
+Match: ❌ (similarity: 0.80)
+Missing terms: FirstName
+Extra terms: FirstName,, LastName,
+
+Testing prompt 28/100: "Get Opportunities where StageName is 'Prospecting' or 'Qualification'."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE StageName IN ('Prospecting', 'Qualification')
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name, StageName FROM Opportunity WHERE Name = 'prospecting'
+Match: ❌ (similarity: 0.70)
+Missing terms: ('Prospecting',, IN, 'Qualification')
+Extra terms: 'prospecting', =, Name,
+
+Testing prompt 29/100: "Get Users where Profile Name is 'System Administrator'."
+Expected answer: SELECT Id, Name FROM User WHERE Profile.Name = 'System Administrator'
+Handling model: WhereClauseModel
+Identified object: User
+Generated answer: SELECT Id, Name, Profile.Name FROM User WHERE Profile.Name = 'System Administrator'
+Match: ❌ (similarity: 0.90)
+Missing terms: Name
+Extra terms: Name,
+
+Testing prompt 30/100: "Get Leads where IsConverted is false."
+Expected answer: SELECT Id, Name FROM Lead WHERE IsConverted = FALSE
+Handling model: WhereClauseModel
+Identified object: Lead
+Generated answer: SELECT Id, Name, IsConverted FROM Lead WHERE IsConverted = FALSE
+Match: ❌ (similarity: 0.89)
+Missing terms: Name
+Extra terms: Name,
+
+Testing prompt 31/100: "Get Accounts created today."
+Expected answer: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY AND CreatedDate = TODAY
+Match: ❌ (similarity: 0.90)
+Extra terms: AND
+
+Testing prompt 32/100: "Get Cases modified yesterday."
+Expected answer: SELECT Id, Subject FROM Case WHERE LastModifiedDate = YESTERDAY
+Handling model: DateFilterModel
+Identified object: Case
+Generated answer: SELECT Id, Subject FROM Case WHERE LastModifiedDate = YESTERDAY
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 33/100: "Get Contacts created this week."
+Expected answer: SELECT Id, FirstName FROM Contact WHERE CreatedDate = THIS_WEEK
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName FROM Contact WHERE CreatedDate = THIS_WEEK AND CreatedDate = THIS_WEEK
+Match: ❌ (similarity: 0.90)
+Extra terms: AND
+
+Testing prompt 34/100: "Get Opportunities closing this quarter."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE CloseDate = THIS_QUARTER
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name FROM Opportunity WHERE CreatedDate = THIS_QUARTER AND CloseDate = THIS_QUARTER
+Match: ❌ (similarity: 0.82)
+Extra terms: CreatedDate, AND
+
+Testing prompt 35/100: "Get Leads created in the last 7 days."
+Expected answer: SELECT Id, Name FROM Lead WHERE CreatedDate = LAST_N_DAYS:7
+Handling model: WhereClauseModel
+Identified object: Lead
+Generated answer: SELECT Id, Name FROM Lead WHERE CreatedDate = LAST_N_DAYS:7 AND CreatedDate = LAST_N_DAYS:7
+Match: ❌ (similarity: 0.90)
+Extra terms: AND
+
+Testing prompt 36/100: "Get Opportunities closing in the next 14 days."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE CloseDate = NEXT_N_DAYS:14
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name FROM Opportunity WHERE CreatedDate = NEXT_N_DAYS:14 AND CloseDate = NEXT_N_DAYS:14
+Match: ❌ (similarity: 0.82)
+Extra terms: CreatedDate, AND
+
+Testing prompt 37/100: "Get Accounts created in the last 3 months."
+Expected answer: SELECT Id, Name FROM Account WHERE CreatedDate = LAST_N_MONTHS:3
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE CreatedDate = LAST_N_MONTHS:3 AND CreatedDate = LAST_N_MONTHS:3
+Match: ❌ (similarity: 0.90)
+Extra terms: AND
+
+Testing prompt 38/100: "Get Cases created before last year."
+Expected answer: SELECT Id, Subject FROM Case WHERE CreatedDate < LAST_YEAR
+Handling model: WhereClauseModel
+Identified object: Case
+Generated answer: SELECT Id, Subject FROM Case WHERE CreatedDate < LAST_YEAR AND CreatedDate = LAST_YEAR
+Match: ❌ (similarity: 0.82)
+Extra terms: AND, =
+
+Testing prompt 39/100: "Get Opportunities created in the past year."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE CreatedDate = LAST_365_DAYS
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name FROM Opportunity WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.89)
+Missing terms: LAST_365_DAYS
+Extra terms: TODAY
+
+Testing prompt 40/100: "Get Users who logged in one day ago."
+Expected answer: SELECT Id, Name FROM User WHERE LastLoginDate = YESTERDAY
+Handling model: WhereClauseModel
+Identified object: User
+Generated answer: SELECT Id, Name FROM User
+Match: ❌ (similarity: 0.56)
+Missing terms: YESTERDAY, WHERE, LastLoginDate, =
+
+Testing prompt 41/100: "Count all Accounts."
+Expected answer: SELECT COUNT() FROM Account
+Handling model: AggregationModel
+Identified object: Account
+Generated answer: SELECT COUNT(Id) FROM Account
+Match: ❌ (similarity: 0.75)
+Missing terms: COUNT()
+Extra terms: COUNT(Id)
+
+Testing prompt 42/100: "Count Accounts grouped by Industry."
+Expected answer: SELECT Industry, COUNT(Id) FROM Account GROUP BY Industry
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Industry, COUNT(Id) FROM Account GROUP BY Industry
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 43/100: "Get average AnnualRevenue grouped by Type."
+Expected answer: SELECT Type, AVG(AnnualRevenue) FROM Account GROUP BY Type
+Handling model: AggregationModel
+Identified object: Account
+Generated answer: SELECT AVG(Id) FROM Account GROUP BY Type
+Match: ❌ (similarity: 0.75)
+Missing terms: AVG(AnnualRevenue), Type,
+Extra terms: AVG(Id)
+
+Testing prompt 44/100: "Get total Opportunity Amounts grouped by Owner."
+Expected answer: SELECT OwnerId, SUM(Amount) FROM Opportunity GROUP BY OwnerId
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name, Amount FROM Opportunity
+Match: ❌ (similarity: 0.38)
+Missing terms: GROUP, OwnerId, BY, SUM(Amount), OwnerId,
+Extra terms: Amount, Id,, Name,
+
+Testing prompt 45/100: "Get max and min Opportunity Amounts grouped by CloseDate."
+Expected answer: SELECT CloseDate, MAX(Amount), MIN(Amount) FROM Opportunity GROUP BY CloseDate
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT MIN(Amount) FROM Opportunity
+Match: ❌ (similarity: 0.44)
+Missing terms: GROUP, CloseDate, BY, MAX(Amount),, CloseDate,
+
+Testing prompt 46/100: "Count Leads grouped by LeadSource."
+Expected answer: SELECT LeadSource, COUNT(Id) FROM Lead GROUP BY LeadSource
+Handling model: AggregationModel
+Identified object: Lead
+Generated answer: SELECT COUNT(Id) FROM Lead
+Match: ❌ (similarity: 0.50)
+Missing terms: GROUP, BY, LeadSource, LeadSource,
+
+Testing prompt 47/100: "Count Cases grouped by year."
+Expected answer: SELECT CALENDAR_YEAR(CreatedDate), COUNT(Id) FROM Case GROUP BY CALENDAR_YEAR(CreatedDate)
+Handling model: AggregationModel
+Identified object: Case
+Generated answer: SELECT COUNT(Id) FROM Case
+Match: ❌ (similarity: 0.50)
+Missing terms: GROUP, BY, CALENDAR_YEAR(CreatedDate),, CALENDAR_YEAR(CreatedDate)
+
+Testing prompt 48/100: "Count Accounts grouped by Industry and Type using ROLLUP."
+Expected answer: SELECT Industry, Type, COUNT(Id) FROM Account GROUP BY ROLLUP(Industry, Type)
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Industry, COUNT(Id) FROM Account GROUP BY Industry
+Match: ❌ (similarity: 0.70)
+Missing terms: Type), ROLLUP(Industry,, Type,
+Extra terms: Industry
+
+Testing prompt 49/100: "Count Opportunities using CUBE on Stage and Type."
+Expected answer: SELECT StageName, Type, COUNT(Id) FROM Opportunity GROUP BY CUBE(StageName, Type)
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT COUNT(Id) FROM Opportunity
+Match: ❌ (similarity: 0.40)
+Missing terms: Type), GROUP, StageName,, BY, Type,, CUBE(StageName,
+
+Testing prompt 50/100: "Count Opportunities grouped by AccountId."
+Expected answer: SELECT AccountId, COUNT(Id) FROM Opportunity GROUP BY AccountId
+Handling model: AggregationModel
+Identified object: Opportunity
+Generated answer: SELECT COUNT(Id) FROM Opportunity
+Match: ❌ (similarity: 0.50)
+Missing terms: GROUP, BY, AccountId, AccountId,
+
+Testing prompt 51/100: "Get top 10 most recently created Accounts."
+Expected answer: SELECT Id, Name, CreatedDate FROM Account ORDER BY CreatedDate DESC LIMIT 10
+Handling model: DateFilterModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.45)
+Missing terms: 10, Name,, DESC, LIMIT, BY, ORDER
+Extra terms: Name, WHERE, TODAY, =
+
+Testing prompt 52/100: "Get top 5 Opportunities by Amount."
+Expected answer: SELECT Id, Name, Amount FROM Opportunity ORDER BY Amount DESC LIMIT 5
+Handling model: AggregationModel
+Identified object: None
+Generated answer: SELECT Id FROM Opportunity
+Match: ❌ (similarity: 0.27)
+Missing terms: Name,, Amount, Id,, DESC, 5, LIMIT, BY, ORDER
+Extra terms: Id
+
+Testing prompt 53/100: "Get Contacts ordered by LastName ascending."
+Expected answer: SELECT Id, FirstName, LastName FROM Contact ORDER BY LastName ASC
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName FROM Contact
+Match: ❌ (similarity: 0.67)
+Missing terms: ASC, ORDER, BY
+
+Testing prompt 54/100: "Get 50 Contacts after skipping the first 50."
+Expected answer: SELECT Id, FirstName, LastName FROM Contact ORDER BY LastName ASC LIMIT 50 OFFSET 50
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName FROM Contact LIMIT 50
+Match: ❌ (similarity: 0.67)
+Missing terms: ASC, ORDER, OFFSET, BY
+
+Testing prompt 55/100: "Get Accounts ordered by AnnualRevenue with nulls last."
+Expected answer: SELECT Id, Name, AnnualRevenue FROM Account ORDER BY AnnualRevenue NULLS LAST
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT COUNT(Id) FROM Account
+Match: ❌ (similarity: 0.30)
+Missing terms: LAST, AnnualRevenue, Name,, Id,, BY, NULLS, ORDER
+Extra terms: COUNT(Id)
+
+Testing prompt 56/100: "Get closed-won Opportunities ordered by CreatedDate."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE StageName = 'Closed Won' ORDER BY CreatedDate DESC
+Handling model: AggregationModel
+Identified object: None
+Generated answer: SELECT Id FROM Opportunity
+Match: ❌ (similarity: 0.21)
+Missing terms: CreatedDate, WHERE, Name, Id,, Won', DESC, =, 'Closed, BY, ORDER, StageName
+Extra terms: Id
+
+Testing prompt 57/100: "Get top 20 High priority Cases by LastModifiedDate."
+Expected answer: SELECT Id, Subject FROM Case WHERE Priority = 'High' ORDER BY LastModifiedDate DESC LIMIT 20
+Handling model: WhereClauseModel
+Identified object: Case
+Generated answer: SELECT Id, Subject, Priority FROM Case WHERE Priority = 'High' AND LastModifiedDate = TODAY LIMIT 20
+Match: ❌ (similarity: 0.73)
+Missing terms: Subject, ORDER, DESC, BY
+Extra terms: AND, TODAY, Subject,
+
+Testing prompt 58/100: "Get User who last logged in."
+Expected answer: SELECT Id, Name, LastLoginDate FROM User ORDER BY LastLoginDate DESC LIMIT 1
+Handling model: WhereClauseModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM User
+Match: ❌ (similarity: 0.36)
+Missing terms: Name,, DESC, 1, LIMIT, BY, LastLoginDate, ORDER
+Extra terms: Name
+
+Testing prompt 59/100: "Get open Tasks ordered by DueDate."
+Expected answer: SELECT Id, Subject, ActivityDate FROM Task WHERE Status != 'Completed' ORDER BY ActivityDate ASC
+Handling model: AggregationModel
+Identified object: None
+Generated answer: SELECT Id FROM Account WHERE Name = 'No object identified'
+Match: ❌ (similarity: 0.23)
+Missing terms: Task, 'Completed', ASC, Id,, !=, Subject,, BY, Status, ORDER, ActivityDate
+Extra terms: object, 'No, Account, Name, =, Id, identified'
+
+Testing prompt 60/100: "Get Quotes ordered by ExpirationDate."
+Expected answer: SELECT Id, Name, ExpirationDate FROM Quote ORDER BY ExpirationDate DESC
+Handling model: AggregationModel
+Identified object: None
+Generated answer: SELECT Id FROM Account WHERE Name = 'No object identified'
+Match: ❌ (similarity: 0.20)
+Missing terms: Quote, Name,, Id,, DESC, BY, ExpirationDate, ORDER
+Extra terms: object, 'No, Account, WHERE, Name, =, Id, identified'
+
+Testing prompt 61/100: "Get Accounts with Opportunities where Amount > 100000."
+Expected answer: SELECT Id, Name, (SELECT Id, Name FROM Opportunities WHERE Amount > 100000) FROM Account
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE Amount > 100000
+Match: ❌ (similarity: 0.67)
+Missing terms: 100000), (SELECT, Opportunities, Name,
+Extra terms: 100000
+
+Testing prompt 62/100: "Get Accounts without any closed Cases."
+Expected answer: SELECT Id, Name FROM Account WHERE Id NOT IN (SELECT AccountId FROM Case WHERE Status = 'Closed')
+Handling model: WhereClauseModel
+Identified object: Case
+Generated answer: SELECT Id, Subject, Status FROM Case WHERE ClosedDate = TODAY
+Match: ❌ (similarity: 0.47)
+Missing terms: NOT, IN, 'Closed'), Name, AccountId, Id, Account, (SELECT
+Extra terms: ClosedDate, TODAY, Subject,
+
+Testing prompt 63/100: "Get Contacts with Cases where Priority = 'High'."
+Expected answer: SELECT Id, Name, (SELECT Id, Subject FROM Cases WHERE Priority = 'High') FROM Contact
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName FROM Contact WHERE Priority = 'High'
+Match: ❌ (similarity: 0.58)
+Missing terms: 'High'), Cases, Name,, Subject, (SELECT
+Extra terms: LastName, 'High', FirstName,
+
+Testing prompt 64/100: "Get Opportunities for Accounts in the 'Finance' industry."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE Account.Industry = 'Finance'
+Handling model: RelationshipModel
+Identified object: Account
+Generated answer: SELECT Id, Name, (SELECT Id, Name FROM Opportunities) FROM Account WHERE Industry = 'Finance'
+Match: ❌ (similarity: 0.58)
+Missing terms: Opportunity, Account.Industry
+Extra terms: Name,, Industry, Opportunities), Account, (SELECT
+
+Testing prompt 65/100: "Get Accounts where Name IN ('Acme', 'GlobalTech')."
+Expected answer: SELECT Id, Name FROM Account WHERE Name IN ('Acme', 'GlobalTech')
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE Name LIKE 'Acme%'
+Match: ❌ (similarity: 0.67)
+Missing terms: ('Acme',, IN, 'GlobalTech')
+Extra terms: 'Acme%', LIKE
+
+Testing prompt 66/100: "Get Opportunities where StageName IN ('Prospecting', 'Closed Won')."
+Expected answer: SELECT Id, Name FROM Opportunity WHERE StageName IN ('Prospecting', 'Closed Won')
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name, StageName FROM Opportunity WHERE Name IN (''prospecting'', ''closed won'') AND CloseDate = TODAY
+Match: ❌ (similarity: 0.50)
+Missing terms: 'Closed, ('Prospecting',, Won')
+Extra terms: won''), Name,, AND, ''closed, TODAY, =, CloseDate, (''prospecting'',
+
+Testing prompt 67/100: "Get Contacts where City NOT IN ('Paris', 'Berlin')."
+Expected answer: SELECT Id, FirstName, MailingCity FROM Contact WHERE MailingCity NOT IN ('Paris', 'Berlin')
+Handling model: WhereClauseModel
+Identified object: Contact
+Generated answer: SELECT Id, FirstName, LastName, MailingCity FROM Contact
+Match: ❌ (similarity: 0.55)
+Missing terms: WHERE, NOT, IN, 'Berlin'), ('Paris',
+Extra terms: LastName,
+
+Testing prompt 68/100: "Get Accounts created after variable date."
+Expected answer: SELECT Id, Name FROM Account WHERE CreatedDate > :someDateVariable
+Handling model: DateFilterModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.78)
+Missing terms: >, :someDateVariable
+Extra terms: TODAY, =
+
+Testing prompt 69/100: "Get Accounts in last 30 days without Closed-Won Opportunities."
+Expected answer: SELECT Id, Name FROM Account WHERE CreatedDate = LAST_N_DAYS:30 AND Id NOT IN (SELECT AccountId FROM Opportunity WHERE StageName = 'Closed Won')
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE CreatedDate = LAST_N_DAYS:30 AND CreatedDate = LAST_N_DAYS:30 LIMIT 30
+Match: ❌ (similarity: 0.53)
+Missing terms: NOT, IN, (SELECT, Won'), 'Closed, AccountId, StageName, Id, Opportunity
+Extra terms: LIMIT, 30
+
+Testing prompt 70/100: "Get Leads where IsConverted = true."
+Expected answer: SELECT Id, Name FROM Lead WHERE IsConverted = TRUE
+Handling model: WhereClauseModel
+Identified object: Lead
+Generated answer: SELECT Id, Name, IsConverted FROM Lead
+Match: ❌ (similarity: 0.56)
+Missing terms: Name, TRUE, WHERE, =
+Extra terms: Name,
+
+Testing prompt 71/100: "Get all Accounts with enforced sharing."
+Expected answer: SELECT Id, Name FROM Account WITH SHARING
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account
+Match: ❌ (similarity: 0.71)
+Missing terms: SHARING, WITH
+
+Testing prompt 72/100: "Get Opportunities with Owner.Name using sharing."
+Expected answer: SELECT Id, Name, Owner.Name FROM Opportunity WITH SHARING
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name FROM Opportunity
+Match: ❌ (similarity: 0.50)
+Missing terms: Owner.Name, SHARING, WITH, Name,
+Extra terms: Name
+
+Testing prompt 73/100: "Get deleted Contacts using ALL ROWS."
+Expected answer: SELECT Id, FirstName, IsDeleted FROM Contact WHERE IsDeleted = TRUE ALL ROWS
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM Contact WHERE IsDeleted = TRUE ALL ROWS
+Match: ❌ (similarity: 0.91)
+Missing terms: FirstName,
+Extra terms: Name
+
+Testing prompt 74/100: "Get converted Leads using ALL ROWS."
+Expected answer: SELECT Id, Name FROM Lead WHERE IsConverted = TRUE ALL ROWS
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM Lead WHERE IsConverted = TRUE ALL ROWS
+Match: ✅ (similarity: 1.00)
+
+Testing prompt 75/100: "Get Account where Id = specific ID."
+Expected answer: SELECT Id, Name FROM Account WHERE Id = '001XXXXXXXXXXXX'
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account
+Match: ❌ (similarity: 0.56)
+Missing terms: WHERE, '001XXXXXXXXXXXX', Id, =
+
+Testing prompt 76/100: "Get Users where UserRole.Name is 'Sales Manager'."
+Expected answer: SELECT Id, Name FROM User WHERE UserRole.Name = 'Sales Manager'
+Handling model: WhereClauseModel
+Identified object: User
+Generated answer: SELECT Id, Name FROM User WHERE Name = 'sales manager'
+Match: ❌ (similarity: 0.70)
+Missing terms: Manager', 'Sales, UserRole.Name
+Extra terms: 'sales, manager'
+
+Testing prompt 77/100: "Get Accounts where Owner.Profile.Name is 'Partner Community User'."
+Expected answer: SELECT Id, Name FROM Account WHERE Owner.Profile.Name = 'Partner Community User'
+Handling model: WhereClauseModel
+Identified object: User
+Generated answer: SELECT Id, Name, Profile.Name FROM User WHERE Name = 'partner community user'
+Match: ❌ (similarity: 0.50)
+Missing terms: 'Partner, User', Owner.Profile.Name, Community, Account
+Extra terms: 'partner, Name,, User, user', Profile.Name, community
+
+Testing prompt 78/100: "Get Opportunities where TeamMemberRole = 'Sales Rep'."
+Expected answer: SELECT OpportunityId FROM OpportunityTeamMember WHERE TeamMemberRole = 'Sales Rep'
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name FROM Opportunity
+Match: ❌ (similarity: 0.22)
+Missing terms: OpportunityId, WHERE, Rep', 'Sales, =, OpportunityTeamMember, TeamMemberRole
+Extra terms: Name, Id,, Opportunity
+
+Testing prompt 79/100: "Get Contacts for Accounts owned by System Admin."
+Expected answer: SELECT Id, FirstName, LastName FROM Contact WHERE Account.Owner.Profile.Name = 'System Administrator'
+Handling model: RelationshipModel
+Identified object: None
+Generated answer: SELECT COUNT(Id) FROM Account
+Match: ❌ (similarity: 0.18)
+Missing terms: LastName, Account.Owner.Profile.Name, WHERE, 'System, Id,, Administrator', Contact, =, FirstName,
+Extra terms: COUNT(Id), Account
+
+Testing prompt 80/100: "Count Cases for users in Partner profile."
+Expected answer: SELECT COUNT(Id) FROM Case WHERE CreatedBy.Profile.Name = 'Partner Community User'
+Handling model: RelationshipModel
+Identified object: None
+Generated answer: SELECT COUNT(Id) FROM User
+Match: ❌ (similarity: 0.30)
+Missing terms: WHERE, 'Partner, =, Case, CreatedBy.Profile.Name, User', Community
+Extra terms: User
+
+Testing prompt 81/100: "Build dynamic SOQL to get Account Names."
+Expected answer: String query = 'SELECT Name FROM Account'
+Handling model: BasicQueryModel
+Identified object: Account
+Generated answer: SELECT Id, Name, Type, Industry, Phone, Website FROM Account
+Match: ❌ (similarity: 0.11)
+Missing terms: Name, =, String, Account', query, 'SELECT
+Extra terms: SELECT, Name,, Id,, Phone,, Website, Industry,, Type,, Account
+
+Testing prompt 82/100: "Build SOQL using Apex variable for country."
+Expected answer: String query = 'SELECT Id, Name FROM Contact WHERE MailingCountry = :selectedCountry'
+Handling model: RelationshipModel
+Identified object: None
+Generated answer: SELECT Id FROM Account WHERE Name = 'No object identified'
+Match: ❌ (similarity: 0.36)
+Missing terms: Id,, Contact, :selectedCountry', String, query, 'SELECT, MailingCountry
+Extra terms: object, 'No, Account, SELECT, Id, identified'
+
+Testing prompt 83/100: "Use a limit variable in SOQL query on Accounts."
+Expected answer: String query = 'SELECT Id, Name FROM Account LIMIT :limitSize'
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account
+Match: ❌ (similarity: 0.40)
+Missing terms: :limitSize', =, LIMIT, String, query, 'SELECT
+Extra terms: SELECT
+
+Testing prompt 84/100: "Use name prefix variable in Account name filter."
+Expected answer: String query = 'SELECT Id, Name FROM Account WHERE Name LIKE :prefix + '%''
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account
+Match: ❌ (similarity: 0.31)
+Missing terms: WHERE, 'SELECT, '%'', :prefix, =, String, query, +, LIKE
+Extra terms: SELECT
+
+Testing prompt 85/100: "Use from/to date variables to filter Accounts."
+Expected answer: String query = 'SELECT Id, Name FROM Account WHERE CreatedDate >= :startDate AND CreatedDate <= :endDate'
+Handling model: DateFilterModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.47)
+Missing terms: AND, <=, >=, String, :endDate', query, :startDate, 'SELECT
+Extra terms: SELECT, TODAY
+
+Testing prompt 86/100: "Filter Accounts with CreatedDate = TODAY."
+Expected answer: String query = 'SELECT Id, Name FROM Account WHERE CreatedDate = TODAY'
+Handling model: WhereClauseModel
+Identified object: Account
+Generated answer: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY AND CreatedDate = TODAY
+Match: ❌ (similarity: 0.64)
+Missing terms: query, String, TODAY', 'SELECT
+Extra terms: AND, SELECT, TODAY
+
+Testing prompt 87/100: "Query User record using variable user name."
+Expected answer: String query = 'SELECT Id, Name FROM User WHERE Name = :userName'
+Handling model: WhereClauseModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM Account
+Match: ❌ (similarity: 0.30)
+Missing terms: :userName', WHERE, User, =, String, query, 'SELECT
+Extra terms: SELECT, Account
+
+Testing prompt 88/100: "Get Opportunities with Amount > X and CloseDate < Y."
+Expected answer: String query = 'SELECT Id, Name FROM Opportunity WHERE Amount > :minAmount AND CloseDate < :closeDate'
+Handling model: WhereClauseModel
+Identified object: Opportunity
+Generated answer: SELECT Id, Name, StageName FROM Opportunity WHERE CloseDate = TODAY
+Match: ❌ (similarity: 0.38)
+Missing terms: <, :closeDate', Name, Amount, AND, String, :minAmount, >, query, 'SELECT
+Extra terms: StageName, SELECT, TODAY, Name,
+
+Testing prompt 89/100: "Search Cases where Subject includes dynamic keyword."
+Expected answer: String query = 'SELECT Id, Subject FROM Case WHERE Subject LIKE '%' + keyword + '%'
+Handling model: WhereClauseModel
+Identified object: Case
+Generated answer: SELECT Id, Subject FROM Case
+Match: ❌ (similarity: 0.31)
+Missing terms: WHERE, 'SELECT, '%', =, String, query, keyword, +, LIKE
+Extra terms: SELECT
+
+Testing prompt 90/100: "Use dynamic object name in SOQL string."
+Expected answer: String query = 'SELECT Id FROM ' + objectName
+Handling model: WhereClauseModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM Account
+Match: ❌ (similarity: 0.11)
+Missing terms: 'SELECT, objectName, =, String, query, Id, +, '
+Extra terms: Name, Id,, SELECT, Account
+
+Testing prompt 91/100: "Get Accounts using FOR VIEW."
+Expected answer: SELECT Id, Name FROM Account FOR VIEW
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name, (SELECT Id, Name FROM Opportunities) FROM Account
+Match: ❌ (similarity: 0.62)
+Missing terms: FOR, VIEW
+Extra terms: (SELECT, Opportunities), Name,
+
+Testing prompt 92/100: "Get Contacts using FOR REFERENCE."
+Expected answer: SELECT Id, Name FROM Contact FOR REFERENCE
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name, (SELECT Id, Name FROM Opportunities) FROM Account
+Match: ❌ (similarity: 0.50)
+Missing terms: FOR, REFERENCE, Contact
+Extra terms: Account, (SELECT, Opportunities), Name,
+
+Testing prompt 93/100: "Get Account Names FOR VIEW."
+Expected answer: SELECT Name FROM Account FOR VIEW
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM Account FOR VIEW
+Match: ❌ (similarity: 0.86)
+Extra terms: Id,
+
+Testing prompt 94/100: "Get Contact Names FOR REFERENCE."
+Expected answer: SELECT FirstName, LastName FROM Contact FOR REFERENCE
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM Contact FOR REFERENCE
+Match: ❌ (similarity: 0.71)
+Missing terms: LastName, FirstName,
+Extra terms: Name, Id,
+
+Testing prompt 95/100: "Get Opportunities ordered by Date FOR VIEW."
+Expected answer: SELECT Id, Name FROM Opportunity ORDER BY CloseDate DESC FOR VIEW
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM Account FOR VIEW
+Match: ❌ (similarity: 0.55)
+Missing terms: DESC, CloseDate, BY, ORDER, Opportunity
+Extra terms: Account
+
+Testing prompt 96/100: "Get Account by ID using FOR VIEW."
+Expected answer: SELECT Id, Name FROM Account WHERE Id = '001XXXXXXXXXXXX' FOR VIEW
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT COUNT(Id) FROM Account
+Match: ❌ (similarity: 0.27)
+Missing terms: WHERE, VIEW, Name, Id,, FOR, '001XXXXXXXXXXXX', =, Id
+Extra terms: COUNT(Id)
+
+Testing prompt 97/100: "Lock Contact records using FOR UPDATE."
+Expected answer: SELECT Id, FirstName FROM Contact WHERE MailingCity = 'New York' FOR UPDATE
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, FirstName, LastName FROM Contact WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.50)
+Missing terms: MailingCity, FOR, UPDATE, York', FirstName, 'New
+Extra terms: LastName, CreatedDate, TODAY, FirstName,
+
+Testing prompt 98/100: "Lock Prospects in Qualification using FOR UPDATE."
+Expected answer: SELECT Id, Name FROM Lead WHERE Status = 'Qualification' FOR UPDATE
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name FROM Prospect WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.55)
+Missing terms: FOR, UPDATE, 'Qualification', Status, Lead
+Extra terms: CreatedDate, Prospect, TODAY
+
+Testing prompt 99/100: "Lock Account records using FOR UPDATE."
+Expected answer: SELECT Id, Name FROM Account WHERE Industry = 'Technology' FOR UPDATE
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Name, CreatedDate FROM Account WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.55)
+Missing terms: Name, FOR, 'Technology', UPDATE, Industry
+Extra terms: CreatedDate, TODAY, Name,
+
+Testing prompt 100/100: "Lock new Case records using FOR UPDATE."
+Expected answer: SELECT Id, Subject FROM Case WHERE CreatedDate = TODAY FOR UPDATE
+Handling model: AdvancedFeaturesModel
+Identified object: None
+Generated answer: SELECT Id, Subject FROM Case WHERE CreatedDate = TODAY
+Match: ❌ (similarity: 0.82)
+Missing terms: FOR, UPDATE
+
+=== SUMMARY ===
+Total prompts tested: 100
+Exact matches: 12 (12.0%)
+Errors: 0 (0.0%)
+Average similarity for non-matching queries: 0.59
+
+Similarity distribution:
+  0.9-1.0: 21 (21.0%)
+  0.8-0.9: 13 (13.0%)
+  0.7-0.8: 11 (11.0%)
+  0.6-0.7: 9 (9.0%)
+  0.5-0.6: 21 (21.0%)
+  0.0-0.5: 25 (25.0%)
+
+Results by model:
+  BasicQueryModel: 1/3 matches (33.3%)
+  WhereClauseModel: 3/58 matches (5.2%)
+  RelationshipModel: 6/13 matches (46.2%)
+  DateFilterModel: 1/5 matches (20.0%)
+  AggregationModel: 0/9 matches (0.0%)
+  AdvancedFeaturesModel: 1/12 matches (8.3%)
+
+Object identification results:
+  Account: 4/28 matches (14.3%)
+  None: 1/22 matches (4.5%)
+  Opportunity: 1/16 matches (6.2%)
+  Contact: 3/11 matches (27.3%)
+  Case: 2/10 matches (20.0%)
+  Lead: 0/7 matches (0.0%)
+  User: 0/5 matches (0.0%)
+  Quote: 1/1 matches (100.0%)
+
+Details of a few specific prompts:
+
+Basic Query: "Get all Account IDs and Names."
+Model: BasicQueryModel
+Identified object: Account
+Expected: SELECT Id, Name FROM Account
+Generated: SELECT Id, Name, Type, Industry, Phone, Website FROM Account
+Match: ❌ (similarity: 0.44)
+Missing terms: Name
+Extra terms: Name,, Phone,, Website, Industry,, Type,
+
+Relationship Query: "Get Accounts with their related Contacts."
+Model: RelationshipModel
+Identified object: Account
+Expected: SELECT Id, Name, (SELECT Id, FirstName, LastName FROM Contacts) FROM Account
+Generated: SELECT Id, Name, (SELECT Id, FirstName, LastName FROM Contacts) FROM Account
+Match: ✅ (similarity: 1.00)
+
+Aggregation Query: "Count all Accounts."
+Model: AggregationModel
+Identified object: Account
+Expected: SELECT COUNT() FROM Account
+Generated: SELECT COUNT(Id) FROM Account
+Match: ❌ (similarity: 0.75)
+Missing terms: COUNT()
+Extra terms: COUNT(Id)
+
+Date Filter Query: "Get Accounts created today."
+Model: WhereClauseModel
+Identified object: Account
+Expected: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY
+Generated: SELECT Id, Name FROM Account WHERE CreatedDate = TODAY AND CreatedDate = TODAY
+Match: ❌ (similarity: 0.90)
+Extra terms: AND
+
+Advanced Features Query: "Get Accounts using FOR VIEW."
+Model: AdvancedFeaturesModel
+Identified object: None
+Expected: SELECT Id, Name FROM Account FOR VIEW
+Generated: SELECT Id, Name, (SELECT Id, Name FROM Opportunities) FROM Account
+Match: ❌ (similarity: 0.62)
+Missing terms: FOR, VIEW
+Extra terms: (SELECT, Opportunities), Name,
+
+Sorting Query: "Get Contacts ordered by LastName ascending."
+Model: WhereClauseModel
+Identified object: Contact
+Expected: SELECT Id, FirstName, LastName FROM Contact ORDER BY LastName ASC
+Generated: SELECT Id, FirstName, LastName FROM Contact
+Match: ❌ (similarity: 0.67)
+Missing terms: ASC, ORDER, BY

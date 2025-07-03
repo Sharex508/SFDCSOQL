@@ -4,22 +4,134 @@
     {
       "name": "Id",
       "type": "id",
-      "label": "Contact ID"
+      "label": "Id"
     },
     {
-      "name": "FirstName",
-      "type": "string",
-      "label": "First Name"
+      "name": "IsDeleted",
+      "type": "boolean",
+      "label": "IsDeleted"
+    },
+    {
+      "name": "MasterRecordId",
+      "type": "reference",
+      "label": "MasterRecordId",
+      "referenceTo": "Contact"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "AccountId",
+      "referenceTo": "Account"
     },
     {
       "name": "LastName",
       "type": "string",
-      "label": "Last Name"
+      "label": "LastName"
     },
     {
-      "name": "Email",
-      "type": "email",
-      "label": "Email"
+      "name": "FirstName",
+      "type": "string",
+      "label": "FirstName"
+    },
+    {
+      "name": "Salutation",
+      "type": "picklist",
+      "label": "Salutation"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Name"
+    },
+    {
+      "name": "OtherStreet",
+      "type": "textarea",
+      "label": "OtherStreet"
+    },
+    {
+      "name": "OtherCity",
+      "type": "string",
+      "label": "OtherCity"
+    },
+    {
+      "name": "OtherState",
+      "type": "string",
+      "label": "OtherState"
+    },
+    {
+      "name": "OtherPostalCode",
+      "type": "string",
+      "label": "OtherPostalCode"
+    },
+    {
+      "name": "OtherCountry",
+      "type": "string",
+      "label": "OtherCountry"
+    },
+    {
+      "name": "OtherLatitude",
+      "type": "double",
+      "label": "OtherLatitude"
+    },
+    {
+      "name": "OtherLongitude",
+      "type": "double",
+      "label": "OtherLongitude"
+    },
+    {
+      "name": "OtherGeocodeAccuracy",
+      "type": "picklist",
+      "label": "OtherGeocodeAccuracy"
+    },
+    {
+      "name": "OtherAddress",
+      "type": "address",
+      "label": "OtherAddress"
+    },
+    {
+      "name": "MailingStreet",
+      "type": "textarea",
+      "label": "MailingStreet"
+    },
+    {
+      "name": "MailingCity",
+      "type": "string",
+      "label": "MailingCity"
+    },
+    {
+      "name": "MailingState",
+      "type": "string",
+      "label": "MailingState"
+    },
+    {
+      "name": "MailingPostalCode",
+      "type": "string",
+      "label": "MailingPostalCode"
+    },
+    {
+      "name": "MailingCountry",
+      "type": "string",
+      "label": "MailingCountry"
+    },
+    {
+      "name": "MailingLatitude",
+      "type": "double",
+      "label": "MailingLatitude"
+    },
+    {
+      "name": "MailingLongitude",
+      "type": "double",
+      "label": "MailingLongitude"
+    },
+    {
+      "name": "MailingGeocodeAccuracy",
+      "type": "picklist",
+      "label": "MailingGeocodeAccuracy"
+    },
+    {
+      "name": "MailingAddress",
+      "type": "address",
+      "label": "MailingAddress"
     },
     {
       "name": "Phone",
@@ -27,22 +139,427 @@
       "label": "Phone"
     },
     {
+      "name": "Fax",
+      "type": "phone",
+      "label": "Fax"
+    },
+    {
+      "name": "MobilePhone",
+      "type": "phone",
+      "label": "MobilePhone"
+    },
+    {
+      "name": "HomePhone",
+      "type": "phone",
+      "label": "HomePhone"
+    },
+    {
+      "name": "OtherPhone",
+      "type": "phone",
+      "label": "OtherPhone"
+    },
+    {
+      "name": "AssistantPhone",
+      "type": "phone",
+      "label": "AssistantPhone"
+    },
+    {
+      "name": "ReportsToId",
+      "type": "reference",
+      "label": "ReportsToId",
+      "referenceTo": "Contact"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "label": "Email"
+    },
+    {
       "name": "Title",
       "type": "string",
       "label": "Title"
     },
     {
-      "name": "AccountId",
+      "name": "Department",
+      "type": "string",
+      "label": "Department"
+    },
+    {
+      "name": "AssistantName",
+      "type": "string",
+      "label": "AssistantName"
+    },
+    {
+      "name": "LeadSource",
+      "type": "picklist",
+      "label": "LeadSource"
+    },
+    {
+      "name": "Birthdate",
+      "type": "date",
+      "label": "Birthdate"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "label": "Description"
+    },
+    {
+      "name": "OwnerId",
       "type": "reference",
-      "label": "Account ID"
+      "label": "OwnerId",
+      "referenceTo": "User"
+    },
+    {
+      "name": "CreatedDate",
+      "type": "datetime",
+      "label": "CreatedDate"
+    },
+    {
+      "name": "CreatedById",
+      "type": "reference",
+      "label": "CreatedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "LastModifiedDate",
+      "type": "datetime",
+      "label": "LastModifiedDate"
+    },
+    {
+      "name": "LastModifiedById",
+      "type": "reference",
+      "label": "LastModifiedById",
+      "referenceTo": "User"
+    },
+    {
+      "name": "SystemModstamp",
+      "type": "datetime",
+      "label": "SystemModstamp"
+    },
+    {
+      "name": "LastActivityDate",
+      "type": "date",
+      "label": "LastActivityDate"
+    },
+    {
+      "name": "LastCURequestDate",
+      "type": "datetime",
+      "label": "LastCURequestDate"
+    },
+    {
+      "name": "LastCUUpdateDate",
+      "type": "datetime",
+      "label": "LastCUUpdateDate"
+    },
+    {
+      "name": "LastViewedDate",
+      "type": "datetime",
+      "label": "LastViewedDate"
+    },
+    {
+      "name": "LastReferencedDate",
+      "type": "datetime",
+      "label": "LastReferencedDate"
+    },
+    {
+      "name": "EmailBouncedReason",
+      "type": "string",
+      "label": "EmailBouncedReason"
+    },
+    {
+      "name": "EmailBouncedDate",
+      "type": "datetime",
+      "label": "EmailBouncedDate"
+    },
+    {
+      "name": "IsEmailBounced",
+      "type": "boolean",
+      "label": "IsEmailBounced"
+    },
+    {
+      "name": "PhotoUrl",
+      "type": "url",
+      "label": "PhotoUrl"
+    },
+    {
+      "name": "Jigsaw",
+      "type": "string",
+      "label": "Jigsaw"
+    },
+    {
+      "name": "JigsawContactId",
+      "type": "string",
+      "label": "JigsawContactId"
+    },
+    {
+      "name": "CleanStatus",
+      "type": "picklist",
+      "label": "CleanStatus"
+    },
+    {
+      "name": "IndividualId",
+      "type": "reference",
+      "label": "IndividualId",
+      "referenceTo": "Individual"
+    },
+    {
+      "name": "Level__c",
+      "type": "picklist",
+      "label": "Level__c"
+    },
+    {
+      "name": "Languages__c",
+      "type": "string",
+      "label": "Languages__c"
+    },
+    {
+      "name": "HarshaAccount__c",
+      "type": "reference",
+      "label": "HarshaAccount__c",
+      "referenceTo": "Account"
     }
   ],
   "relationships": [
+    {
+      "name": "Contact",
+      "type": "parent",
+      "parentObject": "Contact",
+      "field": "MasterRecordId"
+    },
     {
       "name": "Account",
       "type": "parent",
       "parentObject": "Account",
       "field": "AccountId"
+    },
+    {
+      "name": "Contact",
+      "type": "parent",
+      "parentObject": "Contact",
+      "field": "ReportsToId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "OwnerId"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "CreatedById"
+    },
+    {
+      "name": "User",
+      "type": "parent",
+      "parentObject": "User",
+      "field": "LastModifiedById"
+    },
+    {
+      "name": "Individual",
+      "type": "parent",
+      "parentObject": "Individual",
+      "field": "IndividualId"
+    },
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "HarshaAccount__c"
+    },
+    {
+      "name": "AccountContactRoles",
+      "type": "child",
+      "childObject": "AccountContactRole",
+      "field": "ContactId"
+    },
+    {
+      "name": "Assets",
+      "type": "child",
+      "childObject": "Asset",
+      "field": "ContactId"
+    },
+    {
+      "name": "CampaignMembers",
+      "type": "child",
+      "childObject": "CampaignMember",
+      "field": "ContactId"
+    },
+    {
+      "name": "Cases",
+      "type": "child",
+      "childObject": "Case",
+      "field": "ContactId"
+    },
+    {
+      "name": "CaseContactRoles",
+      "type": "child",
+      "childObject": "CaseContactRole",
+      "field": "ContactId"
+    },
+    {
+      "name": "Contacts",
+      "type": "child",
+      "childObject": "Contact",
+      "field": "MasterRecordId"
+    },
+    {
+      "name": "Contacts",
+      "type": "child",
+      "childObject": "Contact",
+      "field": "ReportsToId"
+    },
+    {
+      "name": "ContactCleanInfos",
+      "type": "child",
+      "childObject": "ContactCleanInfo",
+      "field": "ContactId"
+    },
+    {
+      "name": "ContactFeeds",
+      "type": "child",
+      "childObject": "ContactFeed",
+      "field": "ParentId"
+    },
+    {
+      "name": "ContactHistories",
+      "type": "child",
+      "childObject": "ContactHistory",
+      "field": "ContactId"
+    },
+    {
+      "name": "ContactShares",
+      "type": "child",
+      "childObject": "ContactShare",
+      "field": "ContactId"
+    },
+    {
+      "name": "Contracts",
+      "type": "child",
+      "childObject": "Contract",
+      "field": "CustomerSignedId"
+    },
+    {
+      "name": "ContractContactRoles",
+      "type": "child",
+      "childObject": "ContractContactRole",
+      "field": "ContactId"
+    },
+    {
+      "name": "CreditMemos",
+      "type": "child",
+      "childObject": "CreditMemo",
+      "field": "BillToContactId"
+    },
+    {
+      "name": "EntitlementContacts",
+      "type": "child",
+      "childObject": "EntitlementContact",
+      "field": "ContactId"
+    },
+    {
+      "name": "FulfillmentOrders",
+      "type": "child",
+      "childObject": "FulfillmentOrder",
+      "field": "BillToContactId"
+    },
+    {
+      "name": "Invoices",
+      "type": "child",
+      "childObject": "Invoice",
+      "field": "BillToContactId"
+    },
+    {
+      "name": "Leads",
+      "type": "child",
+      "childObject": "Lead",
+      "field": "ConvertedContactId"
+    },
+    {
+      "name": "MatchingInformations",
+      "type": "child",
+      "childObject": "MatchingInformation",
+      "field": "SFDCIdId"
+    },
+    {
+      "name": "MessagingEndUsers",
+      "type": "child",
+      "childObject": "MessagingEndUser",
+      "field": "ContactId"
+    },
+    {
+      "name": "MessagingSessions",
+      "type": "child",
+      "childObject": "MessagingSession",
+      "field": "EndUserContactId"
+    },
+    {
+      "name": "Opportunities",
+      "type": "child",
+      "childObject": "Opportunity",
+      "field": "ContactId"
+    },
+    {
+      "name": "OpportunityContactRoles",
+      "type": "child",
+      "childObject": "OpportunityContactRole",
+      "field": "ContactId"
+    },
+    {
+      "name": "Orders",
+      "type": "child",
+      "childObject": "Order",
+      "field": "CustomerAuthorizedById"
+    },
+    {
+      "name": "Orders",
+      "type": "child",
+      "childObject": "Order",
+      "field": "BillToContactId"
+    },
+    {
+      "name": "Orders",
+      "type": "child",
+      "childObject": "Order",
+      "field": "ShipToContactId"
+    },
+    {
+      "name": "PendingOrderSummaries",
+      "type": "child",
+      "childObject": "PendingOrderSummary",
+      "field": "BillToContactId"
+    },
+    {
+      "name": "ReturnOrders",
+      "type": "child",
+      "childObject": "ReturnOrder",
+      "field": "ContactId"
+    },
+    {
+      "name": "ServiceAppointments",
+      "type": "child",
+      "childObject": "ServiceAppointment",
+      "field": "ContactId"
+    },
+    {
+      "name": "ServiceContracts",
+      "type": "child",
+      "childObject": "ServiceContract",
+      "field": "ContactId"
+    },
+    {
+      "name": "Users",
+      "type": "child",
+      "childObject": "User",
+      "field": "ContactId"
+    },
+    {
+      "name": "WorkOrders",
+      "type": "child",
+      "childObject": "WorkOrder",
+      "field": "ContactId"
     }
   ]
 }

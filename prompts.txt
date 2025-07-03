@@ -1,0 +1,429 @@
+Basic Queries (1–10)
+“Show me the ID and name of all accounts.”
+
+“List the IDs, first names, and last names of all contacts.”
+
+“Get open opportunities with their ID, name, and creation date.”
+
+“Retrieve IDs of leads with status ‘Open – Not Contacted’.”
+
+“Show me high‑priority cases (ID and subject).”
+
+“List tech‑industry accounts with their ID, name, and type.”
+
+“Count how many contacts have mailing country USA.”
+
+“Show the names of all active users.”
+
+“Get email addresses of leads created in the past 30 days.”
+
+“List names of opportunities closing in the next three months.”
+
+🌐 Multi‑Object Joins (11–20)
+“For each account, show its account name and list its contacts.”
+
+“List contacts with their account’s name.”
+
+“Show cases with their ID, subject, and related account name.”
+
+“List Finance‑industry accounts with IDs and their opportunity IDs.”
+
+“Show accounts with their IDs, names, and owner’s name.”
+
+“List contacts with their ID, name, and who created them.”
+
+“For each opportunity, list completed tasks under it.”
+
+“Show each case with its comments.”
+
+“For each quote, list its quote line items.”
+
+“Show accounts with their IDs, names, and associated orders.”
+
+🔍 WHERE Clauses & Filters (21–30)
+“Find accounts whose name starts with ‘Acme’.”
+
+“Get contacts in California, New York, or Texas.”
+
+“List leads with annual revenue over one million.”
+
+“Show opportunities where the amount is $50,000 or less.”
+
+“Find cases that are not closed.”
+
+“Get accounts created after January 1, 2025 UTC.”
+
+“Show contacts in Mumbai or Delhi.”
+
+“Retrieve opportunities in Prospecting or Qualification stages.”
+
+“List users whose profile is System Administrator.”
+
+“Show leads that aren’t converted.”
+
+⏳ Date Literals & Range Filters (31–40)
+“Show accounts created today.”
+
+“Get cases last modified yesterday.”
+
+“List contacts created this week.”
+
+“Retrieve opportunities closing this quarter.”
+
+“Show leads created in the last 7 days.”
+
+“List opportunities closing in the next 14 days.”
+
+“Get accounts created in the last 3 months.”
+
+“Find cases created before last year.”
+
+“List opportunities created in the past year.”
+
+“Show users who last logged in one day ago.”
+
+🧮 Aggregation & GROUP BY (41–50)
+“Count total number of accounts.”
+
+“Count accounts by industry.”
+
+“Show average annual revenue per account type.”
+
+“Sum opportunity amounts by owner.”
+
+“For each close date, find max and min opportunity amount.”
+
+“Count distinct countries for each lead source.”
+
+“Count cases created each calendar year.”
+
+“Use ROLLUP to count accounts by industry and type.”
+
+“Use CUBE on opportunity stage and type to count records.”
+
+“For each account, count its opportunities.”
+
+⚙️ ORDER BY, LIMIT, OFFSET (51–60)
+“Show 10 most recent accounts by creation date.”
+
+“List top 5 opportunities by highest amount.”
+
+“Retrieve contacts ordered by last name, ascending.”
+
+“Get contacts 51–150 by creation date desc (limit 100 offset 50).”
+
+“Show accounts ordered by revenue, with nulls last.”
+
+“List closed‑won opportunities ordered by creation date.”
+
+“Get top 20 high‑priority cases by last modified date.”
+
+“Find the user who most recently logged in.”
+
+“List open tasks by nearest due date, ascending.”
+
+“Show quotes ordered by soonest expiration date.”
+
+📁 Subqueries & Semi‑Joins (61–70)
+“Show accounts that have opportunities over $100k.”
+
+“Find accounts without any closed cases.”
+
+“List contacts that have high‑priority cases.”
+
+“Show opportunities for finance‑industry accounts.”
+
+“List accounts whose names match a given list.”
+
+“Get opportunities with stage names in a given set.”
+
+“List contacts not in Paris or Berlin.”
+
+“Find accounts created after a date variable.”
+
+“Accounts created in last 30 days that don’t have closed‑won opportunities.”
+
+“Show leads that have been converted.”
+
+🔐 Security & Sharing Context (71–80)
+“With sharing enforcement, list all account IDs and names.”
+
+“Enforce security and list opportunities IDs and names.”
+
+“Show deleted contacts (ALL ROWS).”
+
+“Get converted leads including deleted ones (ALL ROWS).”
+
+“Get account by a specific record ID.”
+
+“List users whose role is Sales Manager.”
+
+“Show accounts where owner’s profile is Partner Community User.”
+
+“Find opportunities with team member role ‘Sales Rep’.”
+
+“List contacts for accounts owned by admins.”
+
+“Count cases owned by partner‑type profiles.”
+
+🔄 Dynamic SOQL & Variables (81–90)
+“Run a dynamic SOQL query from a string variable.”
+
+(Example in Apex): build and query accounts by country variable.
+
+“Query accounts with a record‑limit from a variable.”
+
+“Query accounts with a name prefix stored in a variable.”
+
+“Run accounts created within two date‑range variables.”
+
+“Find recent accounts using Date.today() in SOQL.”
+
+“Get current user’s record by user‑name variable.”
+
+“Find opportunities above a certain amount before a date variable.”
+
+“Search cases where subject includes a keyword variable.”
+
+“Build a SOQL string housing an object name in a variable.”
+
+🧩 Advanced Features (91–100)
+“Run account query FOR VIEW.”
+
+“Query contacts FOR REFERENCE.”
+
+“List accounts names FOR VIEW.”
+
+“Show contacts names FOR REFERENCE.”
+
+“Query sorted opportunities FOR VIEW.”
+
+“Find a limited row FOR VIEW by ID list.”
+
+“Lock a contact record FOR UPDATE in SOQL.”
+
+“Lock prospects FOR UPDATE in a certain stage.”
+
+“Explicitly lock account records FOR UPDATE.”
+
+“Fetch new cases FOR UPDATE.”
+
+
+Answers
+
+📄 1–10: Basic Queries
+SELECT Id, Name FROM Account
+
+SELECT Id, FirstName, LastName FROM Contact
+
+SELECT Id, Name, CreatedDate FROM Opportunity WHERE IsClosed = FALSE
+
+SELECT Id FROM Lead WHERE Status = 'Open - Not Contacted'
+
+SELECT Id, Subject FROM Case WHERE Priority = 'High'
+
+SELECT Id, Name, Type FROM Account WHERE Industry = 'Technology'
+
+SELECT Count() FROM Contact WHERE MailingCountry = 'USA'
+
+SELECT Name FROM User WHERE IsActive = TRUE
+
+SELECT Email FROM Lead WHERE CreatedDate = LAST_N_DAYS:30
+
+SELECT Name FROM Opportunity WHERE CloseDate = NEXT_N_MONTHS:3
+
+🌐 11–20: Multi‑Object Joins
+SELECT Id, Name, (SELECT Id, Name FROM Contacts) FROM Account
+
+SELECT Id, Name, Account.Name FROM Contact
+
+SELECT Id, Subject, Case.Account.Name FROM Case
+
+SELECT Id, Name, (SELECT Id FROM Opportunities) FROM Account WHERE Industry = 'Finance'
+
+SELECT Id, Name, Owner.Name FROM Account
+
+SELECT Id, Name, CreatedBy.Name FROM Contact
+
+SELECT Id, Name, (SELECT Id, Name FROM Tasks WHERE Status = 'Completed') FROM Opportunity
+
+SELECT Id, Name, (SELECT Id, CommentBody FROM CaseComments) FROM Case
+
+SELECT Id, Name, (SELECT Id, Quantity, UnitPrice FROM QuoteLineItems) FROM Quote
+
+SELECT Id, Name, (SELECT Id, Name FROM Orders) FROM Account
+
+🔍 21–30: WHERE Clauses & Filters
+SELECT Id, Name FROM Account WHERE Name LIKE 'Acme%'
+
+SELECT Id FROM Contact WHERE MailingState IN ('CA','NY','TX')
+
+SELECT Id, Name FROM Lead WHERE AnnualRevenue > 1000000
+
+SELECT Id FROM Opportunity WHERE Amount <= 50000
+
+SELECT Id FROM Case WHERE Status != 'Closed'
+
+SELECT Id FROM Account WHERE CreatedDate > 2025-01-01T00:00:00Z
+
+SELECT Id FROM Contact WHERE (MailingCity = 'Mumbai' OR MailingCity = 'Delhi')
+
+SELECT Id FROM Opportunity WHERE StageName IN ('Prospecting','Qualification')
+
+SELECT Id, Name FROM User WHERE Profile.Name = 'System Administrator'
+
+SELECT Id FROM Lead WHERE IsConverted = FALSE
+
+⏳ 31–40: Date Literals & Range Filters
+SELECT Id FROM Account WHERE CreatedDate = TODAY
+
+SELECT Id FROM Case WHERE LastModifiedDate = YESTERDAY
+
+SELECT Id FROM Contact WHERE CreatedDate = THIS_WEEK
+
+SELECT Id FROM Opportunity WHERE CloseDate = THIS_QUARTER
+
+SELECT Id FROM Lead WHERE CreatedDate = LAST_N_DAYS:7
+
+SELECT Id FROM Opportunity WHERE CloseDate = NEXT_N_DAYS:14
+
+SELECT Id FROM Account WHERE CreatedDate >= LAST_N_MONTHS:3
+
+SELECT Id FROM Case WHERE CreatedDate <= LAST_YEAR
+
+SELECT Id FROM Opportunity WHERE CreatedDate >= LAST_N_YEARS:1
+
+SELECT Id FROM User WHERE LastLoginDate = N_DAYS_AGO(1)
+
+🧮 41–50: Aggregation & Group By
+SELECT Count(Id) FROM Account
+
+SELECT Industry, Count(Id) FROM Account GROUP BY Industry
+
+SELECT Type, AVG(AnnualRevenue) FROM Account GROUP BY Type
+
+SELECT OwnerId, SUM(Amount) FROM Opportunity GROUP BY OwnerId
+
+SELECT CloseDate, MAX(Amount), MIN(Amount) FROM Opportunity GROUP BY CloseDate
+
+SELECT LeadSource, COUNT_DISTINCT(Country) FROM Lead GROUP BY LeadSource
+
+SELECT Calendar_Year(CreatedDate), COUNT(Id) FROM Case GROUP BY Calendar_Year(CreatedDate)
+
+SELECT ROLLUP(Industry, Type), COUNT(Id) FROM Account GROUP BY ROLLUP(Industry, Type)
+
+SELECT CUBE(StageName, Type), COUNT(Id) FROM Opportunity GROUP BY CUBE(StageName, Type)
+
+SELECT Name, (SELECT COUNT(Id) FROM Opportunities) FROM Account
+
+⚙️ 51–60: ORDER BY, LIMIT, OFFSET
+SELECT Name FROM Account ORDER BY CreatedDate DESC LIMIT 10
+
+SELECT Name FROM Opportunity ORDER BY Amount DESC LIMIT 5
+
+SELECT Id, Name FROM Contact ORDER BY LastName ASC
+
+SELECT Id, Name FROM Lead ORDER BY CreatedDate DESC LIMIT 100 OFFSET 50
+
+SELECT Name FROM Account ORDER BY AnnualRevenue DESC NULLS LAST
+
+SELECT Name FROM Opportunity WHERE StageName = 'Closed Won' ORDER BY CreatedDate
+
+SELECT Id FROM Case WHERE Priority = 'High' ORDER BY LastModifiedDate LIMIT 20
+
+SELECT Id, Name FROM User ORDER BY LastLoginDate DESC LIMIT 1
+
+SELECT Id FROM Task WHERE Status != 'Completed' ORDER BY DueDate ASC
+
+SELECT Name FROM Quote ORDER BY ExpirationDate ASC
+
+📁 61–70: Subqueries & Semi‑Joins
+SELECT Id, Name FROM Account WHERE Id IN (SELECT AccountId FROM Opportunity WHERE Amount > 100000)
+
+SELECT Id, Name FROM Account WHERE NOT Id IN (SELECT AccountId FROM Case WHERE Status = 'Closed')
+
+SELECT Name FROM Contact WHERE Id IN (SELECT ContactId FROM Case WHERE Priority = 'High')
+
+SELECT Name FROM Opportunity WHERE AccountId IN (SELECT Id FROM Account WHERE Industry = 'Finance')
+
+SELECT Name FROM Account WHERE Name IN :myNameList
+
+SELECT Name FROM Opportunity WHERE StageName IN :stageSet
+
+SELECT Name FROM Contact WHERE MailingCity NOT IN ('Paris','Berlin')
+
+SELECT Name FROM Account WHERE CreatedDate > :startDateVar
+
+sql
+Copy
+Edit
+SELECT Name FROM Account
+ WHERE CreatedDate = LAST_N_DAYS:30
+   AND Id NOT IN (SELECT AccountId FROM Opportunity WHERE StageName = 'Closed Won')
+SELECT Name FROM Lead WHERE ConvertedDate != NULL
+
+🔐 71–80: Security & Sharing Context
+WITH SECURITY_ENFORCED SELECT Id, Name FROM Account
+
+SELECT Id, Name FROM Opportunity WITH SECURITY_ENFORCED
+
+SELECT Id, Name FROM Contact WHERE IsDeleted = TRUE ALL ROWS
+
+SELECT Id, LastModifiedDate FROM Lead WHERE IsConverted = TRUE ALL ROWS
+
+SELECT Id, Name FROM Account WHERE Id = :recordId
+
+SELECT Id FROM User WHERE Role.Name = 'Sales Manager'
+
+SELECT Id, Name FROM Account WHERE Owner.Profile.Name = 'Partner Community User'
+
+SELECT Id FROM Opportunity WHERE TeamMemberRole = 'Sales Rep'
+
+SELECT Id, Name FROM Contact WHERE Account.Owner.Profile.Name = 'System Administrator'
+
+SELECT Count(Id) FROM Case WHERE Owner.Profile.UserType = 'Partner'
+
+🔄 81–90: Dynamic/DML Context Example
+Database.query(queryStringVar)
+
+apex
+Copy
+Edit
+String soql = 'SELECT Id, Name FROM Account WHERE BillingCountry=:country';
+List<Account> accts = Database.query(soql);
+SELECT Id, Name FROM Account LIMIT :dynamicLimit
+
+WHERE Name LIKE :searchPrefix
+
+WHERE CreatedDate >= :startDate AND CreatedDate <= :endDate
+
+SELECT Id, Name FROM Account WHERE CreatedDate >= :Date.today().addMonths(-3)
+
+SELECT Id FROM User WHERE Username = :System.UserName
+
+SELECT Id FROM Opportunity WHERE Amount > :minAmount AND CloseDate < :endDate
+
+SELECT Id FROM Case WHERE Subject LIKE '%' + :keyword + '%'
+
+String query = 'SELECT Id FROM ' + sObjectName + ' LIMIT 1';
+
+🧩 91–100: Advanced Features
+FOR VIEW
+
+FOR REFERENCE
+
+SELECT Id, Name FROM Account FOR VIEW
+
+SELECT Id, Name FROM Contact FOR REFERENCE
+
+SELECT Id, Name FROM Opportunity ORDER BY Name FOR VIEW
+
+SELECT Id, Name FROM Account WHERE Id IN :myList FOR VIEW
+
+SELECT Id, Name FROM Contact WHERE AccountId = :acctId FOR UPDATE
+
+SELECT Id, Name FROM Opportunity WHERE StageName = 'Prospecting' FOR UPDATE
+
+SELECT Id, Name FROM Account FOR UPDATE
+
+SELECT Id, Name FROM Case WHERE Status = 'New' FOR UPDATE

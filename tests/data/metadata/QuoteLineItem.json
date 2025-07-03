@@ -1,0 +1,43 @@
+{
+  "label": "Quote Line Item",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Quote Line Item ID"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Quote Line Item Name"
+    },
+    {
+      "name": "Quantity",
+      "type": "number",
+      "label": "Quantity"
+    },
+    {
+      "name": "UnitPrice",
+      "type": "currency",
+      "label": "Unit Price"
+    },
+    {
+      "name": "TotalPrice",
+      "type": "currency",
+      "label": "Total Price"
+    },
+    {
+      "name": "QuoteId",
+      "type": "reference",
+      "label": "Quote ID"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Quote",
+      "type": "parent",
+      "parentObject": "Quote",
+      "field": "QuoteId"
+    }
+  ]
+}

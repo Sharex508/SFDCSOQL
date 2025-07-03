@@ -1,0 +1,48 @@
+{
+  "label": "Contact",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Contact ID"
+    },
+    {
+      "name": "FirstName",
+      "type": "string",
+      "label": "First Name"
+    },
+    {
+      "name": "LastName",
+      "type": "string",
+      "label": "Last Name"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "label": "Email"
+    },
+    {
+      "name": "Phone",
+      "type": "phone",
+      "label": "Phone"
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "label": "Title"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "Account ID"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "label": "Opportunity",
+  "fields": [
+    {
+      "name": "Id",
+      "type": "id",
+      "label": "Opportunity ID"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "label": "Opportunity Name"
+    },
+    {
+      "name": "StageName",
+      "type": "picklist",
+      "label": "Stage"
+    },
+    {
+      "name": "CloseDate",
+      "type": "date",
+      "label": "Close Date"
+    },
+    {
+      "name": "Amount",
+      "type": "currency",
+      "label": "Amount"
+    },
+    {
+      "name": "AccountId",
+      "type": "reference",
+      "label": "Account ID"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "Account",
+      "type": "parent",
+      "parentObject": "Account",
+      "field": "AccountId"
+    },
+    {
+      "name": "Quotes",
+      "type": "child",
+      "childObject": "Quote",
+      "field": "OpportunityId"
+    }
+  ]
+}
